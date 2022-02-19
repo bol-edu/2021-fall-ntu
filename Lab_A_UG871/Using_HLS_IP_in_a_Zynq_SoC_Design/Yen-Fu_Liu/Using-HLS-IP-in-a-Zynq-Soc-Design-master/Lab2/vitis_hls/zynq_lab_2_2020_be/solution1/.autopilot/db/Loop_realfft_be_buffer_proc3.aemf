@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634284501305">
+  <ports id="1" name="descramble_buf_0_M_imag_V" type="PortType" coreName="RAM" coreId="1836016431" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="2" name="descramble_buf_1_M_imag_V" type="PortType" coreName="RAM" coreId="1836016431" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="3" name="din_V" type="PortType" originalName="this" coreId="1869506659" bitwidth="48">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="descramble_buf_0_M_real_V" type="PortType" coreName="RAM" coreId="1868771122" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="5" name="descramble_buf_1_M_real_V" type="PortType" coreName="RAM" coreId="1836016431" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="53" source_obj="//@regions.0/@basic_blocks.6/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="54" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="55" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="58" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@ports.0"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="67" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="71" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="84" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.3"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@ports.4"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="164" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="169" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="170" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="172" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="173" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="175" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="8" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_23</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln80" lineNumber="80" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="80" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+      <controlInputObjs>block_23</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+      <validLinenumbers>80</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="159" pipe_depth="1" RegionName="realfft_be_buffer">
+    <basic_blocks id="23" name="block_23" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>block_42</controlInputObjs>
+      <controlInputObjs>.exitStub</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>branch1</controlOutputObjs>
+      <controlOutputObjs>branch0</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i_221" originalName="i" coreId="1279799155" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>block_42</controlInputObjs>
+        <controlInputObjs>.exitStub</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i" lineNumber="80" originalName="i" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="i_fu_128_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="80" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="din_V_read" lineNumber="145" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="48" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="read"/>
+        <dataInputObjs>din_V</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="trunc_ln145" lineNumber="145" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="trunc_ln145_fu_134_p1" coreId="1279799155" contextFuncName="read" bitwidth="16" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="trunc_ln145_2" lineNumber="145" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="descramble_buf_1_M_imag_V_d0" coreId="1279799155" contextFuncName="read" bitwidth="16" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="trunc_ln" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="trunc_ln_fu_152_p4" coreId="1279799155" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="zext_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="zext_ln86_fu_162_p1" coreId="1279799155" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="descramble_buf_0_M_real_V_addr" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>descramble_buf_0_M_real_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="descramble_buf_1_M_real_V_addr_1" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>descramble_buf_1_M_real_V</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="tmp" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="tmp_fu_170_p3" coreId="1279799155" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <controlInputObjs>branch0</controlInputObjs>
+        <controlInputObjs>branch1</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>80</validLinenumbers>
+        <validLinenumbers>86</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>145</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="26" name="branch0" type="BlockType">
+      <controlInputObjs>block_23</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_33</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="descramble_buf_0_M_real_V_addr_write_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <controlInputObjs>block_33</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>86</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="29" name="branch1" type="BlockType">
+      <controlInputObjs>block_23</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_33</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="descramble_buf_1_M_real_V_addr_1_write_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <controlInputObjs>block_33</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>86</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="33" name="block_33" type="BlockType">
+      <controlInputObjs>branch0</controlInputObjs>
+      <controlInputObjs>branch1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>branch5</controlOutputObjs>
+      <controlOutputObjs>branch4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="descramble_buf_0_M_imag_V_addr" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>descramble_buf_0_M_imag_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="descramble_buf_1_M_imag_V_addr_1" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" bitwidth="8" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>descramble_buf_1_M_imag_V</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="br_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <controlInputObjs>branch4</controlInputObjs>
+        <controlInputObjs>branch5</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>86</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="36" name="branch4" type="BlockType">
+      <controlInputObjs>block_33</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_42</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="descramble_buf_0_M_imag_V_addr_write_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <controlInputObjs>block_42</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>86</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="39" name="branch5" type="BlockType">
+      <controlInputObjs>block_33</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_42</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="descramble_buf_1_M_imag_V_addr_1_write_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" opcode="store" nodeLabel="1.0" m_display="0" m_delay="3.25" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln86" lineNumber="86" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="86" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <controlInputObjs>block_42</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>86</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="42" name="block_42" type="BlockType">
+      <controlInputObjs>branch4</controlInputObjs>
+      <controlInputObjs>branch5</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.exitStub</controlOutputObjs>
+      <controlOutputObjs>block_23</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="icmp_ln80" lineNumber="80" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="icmp_ln80_fu_178_p2" opType="icmp" coreId="1279799155" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="80" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln80" lineNumber="80" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="80" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_23</controlInputObjs>
+        <controlInputObjs>.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>80</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="45" name=".exitStub" type="BlockType">
+      <controlInputObjs>block_42</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>block_23</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln0" coreId="1279799155" opcode="return" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln0" coreId="1279799155" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_23</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="i_reg_186">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="i_221_reg_114">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <expressionNodes realName="descramble_buf_1_M_imag_V_addr_1_gep_fu_95">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln0_fu_184">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_real_V_addr_1_gep_fu_69">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_128">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_170">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_imag_V_addr_gep_fu_88">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln80_fu_178">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_221_phi_fu_118">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln86_fu_162">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_real_V_addr_gep_fu_62">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln145_2_fu_140">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_152">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln145_fu_134">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="din_V_read_read_fu_56">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="descramble_buf_0_M_imag_V">
+    <nodeIds>34</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_0_M_real_V">
+    <nodeIds>24</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_1_M_imag_V">
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_1_M_real_V">
+    <nodeIds>27</nodeIds>
+  </memoryPorts>
+  <ioPorts name="descramble_buf_0_M_imag_V(p0)">
+    <contents name="store">
+      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_0_M_real_V(p0)">
+    <contents name="store">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_1_M_imag_V(p0)">
+    <contents name="store">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_1_M_real_V(p0)">
+    <contents name="store">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="din_V">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="Loop_realfft_be_buffer_proc3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="511" mMaxLatency="512">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="realfft_be_buffer" mII="1" mDepth="1" mMinTripCount="512" mMaxTripCount="512" mMinLatency="511" mMaxLatency="511" mType="1">
+      <basicBlocks>23</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>33</basicBlocks>
+      <basicBlocks>36</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>42</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

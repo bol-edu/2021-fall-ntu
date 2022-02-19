@@ -1,0 +1,1688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634469077824">
+  <ports id="1" name="real_spectrum_lo_V_M_real_V" type="PortType" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="2" name="real_spectrum_lo_V_M_imag_V" type="PortType" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="real_spectrum_hi_buf_i_0" type="PortType" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="256"/>
+  <ports id="4" name="real_spectrum_hi_buf_i_1" type="PortType" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="256"/>
+  <ports id="5" name="descramble_buf_1_M_real_V" type="PortType" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="6" name="descramble_buf_1_M_imag_V" type="PortType" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="7" name="descramble_buf_0_M_real_V" type="PortType" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="8" name="descramble_buf_0_M_imag_V" type="PortType" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="256">
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="172" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="176" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="177" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="178" source_obj="//@regions.0/@basic_blocks.3/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="179" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.2/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="182" source_obj="//@regions.0/@basic_blocks.3/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="183" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="184" source_obj="//@regions.0/@basic_blocks.2/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="187" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="188" source_obj="//@regions.0/@basic_blocks.2/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="189" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="191" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.2/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="193" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.4/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.6"/>
+  <edges id="242" source_obj="//@regions.0/@basic_blocks.4/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.9"/>
+  <edges id="246" source_obj="//@regions.0/@basic_blocks.4/@node_objs.10" sink_obj="//@ports.0"/>
+  <edges id="247" source_obj="//@regions.0/@basic_blocks.4/@node_objs.10" sink_obj="//@ports.1"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.4/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.10"/>
+  <edges id="249" source_obj="//@regions.0/@basic_blocks.4/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.10"/>
+  <edges id="272" source_obj="//@regions.0/@basic_blocks.4/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="291" source_obj="//@regions.0/@basic_blocks.4/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.17"/>
+  <edges id="296" source_obj="//@regions.0/@basic_blocks.4/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.18"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.4/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.19"/>
+  <edges id="303" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.20"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="305" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="310" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.4"/>
+  <edges id="320" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="322" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="323" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="324" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="338" source_obj="//@regions.0/@basic_blocks.2/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="367" source_obj="//@regions.0/@basic_blocks.2/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="391" source_obj="//@regions.0/@basic_blocks.2/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.13"/>
+  <edges id="394" source_obj="//@regions.0/@basic_blocks.2/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.14"/>
+  <edges id="409" source_obj="//@regions.0/@basic_blocks.2/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.16"/>
+  <edges id="427" source_obj="//@regions.0/@basic_blocks.2/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.19"/>
+  <edges id="445" source_obj="//@regions.0/@basic_blocks.2/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.24"/>
+  <edges id="446" source_obj="//@regions.0/@basic_blocks.2/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.24"/>
+  <edges id="457" source_obj="//@regions.0/@basic_blocks.2/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.27"/>
+  <edges id="458" source_obj="//@regions.0/@basic_blocks.2/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.27"/>
+  <edges id="463" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.28"/>
+  <edges id="465" source_obj="//@regions.0/@basic_blocks.2/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.29"/>
+  <edges id="467" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.30"/>
+  <edges id="470" source_obj="//@regions.0/@basic_blocks.2/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.31"/>
+  <edges id="471" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.32"/>
+  <edges id="551" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="552" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="553" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="554" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="555" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="556" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="557" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="558" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="-1" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.20"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.21"/>
+  <edges id="-1" source_obj="//@ports.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@ports.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.9"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.17"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.9"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.11"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.13"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.12"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.13"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.16"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.15"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.16"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.19"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.18"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.19"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.22"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.25"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.22"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.26"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.23"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.25"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.23"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.26"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.28"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.30"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.29"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.31"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.15"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.12"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.9"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.8"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.9"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.11"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.18"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.19"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.13"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.17"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.16"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.17"/>
+  <blocks id="18" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader2174.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln0" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader2174.i</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="155" name=".preheader2173.i.exitStub" type="BlockType">
+    <controlInputObjs>.preheader2174.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="154" name="_ln0" opcode="ret" nodeLabel="16.0" m_display="0" m_topoIndex="129" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="627" pipe_depth="15" RegionName="realfft_be_descramble">
+    <basic_blocks id="24" name=".preheader2174.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>realfft_be_descramble_end</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader2173.i.exitStub</controlOutputObjs>
+      <controlOutputObjs>realfft_be_descramble_begin</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i2_0_i" originalName="i" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>realfft_be_descramble_end</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="icmp_ln87" lineNumber="87" fileName="./xfft2real.h" fileDirectory=".." rtlName="icmp_ln87_fu_294_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="87" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="i" lineNumber="87" originalName="i" fileName="./xfft2real.h" fileDirectory=".." rtlName="i_fu_300_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="87" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln87" lineNumber="87" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="87" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>realfft_be_descramble_begin</controlInputObjs>
+        <controlInputObjs>.preheader2173.i.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./xfft2real.h">
+        <validLinenumbers>87</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="xfft2real.cpp">
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="35" name="realfft_be_descramble_begin" type="BlockType">
+      <controlInputObjs>.preheader2174.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlOutputObjs>
+      <controlOutputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="p_Val2_s" lineNumber="89" originalName="__Val2__" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="89" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>descramble_buf_0_M_real_V</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="p_Val2_1" lineNumber="89" originalName="__Val2__" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="89" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>descramble_buf_0_M_imag_V</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln91" lineNumber="91" fileName="./xfft2real.h" fileDirectory=".." rtlName="icmp_ln91_fu_306_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="91" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln91" lineNumber="91" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="91" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlInputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./xfft2real.h">
+        <validLinenumbers>89</validLinenumbers>
+        <validLinenumbers>91</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="xfft2real.cpp">
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="100" name="_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i" type="BlockType">
+      <controlInputObjs>realfft_be_descramble_begin</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>realfft_be_descramble_end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="sub_ln96" lineNumber="96" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln96_fu_316_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="8" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.91" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="96" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="p_Val2_3" lineNumber="96" originalName="__z._M_real.V" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="96" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>descramble_buf_1_M_real_V</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="p_Val2_2" lineNumber="96" originalName="__z._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="96" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>descramble_buf_1_M_imag_V</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="p_Val2_4" lineNumber="96" originalName="complex&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt; &amp;gt;._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="p_Val2_4_fu_338_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="4.0" m_display="0" m_delay="2.07" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="96" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="ret_V" lineNumber="98" originalName="ret.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="ret_V_fu_357_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.07" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="98" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="ret_V_3" lineNumber="101" originalName="ret.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="ret_V_3_fu_363_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="5.0" m_display="0" m_delay="2.07" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="101" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="sub_ln1148" lineNumber="98" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_fu_454_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="18" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="2.1" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="98" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="sub_ln1148_1" lineNumber="98" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_1_fu_541_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="2.07" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="98" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="f_M_real_V" lineNumber="98" originalName="f._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="f_M_real_V_fu_546_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.8" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="98" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="ret_V_1" lineNumber="99" originalName="ret.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="ret_V_1_fu_390_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.07" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="99" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="ret_V_2" lineNumber="100" originalName="ret.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="ret_V_2_fu_396_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="5.0" m_display="0" m_delay="2.07" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="100" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="sub_ln1148_2" lineNumber="99" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_2_fu_473_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="18" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="2.1" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="99" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="sub_ln1148_3" lineNumber="99" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_3_fu_552_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="2.07" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="99" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="f_M_imag_V" lineNumber="99" originalName="f._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="f_M_imag_V_fu_557_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.8" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="99" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="r_V" lineNumber="100" originalName="r.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="r_V_fu_489_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="2.1" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="100" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="sub_ln1148_4" lineNumber="100" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_4_fu_502_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="2.07" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="100" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="select_ln1148_3" lineNumber="100" originalName="__y._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="select_ln1148_3_fu_517_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="6.0" m_display="0" m_delay="0.8" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="100" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="sub_ln1148_5" lineNumber="101" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_5_fu_525_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="18" opcode="sub" nodeLabel="6.0" m_display="0" m_delay="2.1" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="101" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="sub_ln1148_6" lineNumber="101" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_6_fu_563_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="2.07" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="101" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="select_ln1148_4" lineNumber="101" originalName="__y._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="select_ln1148_4_fu_568_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.8" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="101" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="p_Val2_18" lineNumber="105" originalName="__Val2__" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="15" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="p_Val2_19" lineNumber="105" originalName="__Val2__" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="r_V_1" lineNumber="106" originalName="r.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="hls_xfft2real_muldEe_U8" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="31" opcode="mul" nodeLabel="7.0" nodeLatency="2" m_display="0" m_delay="3.89" m_isOnCriticalPath="true" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="106" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="mul_ln1193" lineNumber="106" fileName="./xfft2real.h" fileDirectory=".." rtlName="hls_xfft2real_macfYi_U10" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="31" opcode="mul" nodeLabel="8.0" nodeLatency="2" m_display="0" m_delay="1.05" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="106" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="ret_V_4" lineNumber="106" originalName="ret.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="hls_xfft2real_macfYi_U10" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="31" opcode="sub" nodeLabel="10.0" m_display="0" m_delay="3.02" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="106" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="r_V_2" lineNumber="106" originalName="r.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="hls_xfft2real_macg8j_U11" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="31" opcode="mul" nodeLabel="8.0" nodeLatency="2" m_display="0" m_delay="1.05" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="106" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="mul_ln1192" lineNumber="106" fileName="./xfft2real.h" fileDirectory=".." rtlName="hls_xfft2real_muleOg_U9" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="31" opcode="mul" nodeLabel="7.0" nodeLatency="2" m_display="0" m_delay="3.89" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="106" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="ret_V_5" lineNumber="106" originalName="ret.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="hls_xfft2real_macg8j_U11" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="31" opcode="add" nodeLabel="10.0" m_display="0" m_delay="3.02" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="106" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="cdata1_M_real_V_1" lineNumber="107" originalName="complex&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt; &amp;gt;._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="cdata1_M_real_V_1_fu_604_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="add" nodeLabel="11.0" m_display="0" m_delay="2.07" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="107" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="cdata1_M_imag_V_1" lineNumber="107" originalName="complex&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt; &amp;gt;._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="cdata1_M_imag_V_1_fu_609_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="add" nodeLabel="11.0" m_display="0" m_delay="2.07" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="107" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="cdata2_M_real_V_1" lineNumber="108" originalName="complex&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt; &amp;gt;._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="cdata2_M_real_V_1_fu_614_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="11.0" m_display="0" m_delay="2.07" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="108" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="cdata2_M_imag_V_1" lineNumber="108" originalName="complex&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt; &amp;gt;._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="cdata2_M_imag_V_1_fu_619_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="11.0" m_display="0" m_delay="2.07" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="108" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="_ln0" opcode="br" nodeLabel="12.0" m_display="0" m_delay="1.76" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <controlInputObjs>realfft_be_descramble_end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./xfft2real.h">
+        <validLinenumbers>96</validLinenumbers>
+        <validLinenumbers>98</validLinenumbers>
+        <validLinenumbers>101</validLinenumbers>
+        <validLinenumbers>99</validLinenumbers>
+        <validLinenumbers>100</validLinenumbers>
+        <validLinenumbers>105</validLinenumbers>
+        <validLinenumbers>106</validLinenumbers>
+        <validLinenumbers>107</validLinenumbers>
+        <validLinenumbers>108</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="xfft2real.cpp">
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="106" name="_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i" type="BlockType">
+      <controlInputObjs>realfft_be_descramble_begin</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>realfft_be_descramble_end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="cdata1_M_real_V" lineNumber="92" originalName="cdata1._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="cdata1_M_real_V_fu_624_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="add" nodeLabel="11.0" m_display="0" m_delay="2.07" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="92" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="cdata1_M_imag_V" lineNumber="93" originalName="cdata1._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="cdata1_M_imag_V_fu_628_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="11.0" m_display="0" m_delay="2.07" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="93" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="cdata2_M_real_V" lineNumber="94" originalName="cdata2._M_real.V" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="74" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="94" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>descramble_buf_1_M_real_V</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="cdata2_M_imag_V" lineNumber="94" originalName="cdata2._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="load" nodeLabel="10.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="94" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>descramble_buf_1_M_imag_V</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="_ln95" lineNumber="95" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="br" nodeLabel="12.0" m_display="0" m_delay="1.76" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="95" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <controlInputObjs>realfft_be_descramble_end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./xfft2real.h">
+        <validLinenumbers>92</validLinenumbers>
+        <validLinenumbers>93</validLinenumbers>
+        <validLinenumbers>94</validLinenumbers>
+        <validLinenumbers>95</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="xfft2real.cpp">
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="153" name="realfft_be_descramble_end" type="BlockType">
+      <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlInputObjs>
+      <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader2174.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="t_V_7" originalName="cdata2._M_imag.V" bitwidth="16" opcode="phi" nodeLabel="13.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlInputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="t_V_6" originalName="cdata2._M_real.V" bitwidth="16" opcode="phi" nodeLabel="13.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlInputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="t_V_5" originalName="cdata1._M_imag.V" bitwidth="16" opcode="phi" nodeLabel="13.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlInputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="t_V_4" originalName="cdata1._M_real.V" bitwidth="16" opcode="phi" nodeLabel="13.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i.i</controlInputObjs>
+        <controlInputObjs>_ZN13ap_fixed_baseILi17ELi2ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi16ELi1ELb1ELS0_5ELS1_3ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit9.i104.i</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="sub_ln1148_7" lineNumber="110" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_7_fu_656_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="13.0" m_display="0" m_delay="2.07" m_topoIndex="95" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="sub_ln1148_8" lineNumber="110" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_8_fu_787_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="14.0" m_display="0" m_delay="2.07" m_topoIndex="111" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="tmp_M_real_V" lineNumber="110" originalName="tmp._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="tmp_M_real_V_fu_792_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="14.0" m_display="0" m_delay="0.8" m_topoIndex="112" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="sub_ln1148_9" lineNumber="110" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_9_fu_690_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="13.0" m_display="0" m_delay="2.07" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="sub_ln1148_10" lineNumber="110" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_10_fu_802_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="14.0" m_display="0" m_delay="2.07" m_topoIndex="114" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="tmp_M_imag_V" lineNumber="110" originalName="tmp._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="tmp_M_imag_V_fu_807_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="14.0" m_display="0" m_delay="0.8" m_topoIndex="115" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="real_spectrum_lo_V_M_real_V_write_ln110" lineNumber="110" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="write" nodeLabel="15.0" m_display="0" m_delay="1.0" m_topoIndex="122" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="110" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>real_spectrum_lo_V_M_real_V</dataOutputObjs>
+        <dataOutputObjs>real_spectrum_lo_V_M_imag_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="sub_ln111" lineNumber="111" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln111_fu_343_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="8" opcode="sub" nodeLabel="4.0" m_display="0" m_delay="1.91" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="111" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="sub_ln1148_11" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_11_fu_724_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="13.0" m_display="0" m_delay="2.07" m_topoIndex="103" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="sub_ln1148_12" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_12_fu_817_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="14.0" m_display="0" m_delay="2.07" m_topoIndex="117" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="select_ln1148" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." rtlName="select_ln1148_fu_822_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="14.0" m_display="0" m_delay="0.8" m_topoIndex="118" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="sub_ln1148_13" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_13_fu_758_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="17" opcode="sub" nodeLabel="13.0" m_display="0" m_delay="2.07" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="sub_ln1148_14" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." rtlName="sub_ln1148_14_fu_832_p2" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="sub" nodeLabel="14.0" m_display="0" m_delay="2.07" m_topoIndex="120" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="select_ln1148_5" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." rtlName="select_ln1148_5_fu_837_p3" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="select" nodeLabel="14.0" m_display="0" m_delay="0.8" m_topoIndex="121" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="148" name="real_spectrum_hi_buf_write_ln112" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="store" nodeLabel="15.0" m_display="0" m_delay="3.25" m_topoIndex="125" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="150" name="real_spectrum_hi_buf_2_write_ln112" lineNumber="112" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="store" nodeLabel="15.0" m_display="0" m_delay="3.25" m_topoIndex="127" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="112" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>sub</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="152" name="_ln87" lineNumber="87" fileName="./xfft2real.h" fileDirectory=".." contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" opcode="br" nodeLabel="15.0" m_display="0" m_topoIndex="128" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="87" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <controlInputObjs>.preheader2174.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./xfft2real.h">
+        <validLinenumbers>110</validLinenumbers>
+        <validLinenumbers>111</validLinenumbers>
+        <validLinenumbers>112</validLinenumbers>
+        <validLinenumbers>87</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="xfft2real.cpp">
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <regnodes realName="ret_V_2_reg_1010">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln111_reg_980">
+    <nodeIds>131</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_s_reg_946">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_13_reg_1201">
+    <nodeIds>136</nodeIds>
+  </regnodes>
+  <regnodes realName="descramble_buf_0_M_1_reg_916">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata1_M_real_V_1_reg_1121">
+    <nodeIds>95</nodeIds>
+  </regnodes>
+  <regnodes realName="descramble_buf_1_M_1_reg_878">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_8_reg_1206">
+    <nodeIds>140</nodeIds>
+  </regnodes>
+  <regnodes realName="t_V_4_reg_285">
+    <nodeIds>110</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1116_reg_1077">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_14_reg_1211">
+    <nodeIds>142</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_7_reg_1191">
+    <nodeIds>133</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_3_reg_960">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_4_reg_1045">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata2_M_real_V_1_reg_1131">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="twid_rom_0_addr_reg_931">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_1_reg_1040">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_2_reg_926">
+    <nodeIds>42</nodeIds>
+  </regnodes>
+  <regnodes realName="twid_rom_1_addr_reg_936">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="descramble_buf_1_M_reg_873">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_7_reg_1025">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="descramble_buf_1_M_3_reg_906">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_3_reg_1035">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_6_reg_1176">
+    <nodeIds>122</nodeIds>
+  </regnodes>
+  <regnodes realName="descramble_buf_1_M_2_reg_921">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_4_reg_965">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1118_reg_1083">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_4_reg_1111">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_1015">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_1_reg_1005">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_5_reg_1161">
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_ln96_reg_896">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln1192_reg_1106">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_18_reg_970">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1118_2_reg_1089">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="t_V_5_reg_276">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_4_reg_1030">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_5_reg_1116">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1148_reg_1231">
+    <nodeIds>139</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata1_M_imag_V_1_reg_1126">
+    <nodeIds>96</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_1_reg_953">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1118_1_reg_1095">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln96_reg_901">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="f_M_real_V_reg_1060">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_s_reg_1055">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1148_3_reg_1050">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_6_reg_1166">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_M_real_V_reg_1221">
+    <nodeIds>121</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_reg_985">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="descramble_buf_0_M_reg_911">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="f_M_imag_V_reg_1066">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln91_reg_892">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="t_V_6_reg_267">
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_995">
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_9_reg_1171">
+    <nodeIds>118</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata2_M_imag_V_1_reg_1136">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="r_V_1_reg_1101">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln87_reg_883">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata2_M_imag_V_reg_1156">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata1_M_real_V_reg_1141">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="ret_V_3_reg_990">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_887">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="p_Val2_19_reg_975">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1148_5_reg_1236">
+    <nodeIds>146</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln1148_4_reg_1072">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_11_reg_1186">
+    <nodeIds>125</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata1_M_imag_V_reg_1146">
+    <nodeIds>102</nodeIds>
+  </regnodes>
+  <regnodes realName="cdata2_M_real_V_reg_1151">
+    <nodeIds>103</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_2_reg_1000">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_5_reg_1020">
+    <nodeIds>64</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_10_reg_1181">
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="t_V_7_reg_258">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="i2_0_i_reg_246">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln111_reg_941">
+    <nodeIds>130</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_12_reg_1196">
+    <nodeIds>135</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_M_imag_V_reg_1226">
+    <nodeIds>128</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln1148_15_reg_1216">
+    <nodeIds>143</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln1148_3_fu_799">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_4_fu_479">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_2_gep_fu_173">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_2_fu_396">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cdata2_M_real_V_1_fu_614">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="f_M_real_V_fu_546">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="t_V_7_phi_fu_261">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_fu_644">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_14_fu_832">
+    <nodeIds>145</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_1_fu_390">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_2_fu_473">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln91_fu_306">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln111_fu_844">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_1_fu_784">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_1_gep_fu_160">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_fu_489">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_648">
+    <nodeIds>115</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_8_fu_507">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_buf_2_gep_fu_233">
+    <nodeIds>149</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_fu_454">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="twid_rom_0_addr_gep_fu_186">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1148_5_fu_837">
+    <nodeIds>146</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_gep_fu_118">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln96_fu_316">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i2_0_i_phi_fu_250">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cdata2_M_imag_V_1_fu_619">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_11_fu_706">
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cdata1_M_imag_V_1_fu_609">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_5_fu_814">
+    <nodeIds>137</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_14_fu_764">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_2_fu_377">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_15_fu_595">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_s_fu_531">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1148_4_fu_568">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_12_fu_817">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_fu_357">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_M_imag_V_fu_807">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_M_real_V_fu_792">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1118_1_fu_583">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_15_fu_774">
+    <nodeIds>143</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_7_fu_829">
+    <nodeIds>144</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_7_fu_656">
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_1_fu_460">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_9_fu_690">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1118_fu_577">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_7_fu_420">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1148_1_fu_470">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1148_fu_822">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_750">
+    <nodeIds>140</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_8_fu_787">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_4_fu_636">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln87_fu_294">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_13_fu_740">
+    <nodeIds>136</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_6_fu_632">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_430">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cdata1_M_imag_V_fu_628">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lhs_V_fu_354">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_3_fu_438">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_682">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_gep_fu_147">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_9_fu_672">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_13_fu_758">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_r_V_fu_586">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="twid_rom_1_addr_gep_fu_199">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_3_fu_552">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lhs_V_4_fu_387">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_12_fu_730">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="t_V_6_phi_fu_270">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_1_fu_541">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_6_fu_662">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_10_fu_802">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_10_fu_696">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ret_V_3_fu_363">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1265_fu_326">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1148_2_fu_640">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln1148_3_fu_517">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln111_fu_334">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_6_fu_563">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_buf_gep_fu_220">
+    <nodeIds>147</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_1_gep_fu_126">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rhs_V_fu_348">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln96_fu_322">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_716">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="t_V_5_phi_fu_279">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_4_fu_338">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1118_2_fu_580">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cdata1_M_real_V_1_fu_604">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rhs_V_3_fu_351">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1148_5_fu_410">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="cdata1_M_real_V_fu_624">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1116_fu_574">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln96_fu_312">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_494">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="t_V_4_phi_fu_288">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_402">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_369">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1148_2_fu_451">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="f_M_imag_V_fu_557">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_300">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1148_fu_448">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_3_gep_fu_134">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln111_fu_343">
+    <nodeIds>131</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_11_fu_724">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_5_fu_525">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln1148_4_fu_502">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_849">
+    <nodeIds>85</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_855">
+    <nodeIds>92</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_867">
+    <nodeIds>91</nodeIds>
+    <nodeIds>93</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_861">
+    <nodeIds>88</nodeIds>
+    <nodeIds>89</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="write_ln110_write_fu_108">
+    <nodeIds>129</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="descramble_buf_0_M_imag_V">
+    <nodeIds>32</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_0_M_real_V">
+    <nodeIds>30</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_1_M_imag_V">
+    <nodeIds>42</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_1_M_imag_V" portID="1">
+    <nodeIds>104</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_1_M_real_V">
+    <nodeIds>41</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="descramble_buf_1_M_real_V" portID="1">
+    <nodeIds>103</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="real_spectrum_hi_buf_i_0">
+    <nodeIds>148</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="real_spectrum_hi_buf_i_1">
+    <nodeIds>150</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="twid_rom_0">
+    <nodeIds>80</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="twid_rom_1">
+    <nodeIds>82</nodeIds>
+  </memoryPorts>
+  <ioPorts name="descramble_buf_0_M_imag_V(p0)">
+    <contents name="load">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_0_M_real_V(p0)">
+    <contents name="load">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_1_M_imag_V(p0)">
+    <contents name="load">
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_1_M_imag_V(p1)">
+    <contents name="load">
+      <nodeIds>104</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_1_M_real_V(p0)">
+    <contents name="load">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="descramble_buf_1_M_real_V(p1)">
+    <contents name="load">
+      <nodeIds>103</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_spectrum_hi_buf_i_0(p0)">
+    <contents name="store">
+      <nodeIds>148</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_spectrum_hi_buf_i_1(p0)">
+    <contents name="store">
+      <nodeIds>150</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_spectrum_lo_V_M_imag_V">
+    <contents name="write">
+      <nodeIds>129</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="real_spectrum_lo_V_M_real_V">
+    <contents name="write">
+      <nodeIds>129</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="2" latency="2"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="2" latency="2"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="41" stage="2" latency="2"/>
+      <operations id="42" stage="1" latency="2"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="2" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="2" latency="2"/>
+      <operations id="130" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="30" stage="1" latency="2"/>
+      <operations id="32" stage="1" latency="2"/>
+      <operations id="41" stage="1" latency="2"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="2"/>
+      <operations id="82" stage="1" latency="2"/>
+      <operations id="131" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="3" latency="3"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="92" stage="3" latency="3"/>
+    </states>
+    <states id="9">
+      <operations id="85" stage="2" latency="3"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="88" stage="3" latency="3"/>
+      <operations id="91" stage="3" latency="3"/>
+      <operations id="92" stage="2" latency="3"/>
+    </states>
+    <states id="10">
+      <operations id="85" stage="1" latency="3"/>
+      <operations id="88" stage="2" latency="3"/>
+      <operations id="91" stage="2" latency="3"/>
+      <operations id="92" stage="1" latency="3"/>
+    </states>
+    <states id="11">
+      <operations id="88" stage="1" latency="3"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="3"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="103" stage="2" latency="2"/>
+      <operations id="104" stage="2" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="2"/>
+      <operations id="104" stage="1" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+    </states>
+    <states id="14">
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+    </states>
+    <states id="15">
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+    </states>
+    <states id="16">
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+    </states>
+    <states id="17">
+      <operations id="154" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="Loop_realfft_be_desc" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="271" mMaxLatency="271">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>18</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="realfft_be_descramble" mII="1" mDepth="15" mMinTripCount="256" mMaxTripCount="256" mMinLatency="269" mMaxLatency="269" mType="1">
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>100</basicBlocks>
+      <basicBlocks>106</basicBlocks>
+      <basicBlocks>153</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>155</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

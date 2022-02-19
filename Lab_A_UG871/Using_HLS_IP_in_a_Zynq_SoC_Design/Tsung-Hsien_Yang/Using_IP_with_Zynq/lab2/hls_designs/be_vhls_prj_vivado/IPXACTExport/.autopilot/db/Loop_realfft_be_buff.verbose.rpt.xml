@@ -1,0 +1,139 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Loop_realfft_be_buff'" level="0">
+<item name = "Date">Sun Oct 17 19:11:17 2021
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">be_vhls_prj_vivado</item>
+<item name = "Solution">IPXACTExport</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.254 ns, 0.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">511, 512, 2.044 us, 2.048 us, 511, 512, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- realfft_be_buffer">511, 511, 1, 1, 1, 512, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 32, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 42, -</column>
+<column name="Register">-, -, 12, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_fu_191_p2">+, 0, 0, 15, 1, 9</column>
+<column name="icmp_ln78_fu_209_p2">icmp, 0, 0, 13, 9, 2</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">15, 3, 1, 3</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="din_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="val_assign41_reg_141">9, 2, 9, 18</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="val_assign41_reg_141">9, 0, 9, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Loop_realfft_be_buff, return value</column>
+<column name="descramble_buf_0_M_imag_V_address0">out, 8, ap_memory, descramble_buf_0_M_imag_V, array</column>
+<column name="descramble_buf_0_M_imag_V_ce0">out, 1, ap_memory, descramble_buf_0_M_imag_V, array</column>
+<column name="descramble_buf_0_M_imag_V_we0">out, 1, ap_memory, descramble_buf_0_M_imag_V, array</column>
+<column name="descramble_buf_0_M_imag_V_d0">out, 16, ap_memory, descramble_buf_0_M_imag_V, array</column>
+<column name="descramble_buf_1_M_imag_V_address0">out, 8, ap_memory, descramble_buf_1_M_imag_V, array</column>
+<column name="descramble_buf_1_M_imag_V_ce0">out, 1, ap_memory, descramble_buf_1_M_imag_V, array</column>
+<column name="descramble_buf_1_M_imag_V_we0">out, 1, ap_memory, descramble_buf_1_M_imag_V, array</column>
+<column name="descramble_buf_1_M_imag_V_d0">out, 16, ap_memory, descramble_buf_1_M_imag_V, array</column>
+<column name="din_TDATA">in, 32, axis, din_V_data, pointer</column>
+<column name="din_TVALID">in, 1, axis, din_V_last_V, pointer</column>
+<column name="din_TREADY">out, 1, axis, din_V_last_V, pointer</column>
+<column name="din_TLAST">in, 1, axis, din_V_last_V, pointer</column>
+<column name="descramble_buf_0_M_real_V_address0">out, 8, ap_memory, descramble_buf_0_M_real_V, array</column>
+<column name="descramble_buf_0_M_real_V_ce0">out, 1, ap_memory, descramble_buf_0_M_real_V, array</column>
+<column name="descramble_buf_0_M_real_V_we0">out, 1, ap_memory, descramble_buf_0_M_real_V, array</column>
+<column name="descramble_buf_0_M_real_V_d0">out, 16, ap_memory, descramble_buf_0_M_real_V, array</column>
+<column name="descramble_buf_1_M_real_V_address0">out, 8, ap_memory, descramble_buf_1_M_real_V, array</column>
+<column name="descramble_buf_1_M_real_V_ce0">out, 1, ap_memory, descramble_buf_1_M_real_V, array</column>
+<column name="descramble_buf_1_M_real_V_we0">out, 1, ap_memory, descramble_buf_1_M_real_V, array</column>
+<column name="descramble_buf_1_M_real_V_d0">out, 16, ap_memory, descramble_buf_1_M_real_V, array</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,923 @@
+INFO-FLOW: Workspace /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution opened at Sun Oct 31 23:03:50 CST 2021
+Execute       send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute       get_config_interface -m_axi_latency 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute       config_interface -m_axi_latency=64 
+Command       config_interface done; 0.12 sec.
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute       config_interface -m_axi_alignment_byte_size=64 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute       config_interface -m_axi_max_widen_bitwidth=512 
+Execute       get_config_interface -default_interface 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute       config_interface -default_interface=kernel 
+Execute       get_config_interface -m_axi_offset 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_offset=slave 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+Execute       config_interface -m_axi_offset=slave 
+Execute       get_config_rtl -register_reset_num 
+Execute       send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute       config_rtl -register_reset_num=3 
+Command     open_solution done; 0.36 sec.
+Execute     set_part xcu50-fsvh2104-2-e 
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=/opt/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=/opt/Xilinx/Vivado/2020.2/data:/opt/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: /opt/Xilinx/Vitis_HLS/2020.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 0.66 sec.
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcu50:-fsvh2104:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcu50-fsvh2104-2-e 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 108960} {LUT 871680} {FF 1743360} {DSP 5952} {BRAM 2688} {URAM 640} {SLR 2} 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcu50:-fsvh2104:-2-e 
+Execute         import_lib /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       add_library done; 0.12 sec.
+INFO: [HLS 200-10] Setting target device to 'xcu50-fsvh2104-2-e'
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.8 sec.
+Execute     create_clock -period 300.000000MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+Execute       ap_set_clock -name default -period 3.333 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+Execute     config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+Execute     config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+Execute     config_rtl -m_axi_conservative_mode=1 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+Execute     config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+Execute     config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+Execute     config_export -format ip_catalog -ipname tsp 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname tsp 
+Execute     csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 189.752 MB.
+INFO: [HLS 200-10] Analyzing design file '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute         get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp as C++
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp -foptimization-record-file=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.tsp.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vitis_HLS/2020.2/tps/lnx64/gcc-6.2.0 -fhls -fno-exceptions -E -I/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.tsp.cpp.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.tsp.cpp.err.log 
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds per iteration
+Execute         set_directive_top tsp -name=tsp 
+INFO-FLOW: Setting directive 'TOP' name=tsp 
+INFO-FLOW: Setting directive 'TOP' name=tsp 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=tsp 
+Execute         list_core -type functional_unit 
+Execute         clang_tidy xilinx-systemc-detector /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp std=gnu++14 -target fpga  -directive=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/.systemc_flag -fix-errors /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute         clang_tidy xilinx-directive2pragma /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp std=gnu++14 -target fpga  -directive=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/all.directive.json -fix-errors /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute         clang_tidy xilinx-constantarray-param,xilinx-remove-assert /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute         clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp std=gnu++14 -target fpga  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang-tidy.tsp.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang-tidy.tsp.pp.0.cpp.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang-tidy.tsp.pp.0.cpp.err.log 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command         clang_tidy done; 0.14 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/xilinx-dataflow-lawyer.tsp.pp.0.cpp.diag.yml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/xilinx-dataflow-lawyer.tsp.pp.0.cpp.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/xilinx-dataflow-lawyer.tsp.pp.0.cpp.err.log 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.tsp.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.pp.0.cpp -I/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I /opt/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.tsp.pp.0.cpp.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.tsp.pp.0.cpp.err.log 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.36 seconds. CPU system time: 0.14 seconds. Elapsed time: 0.77 seconds; current allocated memory: 191.389 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute         run_link_or_opt -out /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.0.bc -args  "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.g.bc"  
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.g.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.0.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.1.lower.bc -args /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.1.lower.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute         run_link_or_opt -out /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.2.m1.bc -args /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsm_39.bc /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libhlsmc++_39.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.2.m1.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command           ap_eval done; 1.85 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 1.86 sec.
+Execute         run_link_or_opt -opt -out /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.3.fpc.bc -args /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=tsp -reflow-float-conversion 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=tsp -reflow-float-conversion -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.3.fpc.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command           ap_eval done; 0.49 sec.
+INFO-FLOW: 
+Command         run_link_or_opt done; 0.52 sec.
+Execute         run_link_or_opt -out /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.4.m2.bc -args /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/llvm-link /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.3.fpc.bc -only-needed /opt/Xilinx/Vitis_HLS/2020.2/lnx64/lib/libfloatconversion_39.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.4.m2.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute         run_link_or_opt -opt -out /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.5.gdce.bc -args /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=tsp 
+Execute           ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.5.gdce.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute         get_solution -flow_target 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_interface -default_slave_interface 
+Execute         get_solution -flow_target 
+Execute         get_config_interface -m_axi_offset 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_min_bitwidth 
+Execute         get_config_interface -m_axi_max_bitwidth 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -m_axi_auto_max_ports 
+Execute         get_config_interface -m_axi_num_read_outstanding 
+Execute         get_config_interface -m_axi_num_write_outstanding 
+Execute         get_config_interface -m_axi_max_read_burst_length 
+Execute         get_config_interface -m_axi_max_write_burst_length 
+Execute         get_config_interface -s_axilite_data64 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_compile -pragma_strict_mode 
+Execute         get_config_compile -pipeline_style 
+Execute         send_msg_by_id INFO @200-777@%s Vitis 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+Execute         is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vitis_HLS/2020.2/lnx64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=tsp -mllvm -hls-db-dir -mllvm /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml -mllvm -top-io-mapping-info=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=64 -mllvm -no-unaligned-maxi-accesses=false -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -x ir /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.ld.5.gdce.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.lto.bc > /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command         ap_eval done; 0.13 sec.
+INFO: [HLS 214-131] Inlining function 'compute(unsigned long, unsigned short const (*) [11])' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:96:13)
+INFO: [HLS 214-178] Inlining function 'getDistance(int const*, unsigned short const (*) [11])' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:0)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml -> /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.89 seconds. CPU system time: 0.13 seconds. Elapsed time: 3.07 seconds; current allocated memory: 192.731 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 192.733 MB.
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top tsp -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.0.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 194.202 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.1.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'factorial' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:62) automatically.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.2.prechk.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 193.344 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.g.1.bc to /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.1.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_compute' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:48) in function 'tsp' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'factorial' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:23).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' in function 'tsp' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_61_1' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:61) in function 'tsp' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_66_2' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:66) in function 'tsp' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_67_3' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:67) in function 'tsp' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_41_1' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:40) in function 'tsp' completely with a factor of 10.
+Execute             get_top
+Execute               get_top 
+Execute             get_files -fullpath
+Execute               get_files -fullpath 
+WARNING: [HLS 200-936] Cannot unroll loop 'Loop-1' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:26) in function 'factorial': cannot completely unroll a loop with a variable trip count.
+INFO: [XFORM 203-102] Partitioning array 'perm' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:53) automatically.
+Command           transform done; 0.33 sec.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.1.tmp.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-11] Balancing expressions in function 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:87)...17 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 214.723 MB.
+Execute           get_config_compile -enable_loop_extract 
+Execute           get_config_compile -disable_auto_rewind 
+Execute           get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.2.bc -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'factorial' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:62:19) in function 'tsp' and propagating its result(s) since all actual argument(s) to the function are constants.
+Command           transform done; 0.25 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 209.958 MB.
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 1.12 sec.
+Command       elaborate done; 5.06 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'tsp' ...
+Execute         ap_set_top_model tsp 
+Execute         get_model_list tsp -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model tsp 
+Execute         get_model_list tsp -filter all-wo-channel 
+INFO-FLOW: Model list for configure: tsp
+INFO-FLOW: Configuring Module : tsp ...
+Execute         set_default_model tsp 
+Execute         apply_spec_resource_limit tsp 
+INFO-FLOW: Model list for preprocess: tsp
+INFO-FLOW: Preprocessing Module: tsp ...
+Execute         set_default_model tsp 
+Execute         cdfg_preprocess -model tsp 
+Execute         rtl_gen_preprocess tsp 
+INFO-FLOW: Model list for synthesis: tsp
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tsp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model tsp 
+Execute         schedule -model tsp 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln62_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln62_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln62_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop_compute'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:42) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 10, Depth = 193, loop 'loop_compute'
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 1.28 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.83 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.44 seconds; current allocated memory: 213.011 MB.
+Execute         syn_report -verbosereport -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.verbose.sched.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.66 sec.
+Execute         db_write -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.sched.adb -f 
+INFO-FLOW: Finish scheduling tsp.
+Execute         set_default_model tsp 
+Execute         bind -model tsp 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.51 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.25 seconds; current allocated memory: 216.855 MB.
+Execute         syn_report -verbosereport -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.verbose.bind.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.65 sec.
+Execute         db_write -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.bind.adb -f 
+Command         db_write done; 0.13 sec.
+INFO-FLOW: Finish binding tsp.
+Execute         get_model_list tsp -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess tsp 
+INFO-FLOW: Model list for RTL generation: tsp
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tsp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model tsp -top_prefix  -sub_prefix tsp_ -mg_file /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tsp/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tsp/distances' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tsp/shortestDistance' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'tsp' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'distances', 'shortestDistance' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_19ns_21ns_39_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_7ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_6ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_12ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_12ns_6ns_27_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_13ns_15ns_27_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_18ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_28_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_5ns_6ns_28_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_6ns_6ns_25_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_7ns_6ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_8ns_6ns_19_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_9ns_6ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_10ns_8ns_7_14_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_13ns_11ns_10_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_16ns_14ns_13_20_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_22ns_17ns_16_26_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_5ns_4ns_5_9_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_6ns_5_11_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tsp'.
+Command         create_rtl_model done; 0.84 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.76 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.7 seconds; current allocated memory: 222.718 MB.
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute         gen_rtl tsp -istop -style xilinx -f -lang vhdl -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/syn/vhdl/tsp 
+Command         gen_rtl done; 0.3 sec.
+Execute         gen_rtl tsp -istop -style xilinx -f -lang vlog -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/syn/verilog/tsp 
+Command         gen_rtl done; 0.17 sec.
+Execute         syn_report -csynth -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/syn/report/tsp_csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.15 sec.
+Execute         syn_report -rtlxml -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/syn/report/tsp_csynth.xml 
+Execute           get_solution -flow_target
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.14 sec.
+Execute         syn_report -verbosereport -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.verbose.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Command         syn_report done; 0.75 sec.
+Execute         db_write -model tsp -f -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.adb 
+Command         db_write done; 0.39 sec.
+Execute         gen_tb_info tsp -p /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp 
+Execute         export_constraint_db -f -tool general -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+Execute         syn_report -designview -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.design.xml 
+Command         syn_report done; 0.3 sec.
+Execute         syn_report -csynthDesign -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/syn/report/csynth.rpt 
+Execute           AP::get_flow_target_display_name
+Execute             get_solution -flow_target 
+Execute         get_config_rtl -disable_wave_debug 
+Execute         syn_report -wcfg -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model tsp -o /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.protoinst 
+Execute         get_config_debug -directory 
+Execute         sc_get_clocks tsp 
+Execute         get_config_export -vivado_clock 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         sc_get_portdomain tsp 
+INFO-FLOW: Model list for RTL component generation: tsp
+INFO-FLOW: Handling components in module [tsp] ... 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+INFO-FLOW: Found component tsp_mul_19ns_21ns_39_1_1.
+INFO-FLOW: Append model tsp_mul_19ns_21ns_39_1_1
+INFO-FLOW: Found component tsp_urem_22ns_17ns_16_26_1.
+INFO-FLOW: Append model tsp_urem_22ns_17ns_16_26_1
+INFO-FLOW: Found component tsp_urem_16ns_14ns_13_20_1.
+INFO-FLOW: Append model tsp_urem_16ns_14ns_13_20_1
+INFO-FLOW: Found component tsp_urem_13ns_11ns_10_17_1.
+INFO-FLOW: Append model tsp_urem_13ns_11ns_10_17_1
+INFO-FLOW: Found component tsp_urem_10ns_8ns_7_14_1.
+INFO-FLOW: Append model tsp_urem_10ns_8ns_7_14_1
+INFO-FLOW: Found component tsp_mul_7ns_9ns_15_1_1.
+INFO-FLOW: Append model tsp_mul_7ns_9ns_15_1_1
+INFO-FLOW: Found component tsp_urem_7ns_6ns_5_11_1.
+INFO-FLOW: Append model tsp_urem_7ns_6ns_5_11_1
+INFO-FLOW: Found component tsp_mul_8ns_6ns_13_1_1.
+INFO-FLOW: Append model tsp_mul_8ns_6ns_13_1_1
+INFO-FLOW: Found component tsp_mul_5ns_7ns_11_1_1.
+INFO-FLOW: Append model tsp_mul_5ns_7ns_11_1_1
+INFO-FLOW: Found component tsp_urem_5ns_4ns_5_9_1.
+INFO-FLOW: Append model tsp_urem_5ns_4ns_5_9_1
+INFO-FLOW: Found component tsp_mul_6ns_6ns_11_1_1.
+INFO-FLOW: Append model tsp_mul_6ns_6ns_11_1_1
+INFO-FLOW: Found component tsp_mul_mul_5ns_6ns_28_4_1.
+INFO-FLOW: Append model tsp_mul_mul_5ns_6ns_28_4_1
+INFO-FLOW: Found component tsp_mul_mul_6ns_6ns_25_4_1.
+INFO-FLOW: Append model tsp_mul_mul_6ns_6ns_25_4_1
+INFO-FLOW: Found component tsp_mul_mul_16ns_18ns_33_4_1.
+INFO-FLOW: Append model tsp_mul_mul_16ns_18ns_33_4_1
+INFO-FLOW: Found component tsp_mul_mul_7ns_6ns_22_4_1.
+INFO-FLOW: Append model tsp_mul_mul_7ns_6ns_22_4_1
+INFO-FLOW: Found component tsp_mul_mul_13ns_15ns_27_4_1.
+INFO-FLOW: Append model tsp_mul_mul_13ns_15ns_27_4_1
+INFO-FLOW: Found component tsp_mul_mul_8ns_6ns_19_4_1.
+INFO-FLOW: Append model tsp_mul_mul_8ns_6ns_19_4_1
+INFO-FLOW: Found component tsp_mul_mul_10ns_12ns_21_4_1.
+INFO-FLOW: Append model tsp_mul_mul_10ns_12ns_21_4_1
+INFO-FLOW: Found component tsp_mul_mul_9ns_6ns_16_4_1.
+INFO-FLOW: Append model tsp_mul_mul_9ns_6ns_16_4_1
+INFO-FLOW: Found component tsp_mul_mul_12ns_6ns_27_4_1.
+INFO-FLOW: Append model tsp_mul_mul_12ns_6ns_27_4_1
+INFO-FLOW: Found component tsp_mul_mul_23ns_6ns_28_4_1.
+INFO-FLOW: Append model tsp_mul_mul_23ns_6ns_28_4_1
+INFO-FLOW: Found component tsp_control_s_axi.
+INFO-FLOW: Append model tsp_control_s_axi
+INFO-FLOW: Found component tsp_gmem_m_axi.
+INFO-FLOW: Append model tsp_gmem_m_axi
+INFO-FLOW: Append model tsp
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: tsp_mul_19ns_21ns_39_1_1 tsp_urem_22ns_17ns_16_26_1 tsp_urem_16ns_14ns_13_20_1 tsp_urem_13ns_11ns_10_17_1 tsp_urem_10ns_8ns_7_14_1 tsp_mul_7ns_9ns_15_1_1 tsp_urem_7ns_6ns_5_11_1 tsp_mul_8ns_6ns_13_1_1 tsp_mul_5ns_7ns_11_1_1 tsp_urem_5ns_4ns_5_9_1 tsp_mul_6ns_6ns_11_1_1 tsp_mul_mul_5ns_6ns_28_4_1 tsp_mul_mul_6ns_6ns_25_4_1 tsp_mul_mul_16ns_18ns_33_4_1 tsp_mul_mul_7ns_6ns_22_4_1 tsp_mul_mul_13ns_15ns_27_4_1 tsp_mul_mul_8ns_6ns_19_4_1 tsp_mul_mul_10ns_12ns_21_4_1 tsp_mul_mul_9ns_6ns_16_4_1 tsp_mul_mul_12ns_6ns_27_4_1 tsp_mul_mul_23ns_6ns_28_4_1 tsp_control_s_axi tsp_gmem_m_axi tsp
+INFO-FLOW: To file: write model tsp_mul_19ns_21ns_39_1_1
+INFO-FLOW: To file: write model tsp_urem_22ns_17ns_16_26_1
+INFO-FLOW: To file: write model tsp_urem_16ns_14ns_13_20_1
+INFO-FLOW: To file: write model tsp_urem_13ns_11ns_10_17_1
+INFO-FLOW: To file: write model tsp_urem_10ns_8ns_7_14_1
+INFO-FLOW: To file: write model tsp_mul_7ns_9ns_15_1_1
+INFO-FLOW: To file: write model tsp_urem_7ns_6ns_5_11_1
+INFO-FLOW: To file: write model tsp_mul_8ns_6ns_13_1_1
+INFO-FLOW: To file: write model tsp_mul_5ns_7ns_11_1_1
+INFO-FLOW: To file: write model tsp_urem_5ns_4ns_5_9_1
+INFO-FLOW: To file: write model tsp_mul_6ns_6ns_11_1_1
+INFO-FLOW: To file: write model tsp_mul_mul_5ns_6ns_28_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_6ns_6ns_25_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_16ns_18ns_33_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_7ns_6ns_22_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_13ns_15ns_27_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_8ns_6ns_19_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_10ns_12ns_21_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_9ns_6ns_16_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_12ns_6ns_27_4_1
+INFO-FLOW: To file: write model tsp_mul_mul_23ns_6ns_28_4_1
+INFO-FLOW: To file: write model tsp_control_s_axi
+INFO-FLOW: To file: write model tsp_gmem_m_axi
+INFO-FLOW: To file: write model tsp
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute         get_top 
+Execute         get_config_export -ipname 
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution
+Execute         get_solution -flow_target 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=3.333 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_19ns_21ns_39_1_1_Multiplier_0'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_22ns_17ns_16_26_1_div'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_16ns_14ns_13_20_1_div'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_13ns_11ns_10_17_1_div'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_10ns_8ns_7_14_1_div'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_7ns_9ns_15_1_1_Multiplier_1'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_7ns_6ns_5_11_1_div'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_8ns_6ns_13_1_1_Multiplier_2'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_5ns_7ns_11_1_1_Multiplier_3'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_5ns_4ns_5_9_1_div'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_6ns_6ns_11_1_1_Multiplier_4'
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           source ./control.slave.tcl 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Command         ap_source done; 3.18 sec.
+Execute         get_solution -flow_target 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       kernel.xml check internal_kernel_xml(1)=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/kernel.internal.xml srclang=c top=tsp
+INFO-FLOW: DBG:CMD:       kernel.xml check proj_kernel_xml    (1)=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml use_proj_kernel_xml=false
+INFO-FLOW: DBG:CMD:       copy internal kernel.xml to project: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:CMD:       update_final_kernel_xml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml
+Execute         get_config_debug -enable 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: Updating /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml with values: interrupt true debug false compileOptions {-I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src} name tsp vlnv xilinx.com:hls:tsp:1.0
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution
+Execute         get_solution -flow_target 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=tsp xml_exists=0
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute           ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+Execute         get_solution -flow_target 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       kernel.xml check internal_kernel_xml(1)=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/kernel.internal.xml srclang=c top=tsp
+INFO-FLOW: DBG:CMD:       kernel.xml check proj_kernel_xml    (1)=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml use_proj_kernel_xml=false
+INFO-FLOW: DBG:CMD:       copy internal kernel.xml to project: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:CMD:       update_final_kernel_xml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml
+Execute         get_config_debug -enable 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: Updating /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml with values: interrupt true debug false compileOptions {-I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src} name tsp vlnv xilinx.com:hls:tsp:1.0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=24 #gSsdmPorts=0
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/top-io-be.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute         get_config_export -format 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         get_solution -flow_target 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -stall_sig_gen 
+Execute         get_config_rtl -profile 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+Execute         sc_get_clocks tsp 
+Execute         source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute         get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.57 seconds. CPU system time: 0.55 seconds. Elapsed time: 22.7 seconds; current allocated memory: 240.322 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for tsp.
+INFO: [VLOG 209-307] Generating Verilog RTL for tsp.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute         syn_report -model tsp -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 411.00 MHz
+Command       autosyn done; 27.51 sec.
+Command     csynth_design done; 32.6 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.08 seconds. CPU system time: 0.95 seconds. Elapsed time: 32.6 seconds; current allocated memory: 240.810 MB.
+Execute     export_design 
+INFO: [HLS 200-1510] Running: export_design 
+Execute       get_config_export -clock_margin 
+Execute       get_config_export -custom_script 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -driver_input_dir 
+Execute       get_config_export -format 
+Execute       get_config_export -ipname 
+Execute       get_config_export -library 
+Execute       get_config_export -output 
+Execute       get_config_export -qor_test 
+Execute       get_config_export -rtl 
+Execute       get_config_export -sim 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -use_ip 
+Execute       get_config_export -use_netlist 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -xo 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -ipname tsp
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -vivado_clock 
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_solution -flow_target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -rtl verilog
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute       get_solution -flow_target 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+Execute       get_config_export -disable_deadlock_detection 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to tsp
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.tcl 
+Execute       get_config_export -disable_deadlock_detection 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to tsp
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=0
+Execute       get_solution -flow_target 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       kernel.xml check internal_kernel_xml(1)=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/kernel.internal.xml srclang=c top=tsp
+INFO-FLOW: DBG:CMD:       kernel.xml check proj_kernel_xml    (1)=/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml use_proj_kernel_xml=false
+INFO-FLOW: DBG:CMD:       copy internal kernel.xml to project: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:CMD:       update_final_kernel_xml /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml
+Execute       get_config_debug -enable 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: Updating /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/../../../kernel.xml with values: interrupt true debug false compileOptions {-I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src} name tsp vlnv xilinx.com:hls:tsp:1.0
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=0 #modelList=24 #gSsdmPorts=0
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/top-io-be.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+Execute       sc_get_clocks tsp 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       copying IP vlog from /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/driver
+Execute       get_config_export -format 
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=true is_sdsoc=true xo_file=
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.compgen.dataonly.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=tsp
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=tsp
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.rtl_wrap.cfg.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.constraint.tcl 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu50-fsvh2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/impl/ip/pack.sh
+Execute       get_config_export -output 
+Execute       send_msg_by_id INFO @200-802@%s tsp/solution/impl/export.zip 
+INFO: [HLS 200-802] Generated output file tsp/solution/impl/export.zip
+Command     export_design done; 26.89 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 8.56 seconds. CPU system time: 1.14 seconds. Elapsed time: 26.89 seconds; current allocated memory: 245.118 MB.
+Execute     close_project 
+Execute       cleanup_all -project 
+Execute     cleanup_all 

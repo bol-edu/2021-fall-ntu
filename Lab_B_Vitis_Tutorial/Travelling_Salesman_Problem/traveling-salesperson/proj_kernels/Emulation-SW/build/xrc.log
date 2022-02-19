@@ -1,0 +1,16 @@
+Sun Oct 31 20:26:16 2021: Server was asked to start on port: '45695'
+Sun Oct 31 20:26:16 2021: Server is using token UUID: '4fbfdaa7-f6da-4059-a8f6-102608e4bb0b'
+Sun Oct 31 20:26:16 2021: Attempting to start server on port '45695'
+Sun Oct 31 20:26:16 2021: XRC main fifo: created main fifo '/tmp/xrcmain4fbfdaa7-f6da-4059-a8f6-102608e4bb0b', fd read = 11
+Sun Oct 31 20:26:16 2021: Running Rule Check Server
+Sun Oct 31 20:26:16 2021: Version 1.6.1
+Sun Oct 31 20:26:17 2021: Rule Check Server: Accepted socket connection from client
+Sun Oct 31 20:26:17 2021: EXCHANGE_TOKEN received, server token: 4fbfdaa7-f6da-4059-a8f6-102608e4bb0b, passed token: 4fbfdaa7-f6da-4059-a8f6-102608e4bb0b
+Mon Nov  1 02:51:38 2021: SESSION_MGR: creating session with session uuid: 'b58a2a19-a22a-4ebf-a2e2-047040dac423' and name 'SystemDebugger_vts_Opt3DataBurst_system_vts_Opt3DataBurst'
+Mon Nov  1 02:51:45 2021: SESSION_MGR: closing session for UUID 'b58a2a19-a22a-4ebf-a2e2-047040dac423' with name 'SystemDebugger_vts_Opt3DataBurst_system_vts_Opt3DataBurst'
+Mon Nov  1 02:54:24 2021: STOP_SERVER received, server token: 4fbfdaa7-f6da-4059-a8f6-102608e4bb0b, passed token: 4fbfdaa7-f6da-4059-a8f6-102608e4bb0b
+Mon Nov  1 02:54:24 2021: Socket received request to stop server.
+Mon Nov  1 02:54:24 2021: SERVER: destructor for server bound to port 45695
+Mon Nov  1 02:54:24 2021: XRC main fifo: Good unlink of /tmp/xrcmain4fbfdaa7-f6da-4059-a8f6-102608e4bb0b
+Mon Nov  1 02:54:24 2021: Server exiting with status 0.
+Mon Nov  1 02:54:24 2021: Closing log file.

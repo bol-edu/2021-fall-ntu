@@ -1,0 +1,3 @@
+hls_macc_mul_32s_32s_32_7_1
+hls_macc_HLS_MACC_PERIPH_BUS_s_axi
+hls_macc

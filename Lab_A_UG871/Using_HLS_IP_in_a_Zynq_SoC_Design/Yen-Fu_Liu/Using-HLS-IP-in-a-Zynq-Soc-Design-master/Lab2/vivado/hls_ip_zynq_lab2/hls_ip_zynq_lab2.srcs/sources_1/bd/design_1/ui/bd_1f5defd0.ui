@@ -1,0 +1,38 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"0,-761",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1560 -y -450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1560 -y -430 -defaultsOSRD
+preplace inst RealFFT -pg 1 -lvl 1 -x 170 -y -180 -defaultsOSRD -resize 219 146
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 550 -y -400 -defaultsOSRD
+preplace inst axi_dma -pg 1 -lvl 3 -x 990 -y -660 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1350 -y -630 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -x 990 -y -330 -defaultsOSRD
+preplace inst axis_subset_converter -pg 1 -lvl 4 -x 1350 -y -390 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1350 -y -210 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 40 -370 300 -520 800 -470 1170
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 N -350
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 20 -540 NJ -540 810J -540 1180
+preplace netloc processing_system7_0_DDR 1 2 3 780J -460 1160 -480 1540
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 810J -450 1190 -470 1530
+preplace netloc realfft_s_axis_din_1 1 0 4 30 -780 NJ -780 NJ -780 1160
+preplace netloc axi_dma_M_AXI_MM2S 1 3 1 N -720
+preplace netloc axi_mem_intercon_M00_AXI 1 1 4 320 -810 NJ -810 NJ -810 1540
+preplace netloc RealFFT_realfft_m_axis_dout 1 1 3 310J -510 790J -440 1190
+preplace netloc axis_subset_converter_M_AXIS 1 2 3 790 -800 NJ -800 1520
+preplace netloc axi_dma_M_AXI_S2MM 1 3 1 N -700
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 820J -430 1160
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 3 800 -790 NJ -790 1510
+levelinfo -pg 1 0 170 550 990 1350 1560
+pagesize -pg 1 -db -bbox -sgen 0 -850 1680 460
+"
+}
+{
+   "da_axi4_cnt":"9",
+   "da_axi4_s2mm_cnt":"5",
+   "da_ps7_cnt":"3"
+}

@@ -1,0 +1,38 @@
+<InterfaceSummary>
+<RtlPorts>
+<name>din_V_V</name>
+<CType>
+<TypeName>ap_fixed 16 1 5 3 0</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</CType>
+<CFractionWidth>15</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>dout_V_data</name>
+<CType>
+<TypeName>complex</TypeName>
+<TypeWidth>32</TypeWidth>
+<PhysicalWidth>32</PhysicalWidth>
+<ElementType>
+<TypeName>ap_fixed 16 1 5 3 0</TypeName>
+<TypeWidth>16</TypeWidth>
+<PhysicalWidth>16</PhysicalWidth>
+</ElementType>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>1</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>dout_V_last_V</name>
+<CType>
+<TypeName>ap_uint 1</TypeName>
+<TypeWidth>1</TypeWidth>
+<PhysicalWidth>1</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+</InterfaceSummary>
+

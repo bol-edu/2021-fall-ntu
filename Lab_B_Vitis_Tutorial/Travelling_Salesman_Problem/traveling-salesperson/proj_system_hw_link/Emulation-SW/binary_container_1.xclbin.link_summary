@@ -1,0 +1,556 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:18 2021",
+ "timestampMillis": "1635691998250",
+ "buildStep": {
+  "cmdId": "690ce0cb-d167-4c3d-aa94-d0c0518fbb0a",
+  "name": "v++",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --link --config binary_container_1-link.cfg -obinary_container_1.xclbin ../../proj_kernels/Emulation-SW/build/tsp.xo ",
+  "args": [
+   "--target",
+   "sw_emu",
+   "--link",
+   "--config",
+   "binary_container_1-link.cfg",
+   "-obinary_container_1.xclbin",
+   "../../proj_kernels/Emulation-SW/build/tsp.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1-link.cfg",
+    "content": "platform=xilinx_u50_gen3x16_xdma_201920_3\nsave-temps=1\ndebug=1\nmessageDb=binary_container_1.mdb\ntemp_dir=binary_container_1.build\nreport_dir=binary_container_1.build/reports\nlog_dir=binary_container_1.build/logs\nremote_ip_cache=/mnt/HLSNAS/r10943005/traveling-salesperson/ip_cache\n\n[advanced]\nmisc=solution_name=link\n\n[connectivity]\nnk=tsp:1:tsp_1\n"
+   }
+  ],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:18 2021",
+ "timestampMillis": "1635691998256",
+ "status": {
+  "cmdId": "690ce0cb-d167-4c3d-aa94-d0c0518fbb0a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Oct 31 22:53:20 2021",
+ "timestampMillis": "1635692000244",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u50_gen3x16_xdma_201920_3.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "binary_container_1",
+    "file": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "tsp",
+     "file": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/tsp/tsp/cpu_sources/tsp.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "tsp_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2020.2. SW Build (by xbuild) on 2020-11-18-05:13:29"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:20 2021",
+ "timestampMillis": "1635692000338",
+ "buildStep": {
+  "cmdId": "67f31e0d-f129-4b3e-9f5c-9431d1d4466a",
+  "name": "regiongen",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_regiongen.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.2/bin/../runtime/bin/regiongen_new -v -m /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:20 2021",
+ "timestampMillis": "1635692000344",
+ "status": {
+  "cmdId": "67f31e0d-f129-4b3e-9f5c-9431d1d4466a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001217",
+ "status": {
+  "cmdId": "67f31e0d-f129-4b3e-9f5c-9431d1d4466a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001279",
+ "buildStep": {
+  "cmdId": "a04e8ee3-6f5d-486c-a6da-a7a9f8cd96cd",
+  "name": "gcc",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/tsp/tsp_kernel_gcc.log",
+  "commandLine": "/opt/Xilinx/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/gcc -I . -I /opt/Xilinx/Vitis_HLS/2020.2/bin/../include -I /opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.2/bin/../common/technology/autopilot/opencl -I /usr/include/x86_64-linux-gnu -std=c++14 -g -I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/tsp.o -MP -MF obj/tsp.Cd /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/tsp/tsp/cpu_sources/tsp.cpp -o obj/tsp.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/usr/include/x86_64-linux-gnu",
+   "-std=c++14",
+   "-g",
+   "-I",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/tsp.o",
+   "-MP",
+   "-MF",
+   "obj/tsp.Cd",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/tsp/tsp/cpu_sources/tsp.cpp",
+   "-o",
+   "obj/tsp.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001287",
+ "status": {
+  "cmdId": "a04e8ee3-6f5d-486c-a6da-a7a9f8cd96cd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001428",
+ "status": {
+  "cmdId": "a04e8ee3-6f5d-486c-a6da-a7a9f8cd96cd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001466",
+ "buildStep": {
+  "cmdId": "171147e3-2f00-452d-8fb4-407db919c899",
+  "name": "ar",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/tsp/tsp_ar.log",
+  "commandLine": "/opt/Xilinx/Vivado/2020.2/tps/lnx64/binutils-2.26/bin/ar -cr /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/tsp/tsp.csim_cu.a /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/tsp/obj/tsp.o",
+  "args": [
+   "-cr",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/tsp/tsp.csim_cu.a",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/tsp/obj/tsp.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001470",
+ "status": {
+  "cmdId": "171147e3-2f00-452d-8fb4-407db919c899",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001567",
+ "status": {
+  "cmdId": "171147e3-2f00-452d-8fb4-407db919c899",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001605",
+ "buildStep": {
+  "cmdId": "b897a253-75f5-482b-bea8-791b6c2cf588",
+  "name": "g++",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xcl_top_gpp.log",
+  "commandLine": "/usr/bin/env PATH=/usr/bin:/bin g++ -I . -I /opt/Xilinx/Vitis_HLS/2020.2/bin/../include -I /opt/Xilinx/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.2/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include -I /opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "PATH=/usr/bin:/bin",
+   "g++",
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2020.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:21 2021",
+ "timestampMillis": "1635692001611",
+ "status": {
+  "cmdId": "b897a253-75f5-482b-bea8-791b6c2cf588",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:22 2021",
+ "timestampMillis": "1635692002791",
+ "status": {
+  "cmdId": "b897a253-75f5-482b-bea8-791b6c2cf588",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:22 2021",
+ "timestampMillis": "1635692002823",
+ "buildStep": {
+  "cmdId": "5a6b189f-9558-4509-94de-69b5152de398",
+  "name": "g++",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_top_gpp.log",
+  "commandLine": "/usr/bin/env PATH=/usr/bin:/bin g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,binary_container_1.so -o binary_container_1.so tsp/tsp.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /opt/Xilinx/Vitis_HLS/2020.2/bin/../lib/lnx64.o -lhlsmathsim -L /opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0 -lgmp -lmpfr -lIp_floating_point_v7_0_bitacc_cmodel -Wl,-rpath,/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0 -L /opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /opt/Xilinx/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "PATH=/usr/bin:/bin",
+   "g++",
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,binary_container_1.so",
+   "-o",
+   "binary_container_1.so",
+   "tsp/tsp.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_0_bitacc_cmodel",
+   "-Wl,-rpath,/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fpo_v7_0",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2020.2/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/opt/Xilinx/Vivado/2020.2/tps/lnx64/gcc-6.2.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:22 2021",
+ "timestampMillis": "1635692002829",
+ "status": {
+  "cmdId": "5a6b189f-9558-4509-94de-69b5152de398",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003062",
+ "status": {
+  "cmdId": "5a6b189f-9558-4509-94de-69b5152de398",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003098",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003140",
+ "buildStep": {
+  "cmdId": "0d7cfdb4-9484-44f2-8ef7-30bfba32c348",
+  "name": "xclbinutil",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xclbinutil.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.2/bin/xclbinutil --add-section BITSTREAM:RAW:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.so --force --target sw_emu --add-section CLOCK_FREQ_TOPOLOGY:JSON:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd --add-section BUILD_METADATA:JSON:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_build.rtd --add-section EMBEDDED_METADATA:RAW:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml --add-section DEBUG_DATA:RAW:/dev/null --output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--output",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003145",
+ "status": {
+  "cmdId": "0d7cfdb4-9484-44f2-8ef7-30bfba32c348",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003367",
+ "status": {
+  "cmdId": "0d7cfdb4-9484-44f2-8ef7-30bfba32c348",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003400",
+ "buildStep": {
+  "cmdId": "04a1b605-5c9c-47a8-81cc-891755f32c4b",
+  "name": "xclbinutil",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin.info",
+  "commandLine": "/opt/Xilinx/Vitis/2020.2/bin/xclbinutil --quiet --info --input /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003402",
+ "status": {
+  "cmdId": "04a1b605-5c9c-47a8-81cc-891755f32c4b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003556",
+ "status": {
+  "cmdId": "04a1b605-5c9c-47a8-81cc-891755f32c4b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003699",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003699",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003714",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 22:53:23 2021",
+ "timestampMillis": "1635692003748",
+ "status": {
+  "cmdId": "690ce0cb-d167-4c3d-aa94-d0c0518fbb0a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

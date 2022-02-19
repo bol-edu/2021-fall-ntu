@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 15 14:57:40 2021
+# Process ID: 3680
+# Current directory: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/hls_real2xfft/xsim_script.tcl}
+# Log file: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/hls_real2xfft/xsim_script.tcl
+# xsim {hls_real2xfft} -autoloadwcfg -tclbatch {hls_real2xfft.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source hls_real2xfft.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 32 [0.00%] @ "125000"
+// RTL Simulation : 1 / 32 [75.12%] @ "20735000"
+// RTL Simulation : 2 / 32 [87.41%] @ "30975000"
+// RTL Simulation : 3 / 32 [87.41%] @ "41215000"
+// RTL Simulation : 4 / 32 [87.41%] @ "51455000"
+// RTL Simulation : 5 / 32 [87.41%] @ "61695000"
+// RTL Simulation : 6 / 32 [87.41%] @ "71935000"
+// RTL Simulation : 7 / 32 [87.41%] @ "82175000"
+// RTL Simulation : 8 / 32 [87.41%] @ "92415000"
+// RTL Simulation : 9 / 32 [87.41%] @ "102655000"
+// RTL Simulation : 10 / 32 [87.41%] @ "112895000"
+// RTL Simulation : 11 / 32 [87.41%] @ "123135000"
+// RTL Simulation : 12 / 32 [87.41%] @ "133375000"
+// RTL Simulation : 13 / 32 [87.41%] @ "143615000"
+// RTL Simulation : 14 / 32 [87.41%] @ "153855000"
+// RTL Simulation : 15 / 32 [87.41%] @ "164095000"
+// RTL Simulation : 16 / 32 [87.41%] @ "174335000"
+// RTL Simulation : 17 / 32 [87.41%] @ "184575000"
+// RTL Simulation : 18 / 32 [87.41%] @ "194815000"
+// RTL Simulation : 19 / 32 [87.41%] @ "205055000"
+// RTL Simulation : 20 / 32 [87.41%] @ "215295000"
+// RTL Simulation : 21 / 32 [87.41%] @ "225535000"
+// RTL Simulation : 22 / 32 [87.41%] @ "235775000"
+// RTL Simulation : 23 / 32 [87.41%] @ "246015000"
+// RTL Simulation : 24 / 32 [87.41%] @ "256255000"
+// RTL Simulation : 25 / 32 [87.41%] @ "266495000"
+// RTL Simulation : 26 / 32 [87.41%] @ "276735000"
+// RTL Simulation : 27 / 32 [87.41%] @ "286975000"
+// RTL Simulation : 28 / 32 [87.41%] @ "297215000"
+// RTL Simulation : 29 / 32 [87.41%] @ "307455000"
+// RTL Simulation : 30 / 32 [87.41%] @ "317695000"
+// RTL Simulation : 31 / 32 [87.41%] @ "327935000"
+// RTL Simulation : 32 / 32 [100.00%] @ "338175000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 338215 ns : File "C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/sim/verilog/hls_real2xfft.autotb.v" Line 250
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 15 14:57:45 2021...

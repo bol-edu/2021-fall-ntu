@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Oct 17 00:26:11 2021
+# Process ID: 25900
+# Current directory: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/xsim.dir/hls_real2xfft/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/webtalk.log
+# Journal file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/xsim.dir/hls_real2xfft/webtalk/xsim_webtalk.tcl -notrace

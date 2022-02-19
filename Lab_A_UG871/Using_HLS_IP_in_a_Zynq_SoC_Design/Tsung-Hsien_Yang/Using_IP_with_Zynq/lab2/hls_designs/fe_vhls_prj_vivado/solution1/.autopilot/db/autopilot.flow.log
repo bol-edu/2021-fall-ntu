@@ -1,0 +1,1493 @@
+INFO-FLOW: Workspace E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1 opened at Sun Oct 17 00:24:12 +0800 2021
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute     config_clock -quiet -name default -uncertainty 0.5 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.128 sec.
+Command     ap_source done; 0.128 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.344 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.462 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_sdx -optimization_level=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 0.67 sec.
+Execute   set_part xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.114 sec.
+Execute   create_clock -period 4 -name default 
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute   config_sdx -optimization_level none -target none 
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute     get_config_compile -pipeline_loops 
+Execute     get_config_compile -name_max_length 
+Execute     get_config_schedule -enable_dsp_full_reg 
+Execute     get_config_rtl -register_reset_num 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_interface -m_axi_addr64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute     set_clock_uncertainty default 
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+Execute   config_export -vivado_optimization_level 2 
+Execute     get_config_export -vivado_impl_strategy 
+Execute     get_config_export -vivado_phys_opt 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'real2xfft.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling real2xfft.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted real2xfft.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2020.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "real2xfft.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -fno-exceptions -D__llvm__ -E real2xfft.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp
+Command       clang done; 1.913 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.963 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2020.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp"  -o "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.595 sec.
+INFO-FLOW: Done: GCC PP time: 4.5 seconds per iteration
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp std=gnu++98 -directive=E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.692 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp std=gnu++98 -directive=E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/all.directive.json -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.674 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.real2xfft.pp.0.cpp.diag.yml E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.real2xfft.pp.0.cpp.out.log 2> E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/xilinx-dataflow-lawyer.real2xfft.pp.0.cpp.err.log 
+Command       ap_eval done; 0.801 sec.
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: real2xfft.cpp:76:1
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: ./sliding_win.h:66:38
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: ./sliding_win.h:75:1
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: ./sliding_win.h:83:1
+Execute       send_msg_by_id WARNING @200-471@%s%s 4 real2xfft.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 4 issue(s) in file real2xfft.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/tidy-3.1.real2xfft.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/tidy-3.1.real2xfft.pp.0.cpp.out.log 2> E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/tidy-3.1.real2xfft.pp.0.cpp.err.log 
+Command         ap_eval done; 0.835 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/xilinx-legacy-rewriter.real2xfft.pp.0.cpp.out.log 2> E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/xilinx-legacy-rewriter.real2xfft.pp.0.cpp.err.log 
+Command         ap_eval done; 0.764 sec.
+Command       tidy_31 done; 1.61 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 3.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.397 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2020.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot -I C:/Xilinx/Vivado/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.bc
+Command       clang done; 1.643 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/real2xfft.g.bc -hls-opt -except-internalize hls_real2xfft -LC:/Xilinx/Vivado/2020.1/win64/lib -lhlsm -lhlsmc++ -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 2.736 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 940.121 ; gain = 843.914
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.pp.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.444 sec.
+Execute         llvm-ld E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2020.1/win64/lib -lfloatconversion -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.332 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -stream-depth-lower -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top hls_real2xfft -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.0.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'sliding_win_1in2out<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 1024>' into 'hls_real2xfft' (real2xfft.cpp:72).
+Command         transform done; 1.479 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.1.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.223 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.g.1.bc to E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.1.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-1101] Packing variable 'dout.V.data' (real2xfft.cpp:62) into a 32-bit variable.
+INFO: [XFORM 203-501] Unrolling loop 'sliding_win_output' (./sliding_win.h:84) in function 'hls_real2xfft' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'apply_win_fn' (./window_fn.h:102) in function 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' partially with a factor of 2.
+INFO: [XFORM 203-101] Partitioning array 'data2window'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'windowed'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'nodelay.i'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'delayed.i'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'coeff_tab1'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-721] Changing loop 'Loop_sliding_win_delay_proc' (./sliding_win.h:76) to a process function for dataflow in function 'hls_real2xfft'.
+INFO: [XFORM 203-721] Changing loop 'Loop_sliding_win_output_proc' (./sliding_win.h:84) to a process function for dataflow in function 'hls_real2xfft'.
+INFO: [XFORM 203-721] Changing loop 'Loop_real2xfft_output_proc' (real2xfft.cpp:77) to a process function for dataflow in function 'hls_real2xfft'.
+WARNING: [XFORM 203-713] All the elements of global array 'delayed.i.0'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'delayed.i.1'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'nodelay.i.0'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'nodelay.i.1'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'hls_real2xfft', detected/extracted 4 process function(s): 
+	 'Loop_sliding_win_delay_proc31'
+	 'Loop_sliding_win_output_proc'
+	 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>'
+	 'Loop_real2xfft_output_proc32'.
+WARNING: [XFORM 203-124] Array  'delayed.i.0' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'delayed.i.1' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'nodelay.i.0' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'nodelay.i.1' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+Command         transform done; 0.542 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.257 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.2.bc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' to 'window_fn' (./window_fn.h:102:33)
+WARNING: [XFORM 203-631] Renaming function 'Loop_sliding_win_output_proc' to 'Loop_sliding_win_out' (./sliding_win.h:84:29)
+WARNING: [XFORM 203-631] Renaming function 'Loop_sliding_win_delay_proc31' to 'Loop_sliding_win_del' (./sliding_win.h:76:33)
+WARNING: [XFORM 203-631] Renaming function 'Loop_real2xfft_output_proc32' to 'Loop_real2xfft_outpu' (real2xfft.cpp:77:30)
+INFO: [XFORM 203-531] Rewinding loop 'apply_win_fn' (./window_fn.h:102) in function 'window_fn'.
+INFO: [XFORM 203-531] Rewinding loop 'sliding_win_output' (./sliding_win.h:84) in function 'Loop_sliding_win_out'.
+INFO: [XFORM 203-531] Rewinding loop 'sliding_win_delay' (./sliding_win.h:76) in function 'Loop_sliding_win_del'.
+INFO: [XFORM 203-531] Rewinding loop 'real2xfft_output' (real2xfft.cpp:77) in function 'Loop_real2xfft_outpu'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'apply_win_fn' in function 'window_fn'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'sliding_win_output' in function 'Loop_sliding_win_out'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'sliding_win_delay' in function 'Loop_sliding_win_del'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'real2xfft_output' in function 'Loop_real2xfft_outpu'.
+Command         transform done; 0.578 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 4.911 sec.
+Command     elaborate done; 19.325 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'hls_real2xfft' ...
+Execute       ap_set_top_model hls_real2xfft 
+Execute       get_model_list hls_real2xfft -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model hls_real2xfft 
+Execute       preproc_iomode -model Loop_real2xfft_outpu 
+Execute       preproc_iomode -model window_fn 
+Execute       preproc_iomode -model Loop_sliding_win_out 
+Execute       preproc_iomode -model Loop_sliding_win_del 
+Execute       get_model_list hls_real2xfft -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft
+INFO-FLOW: Configuring Module : Loop_sliding_win_del ...
+Execute       set_default_model Loop_sliding_win_del 
+Execute       apply_spec_resource_limit Loop_sliding_win_del 
+INFO-FLOW: Configuring Module : Loop_sliding_win_out ...
+Execute       set_default_model Loop_sliding_win_out 
+Execute       apply_spec_resource_limit Loop_sliding_win_out 
+INFO-FLOW: Configuring Module : window_fn ...
+Execute       set_default_model window_fn 
+Execute       apply_spec_resource_limit window_fn 
+INFO-FLOW: Configuring Module : Loop_real2xfft_outpu ...
+Execute       set_default_model Loop_real2xfft_outpu 
+Execute       apply_spec_resource_limit Loop_real2xfft_outpu 
+INFO-FLOW: Configuring Module : hls_real2xfft ...
+Execute       set_default_model hls_real2xfft 
+Execute       apply_spec_resource_limit hls_real2xfft 
+INFO-FLOW: Model list for preprocess: Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft
+INFO-FLOW: Preprocessing Module: Loop_sliding_win_del ...
+Execute       set_default_model Loop_sliding_win_del 
+Execute       cdfg_preprocess -model Loop_sliding_win_del 
+Execute       rtl_gen_preprocess Loop_sliding_win_del 
+INFO-FLOW: Preprocessing Module: Loop_sliding_win_out ...
+Execute       set_default_model Loop_sliding_win_out 
+Execute       cdfg_preprocess -model Loop_sliding_win_out 
+Execute       rtl_gen_preprocess Loop_sliding_win_out 
+INFO-FLOW: Preprocessing Module: window_fn ...
+Execute       set_default_model window_fn 
+Execute       cdfg_preprocess -model window_fn 
+Execute       rtl_gen_preprocess window_fn 
+INFO-FLOW: Preprocessing Module: Loop_real2xfft_outpu ...
+Execute       set_default_model Loop_real2xfft_outpu 
+Execute       cdfg_preprocess -model Loop_real2xfft_outpu 
+Execute       rtl_gen_preprocess Loop_real2xfft_outpu 
+INFO-FLOW: Preprocessing Module: hls_real2xfft ...
+Execute       set_default_model hls_real2xfft 
+Execute       cdfg_preprocess -model hls_real2xfft 
+Execute       rtl_gen_preprocess hls_real2xfft 
+INFO-FLOW: Model list for synthesis: Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_sliding_win_del' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_sliding_win_del 
+Execute       schedule -model Loop_sliding_win_del 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'sliding_win_delay'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.178 sec.
+INFO: [HLS 200-111]  Elapsed time: 20.721 seconds; current allocated memory: 280.451 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.verbose.sched.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_sliding_win_del.
+Execute       set_default_model Loop_sliding_win_del 
+Execute       bind -model Loop_sliding_win_del 
+BIND OPTION: model=Loop_sliding_win_del
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.079 seconds; current allocated memory: 280.611 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.verbose.bind.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.bind.adb -f 
+INFO-FLOW: Finish binding Loop_sliding_win_del.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_sliding_win_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_sliding_win_out 
+Execute       schedule -model Loop_sliding_win_out 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'sliding_win_output'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln84', ./sliding_win.h:84->real2xfft.cpp:72)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.228 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.295 seconds; current allocated memory: 280.807 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.verbose.sched.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_sliding_win_out.
+Execute       set_default_model Loop_sliding_win_out 
+Execute       bind -model Loop_sliding_win_out 
+BIND OPTION: model=Loop_sliding_win_out
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.077 seconds; current allocated memory: 280.996 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.verbose.bind.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.bind.adb -f 
+INFO-FLOW: Finish binding Loop_sliding_win_out.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_fn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model window_fn 
+Execute       schedule -model window_fn 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'apply_win_fn'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln102', ./window_fn.h:102)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 7.
+WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4ns, clock uncertainty: 0.5ns, effective delay budget: 3.5ns).
+WARNING: [SCHED 204-21] The critical path in module 'window_fn' consists of the following:
+	'mul' operation of DSP[32] ('mul_ln1118', ./window_fn.h:105) [32]  (3.89 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.189 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.261 seconds; current allocated memory: 281.202 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.verbose.sched.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.sched.adb -f 
+INFO-FLOW: Finish scheduling window_fn.
+Execute       set_default_model window_fn 
+Execute       bind -model window_fn 
+BIND OPTION: model=window_fn
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.086 seconds; current allocated memory: 281.400 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.verbose.bind.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.bind.adb -f 
+INFO-FLOW: Finish binding window_fn.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_real2xfft_outpu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_real2xfft_outpu 
+Execute       schedule -model Loop_real2xfft_outpu 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'real2xfft_output'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 281.474 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.verbose.sched.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_real2xfft_outpu.
+Execute       set_default_model Loop_real2xfft_outpu 
+Execute       bind -model Loop_real2xfft_outpu 
+BIND OPTION: model=Loop_real2xfft_outpu
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.075 seconds; current allocated memory: 281.602 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.verbose.bind.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.bind.adb -f 
+INFO-FLOW: Finish binding Loop_real2xfft_outpu.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_real2xfft' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model hls_real2xfft 
+Execute       schedule -model hls_real2xfft 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 281.713 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.verbose.sched.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.sched.adb -f 
+INFO-FLOW: Finish scheduling hls_real2xfft.
+Execute       set_default_model hls_real2xfft 
+Execute       bind -model hls_real2xfft 
+BIND OPTION: model=hls_real2xfft
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.089 seconds; current allocated memory: 282.092 MB.
+Execute       syn_report -verbosereport -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.verbose.bind.rpt 
+Execute       db_write -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.bind.adb -f 
+INFO-FLOW: Finish binding hls_real2xfft.
+Execute       get_model_list hls_real2xfft -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Loop_sliding_win_del 
+Execute       rtl_gen_preprocess Loop_sliding_win_out 
+Execute       rtl_gen_preprocess window_fn 
+Execute       rtl_gen_preprocess Loop_real2xfft_outpu 
+Execute       rtl_gen_preprocess hls_real2xfft 
+INFO-FLOW: Model list for RTL generation: Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_sliding_win_del' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_sliding_win_del -vendor xilinx -mg_file E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Loop_sliding_win_del_delay_line_Array_V' to 'Loop_sliding_win_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_sliding_win_del'.
+INFO: [HLS 200-111]  Elapsed time: 0.108 seconds; current allocated memory: 282.431 MB.
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_sliding_win_del -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/systemc/Loop_sliding_win_del -synmodules Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft 
+Execute       gen_rtl Loop_sliding_win_del -style xilinx -f -lang vhdl -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/vhdl/Loop_sliding_win_del 
+Execute       gen_rtl Loop_sliding_win_del -style xilinx -f -lang vlog -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/verilog/Loop_sliding_win_del 
+Execute       syn_report -csynth -model Loop_sliding_win_del -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/Loop_sliding_win_del_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_sliding_win_del -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/Loop_sliding_win_del_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_sliding_win_del -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.verbose.rpt 
+Execute       db_write -model Loop_sliding_win_del -f -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.adb 
+Execute       gen_tb_info Loop_sliding_win_del -p E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_sliding_win_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_sliding_win_out -vendor xilinx -mg_file E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_sliding_win_out'.
+INFO: [HLS 200-111]  Elapsed time: 0.151 seconds; current allocated memory: 283.174 MB.
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_sliding_win_out -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/systemc/Loop_sliding_win_out -synmodules Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft 
+Execute       gen_rtl Loop_sliding_win_out -style xilinx -f -lang vhdl -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/vhdl/Loop_sliding_win_out 
+Execute       gen_rtl Loop_sliding_win_out -style xilinx -f -lang vlog -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/verilog/Loop_sliding_win_out 
+Execute       syn_report -csynth -model Loop_sliding_win_out -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/Loop_sliding_win_out_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_sliding_win_out -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/Loop_sliding_win_out_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_sliding_win_out -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.verbose.rpt 
+Execute       db_write -model Loop_sliding_win_out -f -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.adb 
+Execute       gen_tb_info Loop_sliding_win_out -p E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_fn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model window_fn -vendor xilinx -mg_file E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'window_fn_coeff_tab1_0' to 'window_fn_coeff_tcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'window_fn_coeff_tab1_1' to 'window_fn_coeff_tdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hls_real2xfft_mul_mul_16s_15ns_31_3_1' to 'hls_real2xfft_muleOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hls_real2xfft_muleOg': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_fn'.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 284.107 MB.
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       gen_rtl window_fn -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/systemc/window_fn -synmodules Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft 
+Execute       gen_rtl window_fn -style xilinx -f -lang vhdl -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/vhdl/window_fn 
+Execute       gen_rtl window_fn -style xilinx -f -lang vlog -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/verilog/window_fn 
+Execute       syn_report -csynth -model window_fn -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/window_fn_csynth.rpt 
+Execute       syn_report -rtlxml -model window_fn -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/window_fn_csynth.xml 
+Execute       syn_report -verbosereport -model window_fn -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.verbose.rpt 
+Execute       db_write -model window_fn -f -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.adb 
+Execute       gen_tb_info window_fn -p E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_real2xfft_outpu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_real2xfft_outpu -vendor xilinx -mg_file E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_real2xfft_outpu'.
+INFO: [HLS 200-111]  Elapsed time: 0.155 seconds; current allocated memory: 284.879 MB.
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_real2xfft_outpu -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/systemc/Loop_real2xfft_outpu -synmodules Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft 
+Execute       gen_rtl Loop_real2xfft_outpu -style xilinx -f -lang vhdl -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/vhdl/Loop_real2xfft_outpu 
+Execute       gen_rtl Loop_real2xfft_outpu -style xilinx -f -lang vlog -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/verilog/Loop_real2xfft_outpu 
+Execute       syn_report -csynth -model Loop_real2xfft_outpu -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/Loop_real2xfft_outpu_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_real2xfft_outpu -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/Loop_real2xfft_outpu_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_real2xfft_outpu -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.verbose.rpt 
+Execute       db_write -model Loop_real2xfft_outpu -f -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.adb 
+Execute       gen_tb_info Loop_real2xfft_outpu -p E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_real2xfft' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model hls_real2xfft -vendor xilinx -mg_file E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_real2xfft/din_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_real2xfft/dout_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_real2xfft/dout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hls_real2xfft' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_sliding_win_out_U0' to 'start_for_Loop_slfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_window_fn_U0' to 'start_for_window_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_real2xfft_outpu_U0' to 'start_for_Loop_rehbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_real2xfft'.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 285.737 MB.
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       gen_rtl hls_real2xfft -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/systemc/hls_real2xfft -synmodules Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft 
+Execute       gen_rtl hls_real2xfft -istop -style xilinx -f -lang vhdl -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/vhdl/hls_real2xfft 
+Execute       gen_rtl hls_real2xfft -istop -style xilinx -f -lang vlog -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/verilog/hls_real2xfft 
+Execute       syn_report -csynth -model hls_real2xfft -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/hls_real2xfft_csynth.rpt 
+Execute       syn_report -rtlxml -model hls_real2xfft -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/syn/report/hls_real2xfft_csynth.xml 
+Execute       syn_report -verbosereport -model hls_real2xfft -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.verbose.rpt 
+Execute       db_write -model hls_real2xfft -f -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.adb 
+Execute       gen_tb_info hls_real2xfft -p E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft 
+Execute       export_constraint_db -f -tool general -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.constraint.tcl 
+Execute       syn_report -designview -model hls_real2xfft -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model hls_real2xfft -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model hls_real2xfft -o E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks hls_real2xfft 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain hls_real2xfft 
+INFO-FLOW: Model list for RTL component generation: Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft
+INFO-FLOW: Handling components in module [Loop_sliding_win_del] ... 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+INFO-FLOW: Found component Loop_sliding_win_bkb.
+INFO-FLOW: Append model Loop_sliding_win_bkb
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [Loop_sliding_win_out] ... 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+INFO-FLOW: Handling components in module [window_fn] ... 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+INFO-FLOW: Found component hls_real2xfft_muleOg.
+INFO-FLOW: Append model hls_real2xfft_muleOg
+INFO-FLOW: Found component window_fn_coeff_tcud.
+INFO-FLOW: Append model window_fn_coeff_tcud
+INFO-FLOW: Found component window_fn_coeff_tdEe.
+INFO-FLOW: Append model window_fn_coeff_tdEe
+INFO-FLOW: Handling components in module [Loop_real2xfft_outpu] ... 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [hls_real2xfft] ... 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+INFO-FLOW: Found component fifo_w16_d256_A.
+INFO-FLOW: Append model fifo_w16_d256_A
+INFO-FLOW: Found component fifo_w16_d256_A.
+INFO-FLOW: Append model fifo_w16_d256_A
+INFO-FLOW: Found component fifo_w16_d512_A.
+INFO-FLOW: Append model fifo_w16_d512_A
+INFO-FLOW: Found component fifo_w16_d512_A.
+INFO-FLOW: Append model fifo_w16_d512_A
+INFO-FLOW: Found component fifo_w16_d2_A.
+INFO-FLOW: Append model fifo_w16_d2_A
+INFO-FLOW: Found component fifo_w16_d2_A.
+INFO-FLOW: Append model fifo_w16_d2_A
+INFO-FLOW: Found component fifo_w16_d2_A.
+INFO-FLOW: Append model fifo_w16_d2_A
+INFO-FLOW: Found component fifo_w16_d2_A.
+INFO-FLOW: Append model fifo_w16_d2_A
+INFO-FLOW: Found component start_for_Loop_slfYi.
+INFO-FLOW: Append model start_for_Loop_slfYi
+INFO-FLOW: Found component start_for_window_g8j.
+INFO-FLOW: Append model start_for_window_g8j
+INFO-FLOW: Found component start_for_Loop_rehbi.
+INFO-FLOW: Append model start_for_Loop_rehbi
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Append model Loop_sliding_win_del
+INFO-FLOW: Append model Loop_sliding_win_out
+INFO-FLOW: Append model window_fn
+INFO-FLOW: Append model Loop_real2xfft_outpu
+INFO-FLOW: Append model hls_real2xfft
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: Loop_sliding_win_bkb regslice_core hls_real2xfft_muleOg window_fn_coeff_tcud window_fn_coeff_tdEe regslice_core fifo_w16_d256_A fifo_w16_d256_A fifo_w16_d512_A fifo_w16_d512_A fifo_w16_d2_A fifo_w16_d2_A fifo_w16_d2_A fifo_w16_d2_A start_for_Loop_slfYi start_for_window_g8j start_for_Loop_rehbi regslice_core Loop_sliding_win_del Loop_sliding_win_out window_fn Loop_real2xfft_outpu hls_real2xfft
+INFO-FLOW: To file: write model Loop_sliding_win_bkb
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model hls_real2xfft_muleOg
+INFO-FLOW: To file: write model window_fn_coeff_tcud
+INFO-FLOW: To file: write model window_fn_coeff_tdEe
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model fifo_w16_d256_A
+INFO-FLOW: To file: write model fifo_w16_d256_A
+INFO-FLOW: To file: write model fifo_w16_d512_A
+INFO-FLOW: To file: write model fifo_w16_d512_A
+INFO-FLOW: To file: write model fifo_w16_d2_A
+INFO-FLOW: To file: write model fifo_w16_d2_A
+INFO-FLOW: To file: write model fifo_w16_d2_A
+INFO-FLOW: To file: write model fifo_w16_d2_A
+INFO-FLOW: To file: write model start_for_Loop_slfYi
+INFO-FLOW: To file: write model start_for_window_g8j
+INFO-FLOW: To file: write model start_for_Loop_rehbi
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model Loop_sliding_win_del
+INFO-FLOW: To file: write model Loop_sliding_win_out
+INFO-FLOW: To file: write model window_fn
+INFO-FLOW: To file: write model Loop_real2xfft_outpu
+INFO-FLOW: To file: write model hls_real2xfft
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model hls_real2xfft -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 257.07 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.122 sec.
+Command       ap_source done; 0.122 sec.
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'window_fn_coeff_tcud_rom' using auto ROMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'window_fn_coeff_tdEe_rom' using auto ROMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.146 sec.
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'delayed_i_0_channel_U(fifo_w16_d256_A)' using Block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'delayed_i_1_channel_U(fifo_w16_d256_A)' using Block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'nodelay_i_0_channel_U(fifo_w16_d512_A)' using Block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'nodelay_i_1_channel_U(fifo_w16_d512_A)' using Block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'data2window_1_channe_U(fifo_w16_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'data2window_0_channe_U(fifo_w16_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'windowed_0_channel_U(fifo_w16_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'windowed_1_channel_U(fifo_w16_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_slfYi_U(start_for_Loop_slfYi)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_window_g8j_U(start_for_window_g8j)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_rehbi_U(start_for_Loop_rehbi)' using Shift Registers.
+Command       ap_source done; 0.176 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.129 sec.
+Command       ap_source done; 0.129 sec.
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=hls_real2xfft xml_exists=0
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.constraint.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=8
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=23 #gSsdmPorts=8
+Execute       source C:/Xilinx/Vivado/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.dataonly.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.constraint.tcl 
+Execute       sc_get_clocks hls_real2xfft 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.tbgen.tcl 
+Execute       source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [VHDL 208-304] Generating VHDL RTL for hls_real2xfft.
+INFO: [VLOG 209-307] Generating Verilog RTL for hls_real2xfft.
+Command     autosyn done; 4.151 sec.
+Command   csynth_design done; 23.482 sec.
+Command ap_source done; 24.305 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1 opened at Sun Oct 17 00:25:28 +0800 2021
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.141 sec.
+Command     ap_source done; 0.141 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.378 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.51 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_sdx -optimization_level=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute         get_clock_period -default -name=default 
+Execute         config_clock -quiet -name default -uncertainty 0.5 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 0.74 sec.
+Execute   cosim_design -trace_level all 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.131 sec.
+Command     ap_source done; 0.131 sec.
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     is_encrypted E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.cpp 
+Execute     is_encrypted E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/hls_realfft_test.cpp 
+Execute     is_encrypted E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/real2xfft.cpp 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+INFO-FLOW: TB processing: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.cpp E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/xfft2real.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/xfft2real.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/xfft2real.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.453 sec.
+Execute     tidy_31 xilinx-tb31-process E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/xfft2real.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/xfft2real.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.422 sec.
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+INFO-FLOW: TB processing: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/hls_realfft_test.cpp E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/hls_realfft_test.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/hls_realfft_test.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/hls_realfft_test.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.428 sec.
+Execute     tidy_31 xilinx-tb31-process E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/hls_realfft_test.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/hls_realfft_test.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 3.391 sec.
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+INFO-FLOW: TB processing: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/real2xfft.cpp E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/real2xfft.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/real2xfft.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/real2xfft.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 1.57 sec.
+Execute     tidy_31 xilinx-tb31-process E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/real2xfft.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vivado/2020.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/./sim/autowrap/testbench/real2xfft.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 1.511 sec.
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 1.591 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 22.337 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 54.505 sec.
+Command ap_source done; 55.252 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1 opened at Sun Oct 17 16:35:42 +0800 2021
+Execute     config_clock -quiet -name default -period 4 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.193 sec.
+Command     ap_source done; 0.196 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       ap_part_info -name xc7z020clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.36 sec.
+Execute       ap_part_info -name xc7z020clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.474 sec.
+Execute     ap_part_info -data single -name xc7z020clg400-1 
+Execute     ap_part_info -name xc7z020clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_sdx -optimization_level=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -optimization_level' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute         get_clock_period -default -name=default 
+Execute         config_clock -quiet -name default -uncertainty 0.5 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 0.859 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.127 sec.
+Command     ap_source done; 0.127 sec.
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=4.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.122 sec.
+Command     ap_source done; 0.122 sec.
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=hls_real2xfft xml_exists=1
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_del.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_sliding_win_out.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/window_fn.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/Loop_real2xfft_outpu.compgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.constraint.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=8
+INFO-FLOW: DBG:CMD:       copying IP vlog from E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=8
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=hls_real2xfft
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=hls_real2xfft
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.rtl_wrap.cfg.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.constraint.tcl 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/hls_real2xfft.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/impl/.verilog/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.126 sec.
+Command     ap_source done; 0.126 sec.
+Execute     source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/impl/ip/pack.bat
+Command   export_design done; 6.03 sec.
+Command ap_source done; 6.899 sec.
+Execute cleanup_all 

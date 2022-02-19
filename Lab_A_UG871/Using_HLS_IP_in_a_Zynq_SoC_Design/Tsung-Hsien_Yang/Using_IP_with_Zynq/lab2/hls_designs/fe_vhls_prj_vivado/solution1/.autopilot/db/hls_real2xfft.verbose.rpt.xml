@@ -1,0 +1,130 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hls_real2xfft'" level="0">
+<item name = "Date">Sun Oct 17 00:24:34 2021
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">fe_vhls_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.890 ns, 0.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1032, 1033, 4.128 us, 4.132 us, 1024, 1024, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="window_fn_U0">window_fn, 1028, 1029, 4.112 us, 4.116 us, 1024, 1024, loop rewind(delay=0 initiation interval(s))</column>
+<column name="Loop_sliding_win_out_U0">Loop_sliding_win_out, 1024, 1025, 4.096 us, 4.100 us, 1024, 1024, loop rewind(delay=0 initiation interval(s))</column>
+<column name="Loop_real2xfft_outpu_U0">Loop_real2xfft_outpu, 512, 513, 2.048 us, 2.052 us, 512, 512, loop rewind(delay=0 initiation interval(s))</column>
+<column name="Loop_sliding_win_del_U0">Loop_sliding_win_del, 512, 513, 2.048 us, 2.052 us, 512, 512, loop rewind(delay=0 initiation interval(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">4, -, 200, 368, -</column>
+<column name="Instance">2, 2, 448, 795, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, ~0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="Loop_real2xfft_outpu_U0">Loop_real2xfft_outpu, 0, 0, 25, 122, 0</column>
+<column name="Loop_sliding_win_del_U0">Loop_sliding_win_del, 0, 0, 105, 277, 0</column>
+<column name="Loop_sliding_win_out_U0">Loop_sliding_win_out, 0, 0, 73, 207, 0</column>
+<column name="window_fn_U0">window_fn, 2, 2, 245, 189, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="data2window_0_channe_U">0, 5, 0, -, 2, 16, 32</column>
+<column name="data2window_1_channe_U">0, 5, 0, -, 2, 16, 32</column>
+<column name="delayed_i_0_channel_U">1, 44, 0, -, 256, 16, 4096</column>
+<column name="delayed_i_1_channel_U">1, 44, 0, -, 256, 16, 4096</column>
+<column name="nodelay_i_0_channel_U">1, 46, 0, -, 512, 16, 8192</column>
+<column name="nodelay_i_1_channel_U">1, 46, 0, -, 512, 16, 8192</column>
+<column name="windowed_0_channel_U">0, 5, 0, -, 2, 16, 32</column>
+<column name="windowed_1_channel_U">0, 5, 0, -, 2, 16, 32</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="din_V_V_TDATA">in, 16, axis, din_V_V, pointer</column>
+<column name="din_V_V_TVALID">in, 1, axis, din_V_V, pointer</column>
+<column name="din_V_V_TREADY">out, 1, axis, din_V_V, pointer</column>
+<column name="dout_TDATA">out, 32, axis, dout_V_data, pointer</column>
+<column name="dout_TLAST">out, 1, axis, dout_V_last_V, pointer</column>
+<column name="dout_TVALID">out, 1, axis, dout_V_last_V, pointer</column>
+<column name="dout_TREADY">in, 1, axis, dout_V_last_V, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, hls_real2xfft, return value</column>
+</table>
+</item>
+</section>
+</profile>

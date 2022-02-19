@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634469078528">
+  <ports id="1" name="din_V_data" type="PortType" originalName="din.V.data" bitwidth="32">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="din_V_last_V" type="PortType" originalName="din.V.last.V" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="dout_V_data" type="PortType" originalName="dout.V.data" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="dout_V_last_V" type="PortType" originalName="dout.V.last.V" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="56" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="57" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="69" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@ports.2"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@ports.3"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="84" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="85" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" id="241" RegionName="hls_xfft2real">
+    <basic_blocks id="40" name="hls_xfft2real" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="descramble_buf_0_M" rtlName="descramble_buf_0_M_U" coreName="RAM" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="descramble_buf_1_M" rtlName="descramble_buf_1_M_U" coreName="RAM" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="descramble_buf_0_M_1" rtlName="descramble_buf_0_M_1_U" coreName="RAM" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="descramble_buf_1_M_1" rtlName="descramble_buf_1_M_1_U" coreName="RAM" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="real_spectrum_lo_V_s" lineNumber="66" originalName="real_spectrum_lo.V._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="real_spectrum_lo_V_s_U" coreName="FIFO" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="66" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="real_spectrum_lo_V_1" lineNumber="66" originalName="real_spectrum_lo.V._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="real_spectrum_lo_V_1_U" coreName="FIFO" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="66" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="real_spectrum_hi_V_s" lineNumber="67" originalName="real_spectrum_hi.V._M_real.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="real_spectrum_hi_V_s_U" coreName="FIFO" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="67" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="real_spectrum_hi_V_1" lineNumber="67" originalName="real_spectrum_hi.V._M_imag.V" fileName="./xfft2real.h" fileDirectory=".." rtlName="real_spectrum_hi_V_1_U" coreName="FIFO" contextFuncName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./xfft2real.h" linenumber="67" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 10, true&amp;gt;"/>
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="62" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="real_spectrum_hi_buf" rtlName="real_spectrum_hi_buf_U" coreName="RAM" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="real_spectrum_hi_buf_1" rtlName="real_spectrum_hi_buf_1_U" coreName="RAM" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln0" rtlName="Loop_realfft_be_buff_U0" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>din_V_data</dataInputObjs>
+        <dataInputObjs>din_V_last_V</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Loop_realfft_be_buff</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln0" rtlName="Loop_realfft_be_desc_U0" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Loop_realfft_be_desc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln0" rtlName="Loop_realfft_be_rev_U0" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Loop_realfft_be_rev_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln0" rtlName="Loop_realfft_be_stre_U0" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>dout_V_data</dataOutputObjs>
+        <dataOutputObjs>dout_V_last_V</dataOutputObjs>
+        <constName>Loop_realfft_be_stre</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln63" lineNumber="63" fileName="xfft2real.cpp" fileDirectory=".." contextFuncName="hls_xfft2real" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="xfft2real.cpp" linenumber="63" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_xfft2real"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="./xfft2real.h">
+        <validLinenumbers>66</validLinenumbers>
+        <validLinenumbers>67</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="xfft2real.cpp">
+        <validLinenumbers>63</validLinenumbers>
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <regnodes realName="real_spectrum_hi_V_s_reg_218">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="real_spectrum_hi_V_1_reg_224">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="real_spectrum_lo_V_s_reg_206">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="real_spectrum_lo_V_1_reg_212">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <expressionNodes realName="real_spectrum_hi_buf_alloca_fu_150">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_V_1_fu_146">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_lo_V_s_fu_134">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_buf_1_alloca_fu_154">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_V_s_fu_142">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_alloca_fu_118">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_lo_V_1_fu_138">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_alloca_fu_122">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_1_alloca_fu_126">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_1_alloca_fu_130">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_stre_fu_174">
+    <nodeIds>38</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_desc_fu_158">
+    <nodeIds>36</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_rev_s_fu_186">
+    <nodeIds>37</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_buff_fu_194">
+    <nodeIds>35</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="twid_rom_0" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="twid_rom_1" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <ioPorts name="din_V_data">
+    <contents name="call">
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="din_V_last_V">
+    <contents name="call">
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dout_V_data">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dout_V_last_V">
+    <contents name="call">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="35" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="35" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="36" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="36" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="37" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="38" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="38" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="hls_xfft2real" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1299" mMaxLatency="1301" mIsDfPipe="true">
+      <basicBlocks>40</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.2/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.3/@pins.0/@inst">
+        <processe_list name="Loop_realfft_be_buff_U0" ssdmobj_id="35">
+          <pins>
+            <port name="descramble_buf_0_M_imag_V" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_1_M_imag_V" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </pins>
+          <pins>
+            <port name="din_V_data" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </pins>
+          <pins>
+            <port name="din_V_last_V" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_0_M_real_V" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_1_M_real_V" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Loop_realfft_be_desc_U0" ssdmobj_id="36">
+          <pins>
+            <port name="real_spectrum_lo_V_M_real_V" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_lo_V_M_imag_V" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_buf_i_0" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_buf_i_1" dir="DirInOut" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_1_M_real_V" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_1_M_imag_V" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_0_M_real_V" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="descramble_buf_0_M_imag_V" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="twid_rom_0" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+          <pins>
+            <port name="twid_rom_1" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Loop_realfft_be_rev_U0" ssdmobj_id="37">
+          <pins>
+            <port name="real_spectrum_hi_buf_i_0" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_buf_i_1" dir="DirInOut"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_V_M_real_V" type="BUSType"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_V_M_imag_V" type="BUSType"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Loop_realfft_be_stre_U0" ssdmobj_id="38">
+          <pins>
+            <port name="dout_V_data" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="dout_V_last_V" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_lo_V_M_real_V"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_lo_V_M_imag_V"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_V_M_real_V"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </pins>
+          <pins>
+            <port name="real_spectrum_hi_V_M_imag_V"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" name="descramble_buf_0_M_1" ssdmobj_id="16">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" name="descramble_buf_1_M_1" ssdmobj_id="17">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" name="descramble_buf_0_M" ssdmobj_id="14">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" name="descramble_buf_1_M" ssdmobj_id="15">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_buff_U0" ssdmobj_id="35" object_id="_78"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="16" name="real_spectrum_lo_V_s" ssdmobj_id="18">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="16" name="real_spectrum_lo_V_1" ssdmobj_id="21">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" name="real_spectrum_hi_buf" ssdmobj_id="30">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" name="real_spectrum_hi_buf_1" ssdmobj_id="31">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_desc_U0" ssdmobj_id="36" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="16" name="real_spectrum_hi_V_s" ssdmobj_id="24">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="16" name="real_spectrum_hi_V_1" ssdmobj_id="27">
+          <source>
+            <port name="in" dir="DirEnd"/>
+            <inst name="Loop_realfft_be_rev_U0" ssdmobj_id="37" object_id="_114"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirEnd" type="BUSType"/>
+            <inst name="Loop_realfft_be_stre_U0" ssdmobj_id="38" object_id="_124"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

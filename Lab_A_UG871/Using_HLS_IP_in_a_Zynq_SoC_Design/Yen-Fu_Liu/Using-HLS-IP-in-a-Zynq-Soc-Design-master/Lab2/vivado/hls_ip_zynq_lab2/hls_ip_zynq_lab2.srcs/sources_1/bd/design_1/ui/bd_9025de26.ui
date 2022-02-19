@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.937781",
+   "Default View_TopLeft":"76,-139",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port realfft_s_axis_din -pg 1 -lvl 0 -x -70 -y 90 -defaultsOSRD
+preplace port realfft_m_axis_dout -pg 1 -lvl 5 -x 1180 -y 80 -defaultsOSRD
+preplace port aclk -pg 1 -lvl 0 -x -70 -y 110 -defaultsOSRD
+preplace port aresetn -pg 1 -lvl 0 -x -70 -y 130 -defaultsOSRD
+preplace inst hls_real2xfft_0 -pg 1 -lvl 2 -x 280 -y 110 -defaultsOSRD
+preplace inst xfft_0 -pg 1 -lvl 3 -x 650 -y 130 -defaultsOSRD
+preplace inst hls_xfft2real_0 -pg 1 -lvl 4 -x 1020 -y 90 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 30 -y -20 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 650 -y -110 -defaultsOSRD
+preplace netloc aclk_1 1 0 4 N 110 120 210 420 250 860
+preplace netloc xlconstant_0_dout 1 1 3 140 10 N 10 870
+preplace netloc Net 1 2 2 430 0 870
+preplace netloc aresetn_1 1 0 4 N 130 110 220 430 260 870
+preplace netloc hls_real2xfft_0_dout_V 1 2 1 420J 70n
+preplace netloc xfft_0_M_AXIS_DATA 1 3 1 860J 70n
+preplace netloc realfft_s_axis_din_1 1 0 2 N 90 130
+preplace netloc hls_xfft2real_0_dout_V 1 4 1 1160 80n
+levelinfo -pg 1 -70 30 280 650 1020 1180
+pagesize -pg 1 -db -bbox -sgen -230 -170 1360 270
+"
+}
+

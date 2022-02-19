@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 15 00:10:59 2021
+# Process ID: 9136
+# Current directory: C:/Users/ethan_kvm/hls_ip_zynq_lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12792 C:\Users\ethan_kvm\hls_ip_zynq_lab1\hls_ip_zynq_lab1.xpr
+# Log file: C:/Users/ethan_kvm/hls_ip_zynq_lab1/vivado.log
+# Journal file: C:/Users/ethan_kvm/hls_ip_zynq_lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ethan_kvm/hls_ip_zynq_lab1/hls_ip_zynq_lab1.xpr
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/ethan_kvm/hls_ip_zynq_lab1/hls_ip_zynq_lab1.xsa

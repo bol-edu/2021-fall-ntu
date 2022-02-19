@@ -1,0 +1,126 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2020.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_hls_xfft2real_top glbl -prj hls_xfft2real.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2020.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s hls_xfft2real -debug wave 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/AESL_axi_s_din.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_din
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/AESL_axi_s_dout.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_dout
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/fifo_w16_d8_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d8_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d8_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_hls_xfft2real_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_deshbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_deshbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_deshbi_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_deshbi_memcore_ram
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_deshbi_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_desibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_desibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_desibs_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_desibs_memcore_ram
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_desibs_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_macfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_macfYi_DSP48_2
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_macfYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_macg8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_macg8j_DSP48_3
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_macg8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_muldEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_muldEe_DSP48_0
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_muldEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/hls_xfft2real_muleOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_muleOg_DSP48_1
+INFO: [VRFC 10-311] analyzing module hls_xfft2real_muleOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/Loop_realfft_be_buff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_buff
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/Loop_realfft_be_dbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_dbkb_rom
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_dbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/Loop_realfft_be_dcud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_dcud_rom
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_dcud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/Loop_realfft_be_desc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_desc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/Loop_realfft_be_rev_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_rev_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/Loop_realfft_be_stre.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_realfft_be_stre
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/regslice_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regslice_both
+INFO: [VRFC 10-311] analyzing module regslice_forward
+INFO: [VRFC 10-311] analyzing module regslice_reverse
+INFO: [VRFC 10-311] analyzing module regslice_both_w1
+INFO: [VRFC 10-311] analyzing module regslice_forward_w1
+INFO: [VRFC 10-311] analyzing module regslice_reverse_w1
+INFO: [VRFC 10-311] analyzing module ibuf
+INFO: [VRFC 10-311] analyzing module obuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/sim/verilog/start_for_Loop_rencg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Loop_rencg_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Loop_rencg
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hls_xfft2real_deshbi_memcore_ram
+Compiling module xil_defaultlib.hls_xfft2real_deshbi_memcore
+Compiling module xil_defaultlib.hls_xfft2real_deshbi(AddressRang...
+Compiling module xil_defaultlib.hls_xfft2real_desibs_memcore_ram
+Compiling module xil_defaultlib.hls_xfft2real_desibs_memcore
+Compiling module xil_defaultlib.hls_xfft2real_desibs(AddressRang...
+Compiling module xil_defaultlib.ibuf(W=33)
+Compiling module xil_defaultlib.obuf(W=33)
+Compiling module xil_defaultlib.regslice_both_default
+Compiling module xil_defaultlib.ibuf(W=2)
+Compiling module xil_defaultlib.obuf(W=2)
+Compiling module xil_defaultlib.regslice_both(DataWidth=1)
+Compiling module xil_defaultlib.Loop_realfft_be_buff
+Compiling module xil_defaultlib.Loop_realfft_be_dbkb_rom
+Compiling module xil_defaultlib.Loop_realfft_be_dbkb(DataWidth=1...
+Compiling module xil_defaultlib.Loop_realfft_be_dcud_rom
+Compiling module xil_defaultlib.Loop_realfft_be_dcud(DataWidth=1...
+Compiling module xil_defaultlib.hls_xfft2real_muldEe_DSP48_0
+Compiling module xil_defaultlib.hls_xfft2real_muldEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.hls_xfft2real_muleOg_DSP48_1
+Compiling module xil_defaultlib.hls_xfft2real_muleOg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.hls_xfft2real_macfYi_DSP48_2
+Compiling module xil_defaultlib.hls_xfft2real_macfYi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.hls_xfft2real_macg8j_DSP48_3
+Compiling module xil_defaultlib.hls_xfft2real_macg8j(ID=1,NUM_ST...
+Compiling module xil_defaultlib.Loop_realfft_be_desc
+Compiling module xil_defaultlib.Loop_realfft_be_rev_s
+Compiling module xil_defaultlib.Loop_realfft_be_stre
+Compiling module xil_defaultlib.fifo_w16_d8_A_shiftReg
+Compiling module xil_defaultlib.fifo_w16_d8_A
+Compiling module xil_defaultlib.start_for_Loop_rencg_shiftReg
+Compiling module xil_defaultlib.start_for_Loop_rencg
+Compiling module xil_defaultlib.hls_xfft2real
+Compiling module xil_defaultlib.fifo(DEPTH=512,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=512,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_din
+Compiling module xil_defaultlib.AESL_axi_s_dout
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(IN_CHA...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit_1
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_hls_xfft2real_top
+Compiling module work.glbl
+Built simulation snapshot hls_xfft2real

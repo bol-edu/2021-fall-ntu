@@ -1,0 +1,17 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/reports/link
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin.link_summary, at Sun Oct 31 21:02:10 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Oct 31 21:02:10 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-629] Linking for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-645] kernel flags are '-g -I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src -g'
+ERROR: [v++ 17-1309] Gcc: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/tsp/tsp/cpu_sources/tsp.cpp:105:cannot convert ‘uint16_t (*)[13][13] {aka short unsigned int (*)[13][13]}’ to ‘const uint16_t (*)[13] {aka const short unsigned int (*)[13]}’ for argument ‘2’ to ‘unsigned int compute(long unsigned int, const uint16_t (*)[13])’
+ERROR: [v++ 17-1309] Gcc: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/xo/tsp/tsp/cpu_sources/tsp.cpp:110:invalid conversion from ‘unsigned int’ to ‘unsigned int*’ [-fpermissive]
+ERROR: [v++ 60-398] gcc failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634281005779">
+  <ports id="1" name="indata" type="PortType" originalName="indata.V[0]" coreName="RAM" coreId="1701082476" bitwidth="16" iftype="IfTypeRegister" arraysize="512">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="indata1" type="PortType" originalName="indata.V[1]" coreName="RAM" coreId="1685417059" bitwidth="16" iftype="IfTypeRegister" arraysize="512">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="3" name="outdata" type="PortType" originalName="outdata.V[0]" coreName="RAM" coreId="1920151400" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="4" name="outdata2" type="PortType" originalName="outdata.V[1]" coreName="RAM" coreId="1952542067" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="51" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="53" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="63" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="69" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@ports.2"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="88" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="90" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="93" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@ports.3"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="148" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="149" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="10" name="block_10" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="br_ln102" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="808595506" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+      <controlInputObjs>.split</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h">
+      <validLinenumbers>102</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="173" pipe_depth="5" RegionName="apply_win_fn">
+    <basic_blocks id="42" name=".split" type="BlockType">
+      <controlInputObjs>block_10</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlInputObjs>block_45</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_45</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i33" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="795111282" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="10" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <controlInputObjs>block_10</controlInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_45</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i33_cast" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." rtlName="i33_cast_fu_142_p1" coreId="1882155363" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="11" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="lshr_ln" lineNumber="1116" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="lshr_ln_fu_146_p4" coreId="1869770799" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1116" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="zext_ln1116" lineNumber="1116" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="zext_ln1116_fu_156_p1" coreId="1685025392" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1116" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="coeff_tab_0_addr" lineNumber="1116" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1684826485" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1116" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="r_V" lineNumber="1116" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreName="ROM" implIndex="auto" control="auto" opType="rom" coreId="95" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1116" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="zext_ln1115" lineNumber="1115" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_220_p10" coreId="1768190511" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1115" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="indata_addr" lineNumber="1118" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1685025392" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>indata</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="indata_load" lineNumber="1118" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="sext_ln1118" lineNumber="1118" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1768190511" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="r_V_1" lineNumber="1118" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_mul_16s_15ns_31_4_1_U15" coreName="DSP48" implIndex="dsp" control="auto" opType="mul" coreId="119" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="mul" nodeLabel="2.0" nodeLatency="3" m_display="0" m_delay="2.15" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="trunc_ln" lineNumber="708" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="outdata_d0" coreId="795111282" contextFuncName="operator_assign_32_2_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="708" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator=&amp;lt;32, 2, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="outdata_addr" lineNumber="105" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="795111282" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="105" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>outdata</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="outdata_addr_write_ln105" lineNumber="105" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" opcode="store" nodeLabel="5.0" m_display="0" m_delay="3.25" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="105" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="coeff_tab_1_addr" lineNumber="1116" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1685025392" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1116" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="r_V_2" lineNumber="1116" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreName="ROM" implIndex="auto" control="auto" opType="rom" coreId="95" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1116" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="zext_ln1115_1" lineNumber="1115" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="grp_fu_227_p10" coreId="1685025392" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1115" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="indata1_addr" lineNumber="1118" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="795111282" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="9" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>indata1</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="indata1_load" lineNumber="1118" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="sext_ln1118_1" lineNumber="1118" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="1882155363" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="r_V_3" lineNumber="1118" originalName="r.V" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_mul_16s_15ns_31_4_1_U16" coreName="DSP48" implIndex="dsp" control="auto" opType="mul" coreId="119" contextFuncName="operator_mul_16_1_true_AP_TRN_AP_WRAP_0" bitwidth="31" opcode="mul" nodeLabel="2.0" nodeLatency="3" m_display="0" m_delay="2.15" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="1118" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator*&amp;lt;16, 1, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="trunc_ln708_1" lineNumber="708" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="outdata2_d0" coreId="1684826485" contextFuncName="operator_assign_32_2_true_AP_TRN_AP_WRAP_0" bitwidth="16" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h" linenumber="708" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="operator=&amp;lt;32, 2, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="outdata2_addr" lineNumber="105" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="1768190511" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="9" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="105" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>outdata2</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="outdata2_addr_write_ln105" lineNumber="105" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" opcode="store" nodeLabel="5.0" m_display="0" m_delay="3.25" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="105" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="i" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." rtlName="i_fu_164_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="11" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="trunc_ln102" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." rtlName="trunc_ln102_fu_170_p1" coreId="1491075321" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="10" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="tmp" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." rtlName="tmp_reg_265" coreId="1593901342" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="br_ln102" lineNumber="102" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="1608122819" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="102" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_45</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h">
+        <validLinenumbers>1116</validLinenumbers>
+        <validLinenumbers>1115</validLinenumbers>
+        <validLinenumbers>1118</validLinenumbers>
+        <validLinenumbers>708</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h">
+        <validLinenumbers>102</validLinenumbers>
+        <validLinenumbers>105</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="45" name="block_45" type="BlockType">
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln107" lineNumber="107" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="1583219271" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" opcode="return" nodeLabel="5.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="107" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln107" lineNumber="107" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" fileDirectory=".." coreId="1569981325" contextFuncName="window_fn_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_SAT_0_1024_hls_window_fn_HAMMING_2_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h" linenumber="107" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_SAT, 0&amp;gt;, 1024, hls_window_fn::HAMMING, 2&amp;gt;"/>
+        <controlInputObjs>.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h">
+        <validLinenumbers>107</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="sext_ln1118_reg_274">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="i33_reg_128">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1115_reg_269">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="indata1_addr_reg_255">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1118_1_reg_284">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_265">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="indata_addr_reg_245">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1116_reg_234">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="coeff_tab_0_addr_reg_240">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="coeff_tab_1_addr_reg_250">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln102_reg_260">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1115_1_reg_279">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_fu_164">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1118_1_fu_194">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln708_1_fu_208">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indata_addr_gep_fu_63">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln107_fu_218">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1118_fu_186">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1116_fu_156">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_174">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i33_cast_fu_142">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="coeff_tab_1_addr_gep_fu_76">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lshr_ln_fu_146">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indata1_addr_gep_fu_89">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1115_fu_182">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="coeff_tab_0_addr_gep_fu_50">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1115_1_fu_190">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i33_phi_fu_132">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="outdata2_addr_gep_fu_115">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln102_fu_170">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_198">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="outdata_addr_gep_fu_102">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_227">
+    <nodeIds>34</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_220">
+    <nodeIds>24</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="coeff_tab_0">
+    <nodeIds>19</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="coeff_tab_1">
+    <nodeIds>29</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="indata">
+    <nodeIds>22</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="indata1">
+    <nodeIds>32</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="outdata">
+    <nodeIds>27</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="outdata2">
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <ioPorts name="indata(p0)">
+    <contents name="load">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="indata1(p0)">
+    <contents name="load">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="outdata(p0)">
+    <contents name="store">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="outdata2(p0)">
+    <contents name="store">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="2" latency="2"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="2" latency="2"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="2" latency="2"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="2" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="1" latency="2"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="2"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="4" latency="4"/>
+      <operations id="29" stage="1" latency="2"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="2"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="4" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="24" stage="3" latency="4"/>
+      <operations id="34" stage="3" latency="4"/>
+    </states>
+    <states id="5">
+      <operations id="24" stage="2" latency="4"/>
+      <operations id="34" stage="2" latency="4"/>
+    </states>
+    <states id="6">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="4"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="4"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="515" mMaxLatency="516">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="apply_win_fn" mII="1" mDepth="5" mMinTripCount="512" mMaxTripCount="512" mMinLatency="515" mMaxLatency="515" mType="1">
+      <basicBlocks>42</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

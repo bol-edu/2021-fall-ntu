@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO hls_xfft2real_descramble_buf_0_M_real_V_memcore using a single memory for all blocks" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO hls_xfft2real_twid_rom_M_real_V_memcore using a separate memory for each block" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO hls_xfft2real_twid_rom_M_imag_V_memcore using a separate memory for each block" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-741]" key="HLS 200-741" tag="" content="Implementing PIPO hls_xfft2real_descramble_buf_0_M_real_V_memcore using a single memory for all blocks" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO hls_xfft2real_twid_rom_M_real_V_memcore using a separate memory for each block" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-740]" key="HLS 200-740" tag="" content="Implementing PIPO hls_xfft2real_twid_rom_M_imag_V_memcore using a separate memory for each block" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-802]" key="HLS 200-802" tag="" content="Generated output file zynq_lab_2_2020_be/solution1/impl/export.zip" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 10.805 seconds; current allocated memory: 200.281 MB." resolution=""/>
+</Messages>

@@ -1,0 +1,11 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'HCHI' on host 'hchi-pc' (Windows NT_amd64 version 6.2) on Sat Oct 16 17:19:32 +0800 2021
+INFO: [HLS 200-10] In directory 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/hls_macc/vhls_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/hls_macc/hls_macc_test.c:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 189.760 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Source Code Analysis and Preprocessing: CPU user time: 0.27 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.6 seconds; current allocated memory: 190.367 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-777]" key="HLS 200-777" tag="" content="Using interface defaults for &apos;Vitis&apos; flow target." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-131]" key="HLS 214-131" tag="" content="Inlining function &apos;compute(unsigned long, unsigned short const (*) [11])&apos; into &apos;tsp&apos; (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:96:13)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-178]" key="HLS 214-178" tag="" content="Inlining function &apos;getDistance(int const*, unsigned short const (*) [11])&apos; into &apos;tsp&apos; (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:0)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Compiling Optimization and Transform: CPU user time: 1.82 seconds. CPU system time: 0.25 seconds. Elapsed time: 3.3 seconds; current allocated memory: 191.752 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.753 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1493]" key="HLS 200-1493" tag="" content="Running only source code synthesis checks, skipping scheduling and RTL generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 2.15 seconds. CPU system time: 0.35 seconds. Elapsed time: 4.03 seconds; current allocated memory: 191.726 MB." resolution=""/>
+</Messages>

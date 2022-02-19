@@ -1,0 +1,244 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'real2xfft.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: real2xfft.cpp:76:1
+WARNING: [HLS 214-111] Static scalars and arrays declared inside a dataflow region will be treated like local variables: ./sliding_win.h:66:38
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: ./sliding_win.h:75:1
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: ./sliding_win.h:83:1
+WARNING: [HLS 200-471] Dataflow form checks found 4 issue(s) in file real2xfft.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'sliding_win_1in2out<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 1024>' into 'hls_real2xfft' (real2xfft.cpp:72).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [XFORM 203-1101] Packing variable 'dout.V.data' (real2xfft.cpp:62) into a 32-bit variable.
+INFO: [XFORM 203-501] Unrolling loop 'sliding_win_output' (./sliding_win.h:84) in function 'hls_real2xfft' partially with a factor of 2.
+INFO: [XFORM 203-501] Unrolling loop 'apply_win_fn' (./window_fn.h:102) in function 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' partially with a factor of 2.
+INFO: [XFORM 203-101] Partitioning array 'data2window'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'windowed'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'nodelay.i'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'delayed.i'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-101] Partitioning array 'coeff_tab1'  in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-721] Changing loop 'Loop_sliding_win_delay_proc' (./sliding_win.h:76) to a process function for dataflow in function 'hls_real2xfft'.
+INFO: [XFORM 203-721] Changing loop 'Loop_sliding_win_output_proc' (./sliding_win.h:84) to a process function for dataflow in function 'hls_real2xfft'.
+INFO: [XFORM 203-721] Changing loop 'Loop_real2xfft_output_proc' (real2xfft.cpp:77) to a process function for dataflow in function 'hls_real2xfft'.
+WARNING: [XFORM 203-713] All the elements of global array 'delayed.i.0'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'delayed.i.1'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'nodelay.i.0'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'nodelay.i.1'  should be updated in process function 'Loop_sliding_win_delay_proc31', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'hls_real2xfft', detected/extracted 4 process function(s): 
+	 'Loop_sliding_win_delay_proc31'
+	 'Loop_sliding_win_output_proc'
+	 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>'
+	 'Loop_real2xfft_output_proc32'.
+WARNING: [XFORM 203-124] Array  'delayed.i.0' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'delayed.i.1' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'nodelay.i.0' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'nodelay.i.1' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 940.121 ; gain = 843.914
+WARNING: [XFORM 203-631] Renaming function 'hls_window_fn::window_fn<ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 1, (ap_q_mode)5, (ap_o_mode)0, 0>, 1024, (hls_window_fn::win_fn_t)2, 2>' to 'window_fn' (./window_fn.h:102:33)
+WARNING: [XFORM 203-631] Renaming function 'Loop_sliding_win_output_proc' to 'Loop_sliding_win_out' (./sliding_win.h:84:29)
+WARNING: [XFORM 203-631] Renaming function 'Loop_sliding_win_delay_proc31' to 'Loop_sliding_win_del' (./sliding_win.h:76:33)
+WARNING: [XFORM 203-631] Renaming function 'Loop_real2xfft_output_proc32' to 'Loop_real2xfft_outpu' (real2xfft.cpp:77:30)
+INFO: [XFORM 203-531] Rewinding loop 'apply_win_fn' (./window_fn.h:102) in function 'window_fn'.
+INFO: [XFORM 203-531] Rewinding loop 'sliding_win_output' (./sliding_win.h:84) in function 'Loop_sliding_win_out'.
+INFO: [XFORM 203-531] Rewinding loop 'sliding_win_delay' (./sliding_win.h:76) in function 'Loop_sliding_win_del'.
+INFO: [XFORM 203-531] Rewinding loop 'real2xfft_output' (real2xfft.cpp:77) in function 'Loop_real2xfft_outpu'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'apply_win_fn' in function 'window_fn'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'sliding_win_output' in function 'Loop_sliding_win_out'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'sliding_win_delay' in function 'Loop_sliding_win_del'.
+WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'real2xfft_output' in function 'Loop_real2xfft_outpu'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hls_real2xfft' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_sliding_win_del' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'sliding_win_delay'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.721 seconds; current allocated memory: 280.451 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.079 seconds; current allocated memory: 280.611 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_sliding_win_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'sliding_win_output'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln84', ./sliding_win.h:84->real2xfft.cpp:72)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.295 seconds; current allocated memory: 280.807 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.077 seconds; current allocated memory: 280.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_fn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'apply_win_fn'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln102', ./window_fn.h:102)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 7.
+WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4ns, clock uncertainty: 0.5ns, effective delay budget: 3.5ns).
+WARNING: [SCHED 204-21] The critical path in module 'window_fn' consists of the following:
+	'mul' operation of DSP[32] ('mul_ln1118', ./window_fn.h:105) [32]  (3.89 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.261 seconds; current allocated memory: 281.202 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.086 seconds; current allocated memory: 281.400 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_real2xfft_outpu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'real2xfft_output'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 281.474 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.075 seconds; current allocated memory: 281.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hls_real2xfft' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 281.713 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.089 seconds; current allocated memory: 282.092 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_sliding_win_del' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'Loop_sliding_win_del_delay_line_Array_V' to 'Loop_sliding_win_bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_sliding_win_del'.
+INFO: [HLS 200-111]  Elapsed time: 0.108 seconds; current allocated memory: 282.431 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_sliding_win_out' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_sliding_win_out'.
+INFO: [HLS 200-111]  Elapsed time: 0.151 seconds; current allocated memory: 283.174 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_fn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'window_fn_coeff_tab1_0' to 'window_fn_coeff_tcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'window_fn_coeff_tab1_1' to 'window_fn_coeff_tdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hls_real2xfft_mul_mul_16s_15ns_31_3_1' to 'hls_real2xfft_muleOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hls_real2xfft_muleOg': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_fn'.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 284.107 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_real2xfft_outpu' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_real2xfft_outpu'.
+INFO: [HLS 200-111]  Elapsed time: 0.155 seconds; current allocated memory: 284.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hls_real2xfft' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_real2xfft/din_V_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_real2xfft/dout_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'hls_real2xfft/dout_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'hls_real2xfft' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_sliding_win_out_U0' to 'start_for_Loop_slfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_window_fn_U0' to 'start_for_window_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Loop_real2xfft_outpu_U0' to 'start_for_Loop_rehbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hls_real2xfft'.
+INFO: [HLS 200-111]  Elapsed time: 0.168 seconds; current allocated memory: 285.737 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 257.07 MHz
+INFO: [RTMG 210-279] Implementing memory 'window_fn_coeff_tcud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'window_fn_coeff_tdEe_rom' using auto ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'delayed_i_0_channel_U(fifo_w16_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'delayed_i_1_channel_U(fifo_w16_d256_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'nodelay_i_0_channel_U(fifo_w16_d512_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'nodelay_i_1_channel_U(fifo_w16_d512_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'data2window_1_channe_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data2window_0_channe_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'windowed_0_channel_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'windowed_1_channel_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_slfYi_U(start_for_Loop_slfYi)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_window_g8j_U(start_for_window_g8j)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_rehbi_U(start_for_Loop_rehbi)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 940.121 ; gain = 843.914
+INFO: [VHDL 208-304] Generating VHDL RTL for hls_real2xfft.
+INFO: [VLOG 209-307] Generating Verilog RTL for hls_real2xfft.
+INFO: [HLS 200-112] Total elapsed time: 24.768 seconds; peak allocated memory: 285.737 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

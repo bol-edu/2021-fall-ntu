@@ -1,0 +1,563 @@
+
+*** Running vivado
+    with args -log Zynq_RealFFT_hls_xfft2real_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Zynq_RealFFT_hls_xfft2real_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Zynq_RealFFT_hls_xfft2real_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/vivado_ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top Zynq_RealFFT_hls_xfft2real_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7808
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1175.219 ; gain = 30.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Zynq_RealFFT_hls_xfft2real_0_0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ip/Zynq_RealFFT_hls_xfft2real_0_0/synth/Zynq_RealFFT_hls_xfft2real_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real.v:12]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_deshbi' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi.v:8]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+	Parameter BufferCount bound to: 2 - type: integer 
+	Parameter IndexWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_deshbi_memcore' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi_memcore.v:52]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 512 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_deshbi_memcore_ram' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi_memcore.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 512 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_deshbi_memcore_ram' (1#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi_memcore.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_deshbi_memcore' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi_memcore.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_deshbi' (3#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_desibs' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs.v:8]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+	Parameter BufferCount bound to: 2 - type: integer 
+	Parameter MemLatency bound to: 1 - type: integer 
+	Parameter IndexWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_desibs_memcore' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs_memcore.v:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_desibs_memcore_ram' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs_memcore.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_desibs_memcore_ram' (4#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs_memcore.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_desibs_memcore' (5#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs_memcore.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_desibs' (6#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_buff' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_buff.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (7#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (8#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (9#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (9#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (9#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (9#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_buff' (10#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_buff.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_desc' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state17 bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_dbkb' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dbkb.v:39]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_dbkb_rom' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dbkb.v:6]
+	Parameter DWIDTH bound to: 15 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Loop_realfft_be_dbkb_rom.dat' is read successfully [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dbkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_dbkb_rom' (11#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_dbkb' (12#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dbkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_dcud' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dcud.v:39]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_dcud_rom' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dcud.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './Loop_realfft_be_dcud_rom.dat' is read successfully [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dcud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_dcud_rom' (13#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dcud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_dcud' (14#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dcud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_muldEe' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muldEe.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_muldEe_DSP48_0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muldEe.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_muldEe_DSP48_0' (15#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muldEe.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_muldEe' (16#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muldEe.v:29]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_muleOg' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muleOg.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_muleOg_DSP48_1' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muleOg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_muleOg_DSP48_1' (17#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muleOg.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_muleOg' (18#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muleOg.v:29]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_macfYi' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macfYi.v:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 31 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_macfYi_DSP48_2' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macfYi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_macfYi_DSP48_2' (19#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macfYi.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_macfYi' (20#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macfYi.v:44]
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_macg8j' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macg8j.v:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 31 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_xfft2real_macg8j_DSP48_3' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macg8j.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_macg8j_DSP48_3' (21#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macg8j.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real_macg8j' (22#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macg8j.v:44]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1474]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1476]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1538]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1540]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1542]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1544]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1606]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:1608]
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_desc' (23#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_rev_s' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_rev_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state5 bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_rev_s' (24#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_rev_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Loop_realfft_be_stre' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_stre.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'Loop_realfft_be_stre' (25#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_stre.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d8_A' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/fifo_w16_d8_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d8_A_shiftReg' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/fifo_w16_d8_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d8_A_shiftReg' (26#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/fifo_w16_d8_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d8_A' (27#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/fifo_w16_d8_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Loop_rencg' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/start_for_Loop_rencg.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Loop_rencg_shiftReg' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/start_for_Loop_rencg.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Loop_rencg_shiftReg' (28#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/start_for_Loop_rencg.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Loop_rencg' (29#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/start_for_Loop_rencg.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'hls_xfft2real' (30#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_RealFFT_hls_xfft2real_0_0' (31#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ip/Zynq_RealFFT_hls_xfft2real_0_0/synth/Zynq_RealFFT_hls_xfft2real_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1252.508 ; gain = 108.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.508 ; gain = 108.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1252.508 ; gain = 108.062
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1252.508 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ip/Zynq_RealFFT_hls_xfft2real_0_0/constraints/hls_xfft2real_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.gen/sources_1/bd/Zynq_RealFFT/ip/Zynq_RealFFT_hls_xfft2real_0_0/constraints/hls_xfft2real_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.runs/Zynq_RealFFT_hls_xfft2real_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.runs/Zynq_RealFFT_hls_xfft2real_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1366.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1377.863 ; gain = 11.375
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.863 ; gain = 233.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.863 ; gain = 233.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.runs/Zynq_RealFFT_hls_xfft2real_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.863 ; gain = 233.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "hls_xfft2real_deshbi_memcore_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1377.863 ; gain = 233.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 2     
+	   3 Input   17 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 11    
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 6     
+	   2 Input    1 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	               33 Bit    Registers := 4     
+	               31 Bit    Registers := 4     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 4     
+	               16 Bit    Registers := 93    
+	               15 Bit    Registers := 9     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 109   
++---RAMs : 
+	               8K Bit	(512 X 16 bit)          RAMs := 4     
+	               4K Bit	(256 X 16 bit)          RAMs := 4     
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 30    
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 8     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 15    
+	   4 Input    2 Bit        Muxes := 4     
+	   5 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 107   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg, operation Mode is: (A''*B'')'.
+DSP Report: register Loop_realfft_be_desc_U0/select_ln1148_3_reg_1050_reg is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_muldEe_U8/hls_xfft2real_muldEe_DSP48_0_U/b_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: register Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: register Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: register Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_muldEe_U8/hls_xfft2real_muldEe_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: operator Loop_realfft_be_desc_U0/hls_xfft2real_muldEe_U8/hls_xfft2real_muldEe_DSP48_0_U/p_reg0 is absorbed into DSP Loop_realfft_be_desc_U0/r_V_1_reg_1101_reg.
+DSP Report: Generating DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg, operation Mode is: (PCIN-(A''*B'')')'.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_macfYi_U10/hls_xfft2real_macfYi_DSP48_2_U/m_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: operator Loop_realfft_be_desc_U0/hls_xfft2real_macfYi_U10/hls_xfft2real_macfYi_DSP48_2_U/p is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: operator Loop_realfft_be_desc_U0/hls_xfft2real_macfYi_U10/hls_xfft2real_macfYi_DSP48_2_U/m is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_4_reg_1111_reg.
+DSP Report: Generating DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg, operation Mode is: (A''*B'')'.
+DSP Report: register Loop_realfft_be_desc_U0/select_ln1148_3_reg_1050_reg is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_muldEe_U8/hls_xfft2real_muldEe_DSP48_0_U/b_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: register Loop_realfft_be_desc_U0/p_Val2_19_reg_975_pp0_iter5_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_muleOg_U9/hls_xfft2real_muleOg_DSP48_1_U/b_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: register Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_muleOg_U9/hls_xfft2real_muleOg_DSP48_1_U/p_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: operator Loop_realfft_be_desc_U0/hls_xfft2real_muleOg_U9/hls_xfft2real_muleOg_DSP48_1_U/p_reg0 is absorbed into DSP Loop_realfft_be_desc_U0/mul_ln1192_reg_1106_reg.
+DSP Report: Generating DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: register Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: register Loop_realfft_be_desc_U0/hls_xfft2real_macg8j_U11/hls_xfft2real_macg8j_DSP48_3_U/m_reg_reg is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: operator Loop_realfft_be_desc_U0/hls_xfft2real_macg8j_U11/hls_xfft2real_macg8j_DSP48_3_U/p is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+DSP Report: operator Loop_realfft_be_desc_U0/hls_xfft2real_macg8j_U11/hls_xfft2real_macg8j_DSP48_3_U/m is absorbed into DSP Loop_realfft_be_desc_U0/ret_V_5_reg_1116_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1377.863 ; gain = 233.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++--------------+--------------------------------------------------------------+---------------+----------------+
+|Module Name   | RTL Object                                                   | Depth x Width | Implemented As | 
++--------------+--------------------------------------------------------------+---------------+----------------+
+|hls_xfft2real | Loop_realfft_be_desc_U0/i2_0_i_reg_246_pp0_iter1_reg_reg_rep | 256x15        | Block RAM      | 
+|hls_xfft2real | Loop_realfft_be_desc_U0/i2_0_i_reg_246_pp0_iter1_reg_reg_rep | 256x16        | Block RAM      | 
++--------------+--------------------------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                                                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | descramble_buf_0_M_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg                 | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg   | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg   | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_0_M_1_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg               | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_1_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_1_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | real_spectrum_hi_buf_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg               | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | real_spectrum_hi_buf_1_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg             | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+----------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping	Report (see note below)
++--------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hls_xfft2real | (A''*B'')'         | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hls_xfft2real | (PCIN-(A''*B'')')' | 17     | 17     | -      | -      | 31     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hls_xfft2real | (A''*B'')'         | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hls_xfft2real | (PCIN+(A''*B'')')' | 25     | 17     | -      | -      | 31     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++--------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1381.379 ; gain = 236.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1437.012 ; gain = 292.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+----------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                                                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | descramble_buf_0_M_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg                 | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg   | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg   | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_0_M_1_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg               | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_1_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | descramble_buf_1_M_1_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg | 256 x 16(READ_FIRST)   | W | R | 256 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | real_spectrum_hi_buf_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg               | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst        | real_spectrum_hi_buf_1_U/hls_xfft2real_deshbi_memcore_U/hls_xfft2real_deshbi_memcore_ram_U/ram_reg             | 512 x 16(READ_FIRST)   | W |   | 512 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+----------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_1_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_1_U/gen_buffer[0].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_1_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/descramble_buf_1_M_1_U/gen_buffer[1].hls_xfft2real_desibs_memcore_U/hls_xfft2real_desibs_memcore_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+-------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+-------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hls_xfft2real | Loop_realfft_be_desc_U0/sub_ln111_reg_980_pp0_iter13_reg_reg[7]   | 10     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|hls_xfft2real | Loop_realfft_be_desc_U0/p_Val2_s_reg_946_pp0_iter9_reg_reg[15]    | 6      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|hls_xfft2real | Loop_realfft_be_desc_U0/p_Val2_1_reg_953_pp0_iter9_reg_reg[15]    | 6      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|hls_xfft2real | Loop_realfft_be_desc_U0/f_M_real_V_reg_1060_pp0_iter9_reg_reg[15] | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|hls_xfft2real | Loop_realfft_be_desc_U0/f_M_imag_V_reg_1066_pp0_iter9_reg_reg[15] | 3      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++--------------+-------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[7] | 16     | 16         | 16     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   120|
+|2     |DSP48E1  |     4|
+|3     |LUT1     |   262|
+|4     |LUT2     |   268|
+|5     |LUT3     |   306|
+|6     |LUT4     |   118|
+|7     |LUT5     |   127|
+|8     |LUT6     |    99|
+|9     |RAMB18E1 |    10|
+|13    |SRL16E   |   136|
+|14    |FDRE     |  1128|
+|15    |FDSE     |    29|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1443.980 ; gain = 174.180
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1443.980 ; gain = 299.535
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1452.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 134 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1452.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+100 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1452.625 ; gain = 308.180
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.runs/Zynq_RealFFT_hls_xfft2real_0_0_synth_1/Zynq_RealFFT_hls_xfft2real_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Zynq_RealFFT_hls_xfft2real_0_0, cache-ID = 33ac2387100ae6cb
+INFO: [Coretcl 2-1174] Renamed 45 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/project_1/project_1.runs/Zynq_RealFFT_hls_xfft2real_0_0_synth_1/Zynq_RealFFT_hls_xfft2real_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Zynq_RealFFT_hls_xfft2real_0_0_utilization_synth.rpt -pb Zynq_RealFFT_hls_xfft2real_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 17 20:24:04 2021...

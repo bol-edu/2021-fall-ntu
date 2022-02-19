@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634401474312">
+  <ports id="1" name="delayed_i_0" type="PortType" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="2" name="delayed_i_1" type="PortType" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="din_V_V" type="PortType" originalName="stream&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 0&amp;gt;.V.V" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="nodelay_i_0" type="PortType" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="nodelay_i_1" type="PortType" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="53" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.9/@node_objs.1"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.0"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.8/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="58" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="59" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.8/@node_objs.1"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.6/@node_objs.0" sink_obj="//@ports.0"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.0"/>
+  <edges id="64" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="81" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="84" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="91" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.7/@node_objs.0" sink_obj="//@ports.1"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.0"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.7/@node_objs.1"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="102" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="114" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="266" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="267" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="269" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="270" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="271" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="272" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.7"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.7" sink_obj="//@regions.0/@basic_blocks.8"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.9"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.8" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.9" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <blocks id="12" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>rewind_header</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="_ln76" lineNumber="76" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./sliding_win.h" linenumber="76" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+      <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+      <controlInputObjs>rewind_header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="real2xfft.cpp">
+      <validLinenumbers>72</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="./sliding_win.h">
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="154" pipe_depth="2" RegionName="sliding_win_delay">
+    <basic_blocks id="16" name="rewind_header" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>sliding_win_delay_end</controlInputObjs>
+      <controlInputObjs>.preheader.i.0.exitStub</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>rewind_init</controlOutputObjs>
+      <controlOutputObjs>sliding_win_delay_begin</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="do_init" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataOutputObjs>br</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>sliding_win_delay_end</controlInputObjs>
+        <controlInputObjs>.preheader.i.0.exitStub</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="i_0_i5" originalName="i" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>sliding_win_delay_end</controlInputObjs>
+        <controlInputObjs>.preheader.i.0.exitStub</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="_ln0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>sliding_win_delay_begin</controlInputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+    <basic_blocks id="18" name="rewind_init" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>sliding_win_delay_begin</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln76" lineNumber="76" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="76" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <controlInputObjs>sliding_win_delay_begin</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>76</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="26" name="sliding_win_delay_begin" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlInputObjs>rewind_init</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>branch1</controlOutputObjs>
+      <controlOutputObjs>branch0</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="din_val_V" lineNumber="78" originalName="tmp.V" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" bitwidth="16" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="78" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>din_V_V</dataInputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i" lineNumber="76" originalName="i" fileName="./sliding_win.h" fileDirectory=".." rtlName="i_fu_180_p2" contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="76" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln79" lineNumber="79" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="79" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>branch0</controlInputObjs>
+        <controlInputObjs>branch1</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>78</validLinenumbers>
+        <validLinenumbers>76</validLinenumbers>
+        <validLinenumbers>79</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="29" name="branch0" type="BlockType">
+      <controlInputObjs>sliding_win_delay_begin</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_35</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="nodelay_i_0_write_ln79" lineNumber="79" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="79" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>nodelay_i_0</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln79" lineNumber="79" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="79" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <controlInputObjs>block_35</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>79</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="32" name="branch1" type="BlockType">
+      <controlInputObjs>sliding_win_delay_begin</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_35</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="nodelay_i_1_write_ln79" lineNumber="79" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="79" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>nodelay_i_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln79" lineNumber="79" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="79" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <controlInputObjs>block_35</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>79</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="35" name="block_35" type="BlockType">
+      <controlInputObjs>branch0</controlInputObjs>
+      <controlInputObjs>branch1</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>branch3</controlOutputObjs>
+      <controlOutputObjs>branch2</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="DataOut_V" lineNumber="80" originalName="DataOut.V" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" bitwidth="16" opcode="memshiftread" nodeLabel="2.0" m_display="0" m_delay="1.61" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="80" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln80" lineNumber="80" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="80" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>branch2</controlInputObjs>
+        <controlInputObjs>branch3</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>80</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="38" name="branch2" type="BlockType">
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>sliding_win_delay_end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="delayed_i_0_write_ln80" lineNumber="80" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="80" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataOutputObjs>delayed_i_0</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln80" lineNumber="80" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="80" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <controlInputObjs>sliding_win_delay_end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>80</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="41" name="branch3" type="BlockType">
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>sliding_win_delay_end</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="delayed_i_1_write_ln80" lineNumber="80" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="80" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataOutputObjs>delayed_i_1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln80" lineNumber="80" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="80" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <controlInputObjs>sliding_win_delay_end</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>80</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="46" name="sliding_win_delay_end" type="BlockType">
+      <controlInputObjs>branch2</controlInputObjs>
+      <controlInputObjs>branch3</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>.preheader.i.0.exitStub</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="icmp_ln76" lineNumber="76" fileName="./sliding_win.h" fileDirectory=".." rtlName="icmp_ln76_fu_186_p2" contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="76" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="_ln76" lineNumber="76" fileName="./sliding_win.h" fileDirectory=".." contextFuncName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./sliding_win.h" linenumber="76" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, 1024&amp;gt;"/>
+        <inlineStackInfo fileName="real2xfft.cpp" linenumber="72" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="hls_real2xfft"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+        <controlInputObjs>.preheader.i.0.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="real2xfft.cpp">
+        <validLinenumbers>72</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="./sliding_win.h">
+        <validLinenumbers>76</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="49" name=".preheader.i.0.exitStub" type="BlockType">
+      <controlInputObjs>sliding_win_delay_end</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="_ln0" opcode="return" nodeLabel="2.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="_ln0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="i_0_i5_reg_162">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="do_init_reg_146">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="din_val_V_reg_205">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln76_reg_221">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_216">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln203_reg_212">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <expressionNodes realName="DataOut_V_fu_192">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="do_init_phi_fu_150">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln0_fu_203">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_180">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_0_i5_phi_fu_166">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln76_fu_186">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln203_fu_176">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln79_write_fu_118">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="din_val_V_read_fu_112">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln80_write_fu_132">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln79_write_fu_125">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln80_write_fu_139">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioPorts name="delayed_i_0">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="delayed_i_1">
+    <contents name="write">
+      <nodeIds>39</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="din_V_V">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="nodelay_i_0">
+    <contents name="write">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="nodelay_i_1">
+    <contents name="write">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="Loop_sliding_win_del" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="512" mMaxLatency="513">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>12</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="sliding_win_delay" mII="1" mDepth="2" mMinTripCount="512" mMaxTripCount="512" mMinLatency="512" mMaxLatency="512" mType="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>26</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>46</basicBlocks>
+      <basicBlocks>49</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

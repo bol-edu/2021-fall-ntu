@@ -1,0 +1,583 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 219.279 MB.
+INFO: [HLS 200-10] Analyzing design file 'example.cpp' ... 
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: example.cpp:20:36
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: example.cpp:21:36
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.014 seconds; current allocated memory: 220.642 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_1_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:42:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:46:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:43:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:55:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:59:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:56:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:55:48)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:31:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:32:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:76:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:80:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:77:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:76:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:88:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_2_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:89:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:88:48)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:65:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:66:22)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'example(hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:22:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'example(hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:23:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.012 seconds; current allocated memory: 220.969 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 220.970 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 222.424 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 222.186 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_41_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_45_2' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_2' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_2' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_2' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_75_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_2_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_79_2' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_2_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_87_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_2_2' automatically.
+WARNING: [HLS 200-805] An internal stream 'data_channel1' (example.cpp:65) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'data_channel2' (example.cpp:66) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'data_channel1' (example.cpp:31) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'data_channel2' (example.cpp:32) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'data_channel1' (example.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'data_channel2' (example.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'example' (example.cpp:18)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'proc_1' (example.cpp:29), detected/extracted 2 process function(s): 
+	 'proc_1_1'
+	 'proc_1_2'.
+INFO: [XFORM 203-712] Applying dataflow to function 'proc_2' (example.cpp:63), detected/extracted 2 process function(s): 
+	 'proc_2_1'
+	 'proc_2_2'.
+INFO: [XFORM 203-712] Applying dataflow to function 'example' (example.cpp:18), detected/extracted 2 process function(s): 
+	 'proc_1'
+	 'proc_2'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.92 seconds; current allocated memory: 243.080 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.471 seconds; current allocated memory: 293.457 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'example' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_41_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_41_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_45_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_45_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 293.709 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.219 seconds; current allocated memory: 293.876 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_54_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_58_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.238 seconds; current allocated memory: 293.972 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 294.115 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.214 seconds; current allocated memory: 294.165 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 294.259 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_75_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_79_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_79_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.236 seconds; current allocated memory: 294.354 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 294.481 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_2_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_87_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_87_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.258 seconds; current allocated memory: 294.548 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 294.637 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.208 seconds; current allocated memory: 294.688 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 294.782 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'example' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.225 seconds; current allocated memory: 294.833 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.268 seconds; current allocated memory: 294.924 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_1_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.236 seconds; current allocated memory: 295.220 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_1_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 295.940 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.335 seconds; current allocated memory: 296.568 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_2_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.237 seconds; current allocated memory: 297.032 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_2_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_2_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.325 seconds; current allocated memory: 297.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d2_S' is changed to 'fifo_w32_d2_S_x' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.286 seconds; current allocated memory: 298.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'example' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'example' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d2_S' is changed to 'fifo_w32_d2_S_x0' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'example'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 298.469 MB.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel1_U(example_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel2_U(example_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_proc_1_2_U0_U(example_start_for_proc_1_2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel1_U(example_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel2_U(example_fifo_w32_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_proc_2_2_U0_U(example_start_for_proc_2_2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel1_U(example_fifo_w32_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel2_U(example_fifo_w32_d2_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_proc_2_U0_U(example_start_for_proc_2_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 2.71 seconds; current allocated memory: 305.513 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for example.
+INFO: [VLOG 209-307] Generating Verilog RTL for example.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10 seconds. CPU system time: 1 seconds. Elapsed time: 17.397 seconds; current allocated memory: 305.924 MB.
+INFO: [HLS 200-112] Total CPU user time: 14 seconds. Total CPU system time: 3 seconds. Total elapsed time: 20.932 seconds; peak allocated memory: 305.513 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -enable_fifo_sizing 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 225.946 seconds; current allocated memory: 225.760 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 13.147 seconds; current allocated memory: 225.065 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 219.598 MB.
+INFO: [HLS 200-10] Analyzing design file 'example.cpp' ... 
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: example.cpp:20:36
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: example.cpp:21:36
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.675 seconds; current allocated memory: 220.990 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_1_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:46:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:50:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:47:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:59:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:63:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:60:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_1_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:59:48)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:33:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:35:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:82:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:86:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:83:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_1(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:82:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:94:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'proc_2_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:95:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'proc_2_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:94:48)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:69:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'proc_2(hls::stream<int, 0>&, hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:71:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'example(hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:22:19)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::stream()' into 'example(hls::stream<int, 0>&, hls::stream<int, 0>&)' (example.cpp:24:19)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.346 seconds; current allocated memory: 221.649 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 221.649 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 223.103 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.226 seconds; current allocated memory: 222.867 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_45_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_49_2' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_2' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_62_2' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_1_2' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_81_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_2_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_85_2' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_2_1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_93_1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'proc_2_2' automatically.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'example' (example.cpp:18)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'proc_1' (example.cpp:31), detected/extracted 2 process function(s): 
+	 'proc_1_1'
+	 'proc_1_2'.
+INFO: [XFORM 203-712] Applying dataflow to function 'proc_2' (example.cpp:67), detected/extracted 2 process function(s): 
+	 'proc_2_1'
+	 'proc_2_2'.
+INFO: [XFORM 203-712] Applying dataflow to function 'example' (example.cpp:18), detected/extracted 2 process function(s): 
+	 'proc_1'
+	 'proc_2'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.708 seconds; current allocated memory: 243.762 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.411 seconds; current allocated memory: 294.125 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'example' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_45_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_45_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_49_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_49_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.205 seconds; current allocated memory: 294.377 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.185 seconds; current allocated memory: 294.545 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_58_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_62_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_62_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.204 seconds; current allocated memory: 294.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 294.800 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO data_channel2 (from proc_1_1_U0 to proc_1_2_U0) to 2 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 294.851 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 294.975 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_81_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_81_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_85_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_85_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.212 seconds; current allocated memory: 295.071 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 295.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_2_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_93_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_93_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 295.267 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 295.385 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'proc_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO data_channel2 (from proc_2_1_U0 to proc_2_2_U0) to 2 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 295.466 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 295.561 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'example' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO data_channel2 (from proc_1_U0 to proc_2_U0) to 2 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 295.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 295.704 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_1_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_1_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.197 seconds; current allocated memory: 296.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_1_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_1_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.271 seconds; current allocated memory: 296.829 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 297.564 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_2_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_2_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 298.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_2_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_2_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 298.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'proc_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d10_S' is changed to 'fifo_w32_d10_S_x' due to conflict.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d1_S' is changed to 'fifo_w32_d1_S_x' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'proc_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.246 seconds; current allocated memory: 299.279 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'example' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/A_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'example/B_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'example' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d10_S' is changed to 'fifo_w32_d10_S_x0' due to conflict.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w32_d1_S' is changed to 'fifo_w32_d1_S_x0' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'example'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.237 seconds; current allocated memory: 299.734 MB.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel1_U(example_fifo_w32_d10_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_proc_1_2_U0_U(example_start_for_proc_1_2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel1_U(example_fifo_w32_d10_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_proc_2_2_U0_U(example_start_for_proc_2_2_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'data_channel1_U(example_fifo_w32_d10_S_x0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_proc_2_U0_U(example_start_for_proc_2_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.299 seconds; current allocated memory: 307.041 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for example.
+INFO: [VLOG 209-307] Generating Verilog RTL for example.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.68 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9 seconds. CPU system time: 1 seconds. Elapsed time: 14.754 seconds; current allocated memory: 307.504 MB.
+INFO: [HLS 200-112] Total CPU user time: 12 seconds. Total CPU system time: 2 seconds. Total elapsed time: 17.779 seconds; peak allocated memory: 307.041 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 31.807 seconds; current allocated memory: 225.116 MB.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part virtex7 
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-1511] Skipping solution action command: csim_design
+INFO: [HLS 200-1511] Skipping solution action command: csynth_design
+INFO: [HLS 200-1511] Skipping solution action command: cosim_design
+INFO: [HLS 200-10] Bringing up Vitis HLS GUI ... 
+INFO: [Common 17-206] Exiting vitis_hls at Sat Oct 23 11:04:48 2021...
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name example example 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 32.396 seconds; current allocated memory: 225.216 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7v585t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7v585t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 75MHz -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name example example 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 30.743 seconds; current allocated memory: 225.196 MB.

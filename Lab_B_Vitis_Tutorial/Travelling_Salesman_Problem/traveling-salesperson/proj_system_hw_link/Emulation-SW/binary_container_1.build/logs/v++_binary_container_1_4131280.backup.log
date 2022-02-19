@@ -1,0 +1,52 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/reports/link
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin.link_summary, at Sun Oct 31 20:22:26 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Oct 31 20:22:26 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-629] Linking for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-645] kernel flags are '-g -I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src -g'
+WARNING: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:83:backslash-newline at end of file
+ERROR: [v++ 17-1309] Gcc: xcl_top.cpp:32:expected unqualified-id before ‘,’ token
+ERROR: [v++ 17-1309] Gcc: xcl_top.cpp:32:expected unqualified-id before numeric constant
+ERROR: [v++ 17-1309] Gcc: xcl_top.cpp:33:‘__xlnx_cl_struct_type_0’ does not name a type
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:73:‘packetType’ was not declared in this scope
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:73:template argument 1 is invalid
+ERROR: [v++ 17-1309] Gcc: xcl_top.cpp:33:‘__xlnx_cl_struct_type_0’ does not name a type
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:80:‘packetType’ was not declared in this scope
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:80:template argument 1 is invalid
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:80:expected primary-expression before ‘)’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:80:expected ‘)’ before ‘_sPtr’
+WARNING: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:81:no return statement in function returning non-void [-Wreturn-type]
+ERROR: [v++ 17-1309] Gcc: xcl_top.cpp:33:‘__xlnx_cl_struct_type_0’ does not name a type
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:5:‘packetType’ was not declared in this scope
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:5:template argument 1 is invalid
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:5:expected ‘>’ before ‘*’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:5:expected ‘(’ before ‘*’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:5:expected primary-expression before ‘>’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:5:expected ‘)’ before ‘;’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:14:expected ‘;’ before ‘packet’
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:15:‘packet’ was not declared in this scope; did you mean ‘_packet’?
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:23:request for member ‘write’ in ‘* wStream’, which is of non-class type ‘int’
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:27:expected ‘;’ before ‘packet’
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:31:‘packet’ was not declared in this scope; did you mean ‘_packet’?
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:34:request for member ‘write’ in ‘* wStream’, which is of non-class type ‘int’
+ERROR: [v++ 17-1309] Gcc: xcl_top.cpp:33:‘__xlnx_cl_struct_type_0’ does not name a type
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:45:‘packetType’ was not declared in this scope
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:45:template argument 1 is invalid
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:45:expected ‘>’ before ‘*’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:45:expected ‘(’ before ‘*’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:45:expected primary-expression before ‘>’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:45:expected ‘)’ before ‘;’ token
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:51:request for member ‘empty’ in ‘* rStream’, which is of non-class type ‘int’
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:55:expected ‘;’ before ‘packet’
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:56:‘packet’ was not declared in this scope; did you mean ‘_packet’?
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:57:request for member ‘empty’ in ‘* rStream’, which is of non-class type ‘int’
+ERROR: [v++ 17-1309] Gcc: /opt/Xilinx/Vitis/2020.2/bin/../data/emulation/include/xcl_top_defines.h:58:request for member ‘read’ in ‘* rStream’, which is of non-class type ‘int’
+ERROR: [v++ 60-398] g++ failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.

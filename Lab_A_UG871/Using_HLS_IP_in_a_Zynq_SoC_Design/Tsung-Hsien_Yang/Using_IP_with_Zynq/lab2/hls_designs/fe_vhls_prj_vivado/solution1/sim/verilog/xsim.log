@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# xsim v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Oct 17 00:26:12 2021
+# Process ID: 3192
+# Current directory: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/hls_real2xfft/xsim_script.tcl}
+# Log file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/xsim.log
+# Journal file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/hls_real2xfft/xsim_script.tcl
+# xsim {hls_real2xfft} -autoloadwcfg -tclbatch {hls_real2xfft.tcl}
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source hls_real2xfft.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set dout_group [add_wave_group dout(axis) -into $coutputgroup]
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/dout_TREADY -into $dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/dout_TVALID -into $dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/dout_TLAST -into $dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/dout_TDATA -into $dout_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set din_group [add_wave_group din(axis) -into $cinputgroup]
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/din_V_V_TREADY -into $din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/din_V_V_TVALID -into $din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/din_V_V_TDATA -into $din_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_start -into $blocksiggroup
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_done -into $blocksiggroup
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_ready -into $blocksiggroup
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_hls_real2xfft_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hls_real2xfft_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hls_real2xfft_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hls_real2xfft_top/LENGTH_din_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_hls_real2xfft_top/LENGTH_dout_V_data -into $tb_portdepth_group -radix hex
+## add_wave /apatb_hls_real2xfft_top/LENGTH_dout_V_last_V -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_dout_group [add_wave_group dout(axis) -into $tbcoutputgroup]
+## add_wave /apatb_hls_real2xfft_top/dout_TREADY -into $tb_dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/dout_TVALID -into $tb_dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/dout_TLAST -into $tb_dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/dout_TDATA -into $tb_dout_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_din_group [add_wave_group din(axis) -into $tbcinputgroup]
+## add_wave /apatb_hls_real2xfft_top/din_V_V_TREADY -into $tb_din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/din_V_V_TVALID -into $tb_din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_real2xfft_top/din_V_V_TDATA -into $tb_din_group -radix hex
+## save_wave_config hls_real2xfft.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 32 [0.00%] @ "110000"
+// RTL Simulation : 1 / 32 [50.73%] @ "4266000"
+// RTL Simulation : 2 / 32 [100.29%] @ "8362000"
+// RTL Simulation : 3 / 32 [149.47%] @ "12458000"
+// RTL Simulation : 4 / 32 [149.47%] @ "16554000"
+// RTL Simulation : 5 / 32 [149.47%] @ "20650000"
+// RTL Simulation : 6 / 32 [149.47%] @ "24746000"
+// RTL Simulation : 7 / 32 [149.47%] @ "28842000"
+// RTL Simulation : 8 / 32 [149.47%] @ "32938000"
+// RTL Simulation : 9 / 32 [149.47%] @ "37034000"
+// RTL Simulation : 10 / 32 [149.47%] @ "41130000"
+// RTL Simulation : 11 / 32 [149.47%] @ "45226000"
+// RTL Simulation : 12 / 32 [149.47%] @ "49322000"
+// RTL Simulation : 13 / 32 [149.47%] @ "53418000"
+// RTL Simulation : 14 / 32 [149.47%] @ "57514000"
+// RTL Simulation : 15 / 32 [149.47%] @ "61610000"
+// RTL Simulation : 16 / 32 [149.47%] @ "65706000"
+// RTL Simulation : 17 / 32 [149.47%] @ "69802000"
+// RTL Simulation : 18 / 32 [149.47%] @ "73898000"
+// RTL Simulation : 19 / 32 [149.47%] @ "77994000"
+// RTL Simulation : 20 / 32 [149.47%] @ "82090000"
+// RTL Simulation : 21 / 32 [149.47%] @ "86186000"
+// RTL Simulation : 22 / 32 [149.47%] @ "90282000"
+// RTL Simulation : 23 / 32 [149.47%] @ "94378000"
+// RTL Simulation : 24 / 32 [149.47%] @ "98474000"
+// RTL Simulation : 25 / 32 [149.47%] @ "102570000"
+// RTL Simulation : 26 / 32 [149.47%] @ "106666000"
+// RTL Simulation : 27 / 32 [149.47%] @ "110762000"
+// RTL Simulation : 28 / 32 [149.47%] @ "114858000"
+// RTL Simulation : 29 / 32 [149.47%] @ "118954000"
+// RTL Simulation : 30 / 32 [149.47%] @ "123050000"
+// RTL Simulation : 31 / 32 [149.47%] @ "127146000"
+// RTL Simulation : 32 / 32 [100.00%] @ "131242000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 131258 ns : File "E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/hls_real2xfft.autotb.v" Line 259
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 965.531 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 17 00:26:22 2021...

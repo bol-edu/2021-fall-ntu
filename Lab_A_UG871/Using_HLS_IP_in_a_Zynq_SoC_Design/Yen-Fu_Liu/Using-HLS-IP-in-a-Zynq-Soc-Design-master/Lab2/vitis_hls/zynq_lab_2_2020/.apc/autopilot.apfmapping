@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="real2xfft.cpp" path="C:\Users\ethan_kvm\Downloads\HLS\ug871-design-files\ug871-design-files-updated\Using_IP_with_Zynq\lab2\hls_designs\real2xfft.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="xfft2real.cpp" path="C:\Users\ethan_kvm\Downloads\HLS\ug871-design-files\ug871-design-files-updated\Using_IP_with_Zynq\lab2\hls_designs\xfft2real.cpp"/>
+    <originFiles name="hls_realfft_test.cpp" path="C:\Users\ethan_kvm\Downloads\HLS\ug871-design-files\ug871-design-files-updated\Using_IP_with_Zynq\lab2\hls_designs\hls_realfft_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

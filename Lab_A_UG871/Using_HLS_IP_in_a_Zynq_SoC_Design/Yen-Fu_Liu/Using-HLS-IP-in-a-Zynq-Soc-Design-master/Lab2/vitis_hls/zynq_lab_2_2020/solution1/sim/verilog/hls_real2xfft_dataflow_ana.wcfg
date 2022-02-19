@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="hls_real2xfft.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_hls_real2xfft_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft//AESL_inst_hls_real2xfft_activity">
+         <obj_property name="label">AESL_inst_hls_real2xfft_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_hls_real2xfft_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_hls_real2xfft_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft//AESL_inst_hls_real2xfft_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft//AESL_inst_hls_real2xfft_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft//AESL_inst_hls_real2xfft_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity">
+            <obj_property name="label">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity">
+               <obj_property name="label">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity">
+               <obj_property name="label">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity</obj_property>
+               <obj_property name="ObjectShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity">
+            <obj_property name="label">window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/Loop_real2xfft_output_proc9_U0_activity">
+            <obj_property name="label">Loop_real2xfft_output_proc9_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_real2xfft_output_proc9_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_real2xfft_output_proc9_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/Loop_real2xfft_output_proc9_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/Loop_real2xfft_output_proc9_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/Loop_real2xfft_output_proc9_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft//AESL_inst_hls_real2xfft_activity">
+      <obj_property name="ElementShortName">AESL_inst_hls_real2xfft_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_hls_real2xfft_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_hls_real2xfft_group">
+      <obj_property name="label">AESL_inst_hls_real2xfft</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity">
+         <obj_property name="ElementShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity">
+         <obj_property name="ElementShortName">window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/Loop_real2xfft_output_proc9_U0_activity">
+         <obj_property name="ElementShortName">Loop_real2xfft_output_proc9_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_real2xfft_output_proc9_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_hls_real2xfft_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_group">
+         <obj_property name="label">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity">
+            <obj_property name="ElementShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity">
+            <obj_property name="ElementShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="dout_group">
+               <obj_property name="label">dout(data2window_V_0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout_ce0">
+                  <obj_property name="ElementShortName">dout_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dout_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout_we0">
+                  <obj_property name="ElementShortName">dout_we0</obj_property>
+                  <obj_property name="ObjectShortName">dout_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dout1_group">
+               <obj_property name="label">dout1(data2window_V_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout1_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout1_ce0">
+                  <obj_property name="ElementShortName">dout1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dout1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/dout1_we0">
+                  <obj_property name="ElementShortName">dout1_we0</obj_property>
+                  <obj_property name="ObjectShortName">dout1_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_group">
+            <obj_property name="label">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/real_start">
+                  <obj_property name="ElementShortName">real_start</obj_property>
+                  <obj_property name="ObjectShortName">real_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="nodelay_V_group">
+                  <obj_property name="label">nodelay_V(nodelay_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/nodelay_V_blk_n">
+                     <obj_property name="ElementShortName">nodelay_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/nodelay_V_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/nodelay_V_full_n">
+                     <obj_property name="ElementShortName">nodelay_V_full_n</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/nodelay_V_write">
+                     <obj_property name="ElementShortName">nodelay_V_write</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_write</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="delayed_V_group">
+                  <obj_property name="label">delayed_V(delayed_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/delayed_V_blk_n">
+                     <obj_property name="ElementShortName">delayed_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/delayed_V_din">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/delayed_V_full_n">
+                     <obj_property name="ElementShortName">delayed_V_full_n</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_full_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_U0/delayed_V_write">
+                     <obj_property name="ElementShortName">delayed_V_write</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_write</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_group">
+            <obj_property name="label">sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_Input_group">
+               <obj_property name="label">Input Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="nodelay_V_group">
+                  <obj_property name="label">nodelay_V(nodelay_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/nodelay_V_blk_n">
+                     <obj_property name="ElementShortName">nodelay_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/nodelay_V_dout">
+                     <obj_property name="ElementShortName">nodelay_V_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/nodelay_V_empty_n">
+                     <obj_property name="ElementShortName">nodelay_V_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/nodelay_V_read">
+                     <obj_property name="ElementShortName">nodelay_V_read</obj_property>
+                     <obj_property name="ObjectShortName">nodelay_V_read</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="delayed_V_group">
+                  <obj_property name="label">delayed_V(delayed_V_U, FIFO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/delayed_V_blk_n">
+                     <obj_property name="ElementShortName">delayed_V_blk_n</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_blk_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/delayed_V_dout">
+                     <obj_property name="ElementShortName">delayed_V_dout[15:0]</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_dout[15:0]</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/delayed_V_empty_n">
+                     <obj_property name="ElementShortName">delayed_V_empty_n</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_empty_n</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/delayed_V_read">
+                     <obj_property name="ElementShortName">delayed_V_read</obj_property>
+                     <obj_property name="ObjectShortName">delayed_V_read</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0_Output_group">
+               <obj_property name="label">Output Channels</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="group" fp_name="dout1_group">
+                  <obj_property name="label">dout1(data2window_V_1_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout1_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout1_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout1_ce0">
+                     <obj_property name="ElementShortName">dout1_ce0</obj_property>
+                     <obj_property name="ObjectShortName">dout1_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout1_we0">
+                     <obj_property name="ElementShortName">dout1_we0</obj_property>
+                     <obj_property name="ObjectShortName">dout1_we0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                     <obj_property name="label">ap_done(i_write)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                     <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+               <wvobject type="group" fp_name="dout_group">
+                  <obj_property name="label">dout(data2window_V_0_U, PIPO)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout_address0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout_d0">
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout_ce0">
+                     <obj_property name="ElementShortName">dout_ce0</obj_property>
+                     <obj_property name="ObjectShortName">dout_ce0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/dout_we0">
+                     <obj_property name="ElementShortName">dout_we0</obj_property>
+                     <obj_property name="ObjectShortName">dout_we0</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_done">
+                     <obj_property name="ElementShortName">ap_done</obj_property>
+                     <obj_property name="ObjectShortName">ap_done</obj_property>
+                     <obj_property name="label">ap_done(i_write)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+                  <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_U0/sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8_U0/ap_continue">
+                     <obj_property name="ElementShortName">ap_continue</obj_property>
+                     <obj_property name="ObjectShortName">ap_continue</obj_property>
+                     <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                     <obj_property name="DisplayName">label</obj_property>
+                  </wvobject>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_group">
+         <obj_property name="label">window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="indata_group">
+               <obj_property name="label">indata(data2window_V_0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/indata_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/indata_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/indata_ce0">
+                  <obj_property name="ElementShortName">indata_ce0</obj_property>
+                  <obj_property name="ObjectShortName">indata_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="indata1_group">
+               <obj_property name="label">indata1(data2window_V_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/indata1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/indata1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/indata1_ce0">
+                  <obj_property name="ElementShortName">indata1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">indata1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="coeff_tab_0_group">
+               <obj_property name="label">coeff_tab_0(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/coeff_tab_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/coeff_tab_0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/coeff_tab_0_ce0">
+                  <obj_property name="ElementShortName">coeff_tab_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">coeff_tab_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="coeff_tab_1_group">
+               <obj_property name="label">coeff_tab_1(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/coeff_tab_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/coeff_tab_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/coeff_tab_1_ce0">
+                  <obj_property name="ElementShortName">coeff_tab_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">coeff_tab_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="outdata_group">
+               <obj_property name="label">outdata(windowed_V_0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata_ce0">
+                  <obj_property name="ElementShortName">outdata_ce0</obj_property>
+                  <obj_property name="ObjectShortName">outdata_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata_we0">
+                  <obj_property name="ElementShortName">outdata_we0</obj_property>
+                  <obj_property name="ObjectShortName">outdata_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="outdata2_group">
+               <obj_property name="label">outdata2(windowed_V_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata2_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata2_ce0">
+                  <obj_property name="ElementShortName">outdata2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">outdata2_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/outdata2_we0">
+                  <obj_property name="ElementShortName">outdata2_we0</obj_property>
+                  <obj_property name="ObjectShortName">outdata2_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_real2xfft_output_proc9_U0_group">
+         <obj_property name="label">Loop_real2xfft_output_proc9_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_real2xfft_output_proc9_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="windowed_V_0_group">
+               <obj_property name="label">windowed_V_0(windowed_V_0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/windowed_V_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/windowed_V_0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/windowed_V_0_ce0">
+                  <obj_property name="ElementShortName">windowed_V_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">windowed_V_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="windowed_V_1_group">
+               <obj_property name="label">windowed_V_1(windowed_V_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/windowed_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/windowed_V_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/windowed_V_1_ce0">
+                  <obj_property name="ElementShortName">windowed_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">windowed_V_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_real2xfft_output_proc9_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_hls_real2xfft_top/AESL_inst_hls_real2xfft/Loop_real2xfft_output_proc9_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_real2xfft_output_proc9_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

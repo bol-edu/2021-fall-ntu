@@ -1,0 +1,1643 @@
+INFO-FLOW: Workspace C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1 opened at Sat Oct 23 10:49:10 +0800 2021
+Execute         send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute         get_config_interface -m_axi_latency 
+Execute         get_config_interface -m_axi_alignment_byte_size 
+Execute         get_config_interface -m_axi_max_widen_bitwidth 
+Execute         get_config_interface -default_interface 
+Execute         get_config_interface -m_axi_offset 
+Execute         get_config_rtl -register_reset_num 
+Execute       set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command         ap_part_info done; 1.622 sec.
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute           get_default_platform 
+Execute           open_platform DefaultPlatform 
+Execute           ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute           ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute           config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute           ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute           config_chip_info -speed medium 
+Execute           ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute           config_library_info -library virtexuplus_medium 
+Execute           config_library_info -family virtexuplus 
+Execute           config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute           import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command           ap_source done; 0.124 sec.
+Command         add_library done; 0.218 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 1.889 sec.
+Execute       create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute         ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1511] Skipping solution action command: csim_design
+INFO: [HLS 200-1511] Skipping solution action command: csynth_design
+INFO: [HLS 200-1511] Skipping solution action command: cosim_design
+Command     ap_source done; error code: 1; 2.052 sec.
+Execute     get_project 
+Command   open_tcl_project done; 2.055 sec.
+Execute   get_project -directory 
+INFO-FLOW: Workspace C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1 opened at Sat Oct 23 10:49:39 +0800 2021
+Execute     ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.137 sec.
+Execute     set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 2.026 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute         config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.138 sec.
+Command       add_library done; 0.311 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.405 sec.
+Execute     ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute     config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.62 sec.
+Execute   set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute       config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.136 sec.
+Command     add_library done; 0.215 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.291 sec.
+Execute   create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 219.318 MB.
+INFO: [HLS 200-10] Analyzing design file 'diamond.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling diamond.cpp as C++
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang diamond.cpp -foptimization-record-file=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.diamond.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.diamond.cpp.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.diamond.cpp.err.log 
+Command       ap_eval done; 0.843 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.8 seconds per iteration
+Execute       set_directive_top diamond -name=diamond 
+INFO-FLOW: Setting directive 'TOP' name=diamond 
+INFO-FLOW: Setting directive 'TOP' name=diamond 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=diamond 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/.systemc_flag -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/all.directive.json -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang-tidy.diamond.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang-tidy.diamond.pp.0.cpp.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang-tidy.diamond.pp.0.cpp.err.log 
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/xilinx-dataflow-lawyer.diamond.pp.0.cpp.diag.yml C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/xilinx-dataflow-lawyer.diamond.pp.0.cpp.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/xilinx-dataflow-lawyer.diamond.pp.0.cpp.err.log 
+Command       ap_eval done; 0.139 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.diamond.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.diamond.pp.0.cpp.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.diamond.pp.0.cpp.err.log 
+Command       ap_eval done; 0.772 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.27 seconds; current allocated memory: 219.578 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.0.bc -args  "C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.g.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.0.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.1.lower.bc -args C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.1.lower.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+Command         ap_eval done; 0.141 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.146 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.2.m1.bc -args C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsmc++_39.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.2.m1.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 3.132 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 3.134 sec.
+Execute       run_link_or_opt -opt -out C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=diamond -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=diamond -reflow-float-conversion -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.3.fpc.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 1.079 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.083 sec.
+Execute       run_link_or_opt -out C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.4.m2.bc -args C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libfloatconversion_39.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.4.m2.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=diamond 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.5.gdce.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=diamond -mllvm -hls-db-dir -mllvm C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.lto.bc > C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.754 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+INFO: [HLS 214-188] Unrolling loop 'Loop0' (diamond.cpp:32:3) in function 'funcA' partially with a factor of 2 (diamond.cpp:32:3)
+INFO: [HLS 214-188] Unrolling loop 'Loop0' (diamond.cpp:45:3) in function 'funcB' partially with a factor of 2 (diamond.cpp:45:3)
+INFO: [HLS 214-188] Unrolling loop 'Loop0' (diamond.cpp:56:3) in function 'funcC' partially with a factor of 2 (diamond.cpp:56:3)
+INFO: [HLS 214-188] Unrolling loop 'Loop0' (diamond.cpp:67:3) in function 'funcD' partially with a factor of 2 (diamond.cpp:67:3)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.888 seconds; current allocated memory: 221.773 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.136 seconds; current allocated memory: 221.774 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top diamond -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.0.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.236 seconds; current allocated memory: 222.945 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.1.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.197 seconds; current allocated memory: 222.277 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.g.1.bc to C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.1.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'diamond' (diamond.cpp:21:1)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'diamond' (diamond.cpp:21:1), detected/extracted 4 process function(s): 
+	 'funcA'
+	 'funcB'
+	 'funcC'
+	 'funcD'.
+Command         transform done; 0.202 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 242.670 MB.
+Execute         get_config_compile -enable_loop_extract 
+Execute         get_config_compile -disable_auto_rewind 
+Execute         get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.2.bc -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (diamond.cpp:60:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (diamond.cpp:49:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'out1' (diamond.cpp:37:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'out2' (diamond.cpp:38:13)
+INFO: [XFORM 203-531] Rewinding loop 'Loop0' (diamond.cpp:67) in function 'funcD'.
+INFO: [XFORM 203-531] Rewinding loop 'Loop0' (diamond.cpp:56) in function 'funcC'.
+INFO: [XFORM 203-531] Rewinding loop 'Loop0' (diamond.cpp:45) in function 'funcB'.
+INFO: [XFORM 203-531] Rewinding loop 'Loop0' (diamond.cpp:32) in function 'funcA'.
+Command         transform done; 0.172 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 273.240 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.168 sec.
+Command     elaborate done; 9.639 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'diamond' ...
+Execute       ap_set_top_model diamond 
+Execute       get_model_list diamond -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model diamond 
+Execute       preproc_iomode -model funcD 
+Execute       preproc_iomode -model funcC 
+Execute       preproc_iomode -model funcB 
+Execute       preproc_iomode -model funcA 
+Execute       get_model_list diamond -filter all-wo-channel 
+INFO-FLOW: Model list for configure: funcA funcB funcC funcD diamond
+INFO-FLOW: Configuring Module : funcA ...
+Execute       set_default_model funcA 
+Execute       apply_spec_resource_limit funcA 
+INFO-FLOW: Configuring Module : funcB ...
+Execute       set_default_model funcB 
+Execute       apply_spec_resource_limit funcB 
+INFO-FLOW: Configuring Module : funcC ...
+Execute       set_default_model funcC 
+Execute       apply_spec_resource_limit funcC 
+INFO-FLOW: Configuring Module : funcD ...
+Execute       set_default_model funcD 
+Execute       apply_spec_resource_limit funcD 
+INFO-FLOW: Configuring Module : diamond ...
+Execute       set_default_model diamond 
+Execute       apply_spec_resource_limit diamond 
+INFO-FLOW: Model list for preprocess: funcA funcB funcC funcD diamond
+INFO-FLOW: Preprocessing Module: funcA ...
+Execute       set_default_model funcA 
+Execute       cdfg_preprocess -model funcA 
+Execute       rtl_gen_preprocess funcA 
+INFO-FLOW: Preprocessing Module: funcB ...
+Execute       set_default_model funcB 
+Execute       cdfg_preprocess -model funcB 
+Execute       rtl_gen_preprocess funcB 
+INFO-FLOW: Preprocessing Module: funcC ...
+Execute       set_default_model funcC 
+Execute       cdfg_preprocess -model funcC 
+Execute       rtl_gen_preprocess funcC 
+INFO-FLOW: Preprocessing Module: funcD ...
+Execute       set_default_model funcD 
+Execute       cdfg_preprocess -model funcD 
+Execute       rtl_gen_preprocess funcD 
+INFO-FLOW: Preprocessing Module: diamond ...
+Execute       set_default_model diamond 
+Execute       cdfg_preprocess -model diamond 
+Execute       rtl_gen_preprocess diamond 
+INFO-FLOW: Model list for synthesis: funcA funcB funcC funcD diamond
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'funcA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model funcA 
+Execute       schedule -model funcA 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Loop0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 273.474 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.sched.adb -f 
+INFO-FLOW: Finish scheduling funcA.
+Execute       set_default_model funcA 
+Execute       bind -model funcA 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 273.637 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.bind.adb -f 
+INFO-FLOW: Finish binding funcA.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'funcB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model funcB 
+Execute       schedule -model funcB 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Loop0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.251 seconds; current allocated memory: 273.738 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.sched.adb -f 
+INFO-FLOW: Finish scheduling funcB.
+Execute       set_default_model funcB 
+Execute       bind -model funcB 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 273.837 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.bind.adb -f 
+INFO-FLOW: Finish binding funcB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'funcC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model funcC 
+Execute       schedule -model funcC 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Loop0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.235 seconds; current allocated memory: 273.922 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.sched.adb -f 
+INFO-FLOW: Finish scheduling funcC.
+Execute       set_default_model funcC 
+Execute       bind -model funcC 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 274.023 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.bind.adb -f 
+INFO-FLOW: Finish binding funcC.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'funcD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model funcD 
+Execute       schedule -model funcD 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'Loop0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.272 seconds; current allocated memory: 274.126 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.sched.adb -f 
+INFO-FLOW: Finish scheduling funcD.
+Execute       set_default_model funcD 
+Execute       bind -model funcD 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 274.254 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.bind.adb -f 
+INFO-FLOW: Finish binding funcD.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'diamond' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model diamond 
+Execute       schedule -model diamond 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 274.316 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.sched.adb -f 
+INFO-FLOW: Finish scheduling diamond.
+Execute       set_default_model diamond 
+Execute       bind -model diamond 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.119 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.278 seconds; current allocated memory: 274.390 MB.
+Execute       syn_report -verbosereport -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.bind.adb -f 
+INFO-FLOW: Finish binding diamond.
+Execute       get_model_list diamond -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess funcA 
+Execute       rtl_gen_preprocess funcB 
+Execute       rtl_gen_preprocess funcC 
+Execute       rtl_gen_preprocess funcD 
+Execute       rtl_gen_preprocess diamond 
+INFO-FLOW: Model list for RTL generation: funcA funcB funcC funcD diamond
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'funcA' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model funcA -top_prefix diamond_ -sub_prefix diamond_ -mg_file C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'funcA'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.241 seconds; current allocated memory: 274.654 MB.
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       gen_rtl funcA -style xilinx -f -lang vhdl -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/vhdl/diamond_funcA 
+Execute       gen_rtl funcA -style xilinx -f -lang vlog -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/verilog/diamond_funcA 
+Execute       syn_report -csynth -model funcA -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcA_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model funcA -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcA_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model funcA -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model funcA -f -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.adb 
+Execute       gen_tb_info funcA -p C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'funcB' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model funcB -top_prefix diamond_ -sub_prefix diamond_ -mg_file C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'funcB'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 275.322 MB.
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       gen_rtl funcB -style xilinx -f -lang vhdl -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/vhdl/diamond_funcB 
+Execute       gen_rtl funcB -style xilinx -f -lang vlog -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/verilog/diamond_funcB 
+Execute       syn_report -csynth -model funcB -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcB_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model funcB -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcB_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model funcB -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model funcB -f -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.adb 
+Execute       gen_tb_info funcB -p C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'funcC' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model funcC -top_prefix diamond_ -sub_prefix diamond_ -mg_file C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'funcC'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 275.893 MB.
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       gen_rtl funcC -style xilinx -f -lang vhdl -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/vhdl/diamond_funcC 
+Execute       gen_rtl funcC -style xilinx -f -lang vlog -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/verilog/diamond_funcC 
+Execute       syn_report -csynth -model funcC -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcC_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model funcC -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcC_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model funcC -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model funcC -f -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.adb 
+Execute       gen_tb_info funcC -p C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'funcD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model funcD -top_prefix diamond_ -sub_prefix diamond_ -mg_file C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'funcD'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 276.445 MB.
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       gen_rtl funcD -style xilinx -f -lang vhdl -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/vhdl/diamond_funcD 
+Execute       gen_rtl funcD -style xilinx -f -lang vlog -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/verilog/diamond_funcD 
+Execute       syn_report -csynth -model funcD -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcD_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model funcD -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/funcD_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model funcD -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model funcD -f -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.adb 
+Execute       gen_tb_info funcD -p C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'diamond' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model diamond -top_prefix  -sub_prefix diamond_ -mg_file C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'diamond/vecIn' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'diamond/vecOut' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'diamond' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'diamond'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.392 seconds; current allocated memory: 277.551 MB.
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       gen_rtl diamond -istop -style xilinx -f -lang vhdl -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/vhdl/diamond 
+Execute       gen_rtl diamond -istop -style xilinx -f -lang vlog -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/verilog/diamond 
+Execute       syn_report -csynth -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/diamond_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/diamond_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model diamond -f -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.adb 
+Execute       gen_tb_info diamond -p C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond 
+Execute       export_constraint_db -f -tool general -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.constraint.tcl 
+Execute       syn_report -designview -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.design.xml 
+Command       syn_report done; 0.141 sec.
+Execute       syn_report -csynthDesign -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model diamond -o C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks diamond 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain diamond 
+INFO-FLOW: Model list for RTL component generation: funcA funcB funcC funcD diamond
+INFO-FLOW: Handling components in module [funcA] ... 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.compgen.tcl 
+INFO-FLOW: Handling components in module [funcB] ... 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.compgen.tcl 
+INFO-FLOW: Handling components in module [funcC] ... 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.compgen.tcl 
+INFO-FLOW: Handling components in module [funcD] ... 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.compgen.tcl 
+INFO-FLOW: Handling components in module [diamond] ... 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.tcl 
+INFO-FLOW: Append model funcA
+INFO-FLOW: Append model funcB
+INFO-FLOW: Append model funcC
+INFO-FLOW: Append model funcD
+INFO-FLOW: Append model diamond
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: funcA funcB funcC funcD diamond
+INFO-FLOW: To file: write model funcA
+INFO-FLOW: To file: write model funcB
+INFO-FLOW: To file: write model funcC
+INFO-FLOW: To file: write model funcD
+INFO-FLOW: To file: write model diamond
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): diamond
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.128 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.tcl 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c1_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c1_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'diamond_c1_memcore_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c2_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c2_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'diamond_c2_memcore_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c4_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c4_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'diamond_c4_memcore_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Command       ap_source done; 0.25 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.106 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.15 sec.
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=diamond xml_exists=0
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.tcl 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c1_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c1_memcore using a separate memory for each block
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c2_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c2_memcore using a separate memory for each block
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c4_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c4_memcore using a separate memory for each block
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Command       ap_source done; 0.218 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.tcl 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute         source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Command       ap_source done; 0.272 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.compgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.tcl 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c1_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c1_memcore using a separate memory for each block
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c2_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c2_memcore using a separate memory for each block
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute         send_msg_by_id INFO @200-740@%s diamond_c4_memcore 
+INFO: [HLS 200-740] Implementing PIPO diamond_c4_memcore using a separate memory for each block
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Command       ap_source done; 0.2 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.constraint.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=5 #gSsdmPorts=6
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcA.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcB.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcC.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/funcD.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.constraint.tcl 
+Execute       sc_get_clocks diamond 
+Execute       source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 3.29 seconds; current allocated memory: 285.532 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for diamond.
+INFO: [VLOG 209-307] Generating Verilog RTL for diamond.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute       syn_report -model diamond -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 542.59 MHz
+Command     autosyn done; 7.438 sec.
+Command   csynth_design done; 17.09 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9 seconds. CPU system time: 1 seconds. Elapsed time: 17.23 seconds; current allocated memory: 286.018 MB.
+Command ap_source done; 20.188 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1 opened at Sat Oct 23 10:50:15 +0800 2021
+Execute     ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.118 sec.
+Execute     set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.791 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute         config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.121 sec.
+Command       add_library done; 0.226 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.078 sec.
+Execute     ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute     config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.28 sec.
+Execute   set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute       config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.116 sec.
+Command     add_library done; 0.179 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.226 sec.
+Execute   create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute   cosim_design -wave_debug -enable_dataflow_profiling -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -enable_dataflow_profiling -trace_level all 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.119 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: TB processing: C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/diamond_test.cpp C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.422 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: TB processing: C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/diamond.cpp C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.355 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 117.808 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 123.975 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 124.088 seconds; current allocated memory: 225.497 MB.
+Command ap_source done; 126.634 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1 opened at Sat Oct 23 11:08:38 +0800 2021
+Execute     ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.121 sec.
+Execute     set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.762 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute         config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.123 sec.
+Command       add_library done; 0.231 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.044 sec.
+Execute     ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute     config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.233 sec.
+Execute   set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute       config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.115 sec.
+Command     add_library done; 0.187 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.246 sec.
+Execute   create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute   source ./proj/solution1/directives.tcl 
+Execute     set_directive_top -name diamond diamond 
+INFO: [HLS 200-1510] Running: set_directive_top -name diamond diamond 
+INFO-FLOW: Setting directive 'TOP' name=diamond 
+Execute   cosim_design -enable_dataflow_profiling -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.12 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: TB processing: C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/diamond_test.cpp C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.448 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: TB processing: C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/diamond.cpp C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.374 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/03-dataflow_debug_and_optimization/reference_files/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 22.169 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 28.53 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 28.648 seconds; current allocated memory: 225.604 MB.
+Command ap_source done; 31.175 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1 opened at Sat Oct 23 12:12:24 +0800 2021
+Execute     ap_set_clock -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.122 sec.
+Execute     set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.794 sec.
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute         config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute         config_library_info -library virtexuplus_medium 
+Execute         config_library_info -family virtexuplus 
+Execute         config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.15 sec.
+Command       add_library done; 0.251 sec.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.092 sec.
+Execute     ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute     config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.275 sec.
+Execute   set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data single -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flga2104:-2-i 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xcvu9p-flga2104-2-i 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data resources 
+Execute       config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute       config_library_info -library virtexuplus_medium 
+Execute       config_library_info -family virtexuplus 
+Execute       config_library_info -part xcvu9p:-flga2104:-2-i 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/virtexuplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.114 sec.
+Command     add_library done; 0.169 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.213 sec.
+Execute   create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+Execute   source ./proj/solution1/directives.tcl 
+Execute     set_directive_top -name diamond diamond 
+INFO: [HLS 200-1510] Running: set_directive_top -name diamond diamond 
+INFO-FLOW: Setting directive 'TOP' name=diamond 
+Execute   cosim_design -enable_dataflow_profiling -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.109 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=5.000 (was NA)
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data names -quiet 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info -quiet 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: TB processing: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/diamond_test.cpp C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/./sim/autowrap/testbench/diamond_test.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.385 sec.
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO-FLOW: TB processing: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/diamond.cpp C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/./sim/autowrap/testbench/diamond.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.rtl_wrap.cfg.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.369 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xcvu9p-flga2104-2-i -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+Execute     source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/.autopilot/db/diamond.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 21.249 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 27.312 sec.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 27.428 seconds; current allocated memory: 225.607 MB.
+Command ap_source done; 29.961 sec.
+Execute cleanup_all 

@@ -1,0 +1,161 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hls_xfft2real'" level="0">
+<item name = "Date">Sun Oct 17 19:11:18 2021
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">be_vhls_prj_vivado</item>
+<item name = "Solution">IPXACTExport</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.890 ns, 0.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1299, 1301, 5.196 us, 5.204 us, 512, 512, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="Loop_realfft_be_desc_U0">Loop_realfft_be_desc, 271, 271, 1.084 us, 1.084 us, 271, 271, none</column>
+<column name="Loop_realfft_be_stre_U0">Loop_realfft_be_stre, 513, 514, 2.052 us, 2.056 us, 512, 512, loop rewind(delay=0 initiation interval(s))</column>
+<column name="Loop_realfft_be_rev_U0">Loop_realfft_be_rev_s, 259, 259, 1.036 us, 1.036 us, 259, 259, none</column>
+<column name="Loop_realfft_be_buff_U0">Loop_realfft_be_buff, 511, 512, 2.044 us, 2.048 us, 511, 512, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 34, -</column>
+<column name="FIFO">0, -, 24, 120, -</column>
+<column name="Instance">2, 4, 2412, 1662, -</column>
+<column name="Memory">6, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 54, -</column>
+<column name="Register">-, -, 6, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">2, 1, 2, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="Loop_realfft_be_buff_U0">Loop_realfft_be_buff, 0, 0, 12, 74, 0</column>
+<column name="Loop_realfft_be_desc_U0">Loop_realfft_be_desc, 2, 4, 2324, 1288, 0</column>
+<column name="Loop_realfft_be_rev_U0">Loop_realfft_be_rev_s, 0, 0, 50, 115, 0</column>
+<column name="Loop_realfft_be_stre_U0">Loop_realfft_be_stre, 0, 0, 26, 185, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="descramble_buf_0_M_U">hls_xfft2real_deshbi, 1, 0, 0, 0, 256, 16, 2, 8192</column>
+<column name="descramble_buf_0_M_1_U">hls_xfft2real_deshbi, 1, 0, 0, 0, 256, 16, 2, 8192</column>
+<column name="real_spectrum_hi_buf_U">hls_xfft2real_deshbi, 1, 0, 0, 0, 256, 16, 2, 8192</column>
+<column name="real_spectrum_hi_buf_1_U">hls_xfft2real_deshbi, 1, 0, 0, 0, 256, 16, 2, 8192</column>
+<column name="descramble_buf_1_M_U">hls_xfft2real_desibs, 1, 0, 0, 0, 256, 16, 2, 8192</column>
+<column name="descramble_buf_1_M_1_U">hls_xfft2real_desibs, 1, 0, 0, 0, 256, 16, 2, 8192</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="real_spectrum_hi_V_1_U">0, 6, 0, -, 8, 16, 128</column>
+<column name="real_spectrum_hi_V_s_U">0, 6, 0, -, 8, 16, 128</column>
+<column name="real_spectrum_lo_V_1_U">0, 6, 0, -, 8, 16, 128</column>
+<column name="real_spectrum_lo_V_s_U">0, 6, 0, -, 8, 16, 128</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Loop_realfft_be_buff_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_realfft_be_desc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_realfft_be_desc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_realfft_be_rev_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_descramble_buf_0_M">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_descramble_buf_0_M_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_descramble_buf_1_M">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_descramble_buf_1_M_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_real_spectrum_hi_buf">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_real_spectrum_hi_buf_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_descramble_buf_0_M">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_descramble_buf_0_M_1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_descramble_buf_1_M">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_descramble_buf_1_M_1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_real_spectrum_hi_buf">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_real_spectrum_hi_buf_1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_descramble_buf_0_M">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_descramble_buf_0_M_1">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_descramble_buf_1_M">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_descramble_buf_1_M_1">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_real_spectrum_hi_buf">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_real_spectrum_hi_buf_1">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_descramble_buf_0_M">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_descramble_buf_0_M_1">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_descramble_buf_1_M">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_descramble_buf_1_M_1">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_real_spectrum_hi_buf">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_real_spectrum_hi_buf_1">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hls_xfft2real, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, hls_xfft2real, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, hls_xfft2real, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, hls_xfft2real, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, hls_xfft2real, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, hls_xfft2real, return value</column>
+<column name="din_TDATA">in, 32, axis, din_V_data, pointer</column>
+<column name="din_TLAST">in, 1, axis, din_V_last_V, pointer</column>
+<column name="din_TVALID">in, 1, axis, din_V_last_V, pointer</column>
+<column name="din_TREADY">out, 1, axis, din_V_last_V, pointer</column>
+<column name="dout_TDATA">out, 32, axis, dout_V_data, pointer</column>
+<column name="dout_TLAST">out, 1, axis, dout_V_last_V, pointer</column>
+<column name="dout_TVALID">out, 1, axis, dout_V_last_V, pointer</column>
+<column name="dout_TREADY">in, 1, axis, dout_V_last_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

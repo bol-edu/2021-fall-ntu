@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="window_fn_top" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="window_fn_top"/>
+            </pragma>
+        </directive>
+        <directive functionName="window_fn_top" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="window_fn_top"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hls_real2xfft" xd:componentRef="hls_real2xfft" xd:initiationInterval="2059" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="din" xd:originalName="din" xd:direction="in" xd:interfaceRef="din_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="dout" xd:originalName="dout" xd:direction="out" xd:interfaceRef="dout_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="2055" xd:worst-case="2058" xd:average-case="2055"/>
+  <xd:resourceEstimates xd:LUT="757" xd:FF="681" xd:BRAM="8" xd:DSP="2"/>
+</xd:acceleratorMap>

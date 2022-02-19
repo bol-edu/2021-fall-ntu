@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwkernel:HwKernelProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwkernel="http://www.xilinx.com/acceleration/hwkernel" name="proj_kernels" platform="/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm" platformUID="xilinx:u50:gen3x16_xdma:201920.3" systemProject="proj_system" cpu="">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwkernel.sw_emu.699964789">
+    <configBuildOptions xsi:type="hwkernel:KernelOptions" kernelDebug="true">
+      <kernels name="tsp" sourceFile="src/tsp.cpp">
+        <args name="distances" master="true"/>
+        <args name="shortestDistance" master="true"/>
+      </kernels>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwkernel:KernelOptions" kernelDebug="true">
+      <kernels name="tsp" sourceFile="src/tsp.cpp">
+        <args name="distances" master="true"/>
+        <args name="shortestDistance" master="true"/>
+      </kernels>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwkernel.hw_emu.1921026131" dirty="true">
+    <configBuildOptions xsi:type="hwkernel:KernelOptions" kernelDebug="true" target="hw_emu">
+      <kernels name="tsp" sourceFile="src/tsp.cpp">
+        <args name="distances" master="true"/>
+        <args name="shortestDistance" master="true"/>
+      </kernels>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwkernel.hw.1957467243">
+    <configBuildOptions xsi:type="hwkernel:KernelOptions" target="hw">
+      <kernels name="tsp" sourceFile="src/tsp.cpp">
+        <args name="distances" master="true"/>
+        <args name="shortestDistance" master="true"/>
+      </kernels>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwkernel:KernelOptions" target="hw">
+      <kernels name="tsp" sourceFile="src/tsp.cpp">
+        <args name="distances" master="true"/>
+        <args name="shortestDistance" master="true"/>
+      </kernels>
+    </lastBuildOptions>
+  </configuration>
+</hwkernel:HwKernelProject>

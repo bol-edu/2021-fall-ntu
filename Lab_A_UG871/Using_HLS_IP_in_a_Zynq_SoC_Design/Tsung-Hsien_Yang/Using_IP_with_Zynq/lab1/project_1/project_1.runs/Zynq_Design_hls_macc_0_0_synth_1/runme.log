@@ -1,0 +1,367 @@
+
+*** Running vivado
+    with args -log Zynq_Design_hls_macc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Zynq_Design_hls_macc_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Zynq_Design_hls_macc_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/hls_macc/vhls_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top Zynq_Design_hls_macc_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18284
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1175.934 ; gain = 32.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Zynq_Design_hls_macc_0_0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_hls_macc_0_0/synth/Zynq_Design_hls_macc_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'hls_macc' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 10'b0000000001 
+	Parameter ap_ST_fsm_state2 bound to: 10'b0000000010 
+	Parameter ap_ST_fsm_state3 bound to: 10'b0000000100 
+	Parameter ap_ST_fsm_state4 bound to: 10'b0000001000 
+	Parameter ap_ST_fsm_state5 bound to: 10'b0000010000 
+	Parameter ap_ST_fsm_state6 bound to: 10'b0000100000 
+	Parameter ap_ST_fsm_state7 bound to: 10'b0001000000 
+	Parameter ap_ST_fsm_state8 bound to: 10'b0010000000 
+	Parameter ap_ST_fsm_state9 bound to: 10'b0100000000 
+	Parameter ap_ST_fsm_state10 bound to: 10'b1000000000 
+	Parameter C_S_AXI_HLS_MACC_PERIPH_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_HLS_MACC_PERIPH_BUS_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_HLS_MACC_PERIPH_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_macc_HLS_MACC_PERIPH_BUS_s_axi' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_HLS_MACC_PERIPH_BUS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_A_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_A_CTRL bound to: 6'b010100 
+	Parameter ADDR_B_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_B_CTRL bound to: 6'b011100 
+	Parameter ADDR_ACCUM_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_ACCUM_CTRL bound to: 6'b100100 
+	Parameter ADDR_ACCUM_CLR_DATA_0 bound to: 6'b110000 
+	Parameter ADDR_ACCUM_CLR_CTRL bound to: 6'b110100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_HLS_MACC_PERIPH_BUS_s_axi.v:218]
+INFO: [Synth 8-6155] done synthesizing module 'hls_macc_HLS_MACC_PERIPH_BUS_s_axi' (1#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_HLS_MACC_PERIPH_BUS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hls_macc_mul_32s_32s_32_7_1' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_mul_32s_32s_32_7_1.v:39]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'hls_macc_mul_32s_32s_32_7_1_Multiplier_0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_mul_32s_32s_32_7_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hls_macc_mul_32s_32s_32_7_1_Multiplier_0' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_mul_32s_32s_32_7_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'hls_macc_mul_32s_32s_32_7_1' (3#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc_mul_32s_32s_32_7_1.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'hls_macc' (4#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/255c/hdl/verilog/hls_macc.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_Design_hls_macc_0_0' (5#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_hls_macc_0_0/synth/Zynq_Design_hls_macc_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1233.754 ; gain = 90.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1233.754 ; gain = 90.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1233.754 ; gain = 90.473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1233.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_hls_macc_0_0/constraints/hls_macc_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_hls_macc_0_0/constraints/hls_macc_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_hls_macc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_hls_macc_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1347.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1360.043 ; gain = 12.816
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1360.043 ; gain = 216.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1360.043 ; gain = 216.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_hls_macc_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1360.043 ; gain = 216.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'hls_macc_HLS_MACC_PERIPH_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'hls_macc_HLS_MACC_PERIPH_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'hls_macc_HLS_MACC_PERIPH_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'hls_macc_HLS_MACC_PERIPH_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1360.043 ; gain = 216.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	  10 Input   32 Bit        Muxes := 1     
+	  11 Input   10 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: operator mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: operator mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg.
+DSP Report: Generating DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg, operation Mode is: (PCIN>>17)+(A''*B'')'.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/b_reg0_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: operator mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: operator mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg.
+DSP Report: Generating DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg, operation Mode is: (PCIN+(A''*B'')')'.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: register mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff2_reg is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: operator mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+DSP Report: operator mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff3_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1360.043 ; gain = 216.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hls_macc    | (A''*B'')'            | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hls_macc    | (PCIN>>17)+(A''*B'')' | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|hls_macc    | (PCIN+(A''*B'')')'    | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1369.895 ; gain = 226.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1394.965 ; gain = 251.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1396.883 ; gain = 253.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hls_macc    | mul_32s_32s_32_7_1_U1/hls_macc_mul_32s_32s_32_7_1_Multiplier_0_U/buff4_reg[16] | 3      | 17    | NO           | NO                 | NO                | 17     | 0       | 
++------------+--------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     8|
+|2     |DSP48E1 |     3|
+|3     |LUT1    |     1|
+|4     |LUT2    |     4|
+|5     |LUT3    |   100|
+|6     |LUT4    |    11|
+|7     |LUT5    |    16|
+|8     |LUT6    |    41|
+|9     |SRL16E  |    17|
+|10    |FDRE    |   319|
+|11    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1403.637 ; gain = 260.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1403.637 ; gain = 134.066
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1403.637 ; gain = 260.355
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1415.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1419.223 ; gain = 275.941
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_hls_macc_0_0_synth_1/Zynq_Design_hls_macc_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Zynq_Design_hls_macc_0_0, cache-ID = 759c707f58523392
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_hls_macc_0_0_synth_1/Zynq_Design_hls_macc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Zynq_Design_hls_macc_0_0_utilization_synth.rpt -pb Zynq_Design_hls_macc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 16 17:37:50 2021...

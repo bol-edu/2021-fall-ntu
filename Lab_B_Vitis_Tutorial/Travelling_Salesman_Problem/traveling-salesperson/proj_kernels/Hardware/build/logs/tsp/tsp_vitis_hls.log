@@ -1,0 +1,161 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'r10943005' on host 'HLS01' (Linux_x86_64 version 5.8.0-41-generic) on Sun Oct 31 23:03:50 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp'
+Sourcing Tcl script 'tsp.tcl'
+INFO: [HLS 200-1510] Running: open_project tsp 
+INFO: [HLS 200-10] Creating and opening project '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp'.
+INFO: [HLS 200-1510] Running: set_top tsp 
+INFO: [HLS 200-1510] Running: add_files /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp -cflags  -I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src  
+INFO: [HLS 200-10] Adding design file '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2-e 
+INFO: [HLS 200-10] Setting target device to 'xcu50-fsvh2104-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname tsp 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 189.752 MB.
+INFO: [HLS 200-10] Analyzing design file '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.36 seconds. CPU system time: 0.14 seconds. Elapsed time: 0.77 seconds; current allocated memory: 191.389 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'compute(unsigned long, unsigned short const (*) [11])' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:96:13)
+INFO: [HLS 214-178] Inlining function 'getDistance(int const*, unsigned short const (*) [11])' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.89 seconds. CPU system time: 0.13 seconds. Elapsed time: 3.07 seconds; current allocated memory: 192.731 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 192.733 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 194.202 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'factorial' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:62) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 193.344 MB.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_compute' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:48) in function 'tsp' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'factorial' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:23).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' in function 'tsp' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_61_1' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:61) in function 'tsp' completely with a factor of 11.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_66_2' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:66) in function 'tsp' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_67_3' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:67) in function 'tsp' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_41_1' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:40) in function 'tsp' completely with a factor of 10.
+WARNING: [HLS 200-936] Cannot unroll loop 'Loop-1' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:26) in function 'factorial': cannot completely unroll a loop with a variable trip count.
+Resolution: For help on HLS 200-936 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-936.html
+INFO: [XFORM 203-102] Partitioning array 'perm' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:53) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:87)...17 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 214.723 MB.
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'factorial' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:62:19) in function 'tsp' and propagating its result(s) since all actual argument(s) to the function are constants.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 209.958 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'tsp' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'tsp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln62_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln62_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln62_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop_compute'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:42) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-885.html
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 10, Depth = 193, loop 'loop_compute'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.83 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.44 seconds; current allocated memory: 213.011 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.25 seconds; current allocated memory: 216.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'tsp' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tsp/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tsp/distances' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'tsp/shortestDistance' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'tsp' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'distances', 'shortestDistance' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_19ns_21ns_39_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_7ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_11_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_6ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_12ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_12ns_6ns_27_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_13ns_15ns_27_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_18ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_23ns_6ns_28_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_5ns_6ns_28_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_6ns_6ns_25_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_7ns_6ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_8ns_6ns_19_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_9ns_6ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_10ns_8ns_7_14_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_13ns_11ns_10_17_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_16ns_14ns_13_20_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_22ns_17ns_16_26_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_5ns_4ns_5_9_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_6ns_5_11_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'tsp'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.76 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.7 seconds; current allocated memory: 222.718 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_19ns_21ns_39_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_22ns_17ns_16_26_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_16ns_14ns_13_20_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_13ns_11ns_10_17_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_10ns_8ns_7_14_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_7ns_9ns_15_1_1_Multiplier_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_7ns_6ns_5_11_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_8ns_6ns_13_1_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_5ns_7ns_11_1_1_Multiplier_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_urem_5ns_4ns_5_9_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'tsp_mul_6ns_6ns_11_1_1_Multiplier_4'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.57 seconds. CPU system time: 0.55 seconds. Elapsed time: 22.7 seconds; current allocated memory: 240.322 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for tsp.
+INFO: [VLOG 209-307] Generating Verilog RTL for tsp.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 411.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.08 seconds. CPU system time: 0.95 seconds. Elapsed time: 32.6 seconds; current allocated memory: 240.810 MB.
+INFO: [HLS 200-1510] Running: export_design 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 31 23:04:47 2021...
+INFO: [HLS 200-802] Generated output file tsp/solution/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 8.56 seconds. CPU system time: 1.14 seconds. Elapsed time: 26.89 seconds; current allocated memory: 245.118 MB.
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 19.08 seconds. Total CPU system time: 2.35 seconds. Total elapsed time: 61.16 seconds; peak allocated memory: 240.322 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Oct 31 23:04:51 2021...

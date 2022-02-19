@@ -1,0 +1,13 @@
+Sun Oct 31 23:03:36 2021: Server was asked to start on port: '41599'
+Sun Oct 31 23:03:36 2021: Server is using token UUID: 'd09185cf-fe93-435f-a3ed-106c36180249'
+Sun Oct 31 23:03:36 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun Oct 31 23:03:36 2021: Attempting to start server on port '41599'
+Sun Oct 31 23:03:36 2021: XCD main fifo: created main fifo '/tmp/xcdmaind09185cf-fe93-435f-a3ed-106c36180249', fd read = 14
+Sun Oct 31 23:03:36 2021: Running Dispatch Server
+Sun Oct 31 23:03:36 2021: Version 2.1.0
+Sun Oct 31 23:03:46 2021: Dispatch Server: Accepted socket connection from client
+Sun Oct 31 23:03:46 2021: EXCHANGE_TOKEN received, server token: d09185cf-fe93-435f-a3ed-106c36180249, passed token: d09185cf-fe93-435f-a3ed-106c36180249
+Sun Oct 31 23:03:46 2021: SESSION_MGR: creating session with session uuid: 'd072cfbd-bb2c-4b7a-a4cc-82f5eaed874d' and name 'tsp'
+Sun Oct 31 23:03:46 2021: GUIDANCE_SMGR: creating guidance session with uuid: 'd072cfbd-bb2c-4b7a-a4cc-82f5eaed874d' and name 'tsp'
+Sun Oct 31 23:04:54 2021: SESSION_MGR: closing session for UUID 'd072cfbd-bb2c-4b7a-a4cc-82f5eaed874d' with name 'tsp'
+Sun Oct 31 23:04:54 2021: GUIDANCE_SMGR: closing session for UUID 'd072cfbd-bb2c-4b7a-a4cc-82f5eaed874d' with name 'tsp'

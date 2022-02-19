@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_sliding_win_out'
+================================================================
+* Date:           Sun Oct 17 00:24:33 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        fe_vhls_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 1.880 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  |                   Pipeline                  |
+    |   min   |   max   |    min   |    max   |  min |  max |                     Type                    |
+    +---------+---------+----------+----------+------+------+---------------------------------------------+
+    |     1024|     1025| 4.096 us | 4.100 us |  1024|  1024| loop rewind(delay=0 initiation interval(s)) |
+    +---------+---------+----------+----------+------+------+---------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- sliding_win_output  |     1024|     1024|         3|          2|          1|   512|    yes   |
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 3, States = { 2 4 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 
+3 --> 2 
+4 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str145, i32 0, i32 0, [1 x i8]* @p_str146, [1 x i8]* @p_str147, [1 x i8]* @p_str148, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str149, [1 x i8]* @p_str150)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %nodelay_i_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str139, i32 0, i32 0, [1 x i8]* @p_str140, [1 x i8]* @p_str141, [1 x i8]* @p_str142, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str143, [1 x i8]* @p_str144)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str133, i32 0, i32 0, [1 x i8]* @p_str134, [1 x i8]* @p_str135, [1 x i8]* @p_str136, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str137, [1 x i8]* @p_str138)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data2window_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str127, i32 0, i32 0, [1 x i8]* @p_str128, [1 x i8]* @p_str129, [1 x i8]* @p_str130, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str131, [1 x i8]* @p_str132)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %delayed_i_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str121, i32 0, i32 0, [1 x i8]* @p_str122, [1 x i8]* @p_str123, [1 x i8]* @p_str124, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str125, [1 x i8]* @p_str126)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data2window_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str115, i32 0, i32 0, [1 x i8]* @p_str116, [1 x i8]* @p_str117, [1 x i8]* @p_str118, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str119, [1 x i8]* @p_str120)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.76ns)   --->   "br label %rewind_header" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 11 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.73>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%do_init = phi i1 [ true, %newFuncRoot ], [ false, %.preheader.i.0 ], [ true, %"sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>.exit.exitStub" ]"   --->   Operation 12 'phi' 'do_init' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%i2_0_i_01 = phi i10 [ 0, %newFuncRoot ], [ %empty, %.preheader.i.0 ], [ 0, %"sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>.exit.exitStub" ]" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 13 'phi' 'i2_0_i_01' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %do_init, label %rewind_init, label %sliding_win_output_begin"   --->   Operation 14 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%i2_0_i_01_cast = zext i10 %i2_0_i_01 to i11" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 15 'zext' 'i2_0_i_01_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %i2_0_i_01, i32 9)" [./sliding_win.h:88->real2xfft.cpp:72]   --->   Operation 16 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %tmp, label %2, label %1" [./sliding_win.h:88->real2xfft.cpp:72]   --->   Operation 17 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_2 = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %i2_0_i_01, i32 9)" [./sliding_win.h:88->real2xfft.cpp:72]   --->   Operation 18 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %tmp_2, label %3, label %0" [./sliding_win.h:88->real2xfft.cpp:72]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.73ns)   --->   "%add_ln84 = add i11 2, %i2_0_i_01_cast" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 20 'add' 'add_ln84' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%empty = trunc i11 %add_ln84 to i10" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 21 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 3> <Delay = 1.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "br label %sliding_win_output_begin" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 22 'br' <Predicate = (do_init)> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str7) nounwind" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 23 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str7)" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 24 'specregionbegin' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [./sliding_win.h:86->real2xfft.cpp:72]   --->   Operation 25 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%p_014_0_i_0 = phi i16 [ %delayed_i_0_read, %1 ], [ %nodelay_i_0_read, %2 ]" [./sliding_win.h:89->real2xfft.cpp:72]   --->   Operation 26 'phi' 'p_014_0_i_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %data2window_0, i16 %p_014_0_i_0)" [./sliding_win.h:93->real2xfft.cpp:72]   --->   Operation 27 'write' <Predicate = true> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%empty_36 = call i32 (...)* @_ssdm_op_SpecRegionEnd([19 x i8]* @p_str7, i32 %tmp_1)" [./sliding_win.h:94->real2xfft.cpp:72]   --->   Operation 28 'specregionend' 'empty_36' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%p_014_0_i_1 = phi i16 [ %delayed_i_1_read, %0 ], [ %nodelay_i_1_read, %3 ]" [./sliding_win.h:89->real2xfft.cpp:72]   --->   Operation 29 'phi' 'p_014_0_i_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P(i16* %data2window_1, i16 %p_014_0_i_1)" [./sliding_win.h:93->real2xfft.cpp:72]   --->   Operation 30 'write' <Predicate = true> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%empty_35 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 31 'speclooptripcount' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_Return()"   --->   Operation 32 'return' <Predicate = (icmp_ln84)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 1.88>
+ST_4 : Operation 33 [1/1] (1.00ns)   --->   "%delayed_i_0_read = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %delayed_i_0)" [./sliding_win.h:89->real2xfft.cpp:72]   --->   Operation 33 'read' 'delayed_i_0_read' <Predicate = (!tmp)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 34 [1/1] (1.76ns)   --->   "br label %sliding_win_output_end" [./sliding_win.h:90->real2xfft.cpp:72]   --->   Operation 34 'br' <Predicate = (!tmp)> <Delay = 1.76>
+ST_4 : Operation 35 [1/1] (1.00ns)   --->   "%nodelay_i_0_read = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %nodelay_i_0)" [./sliding_win.h:91->real2xfft.cpp:72]   --->   Operation 35 'read' 'nodelay_i_0_read' <Predicate = (tmp)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 36 [1/1] (1.76ns)   --->   "br label %sliding_win_output_end"   --->   Operation 36 'br' <Predicate = (tmp)> <Delay = 1.76>
+ST_4 : Operation 37 [1/1] (1.00ns)   --->   "%delayed_i_1_read = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %delayed_i_1)" [./sliding_win.h:89->real2xfft.cpp:72]   --->   Operation 37 'read' 'delayed_i_1_read' <Predicate = (!tmp_2)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 38 [1/1] (1.76ns)   --->   "br label %.preheader.i.0" [./sliding_win.h:90->real2xfft.cpp:72]   --->   Operation 38 'br' <Predicate = (!tmp_2)> <Delay = 1.76>
+ST_4 : Operation 39 [1/1] (1.00ns)   --->   "%nodelay_i_1_read = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %nodelay_i_1)" [./sliding_win.h:91->real2xfft.cpp:72]   --->   Operation 39 'read' 'nodelay_i_1_read' <Predicate = (tmp_2)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 40 [1/1] (1.76ns)   --->   "br label %.preheader.i.0"   --->   Operation 40 'br' <Predicate = (tmp_2)> <Delay = 1.76>
+ST_4 : Operation 41 [1/1] (1.88ns)   --->   "%icmp_ln84 = icmp eq i11 %add_ln84, -1024" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 41 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "br i1 %icmp_ln84, label %"sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>.exit.exitStub", label %rewind_header" [./sliding_win.h:84->real2xfft.cpp:72]   --->   Operation 42 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "br label %rewind_header"   --->   Operation 43 'br' <Predicate = (icmp_ln84)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('do_init') [15]  (1.77 ns)
+
+ <State 2>: 1.73ns
+The critical path consists of the following:
+	'phi' operation ('i2_0_i_01', ./sliding_win.h:84->real2xfft.cpp:72) with incoming values : ('empty', ./sliding_win.h:84->real2xfft.cpp:72) [16]  (0 ns)
+	'add' operation ('add_ln84', ./sliding_win.h:84->real2xfft.cpp:72) [48]  (1.73 ns)
+
+ <State 3>: 1ns
+The critical path consists of the following:
+	'phi' operation ('p_014_0_i_0', ./sliding_win.h:89->real2xfft.cpp:72) with incoming values : ('delayed_i_0_read', ./sliding_win.h:89->real2xfft.cpp:72) ('nodelay_i_0_read', ./sliding_win.h:91->real2xfft.cpp:72) [34]  (0 ns)
+	fifo write on port 'data2window_0' (./sliding_win.h:93->real2xfft.cpp:72) [35]  (1 ns)
+
+ <State 4>: 1.88ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln84', ./sliding_win.h:84->real2xfft.cpp:72) [51]  (1.88 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

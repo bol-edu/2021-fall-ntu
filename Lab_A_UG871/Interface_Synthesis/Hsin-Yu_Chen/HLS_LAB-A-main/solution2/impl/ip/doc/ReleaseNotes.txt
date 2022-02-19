@@ -1,0 +1,10 @@
+# ==============================================================
+# Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# ==============================================================
+
+Family       : virtexuplus
+Device       : xcvu9p
+Package      : -flgb2104
+Speed Grade  : -1-e
+Clock Period : 4.000 ns

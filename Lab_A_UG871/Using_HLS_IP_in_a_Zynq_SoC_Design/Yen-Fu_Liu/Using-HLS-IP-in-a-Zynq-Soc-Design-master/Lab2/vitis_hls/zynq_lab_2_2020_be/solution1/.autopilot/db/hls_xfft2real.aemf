@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634284503932">
+  <ports id="1" name="din_V" type="PortType" originalName="din" coreId="1836016431" bitwidth="48">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="dout_V" type="PortType" originalName="dout" coreId="1836016431" bitwidth="48" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="44" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="49" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="65" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@ports.1"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="193" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="194" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="195" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="196" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="197" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="198" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="199" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="200" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" id="191" RegionName="hls_xfft2real">
+    <basic_blocks id="29" name="hls_xfft2real" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="real_spectrum_lo" lineNumber="66" originalName="real_spectrum_lo" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="real_spectrum_lo_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="66" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="real_spectrum_hi" lineNumber="67" originalName="real_spectrum_hi" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="real_spectrum_hi_U" coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="67" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="descramble_buf_0_M_real_V" lineNumber="65" originalName="descramble_buf[0]._M_real.V" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="descramble_buf_0_M_real_V_U" coreId="1279799155" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="65" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="descramble_buf_1_M_real_V" lineNumber="65" originalName="descramble_buf[1]._M_real.V" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="descramble_buf_1_M_real_V_U" coreId="1279799155" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="65" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="descramble_buf_0_M_imag_V" lineNumber="65" originalName="descramble_buf[0]._M_imag.V" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="descramble_buf_0_M_imag_V_U" coreId="1279799155" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="65" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="descramble_buf_1_M_imag_V" lineNumber="65" originalName="descramble_buf[1]._M_imag.V" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="descramble_buf_1_M_imag_V_U" coreId="1279799155" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="65" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="real_spectrum_hi_buf_M_real_V" lineNumber="68" originalName="real_spectrum_hi_buf._M_real.V" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="real_spectrum_hi_buf_M_real_V_U" coreId="1279799155" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="68" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="real_spectrum_hi_buf_M_imag_V" lineNumber="68" originalName="real_spectrum_hi_buf._M_imag.V" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" fileDirectory=".." rtlName="real_spectrum_hi_buf_M_imag_V_U" coreId="1279799155" contextFuncName="xfft2real_ap_fixed_16_1_AP_TRN_AP_WRAP_0_ap_fixed_16_1_AP_TRN_AP_WRAP_0_10_true_s" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h" linenumber="68" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="xfft2real&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 10, true&amp;gt;"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="twid_rom_M_real_V" rtlName="twid_rom_M_real_V_U" coreId="1279799155" bitwidth="15" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="twid_rom_M_imag_V" rtlName="twid_rom_M_imag_V_U" coreId="1279799155" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln0" rtlName="Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_U0" coreId="1279799155" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="_ln0" rtlName="Loop_realfft_be_buffer_proc3_U0" coreId="1279799155" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>din_V</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Loop_realfft_be_buffer_proc3</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln0" rtlName="Loop_realfft_be_descramble_proc4_U0" coreId="1279799155" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Loop_realfft_be_descramble_proc4</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln0" rtlName="Loop_realfft_be_rev_real_hi_proc5_U0" coreId="1279799155" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>Loop_realfft_be_rev_real_hi_proc5</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="_ln0" rtlName="Loop_realfft_be_stream_output_proc6_U0" coreId="1279799155" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>dout_V</dataOutputObjs>
+        <constName>Loop_realfft_be_stream_output_proc6</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="_ln62" lineNumber="62" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.cpp" fileDirectory=".." coreId="1279799155" contextFuncName="hls_xfft2real" opcode="ret" nodeLabel="9.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.cpp" linenumber="62" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="hls_xfft2real"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.cpp">
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h">
+        <validLinenumbers>66</validLinenumbers>
+        <validLinenumbers>67</validLinenumbers>
+        <validLinenumbers>65</validLinenumbers>
+        <validLinenumbers>68</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <regnodes realName="real_spectrum_hi_reg_140">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="real_spectrum_lo_reg_134">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <expressionNodes realName="real_spectrum_lo_fu_50">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_real_V_alloca_fu_62">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_imag_V_alloca_fu_66">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_buf_M_imag_V_alloca_fu_78">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_buf_M_real_V_alloca_fu_74">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real_spectrum_hi_fu_54">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_0_M_real_V_alloca_fu_58">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="descramble_buf_1_M_imag_V_alloca_fu_70">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="twid_rom_M_imag_V_alloca_fu_86">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="twid_rom_M_real_V_alloca_fu_82">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_descramble_proc4_fu_96">
+    <nodeIds>25</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_stream_output_proc6_fu_109">
+    <nodeIds>27</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_fu_90">
+    <nodeIds>23</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_buffer_proc3_fu_124">
+    <nodeIds>24</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_Loop_realfft_be_rev_real_hi_proc5_fu_117">
+    <nodeIds>26</nodeIds>
+  </moduleNodes>
+  <ioPorts name="din_V">
+    <contents name="call">
+      <nodeIds>24</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dout_V">
+    <contents name="call">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="23" stage="2" latency="2"/>
+      <operations id="24" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="23" stage="1" latency="2"/>
+      <operations id="24" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="25" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="25" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="26" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="26" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="27" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="27" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="hls_xfft2real" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1293" mMaxLatency="1295" mIsDfPipe="true">
+      <basicBlocks>29</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.4/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.0/@source/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.0/@sink/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.7/@sink/@inst">
+        <processe_list name="Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_U0" ssdmobj_id="23"/>
+        <processe_list name="Loop_realfft_be_buffer_proc3_U0" ssdmobj_id="24">
+          <pins>
+            <port name="din_V" type="SIOType" top_port_object_id="" top_port_object_id_reference="_73" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_buffer_proc3_U0" ssdmobj_id="24" object_id="_79"/>
+          </pins>
+        </processe_list>
+        <processe_list name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25"/>
+        <processe_list name="Loop_realfft_be_rev_real_hi_proc5_U0" ssdmobj_id="26"/>
+        <processe_list name="Loop_realfft_be_stream_output_proc6_U0" ssdmobj_id="27">
+          <pins>
+            <port name="dout_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_74" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_stream_output_proc6_U0" ssdmobj_id="27" object_id="_85"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="twid_rom_M_real_V" ssdmobj_id="21">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_U0" ssdmobj_id="23" object_id="_89"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="twid_rom_M_imag_V" ssdmobj_id="22">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_U0" ssdmobj_id="23" object_id="_89"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="descramble_buf_0_M_imag_V" ssdmobj_id="17">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_buffer_proc3_U0" ssdmobj_id="24" object_id="_79"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="descramble_buf_1_M_imag_V" ssdmobj_id="18">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_buffer_proc3_U0" ssdmobj_id="24" object_id="_79"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="descramble_buf_0_M_real_V" ssdmobj_id="15">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_buffer_proc3_U0" ssdmobj_id="24" object_id="_79"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="descramble_buf_1_M_real_V" ssdmobj_id="16">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_buffer_proc3_U0" ssdmobj_id="24" object_id="_79"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="32" suggested_type="0" suggested_depth="8" name="real_spectrum_lo" ssdmobj_id="9">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_stream_output_proc6_U0" ssdmobj_id="27" object_id="_85"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="real_spectrum_hi_buf_M_real_V" ssdmobj_id="19">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_rev_real_hi_proc5_U0" ssdmobj_id="26" object_id="_128"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="real_spectrum_hi_buf_M_imag_V" ssdmobj_id="20">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_descramble_proc4_U0" ssdmobj_id="25" object_id="_92"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_rev_real_hi_proc5_U0" ssdmobj_id="26" object_id="_128"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="8" bitwidth="32" suggested_type="0" suggested_depth="8" name="real_spectrum_hi" ssdmobj_id="12">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_rev_real_hi_proc5_U0" ssdmobj_id="26" object_id="_128"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_realfft_be_stream_output_proc6_U0" ssdmobj_id="27" object_id="_85"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

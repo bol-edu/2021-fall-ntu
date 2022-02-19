@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="tsp" xd:componentRef="tsp" xd:initiationInterval="907598" xd:clockPeriod="3.333" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(distances)" xd:originalName="distances" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(shortestDistance)" xd:originalName="shortestDistance" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1" xd:bufferDirection="out"/>
+  <xd:arg xd:name="distances" xd:originalName="distances" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="64" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="shortestDistance" xd:originalName="shortestDistance" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="64" xd:offset="0x1C" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="907597" xd:worst-case="907597" xd:average-case="907597"/>
+  <xd:resourceEstimates xd:LUT="29560" xd:FF="31895" xd:BRAM="2" xd:DSP="60"/>
+</xd:acceleratorMap>

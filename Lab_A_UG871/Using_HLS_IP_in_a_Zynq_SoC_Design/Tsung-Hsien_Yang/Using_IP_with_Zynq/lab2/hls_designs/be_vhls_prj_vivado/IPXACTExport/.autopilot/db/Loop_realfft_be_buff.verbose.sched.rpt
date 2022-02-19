@@ -1,0 +1,160 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_realfft_be_buff'
+================================================================
+* Date:           Sun Oct 17 19:11:16 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        be_vhls_prj_vivado
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 3.254 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                   Pipeline                  |
+    |   min   |   max   |    min   |    max   | min | max |                     Type                    |
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+    |      511|      512| 2.044 us | 2.048 us |  512|  512| loop rewind(delay=0 initiation interval(s)) |
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- realfft_be_buffer  |      511|      511|         1|          1|          1|   512|    yes   |
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %din_V_last_V, i32* %din_V_data, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 3 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.76ns)   --->   "br label %rewind_header" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 4 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%do_init = phi i1 [ true, %newFuncRoot ], [ false, %realfft_be_buffer_end ], [ true, %hls_xfft2real_.exit.exitStub ]"   --->   Operation 5 'phi' 'do_init' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%val_assign41 = phi i9 [ 0, %newFuncRoot ], [ %i, %realfft_be_buffer_end ], [ 0, %hls_xfft2real_.exit.exitStub ]"   --->   Operation 6 'phi' 'val_assign41' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "br i1 %do_init, label %rewind_init, label %realfft_be_buffer_begin"   --->   Operation 7 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "br label %realfft_be_buffer_begin" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 8 'br' <Predicate = (do_init)> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str6) nounwind" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 9 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @p_str6)" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 10 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [./xfft2real.h:79->xfft2real.cpp:62]   --->   Operation 11 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%empty_46 = call { i32, i1 } @_ssdm_op_Read.axis.volatile.i32P.i1P(i32* %din_V_data, i1* %din_V_last_V)" [./xfft2real.h:80->xfft2real.cpp:62]   --->   Operation 12 'read' 'empty_46' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_data = extractvalue { i32, i1 } %empty_46, 0" [./xfft2real.h:80->xfft2real.cpp:62]   --->   Operation 13 'extractvalue' 'tmp_data' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%trunc_ln = call i8 @_ssdm_op_PartSelect.i8.i9.i32.i32(i9 %val_assign41, i32 8, i32 1)" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 14 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i8 %trunc_ln to i64" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 15 'zext' 'zext_ln203' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln203 = trunc i32 %tmp_data to i16" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 16 'trunc' 'trunc_ln203' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%descramble_buf_0_M_2 = getelementptr [256 x i16]* %descramble_buf_0_M_real_V, i64 0, i64 %zext_ln203" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 17 'getelementptr' 'descramble_buf_0_M_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%descramble_buf_1_M_4 = getelementptr [256 x i16]* %descramble_buf_1_M_real_V, i64 0, i64 %zext_ln203" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 18 'getelementptr' 'descramble_buf_1_M_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_9 = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %val_assign41, i32 0)" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 19 'bitselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.82ns)   --->   "%i = add i9 1, %val_assign41" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 20 'add' 'i' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %tmp_9, label %branch3, label %branch2" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 21 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (3.25ns)   --->   "store i16 %trunc_ln203, i16* %descramble_buf_0_M_2, align 4" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 22 'store' <Predicate = (!tmp_9)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "br label %0" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 23 'br' <Predicate = (!tmp_9)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (3.25ns)   --->   "store i16 %trunc_ln203, i16* %descramble_buf_1_M_4, align 4" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 24 'store' <Predicate = (tmp_9)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "br label %0" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 25 'br' <Predicate = (tmp_9)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_data_M_imag_V_l = call i16 @_ssdm_op_PartSelect.i16.i32.i32.i32(i32 %tmp_data, i32 16, i32 31)" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 26 'partselect' 'tmp_data_M_imag_V_l' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%descramble_buf_0_M = getelementptr [256 x i16]* %descramble_buf_0_M_imag_V, i64 0, i64 %zext_ln203" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 27 'getelementptr' 'descramble_buf_0_M' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%descramble_buf_1_M = getelementptr [256 x i16]* %descramble_buf_1_M_imag_V, i64 0, i64 %zext_ln203" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 28 'getelementptr' 'descramble_buf_1_M' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "br i1 %tmp_9, label %branch7, label %branch6" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 29 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (3.25ns)   --->   "store i16 %tmp_data_M_imag_V_l, i16* %descramble_buf_0_M, align 2" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 30 'store' <Predicate = (!tmp_9)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "br label %realfft_be_buffer_end" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 31 'br' <Predicate = (!tmp_9)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (3.25ns)   --->   "store i16 %tmp_data_M_imag_V_l, i16* %descramble_buf_1_M, align 2" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 32 'store' <Predicate = (tmp_9)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "br label %realfft_be_buffer_end" [./xfft2real.h:84->xfft2real.cpp:62]   --->   Operation 33 'br' <Predicate = (tmp_9)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @p_str6, i32 %tmp)" [./xfft2real.h:85->xfft2real.cpp:62]   --->   Operation 34 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (1.66ns)   --->   "%icmp_ln78 = icmp eq i9 %val_assign41, -1" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 35 'icmp' 'icmp_ln78' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 36 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "br i1 %icmp_ln78, label %hls_xfft2real_.exit.exitStub, label %rewind_header" [./xfft2real.h:78->xfft2real.cpp:62]   --->   Operation 37 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_Return()"   --->   Operation 38 'return' <Predicate = (icmp_ln78)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "br label %rewind_header"   --->   Operation 39 'br' <Predicate = (icmp_ln78)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('do_init') [10]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ./xfft2real.h:78->xfft2real.cpp:62) [11]  (0 ns)
+	'getelementptr' operation ('descramble_buf_1_M_4', ./xfft2real.h:84->xfft2real.cpp:62) [25]  (0 ns)
+	'store' operation ('store_ln84', ./xfft2real.h:84->xfft2real.cpp:62) of variable 'trunc_ln203', ./xfft2real.h:84->xfft2real.cpp:62 on array 'descramble_buf_1_M_real_V' [33]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

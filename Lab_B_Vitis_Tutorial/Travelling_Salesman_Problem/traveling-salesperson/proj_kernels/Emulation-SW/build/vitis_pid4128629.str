@@ -1,0 +1,292 @@
+/*
+
+Xilinx Vitis v2020.2.0 (64-bit) [Major: 2020, Minor: 2]
+SW Build 3064172 on 2020-11-18-06:24:19
+
+Process ID (PID): 4128629
+License: Customer
+
+Current time: 	Sun Oct 31 20:26:22 CST 2021
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Ubuntu
+OS Version: 5.8.0-41-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: localhost:10.0
+Screen size: 2560x1440
+Available screens: 1
+Available disk space: 309 GB
+
+Java version: 	11.0.2 64-bit
+Java home: 	/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /opt/Xilinx/Vitis/2020.2/tps/lnx64/javafx-sdk-11.0.2/lib:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o:/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib/:/opt/Xilinx/Vitis/2020.2/tps/lnx64/jre11.0.2/lib//server:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o/Ubuntu:/opt/Xilinx/Vitis/2020.2/lib/lnx64.o:/opt/Xilinx/Vitis/2020.2/tps/lnx64/python-3.8.3/lib:/opt/xilinx/xrt/lib::/opt/Xilinx/Vitis/2020.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /opt/Xilinx/Vitis/2020.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /opt/Xilinx/Vitis
+
+User name: 	r10943005
+User home directory: /mnt/HLSNAS/r10943005
+User working directory: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vitis
+HDI_APPROOT: /opt/Xilinx/Vitis/2020.2
+RDI_DATADIR: /opt/Xilinx/Vitis/2020.2/data
+RDI_BINDIR: /opt/Xilinx/Vitis/2020.2/bin
+
+Vitis preferences directory: /mnt/HLSNAS/r10943005/.Xilinx/Vitis/2020.2/
+Vitis workspace directory: /mnt/HLSNAS/r10943005/AlveoU50
+Vitis workspace log file location: /mnt/HLSNAS/r10943005/AlveoU50/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vitis/2020.2
+XILINX_SDK: /opt/Xilinx/Vitis/2020.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2020.2
+XILINX_XRT: /opt/xilinx/xrt
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectToolBarMenuButton("Run", "vts_Opt2KernelParallel", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("Run Configurations", "Console", "WorkbenchWindow", "MenuItem.RUN_CONFIGURATIONS");
+selectTree("SystemDebugger_vts_Opt1Baseline_system", "System Project Debug", "Run Configurations", "LaunchConfigurationsDialog", "Tree");
+selectButton("Edit", "Run Configurations", "LaunchConfigurationsDialog", "Button.EDIT");
+selectTable("vts_Opt1Baseline", "Edit Program Arguments", "SdxLaunchAppArgsDialog", "TableViewer.ArrayContentProvider");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("Emulation-SW", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+activateView("Problems", "ProblemsView", "CTabItem.PROBLEMS");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
+selectTreeTable("binary_container_1", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link > Emulation-SW", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("KA", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link > Emulation-SW > binary_container_1", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Link Summary", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link > Emulation-SW > binary_container_1", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("binary_container_1", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link > Emulation-SW", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Emulation-SW", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Compile Summary", "vts_Opt1Baseline_system > vts_Opt1Baseline_kernels > Emulation-SW > KA", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("KA", "vts_Opt1Baseline_system > vts_Opt1Baseline_kernels > Emulation-SW", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Emulation-SW", "vts_Opt1Baseline_system > vts_Opt1Baseline_kernels", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("KA", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link > Emulation-SW > binary_container_1", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Link Summary", "vts_Opt1Baseline_system > vts_Opt1Baseline_system_hw_link > Emulation-SW > binary_container_1", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+setCombo("SIZE_DataIn_1", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("kernel.h", "vts_Opt2KernelParallel/src/kernel.h", "CEditor", "CTabItem.KERNEL_H");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+closeView("help_functions.cpp", "vts_Opt2KernelParallel/src/help_functions.cpp", "CEditor", "CTabItem.HELP_FUNCTIONS_CPP");
+activateView("vts_Opt1Baseline_kernels", "vts_Opt1Baseline_kernels/vts_Opt1Baseline_kernels.p", "Settingseditor", "CTabItem.VTS_OPT1BASELINE_KERNELS");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+setCombo("CONST_arg", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("size_t globalSize", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("globalSize", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("localSize", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("kernel.h", "vts_Opt2KernelParallel/src/kernel.h", "CEditor", "CTabItem.KERNEL_H");
+setCombo("clGetPlatformIDs", "kernel.h", "CEditor", "Combo.FIND");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("clGetPlatformIDs", "host.cpp", "CEditor", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("posix_memalign", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+setCombo("posix_memalign", "Find/Replace", "FindReplaceDialog", "Combo.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("Run Summary", "vts_Opt1Baseline_system > vts_Opt1Baseline > Hardware > SystemDebugger_vts_Opt1Baseline_system_vts_Opt1Base", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Run Summary", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel > Hardware > SystemDebugger_vts_Opt2KernelParallel_system_vts_Op", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("Run Summary", "vts_Opt3DataBurst_system > vts_Opt3DataBurst > Hardware > SystemDebugger_vts_Opt3DataBurst_system_vts_Opt3Dat", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Run Summary", "vts_Opt4ArrayPartition_system > vts_Opt4ArrayPartition > Hardware > SystemDebugger_vts_Opt4ArrayPartition_system_vts_Op", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt1Baseline_system > vts_Opt1Baseline_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("K_KVConstAdd.cpp", "vts_Opt1Baseline_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("kernel.h", "vts_Opt2KernelParallel/src/kernel.h", "CEditor", "CTabItem.KERNEL_H");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("help_functions.cpp", "vts_Opt2KernelParallel/src/help_functions.cpp", "CEditor", "CTabItem.HELP_FUNCTIONS_CPP");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("K_KA.cpp", "vts_Opt2KernelParallel_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("K_KA.cpp", "vts_Opt2KernelParallel_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+selectTreeTable("K_KpB.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KA.cpp", "vts_Opt2KernelParallel_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+selectToolBarButton("Show List", "K_KpB.cpp", "CEditor", "ToolItem.SHOW_LIST");
+selectTable("K_KB.cpp", "vts_Opt2KernelParallel_kernels", "Table", "Table");
+selectToolBarButton("Show List", "K_KB.cpp", "CEditor", "ToolItem.SHOW_LIST");
+selectTable("K_KCalc.cpp", "vts_Opt2KernelParallel_kernels", "Table", "Table");
+activateView("K_KB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+activateView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+activateView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("K_KB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+activateView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KCalc.cpp", "vts_Opt2KernelParallel_kernels/src/K_KCalc.cpp", "CEditor", "CTabItem.K_KCALC_CPP");
+activateView("vts_Opt1Baseline_kernels", "vts_Opt1Baseline_kernels/vts_Opt1Baseline_kernels.p", "SDXSettingsEditor", "CTabItem.VTS_OPT1BASELINE_KERNELS");
+activateView("K_KCalc.cpp", "vts_Opt2KernelParallel_kernels/src/K_KCalc.cpp", "CEditor", "CTabItem.K_KCALC_CPP");
+closeView("K_KCalc.cpp", "vts_Opt2KernelParallel_kernels/src/K_KCalc.cpp", "CEditor", "CTabItem.K_KCALC_CPP");
+closeView("K_KA.cpp", "vts_Opt2KernelParallel_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+closeView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+closeView("K_KB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+closeView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+closeView("kernel.h", "vts_Opt2KernelParallel_kernels/src/kernel.h", "CEditor", "CTabItem.KERNEL_H");
+closeView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+closeView("kernel.h", "vts_Opt2KernelParallel/src/kernel.h", "CEditor", "CTabItem.KERNEL_H");
+closeView("cl.h", "/usr/include/CL/cl.h", "CEditor", "CTabItem.CL_H");
+closeView("help_functions.cpp", "vts_Opt2KernelParallel/src/help_functions.cpp", "CEditor", "CTabItem.HELP_FUNCTIONS_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+closeView("vts_Opt1Baseline_kernels", "vts_Opt1Baseline_kernels/vts_Opt1Baseline_kernels.prj", "SDXSettingsEditor", "CTabItem.VTS_OPT1BASELINE_KERNELS");
+selectTreeTable("vts_Opt1Baseline_kernels", "vts_Opt1Baseline_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("binary_container_1.xclbin", "vts_Opt1Baseline_system > Emulation-SW", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("binary_container_1.xclbin.package_summary", "vts_Opt1Baseline_system > Emulation-SW", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("Emulation-SW", "vts_Opt1Baseline_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("Emulation-HW", "vts_Opt1Baseline_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("host.cpp", "vts_Opt1Baseline_system > vts_Opt1Baseline > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "vts_Opt1Baseline_system > vts_Opt1Baseline", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("vts_Opt1Baseline", "vts_Opt1Baseline_system", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("host.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("host.cpp", "vts_Opt1Baseline/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+selectButton("Find", "Find/Replace", "FindReplaceDialog", "Button.FIND");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("cl.h", "/usr/include/CL/cl.h", "CEditor", "CTabItem.CL_H");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("cl.h", "/usr/include/CL/cl.h", "CEditor", "CTabItem.CL_H");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+selectTreeTable("K_KCalc.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+selectTreeTable("src", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("K_KVConstAdd.cpp", "vts_Opt3DataBurst_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+closeView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+closeView("K_KVConstAdd.cpp", "vts_Opt3DataBurst_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("vts_Opt2KernelParallel_system.sprj", "vts_Opt2KernelParallel_system", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("vts_Opt2KernelParallel_system", "vts_Opt2KernelParallel_system/vts_Opt2KernelParallel_system.sprj", "SystemSettingsEditor", "CTabItem.VTS_OPT2KERNELPARALLEL_SYSTEM");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KA.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KA.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KA.cpp", "vts_Opt3DataBurst_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+closeView("K_KA.cpp", "vts_Opt3DataBurst_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+closeView("K_KA.cpp", "vts_Opt2KernelParallel_kernels/src/K_KA.cpp", "CEditor", "CTabItem.K_KA_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KB.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KB.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KB.cpp", "vts_Opt3DataBurst_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+activateView("K_KB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+closeView("K_KB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+closeView("K_KB.cpp", "vts_Opt3DataBurst_kernels/src/K_KB.cpp", "CEditor", "CTabItem.K_KB_CPP");
+closeView("K_KCalc.cpp", "vts_Opt2KernelParallel_kernels/src/K_KCalc.cpp", "CEditor", "CTabItem.K_KCALC_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KCalc.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KCalc.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("K_KCalc.cpp", "vts_Opt2KernelParallel_kernels/src/K_KCalc.cpp", "CEditor", "CTabItem.K_KCALC_CPP");
+closeView("K_KCalc.cpp", "vts_Opt3DataBurst_kernels/src/K_KCalc.cpp", "CEditor", "CTabItem.K_KCALC_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KpB.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KpB.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KVConstAdd.cpp", "vts_Opt3DataBurst_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+closeView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+closeView("K_KVConstAdd.cpp", "vts_Opt3DataBurst_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel_kernels > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("K_KVConstAdd.cpp", "vts_Opt3DataBurst_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+closeView("K_KVConstAdd.cpp", "vts_Opt2KernelParallel_kernels/src/K_KVConstAdd.cpp", "CEditor", "CTabItem.K_KVCONSTADD_CPP");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("src", "vts_Opt3DataBurst_system > vts_Opt3DataBurst_kernels", "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+closeView("host.cpp", "vts_Opt1Baseline/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+selectTreeTable("host.cpp", "vts_Opt3DataBurst_system > vts_Opt3DataBurst > src", EventType.DOUBLE_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+activateView("host.cpp", "vts_Opt3DataBurst/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("host.cpp", "vts_Opt3DataBurst/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("host.cpp", "vts_Opt2KernelParallel/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+activateView("host.cpp", "vts_Opt3DataBurst/src/host.cpp", "CEditor", "CTabItem.HOST_CPP");
+closeView("K_KpB.cpp", "vts_Opt2KernelParallel_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+closeView("K_KpB.cpp", "vts_Opt3DataBurst_kernels/src/K_KpB.cpp", "CEditor", "CTabItem.K_KPB_CPP");
+closeView("cl.h", "/usr/include/CL/cl.h", "CEditor", "CTabItem.CL_H");
+activateView("Assistant", "SDXAssistantView", "CTabItem.ASSISTANT");
+selectTreeTable("Run Summary", "vts_Opt3DataBurst_system > vts_Opt3DataBurst > Hardware > SystemDebugger_vts_Opt3DataBurst_system_vts_Opt3Dat", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("Run Summary", "vts_Opt2KernelParallel_system > vts_Opt2KernelParallel > Hardware > SystemDebugger_vts_Opt2KernelParallel_system_vts_Op", EventType.DOUBLE_CLICK, "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("vts_Opt3DataBurst_kernels", "vts_Opt3DataBurst_system", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectTreeTable("vts_Opt3DataBurst_system", "vts_Opt3DataBurst_system", "Assistant", "SDXAssistantView", "TreeViewer.AssistantContentProvider");
+selectToolBarMenuButton("Run", "vts_Opt3DataBurst_system", "WorkbenchWindow", "ToolItem.RUN");
+selectMenuItem("3 SystemDebugger_vts_Opt3DataBurst_system", "Assistant", "SDXAssistantView", "MenuItem.3_SYSTEMDEBUGGER_VTS_OPT3DATABURST_SYSTEM");
+selectMenuItem("File", "vts_Opt3DataBurst_system", "WorkbenchWindow", "MenuItem.FILE");
+selectMenuItem("Exit", "vts_Opt3DataBurst_system", "WorkbenchWindow", "MenuItem.EXIT");
+// Exiting Xilinx Vitis with a status code '0' at 11/1/21, 2:54:24 AM CST
+// Elapsed time: 06:28:06
+

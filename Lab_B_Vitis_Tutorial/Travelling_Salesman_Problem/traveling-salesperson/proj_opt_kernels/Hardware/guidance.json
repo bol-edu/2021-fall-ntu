@@ -1,0 +1,36 @@
+{
+ "session": {
+  "name": "Hardware",
+  "uuid": "a1d41019-a5d1-45ce-b15d-e7b77aaf3c43",
+  "description": "Vitis IDE session Hardware",
+  "timestamp": "0",
+  "report_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_kernels/Hardware/guidance.html",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "proto_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_kernels/Hardware/guidance.pb",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "build_target": "",
+  "config_files": []
+ },
+ "violation_count": 0,
+ "waived_count": 0,
+ "affirmation_count": 0
+}
+

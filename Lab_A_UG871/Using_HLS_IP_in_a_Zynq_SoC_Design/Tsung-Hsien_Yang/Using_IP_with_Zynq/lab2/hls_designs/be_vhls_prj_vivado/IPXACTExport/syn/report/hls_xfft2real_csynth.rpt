@@ -1,0 +1,193 @@
+
+
+================================================================
+== Vivado HLS Report for 'hls_xfft2real'
+================================================================
+* Date:           Sun Oct 17 19:11:18 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        be_vhls_prj_vivado
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 3.890 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |     1299|     1301| 5.196 us | 5.204 us |  512|  512| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------------------------------------------+
+        |                         |                       |  Latency (cycles) |  Latency (absolute) |  Interval |                   Pipeline                  |
+        |         Instance        |         Module        |   min   |   max   |    min   |    max   | min | max |                     Type                    |
+        +-------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------------------------------------------+
+        |Loop_realfft_be_desc_U0  |Loop_realfft_be_desc   |      271|      271| 1.084 us | 1.084 us |  271|  271|                     none                    |
+        |Loop_realfft_be_stre_U0  |Loop_realfft_be_stre   |      513|      514| 2.052 us | 2.056 us |  512|  512| loop rewind(delay=0 initiation interval(s)) |
+        |Loop_realfft_be_rev_U0   |Loop_realfft_be_rev_s  |      259|      259| 1.036 us | 1.036 us |  259|  259|                     none                    |
+        |Loop_realfft_be_buff_U0  |Loop_realfft_be_buff   |      511|      512| 2.044 us | 2.048 us |  511|  512|                     none                    |
+        +-------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     34|    -|
+|FIFO             |        0|      -|      24|    120|    -|
+|Instance         |        2|      4|    2412|   1662|    -|
+|Memory           |        6|      -|       0|      0|    0|
+|Multiplexer      |        -|      -|       -|     54|    -|
+|Register         |        -|      -|       6|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        8|      4|    2442|   1870|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        2|      1|       2|      3|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+-----------------------+---------+-------+------+------+-----+
+    |         Instance        |         Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +-------------------------+-----------------------+---------+-------+------+------+-----+
+    |Loop_realfft_be_buff_U0  |Loop_realfft_be_buff   |        0|      0|    12|    74|    0|
+    |Loop_realfft_be_desc_U0  |Loop_realfft_be_desc   |        2|      4|  2324|  1288|    0|
+    |Loop_realfft_be_rev_U0   |Loop_realfft_be_rev_s  |        0|      0|    50|   115|    0|
+    |Loop_realfft_be_stre_U0  |Loop_realfft_be_stre   |        0|      0|    26|   185|    0|
+    +-------------------------+-----------------------+---------+-------+------+------+-----+
+    |Total                    |                       |        2|      4|  2412|  1662|    0|
+    +-------------------------+-----------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +--------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |          Memory          |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |descramble_buf_0_M_U      |hls_xfft2real_deshbi  |        1|  0|   0|    0|   256|   16|     2|         8192|
+    |descramble_buf_0_M_1_U    |hls_xfft2real_deshbi  |        1|  0|   0|    0|   256|   16|     2|         8192|
+    |real_spectrum_hi_buf_U    |hls_xfft2real_deshbi  |        1|  0|   0|    0|   256|   16|     2|         8192|
+    |real_spectrum_hi_buf_1_U  |hls_xfft2real_deshbi  |        1|  0|   0|    0|   256|   16|     2|         8192|
+    |descramble_buf_1_M_U      |hls_xfft2real_desibs  |        1|  0|   0|    0|   256|   16|     2|         8192|
+    |descramble_buf_1_M_1_U    |hls_xfft2real_desibs  |        1|  0|   0|    0|   256|   16|     2|         8192|
+    +--------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                     |                      |        6|  0|   0|    0|  1536|   96|    12|        49152|
+    +--------------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +------------------------+---------+---+----+-----+------+-----+---------+
+    |          Name          | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +------------------------+---------+---+----+-----+------+-----+---------+
+    |real_spectrum_hi_V_1_U  |        0|  6|   0|    -|     8|   16|      128|
+    |real_spectrum_hi_V_s_U  |        0|  6|   0|    -|     8|   16|      128|
+    |real_spectrum_lo_V_1_U  |        0|  6|   0|    -|     8|   16|      128|
+    |real_spectrum_lo_V_s_U  |        0|  6|   0|    -|     8|   16|      128|
+    +------------------------+---------+---+----+-----+------+-----+---------+
+    |Total                   |        0| 24|   0|    0|    32|   64|      512|
+    +------------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+    |                 Variable Name                | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+    |Loop_realfft_be_buff_U0_ap_continue           |    and   |      0|  0|   2|           1|           1|
+    |Loop_realfft_be_desc_U0_ap_continue           |    and   |      0|  0|   2|           1|           1|
+    |Loop_realfft_be_desc_U0_ap_start              |    and   |      0|  0|   2|           1|           1|
+    |Loop_realfft_be_rev_U0_ap_start               |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_descramble_buf_0_M            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_descramble_buf_0_M_1          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_descramble_buf_1_M            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_descramble_buf_1_M_1          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_real_spectrum_hi_buf          |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_real_spectrum_hi_buf_1        |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                       |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_descramble_buf_0_M      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_descramble_buf_0_M_1    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_descramble_buf_1_M      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_descramble_buf_1_M_1    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_real_spectrum_hi_buf    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_real_spectrum_hi_buf_1  |    or    |      0|  0|   2|           1|           1|
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                         |          |      0|  0|  34|          17|          17|
+    +----------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                       | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_descramble_buf_0_M      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_descramble_buf_0_M_1    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_descramble_buf_1_M      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_descramble_buf_1_M_1    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_real_spectrum_hi_buf    |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_real_spectrum_hi_buf_1  |   9|          2|    1|          2|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                             |  54|         12|    6|         12|
+    +--------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------+---+----+-----+-----------+
+    |                       Name                       | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_descramble_buf_0_M      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_descramble_buf_0_M_1    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_descramble_buf_1_M      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_descramble_buf_1_M_1    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_real_spectrum_hi_buf    |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_real_spectrum_hi_buf_1  |  1|   0|    1|          0|
+    +--------------------------------------------------+---+----+-----+-----------+
+    |Total                                             |  6|   0|    6|          0|
+    +--------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+---------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  | Source Object |    C Type    |
++-------------+-----+-----+------------+---------------+--------------+
+|ap_clk       |  in |    1| ap_ctrl_hs | hls_xfft2real | return value |
+|ap_rst_n     |  in |    1| ap_ctrl_hs | hls_xfft2real | return value |
+|ap_start     |  in |    1| ap_ctrl_hs | hls_xfft2real | return value |
+|ap_done      | out |    1| ap_ctrl_hs | hls_xfft2real | return value |
+|ap_ready     | out |    1| ap_ctrl_hs | hls_xfft2real | return value |
+|ap_idle      | out |    1| ap_ctrl_hs | hls_xfft2real | return value |
+|din_TDATA    |  in |   32|    axis    |   din_V_data  |    pointer   |
+|din_TLAST    |  in |    1|    axis    |  din_V_last_V |    pointer   |
+|din_TVALID   |  in |    1|    axis    |  din_V_last_V |    pointer   |
+|din_TREADY   | out |    1|    axis    |  din_V_last_V |    pointer   |
+|dout_TDATA   | out |   32|    axis    |  dout_V_data  |    pointer   |
+|dout_TLAST   | out |    1|    axis    | dout_V_last_V |    pointer   |
+|dout_TVALID  | out |    1|    axis    | dout_V_last_V |    pointer   |
+|dout_TREADY  |  in |    1|    axis    | dout_V_last_V |    pointer   |
++-------------+-----+-----+------------+---------------+--------------+
+

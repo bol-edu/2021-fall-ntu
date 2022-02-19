@@ -1,0 +1,201 @@
+
+
+================================================================
+== Vitis HLS Report for 'window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_s'
+================================================================
+* Date:           Fri Oct 15 14:56:42 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        zynq_lab_2_2020
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.404 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                 Pipeline                 |
+    |   min   |   max   |    min   |    max   | min | max |                   Type                   |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------+
+    |      515|      516|  5.150 us|  5.160 us|  512|  512|  loop rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- apply_win_fn  |      515|      515|         5|          1|          1|   512|       yes|
+        +----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 5, States = { 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 7 [1/1] (1.58ns)   --->   "%br_ln102 = br void %.split" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 7 'br' 'br_ln102' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%i33 = phi i10 0, void, i10 %trunc_ln102, void %.split, i10 0, void" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 8 'phi' 'i33' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%i33_cast = zext i10 %i33" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 9 'zext' 'i33_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i9 @_ssdm_op_PartSelect.i9.i10.i32.i32, i10 %i33, i32 1, i32 9"   --->   Operation 10 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln1116 = zext i9 %lshr_ln"   --->   Operation 11 'zext' 'zext_ln1116' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%coeff_tab_0_addr = getelementptr i15 %coeff_tab_0, i64 0, i64 %zext_ln1116"   --->   Operation 12 'getelementptr' 'coeff_tab_0_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [2/2] (3.25ns)   --->   "%r_V = load i9 %coeff_tab_0_addr"   --->   Operation 13 'load' 'r_V' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 512> <ROM>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%indata_addr = getelementptr i16 %indata, i64 0, i64 %zext_ln1116"   --->   Operation 14 'getelementptr' 'indata_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [2/2] (3.25ns)   --->   "%indata_load = load i9 %indata_addr"   --->   Operation 15 'load' 'indata_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 512> <RAM>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%coeff_tab_1_addr = getelementptr i15 %coeff_tab_1, i64 0, i64 %zext_ln1116"   --->   Operation 16 'getelementptr' 'coeff_tab_1_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (3.25ns)   --->   "%r_V_2 = load i9 %coeff_tab_1_addr"   --->   Operation 17 'load' 'r_V_2' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 512> <ROM>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%indata1_addr = getelementptr i16 %indata1, i64 0, i64 %zext_ln1116"   --->   Operation 18 'getelementptr' 'indata1_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (3.25ns)   --->   "%indata1_load = load i9 %indata1_addr"   --->   Operation 19 'load' 'indata1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 512> <RAM>
+ST_2 : Operation 20 [1/1] (1.73ns)   --->   "%i = add i11 %i33_cast, i11 2" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 20 'add' 'i' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln102 = trunc i11 %i" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 21 'trunc' 'trunc_ln102' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i11.i32, i11 %i, i32 10" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 22 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln102 = br i1 %tmp, void %.split, void" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 23 'br' 'br_ln102' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln107 = br void %.split" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:107]   --->   Operation 24 'br' 'br_ln107' <Predicate = (tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 5.40>
+ST_3 : Operation 25 [1/2] (3.25ns)   --->   "%r_V = load i9 %coeff_tab_0_addr"   --->   Operation 25 'load' 'r_V' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 512> <ROM>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln1115 = zext i15 %r_V"   --->   Operation 26 'zext' 'zext_ln1115' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/2] (3.25ns)   --->   "%indata_load = load i9 %indata_addr"   --->   Operation 27 'load' 'indata_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 512> <RAM>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i16 %indata_load"   --->   Operation 28 'sext' 'sext_ln1118' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [4/4] (2.15ns) (root node of the DSP)   --->   "%r_V_1 = mul i31 %sext_ln1118, i31 %zext_ln1115"   --->   Operation 29 'mul' 'r_V_1' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 30 [1/2] (3.25ns)   --->   "%r_V_2 = load i9 %coeff_tab_1_addr"   --->   Operation 30 'load' 'r_V_2' <Predicate = true> <Delay = 3.25> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 15> <Depth = 512> <ROM>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln1115_1 = zext i15 %r_V_2"   --->   Operation 31 'zext' 'zext_ln1115_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/2] (3.25ns)   --->   "%indata1_load = load i9 %indata1_addr"   --->   Operation 32 'load' 'indata1_load' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 512> <RAM>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%sext_ln1118_1 = sext i16 %indata1_load"   --->   Operation 33 'sext' 'sext_ln1118_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [4/4] (2.15ns) (root node of the DSP)   --->   "%r_V_3 = mul i31 %sext_ln1118_1, i31 %zext_ln1115_1"   --->   Operation 34 'mul' 'r_V_3' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 2.15>
+ST_4 : Operation 35 [3/4] (2.15ns) (root node of the DSP)   --->   "%r_V_1 = mul i31 %sext_ln1118, i31 %zext_ln1115"   --->   Operation 35 'mul' 'r_V_1' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 36 [3/4] (2.15ns) (root node of the DSP)   --->   "%r_V_3 = mul i31 %sext_ln1118_1, i31 %zext_ln1115_1"   --->   Operation 36 'mul' 'r_V_3' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 2.15>
+ST_5 : Operation 37 [2/4] (2.15ns) (root node of the DSP)   --->   "%r_V_1 = mul i31 %sext_ln1118, i31 %zext_ln1115"   --->   Operation 37 'mul' 'r_V_1' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 38 [2/4] (2.15ns) (root node of the DSP)   --->   "%r_V_3 = mul i31 %sext_ln1118_1, i31 %zext_ln1115_1"   --->   Operation 38 'mul' 'r_V_3' <Predicate = true> <Delay = 2.15> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 6 <SV = 5> <Delay = 3.25>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512"   --->   Operation 39 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "%specpipeline_ln102 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 40 'specpipeline' 'specpipeline_ln102' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln102 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102]   --->   Operation 41 'specloopname' 'specloopname_ln102' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 42 [1/4] (0.00ns) (root node of the DSP)   --->   "%r_V_1 = mul i31 %sext_ln1118, i31 %zext_ln1115"   --->   Operation 42 'mul' 'r_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %r_V_1, i32 15, i32 30"   --->   Operation 43 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%outdata_addr = getelementptr i16 %outdata, i64 0, i64 %zext_ln1116" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:105]   --->   Operation 44 'getelementptr' 'outdata_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 45 [1/1] (3.25ns)   --->   "%store_ln105 = store i16 %trunc_ln, i9 %outdata_addr" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:105]   --->   Operation 45 'store' 'store_ln105' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 512> <RAM>
+ST_6 : Operation 46 [1/4] (0.00ns) (root node of the DSP)   --->   "%r_V_3 = mul i31 %sext_ln1118_1, i31 %zext_ln1115_1"   --->   Operation 46 'mul' 'r_V_3' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 119 'DSP48' <Latency = 3> <II = 1> <Delay = 2.15> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%trunc_ln708_1 = partselect i16 @_ssdm_op_PartSelect.i16.i31.i32.i32, i31 %r_V_3, i32 15, i32 30"   --->   Operation 47 'partselect' 'trunc_ln708_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%outdata2_addr = getelementptr i16 %outdata2, i64 0, i64 %zext_ln1116" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:105]   --->   Operation 48 'getelementptr' 'outdata2_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 49 [1/1] (3.25ns)   --->   "%store_ln105 = store i16 %trunc_ln708_1, i9 %outdata2_addr" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:105]   --->   Operation 49 'store' 'store_ln105' <Predicate = true> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 512> <RAM>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "%return_ln107 = return void @_ssdm_op_Return" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:107]   --->   Operation 50 'return' 'return_ln107' <Predicate = (tmp)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i33', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102) with incoming values : ('trunc_ln102', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102) [11]  (1.59 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i33', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102) with incoming values : ('trunc_ln102', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:102) [11]  (0 ns)
+	'getelementptr' operation ('coeff_tab_0_addr') [18]  (0 ns)
+	'load' operation ('r.V') on array 'coeff_tab_0' [19]  (3.25 ns)
+
+ <State 3>: 5.4ns
+The critical path consists of the following:
+	'load' operation ('r.V') on array 'coeff_tab_0' [19]  (3.25 ns)
+	'mul' operation of DSP[24] ('r.V') [24]  (2.15 ns)
+
+ <State 4>: 2.15ns
+The critical path consists of the following:
+	'mul' operation of DSP[24] ('r.V') [24]  (2.15 ns)
+
+ <State 5>: 2.15ns
+The critical path consists of the following:
+	'mul' operation of DSP[24] ('r.V') [24]  (2.15 ns)
+
+ <State 6>: 3.25ns
+The critical path consists of the following:
+	'mul' operation of DSP[24] ('r.V') [24]  (0 ns)
+	'store' operation ('store_ln105', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/window_fn.h:105) of variable 'trunc_ln' on array 'outdata' [27]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

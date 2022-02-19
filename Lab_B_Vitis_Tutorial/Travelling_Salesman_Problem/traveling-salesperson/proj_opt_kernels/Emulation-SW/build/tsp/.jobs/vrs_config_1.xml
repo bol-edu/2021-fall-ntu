@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="tsp" LaunchDir="/mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_kernels/Emulation-SW/build/tsp/tsp" FlowId="Build_IP" FromStepId="vitis_hls" ToStepId="vitis_hls"/>
+</Runs>
+

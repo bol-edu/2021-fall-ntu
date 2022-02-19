@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 23 12:12:46 2021
+# Process ID: 15656
+# Current directory: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/diamond/xsim_script.tcl}
+# Log file: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/xsim.log
+# Journal file: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/diamond/xsim_script.tcl
+# xsim {diamond} -view {{diamond_dataflow_ana.wcfg}} -tclbatch {diamond.tcl} -protoinst {diamond.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file diamond.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond//AESL_inst_diamond_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcA_U0/funcA_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcB_U0/funcB_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcC_U0/funcC_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcD_U0/funcD_U0_activity
+Time resolution is 1 ps
+open_wave_config diamond_dataflow_ana.wcfg
+source diamond.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set vecOut_group [add_wave_group vecOut(memory) -into $coutputgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_we1 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_q1 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_d1 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_ce1 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_address1 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_we0 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_q0 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_d0 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_ce0 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_address0 -into $vecOut_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set vecIn_group [add_wave_group vecIn(memory) -into $cinputgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_we1 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_q1 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_d1 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_ce1 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_address1 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_we0 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_q0 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_d0 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_ce0 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_address0 -into $vecIn_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_start -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_done -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_ready -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_diamond_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/LENGTH_vecIn -into $tb_portdepth_group -radix hex
+## add_wave /apatb_diamond_top/LENGTH_vecOut -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_vecOut_group [add_wave_group vecOut(memory) -into $tbcoutputgroup]
+## add_wave /apatb_diamond_top/vecOut_we1 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_q1 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_d1 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_ce1 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_address1 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_we0 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_q0 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_d0 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_ce0 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_address0 -into $tb_vecOut_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_vecIn_group [add_wave_group vecIn(memory) -into $tbcinputgroup]
+## add_wave /apatb_diamond_top/vecIn_we1 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_q1 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_d1 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_ce1 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_address1 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_we0 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_q0 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_d0 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_ce0 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_address0 -into $tb_vecIn_group -radix hex
+## save_wave_config diamond.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "113000"
+// RTL Simulation : 1 / 3 [67.10%] @ "898000"
+// RTL Simulation : 2 / 3 [67.10%] @ "1148000"
+// RTL Simulation : 3 / 3 [100.00%] @ "1418000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1437500 ps : File "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond.autotb.v" Line 297
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 23 12:12:53 2021...

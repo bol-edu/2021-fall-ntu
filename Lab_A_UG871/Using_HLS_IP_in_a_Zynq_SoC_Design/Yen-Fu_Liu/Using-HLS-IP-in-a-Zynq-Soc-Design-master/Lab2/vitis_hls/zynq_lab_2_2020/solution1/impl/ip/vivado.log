@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 15 14:58:20 2021
+# Process ID: 3320
+# Current directory: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 15 14:58:28 2021...

@@ -1,0 +1,24 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'HCHI' on host 'hchi-pc' (Windows NT_amd64 version 6.2) on Sun Oct 17 19:35:00 +0800 2021
+INFO: [HLS 200-10] In directory 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs'
+Sourcing Tcl script 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport/export.tcl'
+INFO: [HLS 200-10] Opening project 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado'.
+INFO: [HLS 200-10] Opening solution 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/be_vhls_prj_vivado/IPXACTExport'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-741] Implementing PIPO hls_xfft2real_deshbi_memcore using a single memory for all blocks
+INFO: [HLS 200-740] Implementing PIPO hls_xfft2real_desibs_memcore using a separate memory for each block
+INFO: [HLS 200-741] Implementing PIPO hls_xfft2real_deshbi_memcore using a single memory for all blocks
+INFO: [HLS 200-740] Implementing PIPO hls_xfft2real_desibs_memcore using a separate memory for each block
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 17 19:35:08 2021...

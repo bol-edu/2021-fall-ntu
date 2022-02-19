@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634281004517">
+  <ports id="1" name="din_V" type="PortType" originalName="this" coreId="1952542067" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="nodelay_V" type="PortType" coreName="FIFO" coreId="1970037614" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="delayed_V" type="PortType" coreName="FIFO" coreId="1815048558" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="24" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="27" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="30" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="31" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="32" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="34" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="35" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="40" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="43" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@ports.1"/>
+  <edges id="44" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@ports.2"/>
+  <edges id="57" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="61" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="63" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="146" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="147" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="8" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_20</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln76" lineNumber="76" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" fileDirectory=".." coreId="795111282" contextFuncName="sliding_win_1in2out_ap_fixed_16_1_AP_TRN_AP_WRAP_0_1024_s" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" linenumber="76" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;"/>
+      <controlInputObjs>block_20</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h">
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="77" pipe_depth="1" RegionName="sliding_win_delay">
+    <basic_blocks id="20" name="block_20" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>block_20</controlInputObjs>
+      <controlInputObjs>.split4.exitStub</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.split4.exitStub</controlOutputObjs>
+      <controlOutputObjs>block_20</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i3" originalName="i" coreId="1684826485" bitwidth="9" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>newFuncRoot</controlInputObjs>
+        <controlInputObjs>block_20</controlInputObjs>
+        <controlInputObjs>.split4.exitStub</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i" lineNumber="76" originalName="i" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" fileDirectory=".." rtlName="i_fu_83_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="sliding_win_1in2out_ap_fixed_16_1_AP_TRN_AP_WRAP_0_1024_s" bitwidth="9" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.82" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" linenumber="76" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="tmp" lineNumber="145" originalName="tmp" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="115" contextFuncName="read" bitwidth="16" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="read"/>
+        <dataInputObjs>din_V</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>memshiftread</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="nodelay_V_write_ln79" lineNumber="79" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="auto" opType="fifo" coreId="78" contextFuncName="sliding_win_1in2out_ap_fixed_16_1_AP_TRN_AP_WRAP_0_1024_s" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.61" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" linenumber="79" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>nodelay_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="p_0" lineNumber="131" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_shift_reg.h" fileDirectory=".." coreName="ShiftReg" implIndex="auto" control="auto" opType="shiftreg" coreId="77" contextFuncName="shift" bitwidth="16" opcode="memshiftread" nodeLabel="1.0" m_display="0" m_delay="1.61" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_shift_reg.h" linenumber="131" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="shift"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="delayed_V_write_ln80" lineNumber="80" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="auto" opType="fifo" coreId="78" contextFuncName="sliding_win_1in2out_ap_fixed_16_1_AP_TRN_AP_WRAP_0_1024_s" opcode="write" nodeLabel="1.0" m_display="0" m_delay="3.53" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" linenumber="80" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;"/>
+        <dataInputObjs>memshiftread</dataInputObjs>
+        <dataOutputObjs>delayed_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="icmp_ln76" lineNumber="76" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" fileDirectory=".." rtlName="icmp_ln76_fu_100_p2" opType="icmp" coreId="1685025392" contextFuncName="sliding_win_1in2out_ap_fixed_16_1_AP_TRN_AP_WRAP_0_1024_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.66" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" linenumber="76" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln76" lineNumber="76" fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" fileDirectory=".." coreId="1685025392" contextFuncName="sliding_win_1in2out_ap_fixed_16_1_AP_TRN_AP_WRAP_0_1024_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h" linenumber="76" fileDirectory="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis" functionName="sliding_win_1in2out&amp;lt;ap_fixed&amp;lt;16, 1, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_20</controlInputObjs>
+        <controlInputObjs>.split4.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/sliding_win.h">
+        <validLinenumbers>76</validLinenumbers>
+        <validLinenumbers>79</validLinenumbers>
+        <validLinenumbers>80</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_shift_reg.h">
+        <validLinenumbers>131</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>145</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="23" name=".split4.exitStub" type="BlockType">
+      <controlInputObjs>block_20</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_20</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="_ln0" coreId="1685025392" opcode="return" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln0" coreId="1685025392" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_20</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="i_reg_108">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="i3_reg_69">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <expressionNodes realName="p_0_fu_89">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln76_fu_100">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln0_fu_106">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_83">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i3_phi_fu_73">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln79_write_fu_54">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_48">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln80_write_fu_62">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioPorts name="delayed_V">
+    <contents name="write">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="din_V">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="nodelay_V">
+    <contents name="write">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="511" mMaxLatency="512">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="sliding_win_delay" mII="1" mDepth="1" mMinTripCount="512" mMaxTripCount="512" mMinLatency="511" mMaxLatency="511" mType="1">
+      <basicBlocks>20</basicBlocks>
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

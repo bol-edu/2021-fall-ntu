@@ -1,0 +1,480 @@
+
+*** Running vivado
+    with args -log Zynq_Design_axi_intc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Zynq_Design_axi_intc_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Zynq_Design_axi_intc_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/hls_macc/vhls_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top Zynq_Design_axi_intc_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17752
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1175.426 ; gain = 50.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Zynq_Design_axi_intc_0_0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/synth/Zynq_Design_axi_intc_0_0.vhd:85]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: Zynq_Design_axi_intc_0_0 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: 32'b11111111111111111111111111111110 
+	Parameter C_KIND_OF_EDGE bound to: 32'b11111111111111111111111111111111 
+	Parameter C_KIND_OF_LVL bound to: 32'b11111111111111111111111111111111 
+	Parameter C_ASYNC_INTR bound to: 32'b11111111111111111111111111111110 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+	Parameter C_ENABLE_ASYNC bound to: 0 - type: integer 
+	Parameter C_HAS_IPR bound to: 1 - type: integer 
+	Parameter C_HAS_SIE bound to: 1 - type: integer 
+	Parameter C_HAS_CIE bound to: 1 - type: integer 
+	Parameter C_HAS_IVR bound to: 1 - type: integer 
+	Parameter C_HAS_ILR bound to: 0 - type: integer 
+	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE bound to: 1'b1 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
+	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
+	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_intc' declared at 'e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd:3452' bound to instance 'U0' of component 'axi_intc' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/synth/Zynq_Design_axi_intc_0_0.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'axi_intc' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: Zynq_Design_axi_intc_0_0 - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: -2 - type: integer 
+	Parameter C_KIND_OF_EDGE bound to: -1 - type: integer 
+	Parameter C_KIND_OF_LVL bound to: -1 - type: integer 
+	Parameter C_ASYNC_INTR bound to: -2 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_IPR bound to: 1 - type: integer 
+	Parameter C_HAS_SIE bound to: 1 - type: integer 
+	Parameter C_HAS_CIE bound to: 1 - type: integer 
+	Parameter C_HAS_IVR bound to: 1 - type: integer 
+	Parameter C_HAS_ILR bound to: 0 - type: integer 
+	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE bound to: 1'b1 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
+	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_ENABLE_ASYNC bound to: 0 - type: integer 
+	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
+	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'intc_core' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd:794]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DWIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: -2 - type: integer 
+	Parameter C_KIND_OF_EDGE bound to: -1 - type: integer 
+	Parameter C_KIND_OF_LVL bound to: -1 - type: integer 
+	Parameter C_ASYNC_INTR bound to: -2 - type: integer 
+	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
+	Parameter C_HAS_IPR bound to: 1 - type: integer 
+	Parameter C_HAS_SIE bound to: 1 - type: integer 
+	Parameter C_HAS_CIE bound to: 1 - type: integer 
+	Parameter C_HAS_IVR bound to: 1 - type: integer 
+	Parameter C_HAS_ILR bound to: 0 - type: integer 
+	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
+	Parameter C_IRQ_ACTIVE bound to: 1'b1 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
+	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+	Parameter C_IVAR_WE_WIDTH bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
+	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'intc_core' (1#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd:794]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001011111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000000010 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001011111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000000010 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001011111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000100000000000000000000000000000000000100000000000000000000000000000010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 3 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b0111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1010 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1011 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1100 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1101 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1110 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 4 - type: integer 
+	Parameter C_AW bound to: 4 - type: integer 
+	Parameter C_BAR bound to: 4'b1111 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 2 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b100000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 9 - type: integer 
+	Parameter C_BAR bound to: 9'b000000000 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 1 - type: integer 
+	Parameter C_BAR bound to: 1'b0 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+	Parameter C_AB bound to: 1 - type: integer 
+	Parameter C_AW bound to: 1 - type: integer 
+	Parameter C_BAR bound to: 1'b1 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (3#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (4#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (5#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_intc' (6#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
+INFO: [Synth 8-256] done synthesizing module 'Zynq_Design_axi_intc_0_0' (7#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/synth/Zynq_Design_axi_intc_0_0.vhd:85]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1237.410 ; gain = 112.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1237.410 ; gain = 112.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1237.410 ; gain = 112.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1237.410 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/Zynq_Design_axi_intc_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/Zynq_Design_axi_intc_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/Zynq_Design_axi_intc_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/Zynq_Design_axi_intc_0_0.xdc] for cell 'U0'
+Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_axi_intc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_axi_intc_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/Zynq_Design_axi_intc_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_axi_intc_0_0/Zynq_Design_axi_intc_0_0_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1340.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1351.715 ; gain = 10.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_axi_intc_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 45    
++---Muxes : 
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   7 Input    3 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 23    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1351.715 ; gain = 227.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    11|
+|3     |LUT3 |    29|
+|4     |LUT4 |    12|
+|5     |LUT5 |    11|
+|6     |LUT6 |    24|
+|7     |FDRE |    62|
+|8     |FDSE |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1355.570 ; gain = 116.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1355.570 ; gain = 231.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1367.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1370.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1370.605 ; gain = 246.062
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_axi_intc_0_0_synth_1/Zynq_Design_axi_intc_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Zynq_Design_axi_intc_0_0, cache-ID = 2cb3abc0c3d958ab
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_axi_intc_0_0_synth_1/Zynq_Design_axi_intc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Zynq_Design_axi_intc_0_0_utilization_synth.rpt -pb Zynq_Design_axi_intc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 16 18:18:53 2021...

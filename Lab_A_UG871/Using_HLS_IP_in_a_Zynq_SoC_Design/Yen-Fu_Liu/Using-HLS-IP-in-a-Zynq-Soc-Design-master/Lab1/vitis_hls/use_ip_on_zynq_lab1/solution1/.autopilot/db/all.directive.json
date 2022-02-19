@@ -1,0 +1,73 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "hls_macc",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "hls_macc"
+              }]
+          }
+        },
+        {
+          "functionName": "hls_macc",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "BIND_OP",
+            "option": [
+              {
+                "name": "variable",
+                "value": "acc_reg"
+              },
+              {
+                "name": "op",
+                "value": "add"
+              },
+              {
+                "name": "impl",
+                "value": "dsp"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "hls_macc",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "BIND_OP",
+            "option": [
+              {
+                "name": "variable",
+                "value": "dsp"
+              },
+              {
+                "name": "op",
+                "value": "mul"
+              },
+              {
+                "name": "impl",
+                "value": "dsp"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "hls_macc",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "hls_macc"
+              }]
+          }
+        }
+      ]
+    }]}

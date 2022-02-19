@@ -1,0 +1,25 @@
+{
+  "output_dir": "output_vgg_gray_Pynq-Z2",
+  "folding_config_file": "folding_config.json",
+  "synth_clk_period_ns": 10.0,
+  "board": "Pynq-Z2",
+  "shell_flow_type": "vivado_zynq",
+  "auto_fifo_depths": false,
+  "stitched_ip_gen_dcp": true,
+  "verify_save_rtlsim_waveforms": true,
+  "verify_steps": [
+    "initial_python",
+    "streamlined_python",
+    "folded_hls_cppsim",
+    "stitched_ip_rtlsim"
+  ],
+  "generate_outputs": [
+    "estimate_reports",
+    "stitched_ip",
+    "rtlsim_performance",
+    "pynq_driver",
+    "out_of_context_synth",
+    "bitfile",
+    "deployment_package"
+  ]
+}

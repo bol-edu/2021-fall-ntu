@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634401474639">
+  <ports id="1" name="indata_0_V" type="PortType" originalName="indata[0].V" coreName="FSL" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="indata_1_V" type="PortType" originalName="indata[1].V" coreName="FSL" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="outdata_0_V" type="PortType" originalName="outdata[0].V" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="outdata_1_V" type="PortType" originalName="outdata[1].V" coreName="FSL" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="53" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="71" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.2/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="92" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.5"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.2/@node_objs.7" sink_obj="//@ports.3"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.9"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="112" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.10"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="133" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="134" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="263" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="265" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="266" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="267" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.2/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.8"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.2/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <blocks id="14" name="block_14" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>rewind_header</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="_ln102" lineNumber="102" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="br" m_display="0" m_delay="1.76" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="./window_fn.h" linenumber="102" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+      <controlInputObjs>rewind_header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="./window_fn.h">
+      <validLinenumbers>102</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" id="183" pipe_depth="7" RegionName="apply_win_fn">
+    <basic_blocks id="18" name="rewind_header" type="BlockType">
+      <controlInputObjs>block_14</controlInputObjs>
+      <controlInputObjs>apply_win_fn</controlInputObjs>
+      <controlInputObjs>block_52</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>rewind_init</controlOutputObjs>
+      <controlOutputObjs>apply_win_fn</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="do_init" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataOutputObjs>br</dataOutputObjs>
+        <controlInputObjs>block_14</controlInputObjs>
+        <controlInputObjs>apply_win_fn</controlInputObjs>
+        <controlInputObjs>block_52</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i_0_017" lineNumber="102" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="10" opcode="phi" nodeLabel="1.0" m_display="1" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="102" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <controlInputObjs>block_14</controlInputObjs>
+        <controlInputObjs>apply_win_fn</controlInputObjs>
+        <controlInputObjs>block_52</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln0" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>apply_win_fn</controlInputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./window_fn.h">
+        <validLinenumbers>102</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="20" name="rewind_init" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>apply_win_fn</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="_ln102" lineNumber="102" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="102" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <controlInputObjs>apply_win_fn</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./window_fn.h">
+        <validLinenumbers>102</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="49" name="apply_win_fn" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlInputObjs>rewind_init</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_52</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="coeff_tab1_0_load" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="indata_0_V_read" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="16" opcode="read" nodeLabel="3.0" m_display="0" m_delay="1.0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>indata_0_V</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="mul_ln1118" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." rtlName="hls_real2xfft_muleOg_U14" contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="31" opcode="mul" nodeLabel="4.0" nodeLatency="2" m_display="0" m_delay="3.89" m_isOnCriticalPath="true" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="outdata_0_V_write_ln105" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>outdata_0_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="coeff_tab1_1_load" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.25" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="indata_1_V_read" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="16" opcode="read" nodeLabel="3.0" m_display="0" m_delay="1.0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>indata_1_V</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="mul_ln1118_1" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." rtlName="hls_real2xfft_muleOg_U15" contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="31" opcode="mul" nodeLabel="5.0" nodeLatency="2" m_display="0" m_delay="3.89" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="outdata_1_V_write_ln105" lineNumber="105" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="105" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>outdata_1_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln102" lineNumber="102" fileName="./window_fn.h" fileDirectory=".." rtlName="add_ln102_fu_219_p2" contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="11" opcode="add" nodeLabel="1.0" m_display="1" m_delay="1.73" m_isLCDNode="true" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="102" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="icmp_ln102" lineNumber="102" fileName="./window_fn.h" fileDirectory=".." rtlName="icmp_ln102_fu_241_p2" contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="1" m_delay="1.88" m_isLCDNode="true" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="102" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="_ln102" lineNumber="102" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="102" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+        <controlInputObjs>block_52</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./window_fn.h">
+        <validLinenumbers>105</validLinenumbers>
+        <validLinenumbers>102</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="52" name="block_52" type="BlockType">
+      <controlInputObjs>apply_win_fn</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="_ln107" lineNumber="107" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="return" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="107" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="_ln107" lineNumber="107" fileName="./window_fn.h" fileDirectory=".." contextFuncName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="./window_fn.h" linenumber="107" fileDirectory="E:\Courses\EEE5060\LabA\Using_IP_with_Zynq\lab2\hls_designs" functionName="window_fn&amp;lt;ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 1, 5, 0, 0&amp;gt;, 1024, 2, 2&amp;gt;"/>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="./window_fn.h">
+        <validLinenumbers>107</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <regnodes realName="indata_1_V_read_reg_314">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln1118_1_reg_353">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="i_0_017_reg_185">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="do_init_reg_168">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln1118_reg_343">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1118_reg_328">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1117_1_reg_333">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln1118_1_reg_338">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="empty_7_reg_294">
+    <nodeIds>45</nodeIds>
+  </regnodes>
+  <regnodes realName="coeff_tab1_0_load_reg_299">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="coeff_tab1_1_load_reg_309">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln_reg_348">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="indata_0_V_read_reg_304">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="coeff_tab1_1_addr_reg_284">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln1117_reg_323">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln102_reg_289">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln102_reg_319">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="coeff_tab1_0_addr_reg_279">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <expressionNodes realName="sext_ln1118_fu_249">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_203">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1117_1_fu_252">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_0_017_phi_fu_189">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln708_1_fu_229">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_7_fu_225">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln107_fu_239">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1117_fu_246">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln1116_fu_213">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="coeff_tab1_1_addr_gep_fu_155">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln102_fu_199">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="do_init_phi_fu_173">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln102_fu_241">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln102_fu_219">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="coeff_tab1_0_addr_gep_fu_142">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_258">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln1118_1_fu_255">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_267">
+    <nodeIds>32</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_273">
+    <nodeIds>41</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="indata_0_V_read_read_fu_130">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln105_write_fu_123">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indata_1_V_read_read_fu_136">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln105_write_fu_116">
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="coeff_tab1_0">
+    <nodeIds>28</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="coeff_tab1_1">
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <ioPorts name="indata_0_V">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="indata_1_V">
+    <contents name="read">
+      <nodeIds>39</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="outdata_0_V">
+    <contents name="write">
+      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="outdata_1_V">
+    <contents name="write">
+      <nodeIds>43</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="2" latency="2"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="2" latency="2"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="28" stage="1" latency="2"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="3" latency="3"/>
+    </states>
+    <states id="6">
+      <operations id="32" stage="2" latency="3"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="3" latency="3"/>
+    </states>
+    <states id="7">
+      <operations id="32" stage="1" latency="3"/>
+      <operations id="41" stage="2" latency="3"/>
+    </states>
+    <states id="8">
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="3"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="window_fn" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1028" mMaxLatency="1029">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>14</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="apply_win_fn" mII="2" mDepth="7" mMinTripCount="512" mMaxTripCount="512" mMinLatency="1028" mMaxLatency="1028" mType="1">
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>20</basicBlocks>
+      <basicBlocks>49</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

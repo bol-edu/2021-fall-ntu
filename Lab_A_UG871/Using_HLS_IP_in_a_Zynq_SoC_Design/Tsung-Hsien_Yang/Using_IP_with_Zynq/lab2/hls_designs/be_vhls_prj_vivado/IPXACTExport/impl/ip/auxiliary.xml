@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hls_xfft2real" xd:componentRef="hls_xfft2real" xd:initiationInterval="1302" xd:clockPeriod="4.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="din.data.real()" xd:originalName="din" xd:direction="in" xd:interfaceRef="din" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="din.data.imag()" xd:originalName="din" xd:direction="in" xd:interfaceRef="din" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="din.last" xd:originalName="din" xd:direction="in" xd:interfaceRef="din" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="dout.data.real()" xd:originalName="dout" xd:direction="out" xd:interfaceRef="dout" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="dout.data.imag()" xd:originalName="dout" xd:direction="out" xd:interfaceRef="dout" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="dout.last" xd:originalName="dout" xd:direction="out" xd:interfaceRef="dout" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="1299" xd:worst-case="1301" xd:average-case="1299"/>
+  <xd:resourceEstimates xd:LUT="1870" xd:FF="2442" xd:BRAM="8" xd:DSP="4"/>
+</xd:acceleratorMap>

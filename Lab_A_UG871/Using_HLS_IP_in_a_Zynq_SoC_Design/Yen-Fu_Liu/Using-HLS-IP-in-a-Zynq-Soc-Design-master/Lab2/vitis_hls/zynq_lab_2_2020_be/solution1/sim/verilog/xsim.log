@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct 15 15:57:21 2021
+# Process ID: 952
+# Current directory: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020_be/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/hls_xfft2real/xsim_script.tcl}
+# Log file: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020_be/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020_be/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/hls_xfft2real/xsim_script.tcl
+# xsim {hls_xfft2real} -view {{hls_xfft2real_dataflow_ana.wcfg}} -tclbatch {hls_xfft2real.tcl} -protoinst {hls_xfft2real.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file hls_xfft2real.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real//AESL_inst_hls_xfft2real_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_U0/Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/Loop_realfft_be_buffer_proc3_U0/Loop_realfft_be_buffer_proc3_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/Loop_realfft_be_descramble_proc4_U0/Loop_realfft_be_descramble_proc4_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/Loop_realfft_be_rev_real_hi_proc5_U0/Loop_realfft_be_rev_real_hi_proc5_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/Loop_realfft_be_stream_output_proc6_U0/Loop_realfft_be_stream_output_proc6_U0_activity
+Time resolution is 1 ps
+open_wave_config hls_xfft2real_dataflow_ana.wcfg
+source hls_xfft2real.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set dout_group [add_wave_group dout(axis) -into $coutputgroup]
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/dout_V_TREADY -into $dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/dout_V_TVALID -into $dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/dout_V_TDATA -into $dout_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set din_group [add_wave_group din(axis) -into $cinputgroup]
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/din_V_TREADY -into $din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/din_V_TVALID -into $din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/din_V_TDATA -into $din_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/ap_start -into $blocksiggroup
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/ap_done -into $blocksiggroup
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/ap_ready -into $blocksiggroup
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_hls_xfft2real_top/AESL_inst_hls_xfft2real/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_hls_xfft2real_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hls_xfft2real_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hls_xfft2real_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_hls_xfft2real_top/LENGTH_din_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_hls_xfft2real_top/LENGTH_dout_V -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_dout_group [add_wave_group dout(axis) -into $tbcoutputgroup]
+## add_wave /apatb_hls_xfft2real_top/dout_V_TREADY -into $tb_dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/dout_V_TVALID -into $tb_dout_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/dout_V_TDATA -into $tb_dout_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_din_group [add_wave_group din(axis) -into $tbcinputgroup]
+## add_wave /apatb_hls_xfft2real_top/din_V_TREADY -into $tb_din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/din_V_TVALID -into $tb_din_group -color #ffff00 -radix hex
+## add_wave /apatb_hls_xfft2real_top/din_V_TDATA -into $tb_din_group -radix hex
+## save_wave_config hls_xfft2real.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 32 [0.00%] @ "125000"
+// RTL Simulation : 1 / 32 [40.62%] @ "10535000"
+// RTL Simulation : 2 / 32 [40.62%] @ "15655000"
+// RTL Simulation : 3 / 32 [40.62%] @ "20775000"
+// RTL Simulation : 4 / 32 [40.62%] @ "25895000"
+// RTL Simulation : 5 / 32 [40.62%] @ "31015000"
+// RTL Simulation : 6 / 32 [40.62%] @ "36135000"
+// RTL Simulation : 7 / 32 [40.62%] @ "41255000"
+// RTL Simulation : 8 / 32 [40.62%] @ "46375000"
+// RTL Simulation : 9 / 32 [40.62%] @ "51495000"
+// RTL Simulation : 10 / 32 [40.62%] @ "56615000"
+// RTL Simulation : 11 / 32 [40.62%] @ "61735000"
+// RTL Simulation : 12 / 32 [40.62%] @ "66855000"
+// RTL Simulation : 13 / 32 [40.62%] @ "71975000"
+// RTL Simulation : 14 / 32 [40.62%] @ "77095000"
+// RTL Simulation : 15 / 32 [40.62%] @ "82215000"
+// RTL Simulation : 16 / 32 [40.62%] @ "87335000"
+// RTL Simulation : 17 / 32 [40.62%] @ "92455000"
+// RTL Simulation : 18 / 32 [40.62%] @ "97575000"
+// RTL Simulation : 19 / 32 [40.62%] @ "102695000"
+// RTL Simulation : 20 / 32 [40.62%] @ "107815000"
+// RTL Simulation : 21 / 32 [40.62%] @ "112935000"
+// RTL Simulation : 22 / 32 [40.62%] @ "118055000"
+// RTL Simulation : 23 / 32 [40.62%] @ "123175000"
+// RTL Simulation : 24 / 32 [40.62%] @ "128295000"
+// RTL Simulation : 25 / 32 [40.62%] @ "133415000"
+// RTL Simulation : 26 / 32 [40.62%] @ "138535000"
+// RTL Simulation : 27 / 32 [40.62%] @ "143655000"
+// RTL Simulation : 28 / 32 [40.62%] @ "148775000"
+// RTL Simulation : 29 / 32 [40.62%] @ "153895000"
+// RTL Simulation : 30 / 32 [40.62%] @ "159015000"
+// RTL Simulation : 31 / 32 [40.62%] @ "164135000"
+// RTL Simulation : 32 / 32 [100.00%] @ "169255000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 169295 ns : File "C:/Users/ethan_kvm/AppData/Roaming/Xilinx/Vitis/zynq_lab_2_2020_be/solution1/sim/verilog/hls_xfft2real.autotb.v" Line 250
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 980.340 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 15 15:57:32 2021...

@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_realfft_be_rev_s'
+================================================================
+* Date:           Sun Oct 17 19:11:17 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        be_vhls_prj_vivado
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 3.254 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      259|      259| 1.036 us | 1.036 us |  259|  259|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- realfft_be_rev_real_hi  |      257|      257|         3|          1|          1|   256|    yes   |
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     40|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     75|    -|
+|Register         |        -|      -|      50|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      50|    115|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |i_fu_125_p2                       |     +    |      0|  0|  15|           9|           1|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter2  |    and   |      0|  0|   2|           1|           1|
+    |io_acc_block_signal_op24          |    and   |      0|  0|   2|           1|           1|
+    |icmp_ln115_fu_119_p2              |   icmp   |      0|  0|  13|           9|          10|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  40|          25|          18|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+----+-----------+-----+-----------+
+    |                Name               | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                          |  21|          4|    1|          4|
+    |ap_done                            |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1            |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2            |   9|          2|    1|          2|
+    |i3_0_i_reg_108                     |   9|          2|    9|         18|
+    |real_spectrum_hi_V_M_imag_V_blk_n  |   9|          2|    1|          2|
+    |real_spectrum_hi_V_M_real_V_blk_n  |   9|          2|    1|          2|
+    +-----------------------------------+----+-----------+-----+-----------+
+    |Total                              |  75|         16|   15|         32|
+    +-----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   3|   0|    3|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |i3_0_i_reg_108                    |   9|   0|    9|          0|
+    |icmp_ln115_reg_137                |   1|   0|    1|          0|
+    |icmp_ln115_reg_137_pp0_iter1_reg  |   1|   0|    1|          0|
+    |tmp_M_imag_V_reg_161              |  16|   0|   16|          0|
+    |tmp_M_real_V_reg_156              |  16|   0|   16|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  50|   0|   50|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |        Source Object        |    C Type    |
++------------------------------------+-----+-----+------------+-----------------------------+--------------+
+|ap_clk                              |  in |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|ap_rst                              |  in |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|ap_start                            |  in |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|ap_done                             | out |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|ap_continue                         |  in |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|ap_idle                             | out |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|ap_ready                            | out |    1| ap_ctrl_hs |     Loop_realfft_be_rev_    | return value |
+|real_spectrum_hi_buf_i_0_address0   | out |    8|  ap_memory |   real_spectrum_hi_buf_i_0  |     array    |
+|real_spectrum_hi_buf_i_0_ce0        | out |    1|  ap_memory |   real_spectrum_hi_buf_i_0  |     array    |
+|real_spectrum_hi_buf_i_0_q0         |  in |   16|  ap_memory |   real_spectrum_hi_buf_i_0  |     array    |
+|real_spectrum_hi_buf_i_1_address0   | out |    8|  ap_memory |   real_spectrum_hi_buf_i_1  |     array    |
+|real_spectrum_hi_buf_i_1_ce0        | out |    1|  ap_memory |   real_spectrum_hi_buf_i_1  |     array    |
+|real_spectrum_hi_buf_i_1_q0         |  in |   16|  ap_memory |   real_spectrum_hi_buf_i_1  |     array    |
+|real_spectrum_hi_V_M_real_V_din     | out |   16|   ap_fifo  | real_spectrum_hi_V_M_real_V |    pointer   |
+|real_spectrum_hi_V_M_real_V_full_n  |  in |    1|   ap_fifo  | real_spectrum_hi_V_M_real_V |    pointer   |
+|real_spectrum_hi_V_M_real_V_write   | out |    1|   ap_fifo  | real_spectrum_hi_V_M_real_V |    pointer   |
+|real_spectrum_hi_V_M_imag_V_din     | out |   16|   ap_fifo  | real_spectrum_hi_V_M_imag_V |    pointer   |
+|real_spectrum_hi_V_M_imag_V_full_n  |  in |    1|   ap_fifo  | real_spectrum_hi_V_M_imag_V |    pointer   |
+|real_spectrum_hi_V_M_imag_V_write   | out |    1|   ap_fifo  | real_spectrum_hi_V_M_imag_V |    pointer   |
++------------------------------------+-----+-----+------------+-----------------------------+--------------+
+

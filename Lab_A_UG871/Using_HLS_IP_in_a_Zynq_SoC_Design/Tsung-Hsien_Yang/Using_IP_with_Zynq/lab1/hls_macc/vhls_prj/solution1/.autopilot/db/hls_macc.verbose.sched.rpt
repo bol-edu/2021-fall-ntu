@@ -1,0 +1,207 @@
+
+
+================================================================
+== Vitis HLS Report for 'hls_macc'
+================================================================
+* Date:           Sat Oct 16 17:19:20 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        vhls_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  2.552 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        9|        9|  36.000 ns|  36.000 ns|   10|   10|     none|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%accum_clr_read = read i1 @_ssdm_op_Read.s_axilite.i1, i1 %accum_clr" [hls_macc.c:48]   --->   Operation 11 'read' 'accum_clr_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%b_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %b" [hls_macc.c:48]   --->   Operation 12 'read' 'b_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%a_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %a" [hls_macc.c:48]   --->   Operation 13 'read' 'a_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+
+State 2 <SV = 1> <Delay = 2.11>
+ST_2 : Operation 14 [7/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 14 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.11>
+ST_3 : Operation 15 [6/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 15 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.11>
+ST_4 : Operation 16 [5/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 16 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 2.11>
+ST_5 : Operation 17 [4/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 17 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.11>
+ST_6 : Operation 18 [3/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 18 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 2.11>
+ST_7 : Operation 19 [2/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 19 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.11>
+ST_8 : Operation 20 [1/7] (2.11ns)   --->   "%mul_ln59 = mul i32 %b_read, i32 %a_read" [hls_macc.c:59]   --->   Operation 20 'mul' 'mul_ln59' <Predicate = true> <Delay = 2.11> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 6> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 2.55>
+ST_9 : Operation 21 [1/1] (0.00ns)   --->   "%acc_reg_load = load i32 %acc_reg" [hls_macc.c:59]   --->   Operation 21 'load' 'acc_reg_load' <Predicate = (!accum_clr_read)> <Delay = 0.00>
+ST_9 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node add_ln59)   --->   "%select_ln57 = select i1 %accum_clr_read, i32 0, i32 %acc_reg_load" [hls_macc.c:57]   --->   Operation 22 'select' 'select_ln57' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 23 [1/1] (2.55ns) (out node of the LUT)   --->   "%add_ln59 = add i32 %select_ln57, i32 %mul_ln59" [hls_macc.c:59]   --->   Operation 23 'add' 'add_ln59' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 24 [1/1] (0.00ns)   --->   "%store_ln58 = store i32 %add_ln59, i32 %acc_reg" [hls_macc.c:58]   --->   Operation 24 'store' 'store_ln58' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 1.00>
+ST_10 : Operation 25 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_7"   --->   Operation 25 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %a"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %b"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_4, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %accum"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %accum, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_5, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 34 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %accum_clr"   --->   Operation 34 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %accum_clr, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_6, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %accum_clr, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 38 [1/1] (1.00ns)   --->   "%write_ln60 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %accum, i32 %add_ln59" [hls_macc.c:60]   --->   Operation 38 'write' 'write_ln60' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_10 : Operation 39 [1/1] (0.00ns)   --->   "%ret_ln61 = ret" [hls_macc.c:61]   --->   Operation 39 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 1.08ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'accum_clr' (hls_macc.c:48) [20]  (1 ns)
+
+ <State 2>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 3>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 4>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 5>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 6>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 7>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 8>: 2.12ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln59', hls_macc.c:59) [25]  (2.12 ns)
+
+ <State 9>: 2.55ns
+The critical path consists of the following:
+	'load' operation ('acc_reg_load', hls_macc.c:59) on static variable 'acc_reg' [23]  (0 ns)
+	'select' operation ('select_ln57', hls_macc.c:57) [24]  (0 ns)
+	'add' operation ('add_ln59', hls_macc.c:59) [26]  (2.55 ns)
+
+ <State 10>: 1ns
+The critical path consists of the following:
+	s_axi write on port 'accum' (hls_macc.c:60) [27]  (1 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

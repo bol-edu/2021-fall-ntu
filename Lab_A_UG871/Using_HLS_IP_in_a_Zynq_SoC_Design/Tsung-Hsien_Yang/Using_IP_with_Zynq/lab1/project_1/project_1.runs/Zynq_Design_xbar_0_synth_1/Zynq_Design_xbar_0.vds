@@ -1,0 +1,421 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 16 18:18:07 2021
+# Process ID: 14536
+# Current directory: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1
+# Command line: vivado.exe -log Zynq_Design_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Zynq_Design_xbar_0.tcl
+# Log file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1/Zynq_Design_xbar_0.vds
+# Journal file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Zynq_Design_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/hls_macc/vhls_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top Zynq_Design_xbar_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19480
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1183.680 ; gain = 58.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Zynq_Design_xbar_0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_xbar_0/synth/Zynq_Design_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64'b0000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000000000000001111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_RMESG_WIDTH bound to: 36 - type: integer 
+	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 2'b00 
+	Parameter P_M_AXILITE_MASK bound to: 2'b00 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_LIGHTWT bound to: 7 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000010010000000000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000010010000011111111111111110000000000000000000000000000000001000000000000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 3'b011 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000010010000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_decoder' (3#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_decerr_slave' (4#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_S bound to: 1 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter P_PRIO_MASK bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_addr_arbiter_sasd' (5#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter' (6#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_splitter__parameterized0' (6#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 1 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_22_axic_register_slice' (8#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_crossbar_sasd' (9#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_23_axi_crossbar' (10#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ipshared/bc0a/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'Zynq_Design_xbar_0' (11#1) [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_xbar_0/synth/Zynq_Design_xbar_0.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1346.492 ; gain = 221.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1346.492 ; gain = 221.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1346.492 ; gain = 221.055
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1346.492 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_xbar_0/Zynq_Design_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.gen/sources_1/bd/Zynq_Design/ip/Zynq_Design_xbar_0/Zynq_Design_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1357.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1369.309 ; gain = 11.910
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1369.309 ; gain = 243.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     7|
+|3     |LUT3 |     3|
+|4     |LUT4 |    66|
+|5     |LUT5 |    23|
+|6     |LUT6 |    47|
+|7     |FDRE |   130|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.766 ; gain = 251.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1376.766 ; gain = 228.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1376.766 ; gain = 251.328
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1385.609 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1390.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 1390.141 ; gain = 264.703
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1/Zynq_Design_xbar_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Zynq_Design_xbar_0, cache-ID = 74d1ebb60d2effa6
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab1/project_1/project_1.runs/Zynq_Design_xbar_0_synth_1/Zynq_Design_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Zynq_Design_xbar_0_utilization_synth.rpt -pb Zynq_Design_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 16 18:18:58 2021...

@@ -1,0 +1,149 @@
+
+
+================================================================
+== Vitis HLS Report for 'Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc'
+================================================================
+* Date:           Fri Oct 15 15:54:58 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        zynq_lab_2_2020_be
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.254 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      127|      127|  1.270 us|  1.270 us|  127|  127|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|   6129|    -|
+|Register         |        -|    -|     129|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     129|   6131|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     11|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+-----+-----------+-----+-----------+
+    |            Name            | LUT | Input Size| Bits| Total Bits|
+    +----------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                   |  680|        129|    1|        129|
+    |ap_done                     |    9|          2|    1|          2|
+    |twid_rom_M_imag_V_address0  |  680|        129|    8|       1032|
+    |twid_rom_M_imag_V_address1  |  680|        129|    8|       1032|
+    |twid_rom_M_imag_V_d0        |  680|        129|   16|       2064|
+    |twid_rom_M_imag_V_d1        |  680|        129|   16|       2064|
+    |twid_rom_M_real_V_address0  |  680|        129|    8|       1032|
+    |twid_rom_M_real_V_address1  |  680|        129|    8|       1032|
+    |twid_rom_M_real_V_d0        |  680|        129|   15|       1935|
+    |twid_rom_M_real_V_d1        |  680|        129|   15|       1935|
+    +----------------------------+-----+-----------+-----+-----------+
+    |Total                       | 6129|       1163|   96|      12257|
+    +----------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+-----+----+-----+-----------+
+    |     Name    |  FF | LUT| Bits| Const Bits|
+    +-------------+-----+----+-----+-----------+
+    |ap_CS_fsm    |  128|   0|  128|          0|
+    |ap_done_reg  |    1|   0|    1|          0|
+    +-------------+-----+----+-----+-----------+
+    |Total        |  129|   0|  129|          0|
+    +-------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+--------------------------------------------------------------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |                                  Source Object                                 |    C Type    |
++----------------------------+-----+-----+------------+--------------------------------------------------------------------------------+--------------+
+|ap_clk                      |   in|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|ap_rst                      |   in|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|ap_start                    |   in|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|ap_done                     |  out|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|ap_continue                 |   in|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|ap_idle                     |  out|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|ap_ready                    |  out|    1|  ap_ctrl_hs|  Block__ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei.exit.i125_proc|  return value|
+|twid_rom_M_real_V_address0  |  out|    8|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_ce0       |  out|    1|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_we0       |  out|    1|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_d0        |  out|   15|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_address1  |  out|    8|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_ce1       |  out|    1|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_we1       |  out|    1|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_real_V_d1        |  out|   15|   ap_memory|                                                               twid_rom_M_real_V|         array|
+|twid_rom_M_imag_V_address0  |  out|    8|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_ce0       |  out|    1|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_we0       |  out|    1|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_d0        |  out|   16|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_address1  |  out|    8|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_ce1       |  out|    1|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_we1       |  out|    1|   ap_memory|                                                               twid_rom_M_imag_V|         array|
+|twid_rom_M_imag_V_d1        |  out|   16|   ap_memory|                                                               twid_rom_M_imag_V|         array|
++----------------------------+-----+-----+------------+--------------------------------------------------------------------------------+--------------+
+

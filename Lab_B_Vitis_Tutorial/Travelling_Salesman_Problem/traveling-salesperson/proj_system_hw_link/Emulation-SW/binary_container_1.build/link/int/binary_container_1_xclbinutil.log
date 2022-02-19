@@ -1,0 +1,32 @@
+XRT Build Version: 2.8.743 (2020.2)
+       Build Date: 2020-11-16 00:18:20
+          Hash ID: 77d5484b5c4daa691a7f78235053fb036829b1e9
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 149336 bytes
+Format : RAW
+File   : '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.so'
+WARNING: Skipping CLOCK_FREQ_TOPOLOGY section for count size is zero.
+WARNING: Section 'CLOCK_FREQ_TOPOLOGY' content is empty.  No data in the given JSON file.
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was empty.  No action taken.
+Format : JSON
+File   : '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 2101 bytes
+Format : JSON
+File   : '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 2023 bytes
+Format : RAW
+File   : '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.build/link/int/binary_container_1.xml'
+
+Section: 'DEBUG_DATA'(4) was successfully added.
+Size   : 0 bytes
+Format : RAW
+File   : '/dev/null'
+Successfully wrote (157411 bytes) to the output file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system_hw_link/Emulation-SW/binary_container_1.xclbin
+Leaving xclbinutil.

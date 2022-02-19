@@ -1,0 +1,184 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_sliding_win_out'
+================================================================
+* Date:           Sun Oct 17 00:24:34 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        fe_vhls_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 1.880 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+---------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  |                   Pipeline                  |
+    |   min   |   max   |    min   |    max   |  min |  max |                     Type                    |
+    +---------+---------+----------+----------+------+------+---------------------------------------------+
+    |     1024|     1025| 4.096 us | 4.100 us |  1024|  1024| loop rewind(delay=0 initiation interval(s)) |
+    +---------+---------+----------+----------+------+------+---------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- sliding_win_output  |     1024|     1024|         3|          2|          1|   512|    yes   |
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     42|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    165|    -|
+|Register         |        -|      -|      73|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      73|    207|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |add_ln84_fu_241_p2                |     +    |      0|  0|  13|           2|          11|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |ap_condition_114                  |    and   |      0|  0|   2|           1|           1|
+    |ap_condition_85                   |    and   |      0|  0|   2|           1|           1|
+    |icmp_ln84_fu_253_p2               |   icmp   |      0|  0|  13|          11|          12|
+    |ap_block_pp0_stage1_11001         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage0_iter1  |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage1_iter0  |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  42|          21|          32|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------+----+-----------+-----+-----------+
+    |                   Name                   | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                 |  21|          4|    1|          4|
+    |ap_done                                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0                   |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1                   |   9|          2|    1|          2|
+    |ap_phi_mux_i2_0_i_01_phi_fu_191_p6        |  15|          3|   10|         30|
+    |ap_phi_reg_pp0_iter1_p_014_0_i_0_reg_201  |  15|          3|   16|         48|
+    |ap_phi_reg_pp0_iter1_p_014_0_i_1_reg_211  |  15|          3|   16|         48|
+    |data2window_0_blk_n                       |   9|          2|    1|          2|
+    |data2window_1_blk_n                       |   9|          2|    1|          2|
+    |delayed_i_0_blk_n                         |   9|          2|    1|          2|
+    |delayed_i_1_blk_n                         |   9|          2|    1|          2|
+    |i2_0_i_01_reg_187                         |   9|          2|   10|         20|
+    |nodelay_i_0_blk_n                         |   9|          2|    1|          2|
+    |nodelay_i_1_blk_n                         |   9|          2|    1|          2|
+    |real_start                                |   9|          2|    1|          2|
+    +------------------------------------------+----+-----------+-----+-----------+
+    |Total                                     | 165|         35|   63|        170|
+    +------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------+----+----+-----+-----------+
+    |                   Name                   | FF | LUT| Bits| Const Bits|
+    +------------------------------------------+----+----+-----+-----------+
+    |add_ln84_reg_266                          |  11|   0|   11|          0|
+    |ap_CS_fsm                                 |   3|   0|    3|          0|
+    |ap_done_reg                               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg               |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_p_014_0_i_0_reg_201  |  16|   0|   16|          0|
+    |ap_phi_reg_pp0_iter1_p_014_0_i_1_reg_211  |  16|   0|   16|          0|
+    |empty_reg_271                             |  10|   0|   10|          0|
+    |i2_0_i_01_reg_187                         |  10|   0|   10|          0|
+    |icmp_ln84_reg_296                         |   1|   0|    1|          0|
+    |start_once_reg                            |   1|   0|    1|          0|
+    |tmp_2_reg_262                             |   1|   0|    1|          0|
+    |tmp_reg_258                               |   1|   0|    1|          0|
+    +------------------------------------------+----+----+-----+-----------+
+    |Total                                     |  73|   0|   73|          0|
+    +------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++----------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|ap_start              |  in |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|start_full_n          |  in |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|ap_done               | out |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|ap_continue           |  in |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|ap_idle               | out |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|ap_ready              | out |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|start_out             | out |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|start_write           | out |    1| ap_ctrl_hs | Loop_sliding_win_out | return value |
+|delayed_i_0_dout      |  in |   16|   ap_fifo  |      delayed_i_0     |    pointer   |
+|delayed_i_0_empty_n   |  in |    1|   ap_fifo  |      delayed_i_0     |    pointer   |
+|delayed_i_0_read      | out |    1|   ap_fifo  |      delayed_i_0     |    pointer   |
+|nodelay_i_0_dout      |  in |   16|   ap_fifo  |      nodelay_i_0     |    pointer   |
+|nodelay_i_0_empty_n   |  in |    1|   ap_fifo  |      nodelay_i_0     |    pointer   |
+|nodelay_i_0_read      | out |    1|   ap_fifo  |      nodelay_i_0     |    pointer   |
+|delayed_i_1_dout      |  in |   16|   ap_fifo  |      delayed_i_1     |    pointer   |
+|delayed_i_1_empty_n   |  in |    1|   ap_fifo  |      delayed_i_1     |    pointer   |
+|delayed_i_1_read      | out |    1|   ap_fifo  |      delayed_i_1     |    pointer   |
+|nodelay_i_1_dout      |  in |   16|   ap_fifo  |      nodelay_i_1     |    pointer   |
+|nodelay_i_1_empty_n   |  in |    1|   ap_fifo  |      nodelay_i_1     |    pointer   |
+|nodelay_i_1_read      | out |    1|   ap_fifo  |      nodelay_i_1     |    pointer   |
+|data2window_1_din     | out |   16|   ap_fifo  |     data2window_1    |    pointer   |
+|data2window_1_full_n  |  in |    1|   ap_fifo  |     data2window_1    |    pointer   |
+|data2window_1_write   | out |    1|   ap_fifo  |     data2window_1    |    pointer   |
+|data2window_0_din     | out |   16|   ap_fifo  |     data2window_0    |    pointer   |
+|data2window_0_full_n  |  in |    1|   ap_fifo  |     data2window_0    |    pointer   |
+|data2window_0_write   | out |    1|   ap_fifo  |     data2window_0    |    pointer   |
++----------------------+-----+-----+------------+----------------------+--------------+
+

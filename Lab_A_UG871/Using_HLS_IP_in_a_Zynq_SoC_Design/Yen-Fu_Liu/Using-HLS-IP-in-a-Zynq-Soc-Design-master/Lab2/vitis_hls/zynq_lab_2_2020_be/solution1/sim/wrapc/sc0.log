@@ -1,0 +1,8 @@
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_hls_xfft2real.cpp
+   Compiling xfft2real.cpp_pre.cpp.tb.cpp
+   Compiling hls_realfft_test.cpp_pre.cpp.tb.cpp
+   Compiling real2xfft.cpp_pre.cpp.tb.cpp
+   Compiling apatb_hls_xfft2real_util.cpp
+   Compiling apatb_hls_xfft2real_ir.ll
+   Generating cosim.tv.exe

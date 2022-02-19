@@ -1,0 +1,7 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="hls_macc.c:59:12" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by hls_macc.acc_reg" ID="bb2.load.1" VarName="hls_macc.acc_reg"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="hls_macc.c:59:12" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by hls_macc.acc_reg" ID="bb2.store.3" VarName="hls_macc.acc_reg"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="hls_macc.c:60:11" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by accum" ID="bb2.store.4" VarName="accum"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="hls_macc.c:58:15" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by hls_macc.acc_reg" ID="bb1.store.0" VarName="hls_macc.acc_reg"/>
+</VitisHLS:BurstInfo>
+

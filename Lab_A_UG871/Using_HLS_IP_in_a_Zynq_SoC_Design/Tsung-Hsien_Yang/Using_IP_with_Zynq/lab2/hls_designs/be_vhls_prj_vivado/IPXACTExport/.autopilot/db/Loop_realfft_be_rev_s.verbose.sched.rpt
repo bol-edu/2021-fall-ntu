@@ -1,0 +1,168 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_realfft_be_rev_s'
+================================================================
+* Date:           Sun Oct 17 19:11:16 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        be_vhls_prj_vivado
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 3.254 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      259|      259| 1.036 us | 1.036 us |  259|  259|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- realfft_be_rev_real_hi  |      257|      257|         3|          1|          1|   256|    yes   |
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 5 3 
+3 --> 4 
+4 --> 2 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %real_spectrum_hi_V_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str113, [1 x i8]* @p_str114, [1 x i8]* @p_str115, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str116, [1 x i8]* @p_str117)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %real_spectrum_hi_V_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str105, i32 0, i32 0, [1 x i8]* @p_str106, [1 x i8]* @p_str107, [1 x i8]* @p_str108, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str109, [1 x i8]* @p_str110)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.76ns)   --->   "br label %.preheader2173.i"   --->   Operation 8 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%i3_0_i = phi i9 [ %i, %realfft_be_rev_real_hi ], [ 0, %newFuncRoot ]"   --->   Operation 9 'phi' 'i3_0_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.66ns)   --->   "%icmp_ln115 = icmp eq i9 %i3_0_i, -256" [./xfft2real.h:115->xfft2real.cpp:62]   --->   Operation 10 'icmp' 'icmp_ln115' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 11 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (1.82ns)   --->   "%i = add i9 %i3_0_i, 1" [./xfft2real.h:115->xfft2real.cpp:62]   --->   Operation 12 'add' 'i' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "br i1 %icmp_ln115, label %.preheader.i.exitStub, label %realfft_be_rev_real_hi" [./xfft2real.h:115->xfft2real.cpp:62]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln117 = zext i9 %i3_0_i to i64" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 14 'zext' 'zext_ln117' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%real_spectrum_hi_buf = getelementptr [256 x i16]* %real_spectrum_hi_buf_i_0, i64 0, i64 %zext_ln117" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 15 'getelementptr' 'real_spectrum_hi_buf' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_2 : Operation 16 [2/2] (3.25ns)   --->   "%tmp_M_real_V = load i16* %real_spectrum_hi_buf, align 4" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 16 'load' 'tmp_M_real_V' <Predicate = (!icmp_ln115)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%real_spectrum_hi_buf_1 = getelementptr [256 x i16]* %real_spectrum_hi_buf_i_1, i64 0, i64 %zext_ln117" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 17 'getelementptr' 'real_spectrum_hi_buf_1' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_2 : Operation 18 [2/2] (3.25ns)   --->   "%tmp_M_imag_V = load i16* %real_spectrum_hi_buf_1, align 2" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 18 'load' 'tmp_M_imag_V' <Predicate = (!icmp_ln115)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 19 [1/2] (3.25ns)   --->   "%tmp_M_real_V = load i16* %real_spectrum_hi_buf, align 4" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 19 'load' 'tmp_M_real_V' <Predicate = (!icmp_ln115)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_3 : Operation 20 [1/2] (3.25ns)   --->   "%tmp_M_imag_V = load i16* %real_spectrum_hi_buf_1, align 2" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 20 'load' 'tmp_M_imag_V' <Predicate = (!icmp_ln115)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+
+State 4 <SV = 3> <Delay = 1.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([23 x i8]* @p_str8) nounwind" [./xfft2real.h:115->xfft2real.cpp:62]   --->   Operation 21 'specloopname' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([23 x i8]* @p_str8)" [./xfft2real.h:115->xfft2real.cpp:62]   --->   Operation 22 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [./xfft2real.h:116->xfft2real.cpp:62]   --->   Operation 23 'specpipeline' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P.i16P(i16* %real_spectrum_hi_V_M_real_V, i16* %real_spectrum_hi_V_M_imag_V, i16 %tmp_M_real_V, i16 %tmp_M_imag_V)" [./xfft2real.h:117->xfft2real.cpp:62]   --->   Operation 24 'write' <Predicate = (!icmp_ln115)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecRegionEnd([23 x i8]* @p_str8, i32 %tmp_2)" [./xfft2real.h:118->xfft2real.cpp:62]   --->   Operation 25 'specregionend' 'empty_43' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "br label %.preheader2173.i" [./xfft2real.h:115->xfft2real.cpp:62]   --->   Operation 26 'br' <Predicate = (!icmp_ln115)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 27 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', ./xfft2real.h:115->xfft2real.cpp:62) [9]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ./xfft2real.h:115->xfft2real.cpp:62) [9]  (0 ns)
+	'getelementptr' operation ('real_spectrum_hi_buf', ./xfft2real.h:117->xfft2real.cpp:62) [19]  (0 ns)
+	'load' operation ('tmp._M_real.V', ./xfft2real.h:117->xfft2real.cpp:62) on array 'real_spectrum_hi_buf_i_0' [20]  (3.25 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('tmp._M_real.V', ./xfft2real.h:117->xfft2real.cpp:62) on array 'real_spectrum_hi_buf_i_0' [20]  (3.25 ns)
+
+ <State 4>: 1ns
+The critical path consists of the following:
+	fifo write on port 'real_spectrum_hi_V_M_real_V' (./xfft2real.h:117->xfft2real.cpp:62) [23]  (1 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

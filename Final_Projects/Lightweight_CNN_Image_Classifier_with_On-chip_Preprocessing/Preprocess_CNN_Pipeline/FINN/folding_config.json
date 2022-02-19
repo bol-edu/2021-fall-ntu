@@ -1,0 +1,45 @@
+{
+  "Defaults": {},
+  "ConvolutionInputGenerator_0": {
+    "SIMD": 1
+  },
+  "StreamingFCLayer_Batch_0": {
+    "PE": 8,
+    "SIMD": 1,
+    "inFIFODepth": 32,
+    "ram_style": "auto"
+  },
+  "ConvolutionInputGenerator_1": {
+    "SIMD": 16
+  },
+  "StreamingFCLayer_Batch_1": {
+    "PE": 8,
+    "SIMD": 16,
+    "inFIFODepth": 32,
+    "ram_style": "distributed"
+  },
+  "ConvolutionInputGenerator_2": {
+    "SIMD": 16
+  },
+  "StreamingFCLayer_Batch_2": {
+    "PE": 4,
+    "SIMD": 16,
+    "inFIFODepth": 32,
+    "ram_style": "auto"
+  },
+  "ConvolutionInputGenerator_3": {
+    "SIMD": 16
+  },
+  "StreamingFCLayer_Batch_3": {
+    "PE": 1,
+    "SIMD": 16,
+    "inFIFODepth": 32,
+    "ram_style": "auto"
+  },
+  "StreamingFCLayer_Batch_4": {
+    "PE": 5,
+    "SIMD": 1,
+    "inFIFODepth": 4,
+    "ram_style": "distributed"
+  }
+}

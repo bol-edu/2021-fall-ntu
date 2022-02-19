@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Oct 17 16:32:32 2021
+# Process ID: 6640
+# Current directory: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/vivado.log
+# Journal file: E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config E:/Courses/EEE5060/LabA/Using_IP_with_Zynq/lab2/hls_designs/fe_vhls_prj/solution1/sim/verilog/hls_real2xfft.wcfg
+close_sim

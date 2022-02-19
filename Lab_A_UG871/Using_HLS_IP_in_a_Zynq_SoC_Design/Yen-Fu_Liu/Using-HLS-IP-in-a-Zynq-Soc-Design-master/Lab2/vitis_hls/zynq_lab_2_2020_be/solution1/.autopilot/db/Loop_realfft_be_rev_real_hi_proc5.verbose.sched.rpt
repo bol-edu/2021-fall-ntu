@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vitis HLS Report for 'Loop_realfft_be_rev_real_hi_proc5'
+================================================================
+* Date:           Fri Oct 15 15:54:56 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        zynq_lab_2_2020_be
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.803 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      258|      258|  2.580 us|  2.580 us|  258|  258|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |         Loop Name        |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- realfft_be_rev_real_hi  |      256|      256|         2|          1|          1|   256|       yes|
+        +--------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %real_spectrum_hi, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (1.58ns)   --->   "%br_ln0 = br void %.preheader18"   --->   Operation 6 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i = phi i9 %add_ln117, void, i9 0, void %newFuncRoot" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117]   --->   Operation 7 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (1.82ns)   --->   "%add_ln117 = add i9 %i, i9 1" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117]   --->   Operation 8 'add' 'add_ln117' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (1.66ns)   --->   "%icmp_ln117 = icmp_eq  i9 %i, i9 256" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117]   --->   Operation 9 'icmp' 'icmp_ln117' <Predicate = true> <Delay = 1.66> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 256, i64 256, i64 256"   --->   Operation 10 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln117 = br i1 %icmp_ln117, void, void %.preheader.exitStub" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117]   --->   Operation 11 'br' 'br_ln117' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln117 = zext i9 %i" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117]   --->   Operation 12 'zext' 'zext_ln117' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%real_spectrum_hi_buf_M_real_V_addr = getelementptr i16 %real_spectrum_hi_buf_M_real_V, i64 0, i64 %zext_ln117" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:119]   --->   Operation 13 'getelementptr' 'real_spectrum_hi_buf_M_real_V_addr' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%real_spectrum_hi_buf_M_imag_V_addr = getelementptr i16 %real_spectrum_hi_buf_M_imag_V, i64 0, i64 %zext_ln117" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:119]   --->   Operation 14 'getelementptr' 'real_spectrum_hi_buf_M_imag_V_addr' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+ST_2 : Operation 15 [2/2] (3.25ns)   --->   "%real_spectrum_hi_buf_M_real_V_load = load i8 %real_spectrum_hi_buf_M_real_V_addr" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 15 'load' 'real_spectrum_hi_buf_M_real_V_load' <Predicate = (!icmp_ln117)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_2 : Operation 16 [2/2] (3.25ns)   --->   "%real_spectrum_hi_buf_M_imag_V_load = load i8 %real_spectrum_hi_buf_M_imag_V_addr" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 16 'load' 'real_spectrum_hi_buf_M_imag_V_load' <Predicate = (!icmp_ln117)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+
+State 3 <SV = 2> <Delay = 6.80>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specpipeline_ln119 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:119]   --->   Operation 17 'specpipeline' 'specpipeline_ln119' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln119 = specloopname void @_ssdm_op_SpecLoopName, void @empty_5" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:119]   --->   Operation 18 'specloopname' 'specloopname_ln119' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+ST_3 : Operation 19 [1/2] (3.25ns)   --->   "%real_spectrum_hi_buf_M_real_V_load = load i8 %real_spectrum_hi_buf_M_real_V_addr" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 19 'load' 'real_spectrum_hi_buf_M_real_V_load' <Predicate = (!icmp_ln117)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_3 : Operation 20 [1/2] (3.25ns)   --->   "%real_spectrum_hi_buf_M_imag_V_load = load i8 %real_spectrum_hi_buf_M_imag_V_addr" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 20 'load' 'real_spectrum_hi_buf_M_imag_V_load' <Predicate = (!icmp_ln117)> <Delay = 3.25> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 256> <RAM>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i16.i16, i16 %real_spectrum_hi_buf_M_imag_V_load, i16 %real_spectrum_hi_buf_M_real_V_load" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 21 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (3.54ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %real_spectrum_hi, i32 %tmp" [C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 22 'write' 'write_ln174' <Predicate = (!icmp_ln117)> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln117 = br void %.preheader18" [../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117]   --->   Operation 23 'br' 'br_ln117' <Predicate = (!icmp_ln117)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 24 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117) with incoming values : ('add_ln117', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117) [7]  (1.59 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117) with incoming values : ('add_ln117', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:117) [7]  (0 ns)
+	'getelementptr' operation ('real_spectrum_hi_buf_M_real_V_addr', ../../../../Downloads/HLS/ug871-design-files/ug871-design-files-updated/Using_IP_with_Zynq/lab2/hls_designs/xfft2real.h:119) [16]  (0 ns)
+	'load' operation ('real_spectrum_hi_buf_M_real_V_load', C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174) on array 'real_spectrum_hi_buf_M_real_V' [18]  (3.25 ns)
+
+ <State 3>: 6.8ns
+The critical path consists of the following:
+	'load' operation ('real_spectrum_hi_buf_M_real_V_load', C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174) on array 'real_spectrum_hi_buf_M_real_V' [18]  (3.25 ns)
+	fifo write on port 'real_spectrum_hi' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174) [21]  (3.55 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

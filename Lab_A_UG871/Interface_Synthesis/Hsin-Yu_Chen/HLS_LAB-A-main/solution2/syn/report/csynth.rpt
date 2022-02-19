@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'axi_interfaces'
+================================================================
++ General Information: 
+    * Date:           Sun Oct 17 10:49:15 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        axi_interfaces_prj
+    * Solution:       solution2 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flgb2104-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |      Modules     | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |      & Loops     | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ axi_interfaces  |     -|  -1.32|        5|  20.000|         -|        6|     -|        no|     -|   -|  563 (~0%)|  879 (~0%)|    -|
+    | o For_Loop       |     -|  -2.92|        4|  16.000|         2|        1|     4|       yes|     -|   -|          -|          -|    -|
+    +------------------+------+-------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+

@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_realfft_be_stre'
+================================================================
+* Date:           Sun Oct 17 19:11:16 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        be_vhls_prj_vivado
+* Solution:       IPXACTExport
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 2.769 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                   Pipeline                  |
+    |   min   |   max   |    min   |    max   | min | max |                     Type                    |
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+    |      513|      514| 2.052 us | 2.056 us |  512|  512| loop rewind(delay=0 initiation interval(s)) |
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |          Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- realfft_be_stream_output  |      513|      513|         3|          1|          1|   512|    yes   |
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 4 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 
+3 --> 2 
+4 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %dout_V_last_V, i32* %dout_V_data, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %real_spectrum_hi_V_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str112, i32 0, i32 0, [1 x i8]* @p_str113, [1 x i8]* @p_str114, [1 x i8]* @p_str115, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str116, [1 x i8]* @p_str117)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %real_spectrum_hi_V_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str105, i32 0, i32 0, [1 x i8]* @p_str106, [1 x i8]* @p_str107, [1 x i8]* @p_str108, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str109, [1 x i8]* @p_str110)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %real_spectrum_lo_V_M_imag_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str98, i32 0, i32 0, [1 x i8]* @p_str99, [1 x i8]* @p_str100, [1 x i8]* @p_str101, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str102, [1 x i8]* @p_str103)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %real_spectrum_lo_V_M_real_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str91, i32 0, i32 0, [1 x i8]* @p_str92, [1 x i8]* @p_str93, [1 x i8]* @p_str94, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str95, [1 x i8]* @p_str96)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.76ns)   --->   "br label %rewind_header" [./xfft2real.h:120->xfft2real.cpp:62]   --->   Operation 10 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.82>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%do_init = phi i1 [ true, %newFuncRoot ], [ false, %realfft_be_stream_output_end ], [ true, %"xfft2real<ap_fixed<16, 1, 5, 3, 0>, ap_fixed<16, 1, 5, 3, 0>, 10, true>.exit.exitStub" ]"   --->   Operation 11 'phi' 'do_init' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%i4_0_i1 = phi i9 [ 0, %newFuncRoot ], [ %i, %realfft_be_stream_output_end ], [ 0, %"xfft2real<ap_fixed<16, 1, 5, 3, 0>, ap_fixed<16, 1, 5, 3, 0>, 10, true>.exit.exitStub" ]"   --->   Operation 12 'phi' 'i4_0_i1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "br i1 %do_init, label %rewind_init, label %realfft_be_stream_output_begin"   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %i4_0_i1, i32 8)" [./xfft2real.h:123->xfft2real.cpp:62]   --->   Operation 14 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.82ns)   --->   "%i = add i9 %i4_0_i1, 1" [./xfft2real.h:120->xfft2real.cpp:62]   --->   Operation 15 'add' 'i' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "br i1 %tmp, label %1, label %0" [./xfft2real.h:123->xfft2real.cpp:62]   --->   Operation 16 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (1.66ns)   --->   "%dout_val_last_V = icmp eq i9 %i4_0_i1, -1" [./xfft2real.h:127->xfft2real.cpp:62]   --->   Operation 17 'icmp' 'dout_val_last_V' <Predicate = true> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %dout_val_last_V, label %"xfft2real<ap_fixed<16, 1, 5, 3, 0>, ap_fixed<16, 1, 5, 3, 0>, 10, true>.exit.exitStub", label %rewind_header" [./xfft2real.h:120->xfft2real.cpp:62]   --->   Operation 18 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br label %rewind_header"   --->   Operation 19 'br' <Predicate = (dout_val_last_V)> <Delay = 0.00>
+
+State 3 <SV = 3> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "br label %realfft_be_stream_output_begin" [./xfft2real.h:120->xfft2real.cpp:62]   --->   Operation 20 'br' <Predicate = (do_init)> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([25 x i8]* @p_str9) nounwind" [./xfft2real.h:120->xfft2real.cpp:62]   --->   Operation 21 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([25 x i8]* @p_str9)" [./xfft2real.h:120->xfft2real.cpp:62]   --->   Operation 22 'specregionbegin' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [./xfft2real.h:121->xfft2real.cpp:62]   --->   Operation 23 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %dout_V_data, i1* %dout_V_last_V, i32 %tmp_data_1, i1 %dout_val_last_V)" [./xfft2real.h:129->xfft2real.cpp:62]   --->   Operation 24 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([25 x i8]* @p_str9, i32 %tmp_3)" [./xfft2real.h:130->xfft2real.cpp:62]   --->   Operation 25 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%empty_40 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 26 'speclooptripcount' 'empty_40' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_Return()"   --->   Operation 27 'return' <Predicate = (dout_val_last_V)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 2.76>
+ST_4 : Operation 28 [1/1] (1.00ns)   --->   "%empty_41 = call { i16, i16 } @_ssdm_op_Read.ap_fifo.volatile.i16P.i16P(i16* %real_spectrum_lo_V_M_real_V, i16* %real_spectrum_lo_V_M_imag_V)" [./xfft2real.h:124->xfft2real.cpp:62]   --->   Operation 28 'read' 'empty_41' <Predicate = (!tmp)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_M_real_V = extractvalue { i16, i16 } %empty_41, 0" [./xfft2real.h:124->xfft2real.cpp:62]   --->   Operation 29 'extractvalue' 'tmp_M_real_V' <Predicate = (!tmp)> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_M_imag_V = extractvalue { i16, i16 } %empty_41, 1" [./xfft2real.h:124->xfft2real.cpp:62]   --->   Operation 30 'extractvalue' 'tmp_M_imag_V' <Predicate = (!tmp)> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (1.76ns)   --->   "br label %realfft_be_stream_output_end" [./xfft2real.h:124->xfft2real.cpp:62]   --->   Operation 31 'br' <Predicate = (!tmp)> <Delay = 1.76>
+ST_4 : Operation 32 [1/1] (1.00ns)   --->   "%empty_42 = call { i16, i16 } @_ssdm_op_Read.ap_fifo.volatile.i16P.i16P(i16* %real_spectrum_hi_V_M_real_V, i16* %real_spectrum_hi_V_M_imag_V)" [./xfft2real.h:126->xfft2real.cpp:62]   --->   Operation 32 'read' 'empty_42' <Predicate = (tmp)> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_M_real_V_1 = extractvalue { i16, i16 } %empty_42, 0" [./xfft2real.h:126->xfft2real.cpp:62]   --->   Operation 33 'extractvalue' 'tmp_M_real_V_1' <Predicate = (tmp)> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_M_imag_V_1 = extractvalue { i16, i16 } %empty_42, 1" [./xfft2real.h:126->xfft2real.cpp:62]   --->   Operation 34 'extractvalue' 'tmp_M_imag_V_1' <Predicate = (tmp)> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (1.76ns)   --->   "br label %realfft_be_stream_output_end"   --->   Operation 35 'br' <Predicate = (tmp)> <Delay = 1.76>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_data_M_imag_V = phi i16 [ %tmp_M_imag_V, %0 ], [ %tmp_M_imag_V_1, %1 ]"   --->   Operation 36 'phi' 'tmp_data_M_imag_V' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_data_M_real_V = phi i16 [ %tmp_M_real_V, %0 ], [ %tmp_M_real_V_1, %1 ]"   --->   Operation 37 'phi' 'tmp_data_M_real_V' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_data_1 = call i32 @_ssdm_op_BitConcatenate.i32.i16.i16(i16 %tmp_data_M_imag_V, i16 %tmp_data_M_real_V)" [./xfft2real.h:129->xfft2real.cpp:62]   --->   Operation 38 'bitconcatenate' 'tmp_data_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %dout_V_data, i1* %dout_V_last_V, i32 %tmp_data_1, i1 %dout_val_last_V)" [./xfft2real.h:129->xfft2real.cpp:62]   --->   Operation 39 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('do_init') [14]  (1.77 ns)
+
+ <State 2>: 1.82ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ./xfft2real.h:120->xfft2real.cpp:62) [15]  (0 ns)
+	'add' operation ('i', ./xfft2real.h:120->xfft2real.cpp:62) [24]  (1.82 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 2.77ns
+The critical path consists of the following:
+	fifo read on port 'real_spectrum_lo_V_M_real_V' (./xfft2real.h:124->xfft2real.cpp:62) [27]  (1 ns)
+	multiplexor before 'phi' operation ('dout_val.data._M_imag.V') with incoming values : ('tmp._M_imag.V', ./xfft2real.h:124->xfft2real.cpp:62) ('tmp._M_imag.V', ./xfft2real.h:126->xfft2real.cpp:62) [37]  (1.77 ns)
+	'phi' operation ('dout_val.data._M_imag.V') with incoming values : ('tmp._M_imag.V', ./xfft2real.h:124->xfft2real.cpp:62) ('tmp._M_imag.V', ./xfft2real.h:126->xfft2real.cpp:62) [37]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

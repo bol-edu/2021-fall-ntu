@@ -1,0 +1,60 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog" --include "../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog" --include "../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/34f8/hdl" --include "../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/8713/hdl" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_data2window_V_0.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_data2window_V_0_memcore.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_fifo_w16_d256_A.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_fifo_w16_d512_A.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_hls_deadlock_detection_unit.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_Loop_real2xfft_output_proc9.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_mul_mul_16s_15ns_31_4_1.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_regslice_both.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_delbkb.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_output_proc8.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_s.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_start_for_sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_outpucud.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_2_s.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_dEe.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft_window_fn_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_3_0_ap_fixed_16_1_5_0_0_1024_2_eOg.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/ba79/hdl/verilog/hls_real2xfft.v" \
+"../../../bd/design_1/ip/design_1_hls_real2xfft_0_0/sim/design_1_hls_real2xfft_0_0.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_Block_ZN8ap_fixedILi16ELi1EL9ap_q_mode5EL9ap_o_mode0ELi0EEC2Ei_exit_i125_proc.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_descramble_buf_0_M_real_V.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_descramble_buf_0_M_real_V_memcore.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_fifo_w32_d8_S.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_hls_deadlock_detection_unit.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_Loop_realfft_be_buffer_proc3.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_Loop_realfft_be_descramble_proc4.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_Loop_realfft_be_rev_real_hi_proc5.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_Loop_realfft_be_stream_output_proc6.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_mac_muladd_16s_15ns_31s_31_4_1.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_mac_mulsub_16s_16s_31s_31_4_1.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_mul_mul_16s_15ns_31_4_1.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_mul_mul_16s_16s_31_4_1.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_regslice_both.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_start_for_Loop_realfft_be_stream_output_proc6_U0.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_twid_rom_M_imag_V.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_twid_rom_M_imag_V_memcore.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_twid_rom_M_real_V.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real_twid_rom_M_real_V_memcore.v" \
+"../../../../hls_ip_zynq_lab2.gen/sources_1/bd/design_1/ipshared/e528/hdl/verilog/hls_xfft2real.v" \
+"../../../bd/design_1/ip/design_1_hls_xfft2real_0_0/sim/design_1_hls_xfft2real_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_2/sim/design_1_processing_system7_0_2.v" \
+"../../../bd/design_1/ip/design_1_xbar_2/sim/design_1_xbar_2.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_4/sim/design_1_auto_pc_4.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tdata_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tuser_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tstrb_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tkeep_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tid_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tdest_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/tlast_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/hdl/top_design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_axis_subset_converter_1/sim/design_1_axis_subset_converter_1.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_5/sim/design_1_auto_pc_5.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

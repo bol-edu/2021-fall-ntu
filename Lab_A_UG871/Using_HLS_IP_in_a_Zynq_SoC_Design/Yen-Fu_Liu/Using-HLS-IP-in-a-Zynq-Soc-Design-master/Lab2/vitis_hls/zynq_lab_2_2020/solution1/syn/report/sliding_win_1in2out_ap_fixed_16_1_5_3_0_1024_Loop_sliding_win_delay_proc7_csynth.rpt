@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vitis HLS Report for 'sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7'
+================================================================
+* Date:           Fri Oct 15 14:56:44 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        zynq_lab_2_2020
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.155 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      511|      512|  5.110 us|  5.120 us|  511|  512|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- sliding_win_delay  |      511|      511|         1|          1|          1|   512|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     29|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|      64|     32|    -|
+|Multiplexer      |        -|    -|       -|     68|    -|
+|Register         |        -|    -|      13|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      77|    129|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |       Memory       |                                      Module                                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |delay_line_Array_U  |sliding_win_1in2out_ap_fixed_16_1_5_3_0_1024_Loop_sliding_win_delay_proc7_delbkb  |        0|  64|  32|    0|   512|   16|     1|         8192|
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total               |                                                                                  |        0|  64|  32|    0|   512|   16|     1|         8192|
+    +--------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |i_fu_83_p2           |         +|   0|  0|  14|           9|           1|
+    |icmp_ln76_fu_100_p2  |      icmp|   0|  0|  11|           9|           2|
+    |ap_block_state1      |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2      |        or|   0|  0|   2|           1|           1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  29|          20|           5|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm          |  14|          3|    1|          3|
+    |ap_done            |   9|          2|    1|          2|
+    |delayed_V_blk_n    |   9|          2|    1|          2|
+    |din_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |i3_reg_69          |   9|          2|    9|         18|
+    |nodelay_V_blk_n    |   9|          2|    1|          2|
+    |real_start         |   9|          2|    1|          2|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              |  68|         15|   15|         31|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  2|   0|    2|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |i3_reg_69       |  9|   0|    9|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           | 13|   0|   13|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |                                   Source Object                                  |    C Type    |
++------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|start_full_n      |   in|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|ap_continue       |   in|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|start_out         |  out|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|start_write       |  out|    1|  ap_ctrl_hs|  sliding_win_1in2out<ap_fixed<16, 1, 5, 3, 0>, 1024>_Loop_sliding_win_delay_proc7|  return value|
+|din_V_TDATA       |   in|   16|        axis|                                                                             din_V|       pointer|
+|din_V_TVALID      |   in|    1|        axis|                                                                             din_V|       pointer|
+|din_V_TREADY      |  out|    1|        axis|                                                                             din_V|       pointer|
+|nodelay_V_din     |  out|   16|     ap_fifo|                                                                         nodelay_V|       pointer|
+|nodelay_V_full_n  |   in|    1|     ap_fifo|                                                                         nodelay_V|       pointer|
+|nodelay_V_write   |  out|    1|     ap_fifo|                                                                         nodelay_V|       pointer|
+|delayed_V_din     |  out|   16|     ap_fifo|                                                                         delayed_V|       pointer|
+|delayed_V_full_n  |   in|    1|     ap_fifo|                                                                         delayed_V|       pointer|
+|delayed_V_write   |  out|    1|     ap_fifo|                                                                         delayed_V|       pointer|
++------------------+-----+-----+------------+----------------------------------------------------------------------------------+--------------+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="hls_macc" xd:componentRef="hls_macc" xd:initiationInterval="10" xd:clockPeriod="4.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_HLS_MACC_PERIPH_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="a" xd:originalName="a" xd:direction="in" xd:interfaceRef="s_axi_HLS_MACC_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="b" xd:originalName="b" xd:direction="in" xd:interfaceRef="s_axi_HLS_MACC_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(accum)" xd:originalName="accum" xd:direction="out" xd:interfaceRef="s_axi_HLS_MACC_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_vld" xd:statusOffset="0x24" xd:dataWidth="1"/>
+  <xd:arg xd:name="accum_clr" xd:originalName="accum_clr" xd:direction="in" xd:interfaceRef="s_axi_HLS_MACC_PERIPH_BUS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="9" xd:worst-case="9" xd:average-case="9"/>
+  <xd:resourceEstimates xd:LUT="383" xd:FF="575" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

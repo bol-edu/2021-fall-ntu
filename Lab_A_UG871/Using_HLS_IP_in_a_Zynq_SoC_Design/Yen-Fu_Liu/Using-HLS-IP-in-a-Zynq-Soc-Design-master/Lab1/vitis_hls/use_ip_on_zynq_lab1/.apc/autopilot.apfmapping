@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hls_macc.h" path="C:\Users\ethan_kvm\AppData\Roaming\Xilinx\Vitis\hls_macc.h"/>
+    <originFiles name="hls_macc.h" path="C:\Users\ethan_kvm\Downloads\HLS\ug871-design-files\ug871-design-files-updated\Using_IP_with_Zynq\lab1\hls_macc\hls_macc.h"/>
+    <originFiles name="hls_macc.c" path="C:\Users\ethan_kvm\Downloads\HLS\ug871-design-files\ug871-design-files-updated\Using_IP_with_Zynq\lab1\hls_macc\hls_macc.c"/>
+  </source>
+  <testbench>
+    <originFiles name="hls_macc_test.c" path="C:\Users\ethan_kvm\Downloads\HLS\ug871-design-files\ug871-design-files-updated\Using_IP_with_Zynq\lab1\hls_macc\hls_macc_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

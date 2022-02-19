@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_real2xfft_outpu'
+================================================================
+* Date:           Sun Oct 17 00:24:33 2021
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        fe_vhls_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 4.00 ns | 1.770 ns |   0.50 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                   Pipeline                  |
+    |   min   |   max   |    min   |    max   | min | max |                     Type                    |
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+    |      512|      513| 2.048 us | 2.052 us |  512|  512| loop rewind(delay=0 initiation interval(s)) |
+    +---------+---------+----------+----------+-----+-----+---------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- real2xfft_output  |      512|      512|         2|          1|          1|   512|    yes   |
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %dout_V_last_V, i32* %dout_V_data, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %windowed_1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str183, i32 0, i32 0, [1 x i8]* @p_str184, [1 x i8]* @p_str185, [1 x i8]* @p_str186, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str187, [1 x i8]* @p_str188)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %windowed_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str177, i32 0, i32 0, [1 x i8]* @p_str178, [1 x i8]* @p_str179, [1 x i8]* @p_str180, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str181, [1 x i8]* @p_str182)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.76ns)   --->   "br label %rewind_header" [real2xfft.cpp:77]   --->   Operation 7 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.77>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%do_init = phi i1 [ true, %newFuncRoot ], [ false, %real2xfft_output ], [ true, %.exitStub ]"   --->   Operation 8 'phi' 'do_init' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%i_01 = phi i10 [ 0, %newFuncRoot ], [ %trunc_ln77, %real2xfft_output ], [ 0, %.exitStub ]" [real2xfft.cpp:77]   --->   Operation 9 'phi' 'i_01' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "br i1 %do_init, label %rewind_init, label %real2xfft_output"   --->   Operation 10 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%i_01_cast = zext i10 %i_01 to i11" [real2xfft.cpp:77]   --->   Operation 11 'zext' 'i_01_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (1.00ns)   --->   "%tmp_data_M_real_V = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %windowed_0)" [real2xfft.cpp:79]   --->   Operation 12 'read' 'tmp_data_M_real_V' <Predicate = true> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_2 : Operation 13 [1/1] (1.00ns)   --->   "%tmp_data_M_imag_V = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %windowed_1)" [real2xfft.cpp:79]   --->   Operation 13 'read' 'tmp_data_M_imag_V' <Predicate = true> <Delay = 1.00> <Core = "FSL">   --->   Core 4 'FSL' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'nbread' 'nbwrite'>
+ST_2 : Operation 14 [1/1] (1.77ns)   --->   "%tmp_last_V = icmp eq i10 %i_01, -2" [real2xfft.cpp:82]   --->   Operation 14 'icmp' 'tmp_last_V' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_data = call i32 @_ssdm_op_BitConcatenate.i32.i16.i16(i16 %tmp_data_M_imag_V, i16 %tmp_data_M_real_V)" [real2xfft.cpp:83]   --->   Operation 15 'bitconcatenate' 'tmp_data' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %dout_V_data, i1* %dout_V_last_V, i32 %tmp_data, i1 %tmp_last_V)" [real2xfft.cpp:83]   --->   Operation 16 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 17 [1/1] (1.73ns)   --->   "%i = add i11 2, %i_01_cast" [real2xfft.cpp:77]   --->   Operation 17 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln77 = trunc i11 %i to i10" [real2xfft.cpp:77]   --->   Operation 18 'trunc' 'trunc_ln77' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i11.i32(i11 %i, i32 10)" [real2xfft.cpp:77]   --->   Operation 19 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br i1 %tmp, label %.exitStub, label %rewind_header" [real2xfft.cpp:77]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br label %rewind_header"   --->   Operation 21 'br' <Predicate = (tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "br label %real2xfft_output" [real2xfft.cpp:77]   --->   Operation 22 'br' <Predicate = (do_init)> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([17 x i8]* @p_str4) nounwind" [real2xfft.cpp:77]   --->   Operation 23 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @p_str4)" [real2xfft.cpp:77]   --->   Operation 24 'specregionbegin' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [real2xfft.cpp:78]   --->   Operation 25 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i1P(i32* %dout_V_data, i1* %dout_V_last_V, i32 %tmp_data, i1 %tmp_last_V)" [real2xfft.cpp:83]   --->   Operation 26 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @p_str4, i32 %tmp_2)" [real2xfft.cpp:84]   --->   Operation 27 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%empty_38 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 28 'speclooptripcount' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_Return()"   --->   Operation 29 'return' <Predicate = (tmp)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('do_init') [10]  (1.77 ns)
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	'phi' operation ('i_01', real2xfft.cpp:77) with incoming values : ('trunc_ln77', real2xfft.cpp:77) [11]  (0 ns)
+	'icmp' operation ('tmp.last.V', real2xfft.cpp:82) [22]  (1.77 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,12 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../hls_ip_zynq_lab1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../hls_ip_zynq_lab1.gen/sources_1/bd/design_1/ipshared/34f8/hdl" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../../hls_ip_zynq_lab1.gen/sources_1/bd/design_1/ipshared/70ea/hdl/verilog/hls_macc_HLS_MACC_PERIPH_BUS_s_axi.v" \
+"../../../../hls_ip_zynq_lab1.gen/sources_1/bd/design_1/ipshared/70ea/hdl/verilog/hls_macc_mul_32s_32s_32_2_1.v" \
+"../../../../hls_ip_zynq_lab1.gen/sources_1/bd/design_1/ipshared/70ea/hdl/verilog/hls_macc.v" \
+"../../../bd/design_1/ip/design_1_hls_macc_0_0/sim/design_1_hls_macc_0_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

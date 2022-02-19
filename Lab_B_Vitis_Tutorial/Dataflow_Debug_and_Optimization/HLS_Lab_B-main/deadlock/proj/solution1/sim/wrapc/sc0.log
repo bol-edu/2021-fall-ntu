@@ -1,0 +1,7 @@
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_example.cpp
+   Compiling example.cpp_pre.cpp.tb.cpp
+   Compiling apatb_example_util.cpp
+   Compiling example_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_example_ir.ll
+   Generating cosim.tv.exe

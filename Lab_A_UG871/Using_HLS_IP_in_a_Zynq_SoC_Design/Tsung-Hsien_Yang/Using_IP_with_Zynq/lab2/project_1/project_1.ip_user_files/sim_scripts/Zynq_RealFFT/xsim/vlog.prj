@@ -1,0 +1,48 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/34f8/hdl" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_xlconstant_0_0/sim/Zynq_RealFFT_xlconstant_0_0.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_xlconstant_1_0/sim/Zynq_RealFFT_xlconstant_1_0.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_processing_system7_0_0/sim/Zynq_RealFFT_processing_system7_0_0.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/fifo_w16_d2_A.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/fifo_w16_d256_A.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/fifo_w16_d512_A.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/hls_real2xfft_muleOg.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/Loop_real2xfft_outpu.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/Loop_sliding_win_bkb.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/Loop_sliding_win_del.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/Loop_sliding_win_out.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/regslice_core.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/start_for_Loop_rehbi.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/start_for_Loop_slfYi.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/start_for_window_g8j.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/window_fn.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/window_fn_coeff_tcud.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/window_fn_coeff_tdEe.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/65c7/hdl/verilog/hls_real2xfft.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_hls_real2xfft_0_0/sim/Zynq_RealFFT_hls_real2xfft_0_0.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/fifo_w16_d8_A.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_deshbi_memcore.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_desibs_memcore.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macfYi.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_macg8j.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muldEe.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real_muleOg.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_buff.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dbkb.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_dcud.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_desc.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_rev_s.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/Loop_realfft_be_stre.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/start_for_Loop_rencg.v" \
+"../../../../project_1.gen/sources_1/bd/Zynq_RealFFT/ipshared/3b03/hdl/verilog/hls_xfft2real.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_hls_xfft2real_0_0/sim/Zynq_RealFFT_hls_xfft2real_0_0.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_xbar_0/sim/Zynq_RealFFT_xbar_0.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_auto_us_0/sim/Zynq_RealFFT_auto_us_0.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_auto_pc_0/sim/Zynq_RealFFT_auto_pc_0.v" \
+"../../../bd/Zynq_RealFFT/ip/Zynq_RealFFT_auto_pc_1/sim/Zynq_RealFFT_auto_pc_1.v" \
+"../../../bd/Zynq_RealFFT/sim/Zynq_RealFFT.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

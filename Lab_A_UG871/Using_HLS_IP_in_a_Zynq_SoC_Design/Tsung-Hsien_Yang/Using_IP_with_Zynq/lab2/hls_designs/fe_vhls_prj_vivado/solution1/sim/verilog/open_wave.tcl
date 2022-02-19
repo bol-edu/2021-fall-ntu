@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database hls_real2xfft.wdb

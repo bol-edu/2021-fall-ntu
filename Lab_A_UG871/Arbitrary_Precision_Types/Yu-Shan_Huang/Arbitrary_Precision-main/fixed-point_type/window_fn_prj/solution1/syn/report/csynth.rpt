@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'window_fn_top'
+================================================================
++ General Information: 
+    * Date:           Mon Oct 11 19:13:46 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        window_fn_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flgb2104-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------+------+-------+---------+---------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
+    |     Modules     | Issue|       | Latency | Latency | Iteration|         | Trip |          |         |         |           |           |     |
+    |     & Loops     | Type | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF    |    LUT    | URAM|
+    +-----------------+------+-------+---------+---------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
+    |+ window_fn_top  |     -|  -0.86|       39|  195.000|         -|       40|     -|        no|  1 (~0%)|  3 (~0%)|  390 (~0%)|  216 (~0%)|    -|
+    | o winfn_loop    |     -|  -3.65|       37|  185.000|         7|        1|    32|       yes|        -|        -|          -|          -|    -|
+    +-----------------+------+-------+---------+---------+----------+---------+------+----------+---------+---------+-----------+-----------+-----+
+
