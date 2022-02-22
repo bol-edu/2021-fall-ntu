@@ -7,9 +7,9 @@
 ## Table of Content
 
 - [About This Repository](#about-this-repository)
-- [Lab #A - UG871](#lab-#a---ug871)
-- [Lab #B - Vitis Tutorials](#lab-#b---vitis-tutorials)
-- [Lab #C - Vitis Libraries](#lab-#c---vitis-libraries)
+- [Lab #A - UG871](#lab-\#a---ug871)
+- [Lab #B - Vitis Tutorials](#lab-\#b---vitis-tutorials)
+- [Lab #C - Vitis Libraries](#lab-\#c---vitis-libraries)
 - [Final Projects](#final-projects)
 - [References](#references)
 
