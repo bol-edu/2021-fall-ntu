@@ -1,0 +1,27 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/reports/tsp
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/logs/tsp
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp.xo.compile_summary, at Sun Oct 31 23:03:46 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Oct 31 23:03:46 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'tsp'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: tsp Log file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'loop_compute'.
+WARNING: [v++ 200-885] Unable to schedule bus request on port 'gmem' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:42) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-885.html
+INFO: [v++ 204-61] Discarding stage scheduling solution.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 10, Depth = 193, loop 'loop_compute'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 411.00 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/reports/tsp/system_estimate_tsp.xtxt
+INFO: [v++ 60-586] Created build/tsp.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 18s

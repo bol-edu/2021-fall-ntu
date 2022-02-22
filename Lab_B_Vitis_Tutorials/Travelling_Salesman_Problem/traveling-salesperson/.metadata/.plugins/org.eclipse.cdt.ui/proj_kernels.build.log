@@ -1,0 +1,6 @@
+00:02:01 **** Incremental Build of configuration Hardware for project proj_kernels ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+
+00:02:01 Build Finished (took 211ms)
+

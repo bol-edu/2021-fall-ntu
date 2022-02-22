@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="binary_container_1">
+  <platform vendor="xilinx" boardid="u50" name="gen3x16_xdma" featureRomTime="0">
+    <version major="201920" minor="3"/>
+    <description/>
+    <board name="xilinx.com:au50:1.0" vendor="xilinx.com" fpga="xcu50-fsvh2104-2-e">
+      <interfaces>
+        <interface id="int1" name="PCIe" type="gen3x16"/>
+      </interfaces>
+      <memories>
+        <memory name="mem0" type="hbm" size="8GB"/>
+      </memories>
+      <images>
+        <image name="au50_image.jpg" type="HDPI"/>
+        <image name="" type="MDPI"/>
+        <image name="" type="LDPI"/>
+      </images>
+      <id>
+        <vendor/>
+        <device/>
+        <subsystem/>
+      </id>
+    </board>
+    <build_flow/>
+    <host architecture="x86_64"/>
+    <device name="fpga0" fpgaDevice="virtexuplusHBM:xcu50:fsvh2104:-2:e" addrWidth="0">
+      <core name="OCL_REGION_0" target="csim" type="clc_region" clockFreq="0MHz" numComputeUnits="60">
+        <kernel name="tsp" language="c" vlnv="xilinx.com:hls:tsp:1.0" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="true" interrupt="true" hwControlProtocol="ap_ctrl_chain">
+          <port name="M_AXI_GMEM" mode="master" range="0xFFFFFFFF" dataWidth="32" portType="addressable" base="0x0"/>
+          <port name="S_AXI_CONTROL" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x0"/>
+          <arg name="distances" addressQualifier="1" id="0" port="M_AXI_GMEM" size="0x8" offset="0x10" hostOffset="0x0" hostSize="0x8" type="void*"/>
+          <arg name="shortestDistance" addressQualifier="1" id="1" port="M_AXI_GMEM" size="0x8" offset="0x1C" hostOffset="0x0" hostSize="0x8" type="void*"/>
+          <compileWorkGroupSize x="1" y="1" z="1"/>
+          <maxWorkGroupSize x="1" y="1" z="1"/>
+          <string_table/>
+          <instance name="tsp_1">
+            <addrRemap base="0x00000000" port="S_AXI_CONTROL"/>
+          </instance>
+        </kernel>
+      </core>
+    </device>
+  </platform>
+</project>

@@ -1,0 +1,16 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/reports/tsp
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/logs/tsp
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp.xo.compile_summary, at Sun Oct 31 19:24:54 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Oct 31 19:24:54 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'tsp'
+INFO: [v++ 60-594] Finished kernel compilation
+ERROR: [v++ 17-70] Application Exception: Failed to add kernel 'tsp' to XO container because the kernel name '_Z3tspRN3hls6streamItLi0EEERj' defined in kernel.xml does not match.
+
+ERROR: [v++ 60-604] Unable to copy output file build/tsp.xo
+INFO: [v++ 60-1653] Closing dispatch client.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="diamond.cpp" path="C:\E\HLS\Lab\Lab_B\HLS_Lab_B\dataflow\diamond.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="C:\E\HLS\Lab\Lab_B\HLS_Lab_B\dataflow\result.golden.dat"/>
+    <originFiles name="diamond_test.cpp" path="C:\E\HLS\Lab\Lab_B\HLS_Lab_B\dataflow\diamond_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

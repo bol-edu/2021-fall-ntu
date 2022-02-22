@@ -1,0 +1,231 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Oct 31 23:03:46 2021",
+ "timestampMillis": "1635692626390",
+ "buildStep": {
+  "cmdId": "8aefa48f-ba9c-4496-92de-b01859bc82d9",
+  "name": "v++",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2020.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw --compile -I../src --config tsp-compile.cfg -obuild/tsp.xo ../src/tsp.cpp ",
+  "args": [
+   "--target",
+   "hw",
+   "--compile",
+   "-I../src",
+   "--config",
+   "tsp-compile.cfg",
+   "-obuild/tsp.xo",
+   "../src/tsp.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/tsp-compile.cfg",
+    "content": "platform=xilinx_u50_gen3x16_xdma_201920_3\nsave-temps=1\nkernel=tsp\nmessageDb=build/tsp.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=tsp\n"
+   }
+  ],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 23:03:46 2021",
+ "timestampMillis": "1635692626400",
+ "status": {
+  "cmdId": "8aefa48f-ba9c-4496-92de-b01859bc82d9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Oct 31 23:03:48 2021",
+ "timestampMillis": "1635692628278",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u50_gen3x16_xdma_201920_3.xpfm",
+  "hardwareDsa": "hw.xsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "tsp",
+     "file": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2020.2. SW Build (by xbuild) on 2020-11-18-05:13:29"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Oct 31 23:03:48 2021",
+ "timestampMillis": "1635692628313",
+ "buildStep": {
+  "cmdId": "528845e2-d1a8-4d9e-9dd5-37283a204a41",
+  "name": "vitis_hls",
+  "logFile": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/vitis_hls.log",
+  "commandLine": "vitis_hls -f /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 23:03:48 2021",
+ "timestampMillis": "1635692628321",
+ "status": {
+  "cmdId": "528845e2-d1a8-4d9e-9dd5-37283a204a41",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 23:04:51 2021",
+ "timestampMillis": "1635692691367",
+ "status": {
+  "cmdId": "528845e2-d1a8-4d9e-9dd5-37283a204a41",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:53 2021",
+ "timestampMillis": "1635692693284",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/tsp.design.xml",
+  "name": "tsp",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:53 2021",
+ "timestampMillis": "1635692693290",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/.autopilot/db/.message_syn.xml",
+  "name": "tsp",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:53 2021",
+ "timestampMillis": "1635692693359",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/reports/tsp/hls_reports/tsp_csynth.rpt",
+  "name": "tsp",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:53 2021",
+ "timestampMillis": "1635692693368",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/tsp/solution/syn/report/tsp_csynth.xml",
+  "name": "tsp",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:53 2021",
+ "timestampMillis": "1635692693406",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/reports/tsp/system_estimate_tsp.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:54 2021",
+ "timestampMillis": "1635692694601",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Oct 31 23:04:54 2021",
+ "timestampMillis": "1635692694602",
+ "report": {
+  "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Oct 31 23:04:54 2021",
+ "timestampMillis": "1635692694639",
+ "status": {
+  "cmdId": "8aefa48f-ba9c-4496-92de-b01859bc82d9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

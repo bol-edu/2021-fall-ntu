@@ -1,0 +1,19 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_system_hw_link/Emulation-SW/binary_container_1.build/reports/link
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_system_hw_link/Emulation-SW/binary_container_1.build/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_system_hw_link/Emulation-SW/binary_container_1.xclbin.link_summary, at Wed Nov  3 21:04:21 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Wed Nov  3 21:04:21 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-629] Linking for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-645] kernel flags are '-g -I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_kernels/src -g'
+INFO: [v++ 60-586] Created binary_container_1.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Steps Log File: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_system_hw_link/Emulation-SW/binary_container_1.build/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /mnt/HLSNAS/r10943005/traveling-salesperson/proj_opt_system_hw_link/Emulation-SW/binary_container_1.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 15s
+INFO: [v++ 60-1653] Closing dispatch client.

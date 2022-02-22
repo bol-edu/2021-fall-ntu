@@ -1,0 +1,31 @@
+19:15:17 INFO  : Registering command handlers for Vitis TCF services
+19:15:17 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/HLSNAS/r10943005/traveling-salesperson/temp_xsdb_launch_script.tcl
+19:15:18 INFO  : Platform repository initialization has completed.
+19:15:21 INFO  : XSCT server has started successfully.
+19:15:21 INFO  : plnx-install-location is set to ''
+19:15:21 INFO  : Successfully done setting XSCT server connection channel  
+19:15:21 INFO  : Successfully done query RDI_DATADIR 
+19:15:21 INFO  : Successfully done setting workspace for the tool. 
+19:19:44 INFO  : Added kernel '[tsp - proj_kernels/src/tsp.cpp]' in binary container 'binary_container_1' of project 'proj_system_hw_link'
+21:40:42 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:44:45 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:47:15 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:48:46 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:50:54 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:51:18 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:52:03 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:52:11 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:53:17 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+21:59:12 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+22:05:00 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+22:20:11 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+22:21:32 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+22:30:58 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+22:52:08 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+22:54:41 INFO  : Launching executable: Emulation-SW/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Emulation-SW/binary_container_1.xclbin
+23:03:34 INFO  : Build configuration of 'proj_system' is updated to 'Hardware'
+23:03:34 INFO  : Build configuration of system project is automatically updated to 'Hardware'.
+23:03:34 INFO  : Build configuration of 'proj_system_hw_link' is updated to 'Hardware'
+23:03:34 INFO  : Build configuration of 'proj' is updated to 'Hardware'
+00:05:01 INFO  : Launching executable: Hardware/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Hardware/binary_container_1.xclbin
+00:12:39 INFO  : Launching executable: Hardware/proj Xilinx xilinx_u50_gen3x16_xdma_201920_3 ${project_loc:proj_system}/Hardware/binary_container_1.xclbin

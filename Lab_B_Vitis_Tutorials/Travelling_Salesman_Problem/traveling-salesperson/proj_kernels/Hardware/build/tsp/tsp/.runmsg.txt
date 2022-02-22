@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: tsp
+Log file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Hardware/build/tsp/tsp/vitis_hls.log

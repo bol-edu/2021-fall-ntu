@@ -1,0 +1,40 @@
+00:02:27 **** Incremental Build of configuration Hardware for project proj_system ****
+make all 
+/opt/Xilinx/Vitis/2020.2/bin/v++ --package --config package.cfg ../../proj_system_hw_link/Hardware/binary_container_1.xclbin -o binary_container_1.xclbin
+Option Map File Used: '/opt/Xilinx/Vitis/2020.2/data/vitis/vpp/optMap.xml'
+
+****** v++ v2020.2 (64-bit)
+  **** SW Build (by xbuild) on 2020-11-18-05:13:29
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+INFO: [v++ 60-1306] Additional information associated with this v++ package can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/package.build/reports/package
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/package.build/logs/package
+Running Dispatch Server on port:44969
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/binary_container_1.xclbin.package_summary, at Mon Nov  1 00:02:39 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Mon Nov  1 00:02:39 2021
+Running Rule Check Server on port:43153
+INFO: [v++ 60-1315] Creating rulecheck session with output '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/package.build/reports/package/v++_package_binary_container_1_guidance.html', at Mon Nov  1 00:02:40 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-2256] Packaging for hardware
+
+Section: 'SYSTEM_METADATA'(22) was successfully written.
+Format: RAW
+File  : '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/package.build/package/extractedSystemDiagram.json'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 11542 bytes
+Format : RAW
+File   : '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/package.build/package/packagedSystemDiagram.json'
+Successfully wrote (29850431 bytes) to the output file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/package.build/package/upsert.xclbin
+INFO: [v++ 60-2460] Successfully copied a temporary xclbin to the output xclbin: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/binary_container_1.xclbin
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /mnt/HLSNAS/r10943005/traveling-salesperson/proj_system/Hardware/binary_container_1.xclbin.package_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 17s
+INFO: [v++ 60-1653] Closing dispatch client.
+cp -f binary_container_1.xclbin ../../proj/Hardware
+
+00:02:48 Build Finished (took 20s.85ms)
+

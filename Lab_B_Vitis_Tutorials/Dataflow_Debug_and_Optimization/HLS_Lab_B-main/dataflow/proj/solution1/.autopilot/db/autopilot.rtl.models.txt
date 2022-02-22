@@ -1,0 +1,5 @@
+funcA
+funcB
+funcC
+funcD
+diamond

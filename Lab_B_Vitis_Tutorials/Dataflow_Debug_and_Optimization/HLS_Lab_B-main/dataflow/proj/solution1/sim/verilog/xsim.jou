@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct 23 12:12:46 2021
+# Process ID: 15656
+# Current directory: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/diamond/xsim_script.tcl}
+# Log file: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/xsim.log
+# Journal file: C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/diamond/xsim_script.tcl
+open_wave_config diamond_dataflow_ana.wcfg
+source diamond.tcl

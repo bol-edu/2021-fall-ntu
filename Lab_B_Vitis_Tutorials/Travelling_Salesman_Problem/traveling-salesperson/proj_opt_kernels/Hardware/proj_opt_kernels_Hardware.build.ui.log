@@ -1,0 +1,6 @@
+2021-11-03T22:43:54.69189900255-22:43:54 **** Incremental Build of configuration Hardware for project proj_opt_kernels ****
+000-make -j16 all 
+000-make: Nothing to be done for 'all'.
+00255-
+22:43:54 Build Finished (took 183ms)
+

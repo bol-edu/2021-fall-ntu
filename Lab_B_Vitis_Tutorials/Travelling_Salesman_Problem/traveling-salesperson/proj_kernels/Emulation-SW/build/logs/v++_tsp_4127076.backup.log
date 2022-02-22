@@ -1,0 +1,21 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/reports/tsp
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/logs/tsp
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp.xo.compile_summary, at Sun Oct 31 20:14:52 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Oct 31 20:14:52 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'tsp'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: tsp Log file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log :
+ERROR: [v++ 207-3796] unknown type name '_Compare': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:27:55
+ERROR: [v++ 207-3771] use of undeclared identifier 'UINT_MAX': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:121:30
+ERROR: [v++ 60-300] Failed to build kernel(ip) tsp, see log for details: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3796] unknown type name '_Compare': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:27:55
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'UINT_MAX': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:121:30
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.

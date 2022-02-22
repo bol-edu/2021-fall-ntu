@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1634958160742">
+  <ports id="1" name="A" type="PortType" originalName="A" coreName="FIFO_SRL" coreId="1702043696" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="B" type="PortType" originalName="B" coreName="FIFO_SRL" coreId="0" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="data_channel1" type="PortType" originalName="data_channel1" coreName="FIFO_SRL" coreId="39" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="data_channel2" type="PortType" originalName="data_channel2" coreName="FIFO_SRL" coreId="3549535740" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="41" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="44" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="46" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="51" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="58" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="59" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="60" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="61" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="64" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="66" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="72" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="74" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="78" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="80" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="82" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="83" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="84" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="86" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="88" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="201" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="203" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="10" name="block_10" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_18</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="br_ln81" lineNumber="81" fileName="example.cpp" fileDirectory=".." coreId="4294967294" contextFuncName="proc_2_1" opcode="br" m_display="0" m_delay="0.84" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="example.cpp" linenumber="81" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+      <controlInputObjs>block_18</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="example.cpp">
+      <validLinenumbers>81</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="27" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>block_18</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="3.0" m_display="0" m_delay="0.84" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="40" name="block_40" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln88" lineNumber="88" fileName="example.cpp" fileDirectory=".." coreId="98" contextFuncName="proc_2_1" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="example.cpp" linenumber="88" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="example.cpp">
+      <validLinenumbers>88</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="133" pipe_depth="2" RegionName="VITIS_LOOP_81_1">
+    <basic_blocks id="18" name="block_18" type="BlockType">
+      <controlInputObjs>block_10</controlInputObjs>
+      <controlInputObjs>.split4</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+      <controlOutputObjs>.split4</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i" originalName="i" coreId="2" bitwidth="4" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>block_10</controlInputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="add_phi" originalName="tmp" coreId="205" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <controlInputObjs>block_10</controlInputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="i_2" lineNumber="81" originalName="i" fileName="example.cpp" fileDirectory=".." rtlName="i_2_fu_107_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="proc_2_1" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.01" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="81" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="icmp_ln81" lineNumber="81" fileName="example.cpp" fileDirectory=".." rtlName="icmp_ln81_fu_113_p2" opType="icmp" coreId="808531245" contextFuncName="proc_2_1" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.87" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="81" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln81" lineNumber="81" fileName="example.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="proc_2_1" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="81" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split4</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="example.cpp">
+        <validLinenumbers>81</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="25" name=".split4" type="BlockType">
+      <controlInputObjs>block_18</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_18</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="tmp" lineNumber="145" originalName="tmp" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="read" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_delay="2.31" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="read"/>
+        <dataInputObjs>A</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="tmp_3" lineNumber="145" originalName="tmp" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="read" bitwidth="32" opcode="read" nodeLabel="2.0" m_display="0" m_delay="2.39" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="read"/>
+        <dataInputObjs>B</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="tmp_4" lineNumber="82" originalName="tmp" fileName="example.cpp" fileDirectory=".." rtlName="tmp_4_fu_119_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="proc_2_1" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.51" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="82" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="data_channel1_write_ln174" lineNumber="174" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="2.31" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="write"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>data_channel1</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln0" coreId="98" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_18</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>145</validLinenumbers>
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="example.cpp">
+        <validLinenumbers>82</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="134" pipe_depth="2" RegionName="VITIS_LOOP_85_2">
+    <basic_blocks id="34" name=".preheader" type="BlockType">
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_40</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="i_3" originalName="i" coreId="840979276" bitwidth="4" opcode="phi" nodeLabel="4.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="i_4" lineNumber="85" originalName="i" fileName="example.cpp" fileDirectory=".." rtlName="i_4_fu_126_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="proc_2_1" bitwidth="4" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.01" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="85" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="icmp_ln85" lineNumber="85" fileName="example.cpp" fileDirectory=".." rtlName="icmp_ln85_fu_132_p2" opType="icmp" coreId="98" contextFuncName="proc_2_1" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.87" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="85" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln85" lineNumber="85" fileName="example.cpp" fileDirectory=".." coreId="0" contextFuncName="proc_2_1" opcode="br" nodeLabel="4.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="example.cpp" linenumber="85" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="proc_2_1"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_40</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="example.cpp">
+        <validLinenumbers>85</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="38" name=".split" type="BlockType">
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="data_channel2_write_ln174" lineNumber="174" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="auto" opType="fifo" coreId="81" contextFuncName="write" opcode="write" nodeLabel="5.0" m_display="0" m_delay="2.39" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="C:\E\HLS\Lab\Lab_B\03-dataflow_debug_and_optimization\reference_files\deadlock" functionName="write"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>data_channel2</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln0" coreId="2" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <controlInputObjs>.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="i_3_reg_96">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln81_reg_143">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_4_reg_147">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="i_4_reg_152">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_138">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln85_reg_157">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="add_phi_reg_83">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_72">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_2_fu_107">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_119">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_phi_phi_fu_88">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln81_fu_113">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln85_fu_132">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_4_fu_126">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_76">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_phi_fu_100">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln174_write_fu_58">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_46">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_3_read_fu_52">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln174_write_fu_65">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioPorts name="A">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="B">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_channel1">
+    <contents name="write">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="data_channel2">
+    <contents name="write">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="39" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="proc_2_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="24" mMaxLatency="24">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_81_1" mII="1" mDepth="2" mMinTripCount="10" mMaxTripCount="10" mMinLatency="10" mMaxLatency="10" mType="1">
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>25</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>27</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_85_2" mII="1" mDepth="2" mMinTripCount="10" mMaxTripCount="10" mMinLatency="10" mMaxLatency="10" mType="1">
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>40</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

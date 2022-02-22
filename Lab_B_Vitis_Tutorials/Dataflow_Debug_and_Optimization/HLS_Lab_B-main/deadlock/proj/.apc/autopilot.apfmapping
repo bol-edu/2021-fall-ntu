@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="example.cpp" path="C:\E\HLS\Lab\Lab_B\HLS_Lab_B\deadlock\example.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="example_test.cpp" path="C:\E\HLS\Lab\Lab_B\HLS_Lab_B\deadlock\example_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

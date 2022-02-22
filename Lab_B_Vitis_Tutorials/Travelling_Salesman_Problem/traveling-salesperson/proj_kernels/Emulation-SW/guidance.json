@@ -1,0 +1,36 @@
+{
+ "session": {
+  "name": "Emulation-SW",
+  "uuid": "7ec2d558-3cef-4bc5-b303-a0c55634f822",
+  "description": "Vitis IDE session Emulation-SW",
+  "timestamp": "0",
+  "report_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/guidance.html",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "proto_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/guidance.pb",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "build_target": "",
+  "config_files": []
+ },
+ "violation_count": 0,
+ "waived_count": 0,
+ "affirmation_count": 0
+}
+

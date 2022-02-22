@@ -1,0 +1,57 @@
+
+*** Running vitis_hls
+    with args -f tsp.tcl -messageDb vitis_hls.pb
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'r10943005' on host 'HLS01' (Linux_x86_64 version 5.8.0-41-generic) on Sun Oct 31 22:53:00 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp'
+Sourcing Tcl script 'tsp.tcl'
+INFO: [HLS 200-1510] Running: open_project tsp 
+INFO: [HLS 200-10] Creating and opening project '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/tsp'.
+INFO: [HLS 200-1510] Running: set_top tsp 
+INFO: [HLS 200-1510] Running: add_files /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp -cflags  -g -I /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src  
+INFO: [HLS 200-10] Adding design file '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/tsp/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu50-fsvh2104-2-e 
+INFO: [HLS 200-10] Setting target device to 'xcu50-fsvh2104-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname tsp 
+INFO: [HLS 200-1510] Running: csynth_design -synthesis_check 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 189.760 MB.
+INFO: [HLS 200-10] Analyzing design file '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0.27 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.6 seconds; current allocated memory: 190.367 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'compute(unsigned long, unsigned short const (*) [11])' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:96:13)
+INFO: [HLS 214-178] Inlining function 'getDistance(int const*, unsigned short const (*) [11])' into 'tsp' (/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.82 seconds. CPU system time: 0.25 seconds. Elapsed time: 3.3 seconds; current allocated memory: 191.752 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 191.753 MB.
+INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2.15 seconds. CPU system time: 0.35 seconds. Elapsed time: 4.03 seconds; current allocated memory: 191.726 MB.
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 3.62 seconds. Total CPU system time: 0.66 seconds. Total elapsed time: 5.78 seconds; peak allocated memory: 191.753 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Oct 31 22:53:05 2021...

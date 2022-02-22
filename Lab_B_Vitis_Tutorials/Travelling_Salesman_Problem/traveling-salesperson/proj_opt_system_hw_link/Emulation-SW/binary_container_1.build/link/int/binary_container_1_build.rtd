@@ -1,0 +1,103 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "build_metadata": {
+        "dsa": {
+            "vendor": "xilinx",
+            "board_id": "u50",
+            "name": "gen3x16_xdma",
+            "version_major": "201920",
+            "version_minor": "3",
+            "description": "",
+            "generated_by": {
+                "name": "Vivado",
+                "version": "2019.2",
+                "cl": "2708876",
+                "time_stamp": "Wed Feb 19 10:53:31 2020"
+            },
+            "board": {
+                "name": "xilinx.com:au50:1.0",
+                "vendor": "xilinx.com",
+                "part": "xcu50-fsvh2104-2-e",
+                "board_part": "xilinx.com:au50:part0:1.0"
+            },
+            "feature_roms": [
+                {
+                    "time_epoch": "0"
+                }
+            ]
+        },
+        "xclbin": {
+            "generated_by": {
+                "name": "v++",
+                "version": "2020.2",
+                "cl": "0",
+                "time_stamp": "2020-11-18-05:13:29",
+                "options": "\/opt\/Xilinx\/Vitis\/2020.2\/bin\/unwrapped\/lnx64.o\/v++ --advanced.misc solution_name=link --config binary_container_1-link.cfg --connectivity.nk tsp:1:tsp_1 --debug --input_files ..\/..\/proj_opt_kernels\/Emulation-SW\/build\/tsp.xo --link --log_dir binary_container_1.build\/logs --messageDb binary_container_1.mdb --optimize 0 --output binary_container_1.xclbin --platform xilinx_u50_gen3x16_xdma_201920_3 --remote_ip_cache \/mnt\/HLSNAS\/r10943005\/traveling-salesperson\/ip_cache --report_dir binary_container_1.build\/reports --report_level 0 --save-temps --target sw_emu --temp_dir binary_container_1.build "
+            },
+            "user_regions": [
+                {
+                    "name": "OCL_REGION_0",
+                    "type": "clc_region",
+                    "instance_path": "level0_i\/ulp",
+                    "base_address": "",
+                    "kernels": [
+                        {
+                            "name": "tsp",
+                            "ports": [
+                                {
+                                    "name": "M_AXI_GMEM",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "S_AXI_CONTROL",
+                                    "mode": "slave",
+                                    "range": "0x1000",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "name": "distances",
+                                    "address_qualifier": "1",
+                                    "id": "0",
+                                    "port": "M_AXI_GMEM",
+                                    "size": "0x8",
+                                    "offset": "0x10",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "shortestDistance",
+                                    "address_qualifier": "1",
+                                    "id": "1",
+                                    "port": "M_AXI_GMEM",
+                                    "size": "0x8",
+                                    "offset": "0x1C",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                }
+                            ],
+                            "instances": [
+                                {
+                                    "name": "tsp_1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

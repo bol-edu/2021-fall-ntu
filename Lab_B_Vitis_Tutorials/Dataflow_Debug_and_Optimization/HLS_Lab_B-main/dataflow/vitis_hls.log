@@ -1,0 +1,853 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'richard' on host 'desktop-9crvg4j' (Windows NT_amd64 version 6.2) on Sat Oct 23 12:12:24 +0800 2021
+INFO: [HLS 200-10] In directory 'C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow'
+Sourcing Tcl script 'C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: open_project proj 
+INFO: [HLS 200-10] Opening project 'C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj'.
+INFO: [HLS 200-1510] Running: set_top diamond 
+INFO: [HLS 200-1510] Running: add_files diamond.cpp 
+INFO: [HLS 200-10] Adding design file 'diamond.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb result.golden.dat -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'result.golden.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb diamond_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'diamond_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flga2104-2-i'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flga2104-2-i 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name diamond diamond 
+INFO: [HLS 200-1510] Running: cosim_design -enable_dataflow_profiling -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling diamond_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_diamond.cpp
+   Compiling diamond.cpp_pre.cpp.tb.cpp
+   Compiling apatb_diamond_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Series 0 Outcome: 25
+Series 0 Outcome: 40
+Series 0 Outcome: 55
+Series 0 Outcome: 70
+Series 0 Outcome: 85
+Series 0 Outcome: 100
+Series 0 Outcome: 115
+Series 0 Outcome: 130
+Series 0 Outcome: 145
+Series 0 Outcome: 160
+Series 0 Outcome: 175
+Series 0 Outcome: 190
+Series 0 Outcome: 205
+Series 0 Outcome: 220
+Series 0 Outcome: 235
+Series 0 Outcome: 250
+Series 0 Outcome: 9
+Series 0 Outcome: 24
+Series 0 Outcome: 39
+Series 0 Outcome: 54
+Series 0 Outcome: 69
+Series 0 Outcome: 84
+Series 0 Outcome: 99
+Series 0 Outcome: 114
+Series 0 Outcome: 129
+Series 0 Outcome: 144
+Series 0 Outcome: 159
+Series 0 Outcome: 174
+Series 0 Outcome: 189
+Series 0 Outcome: 204
+Series 0 Outcome: 219
+Series 0 Outcome: 234
+Series 0 Outcome: 249
+Series 0 Outcome: 8
+Series 0 Outcome: 23
+Series 0 Outcome: 38
+Series 0 Outcome: 53
+Series 0 Outcome: 68
+Series 0 Outcome: 83
+Series 0 Outcome: 98
+Series 0 Outcome: 113
+Series 0 Outcome: 128
+Series 0 Outcome: 143
+Series 0 Outcome: 158
+Series 0 Outcome: 173
+Series 0 Outcome: 188
+Series 0 Outcome: 203
+Series 0 Outcome: 218
+Series 0 Outcome: 233
+Series 0 Outcome: 248
+Series 0 Outcome: 7
+Series 0 Outcome: 22
+Series 0 Outcome: 37
+Series 0 Outcome: 52
+Series 0 Outcome: 67
+Series 0 Outcome: 82
+Series 0 Outcome: 97
+Series 0 Outcome: 112
+Series 0 Outcome: 127
+Series 0 Outcome: 142
+Series 0 Outcome: 157
+Series 0 Outcome: 172
+Series 0 Outcome: 187
+Series 0 Outcome: 202
+Series 0 Outcome: 217
+Series 0 Outcome: 232
+Series 0 Outcome: 247
+Series 0 Outcome: 6
+Series 0 Outcome: 21
+Series 0 Outcome: 36
+Series 0 Outcome: 51
+Series 0 Outcome: 66
+Series 0 Outcome: 81
+Series 0 Outcome: 96
+Series 0 Outcome: 111
+Series 0 Outcome: 126
+Series 0 Outcome: 141
+Series 0 Outcome: 156
+Series 0 Outcome: 171
+Series 0 Outcome: 186
+Series 0 Outcome: 201
+Series 0 Outcome: 216
+Series 0 Outcome: 231
+Series 0 Outcome: 246
+Series 0 Outcome: 5
+Series 0 Outcome: 20
+Series 0 Outcome: 35
+Series 0 Outcome: 50
+Series 0 Outcome: 65
+Series 0 Outcome: 80
+Series 0 Outcome: 95
+Series 0 Outcome: 110
+Series 0 Outcome: 125
+Series 0 Outcome: 140
+Series 0 Outcome: 155
+Series 0 Outcome: 170
+Series 0 Outcome: 185
+Series 0 Outcome: 200
+Series 0 Outcome: 215
+Series 0 Outcome: 230
+Series 1 Outcome: 25
+Series 1 Outcome: 40
+Series 1 Outcome: 55
+Series 1 Outcome: 70
+Series 1 Outcome: 85
+Series 1 Outcome: 100
+Series 1 Outcome: 115
+Series 1 Outcome: 130
+Series 1 Outcome: 145
+Series 1 Outcome: 160
+Series 1 Outcome: 175
+Series 1 Outcome: 190
+Series 1 Outcome: 205
+Series 1 Outcome: 220
+Series 1 Outcome: 235
+Series 1 Outcome: 250
+Series 1 Outcome: 9
+Series 1 Outcome: 24
+Series 1 Outcome: 39
+Series 1 Outcome: 54
+Series 1 Outcome: 69
+Series 1 Outcome: 84
+Series 1 Outcome: 99
+Series 1 Outcome: 114
+Series 1 Outcome: 129
+Series 1 Outcome: 144
+Series 1 Outcome: 159
+Series 1 Outcome: 174
+Series 1 Outcome: 189
+Series 1 Outcome: 204
+Series 1 Outcome: 219
+Series 1 Outcome: 234
+Series 1 Outcome: 249
+Series 1 Outcome: 8
+Series 1 Outcome: 23
+Series 1 Outcome: 38
+Series 1 Outcome: 53
+Series 1 Outcome: 68
+Series 1 Outcome: 83
+Series 1 Outcome: 98
+Series 1 Outcome: 113
+Series 1 Outcome: 128
+Series 1 Outcome: 143
+Series 1 Outcome: 158
+Series 1 Outcome: 173
+Series 1 Outcome: 188
+Series 1 Outcome: 203
+Series 1 Outcome: 218
+Series 1 Outcome: 233
+Series 1 Outcome: 248
+Series 1 Outcome: 7
+Series 1 Outcome: 22
+Series 1 Outcome: 37
+Series 1 Outcome: 52
+Series 1 Outcome: 67
+Series 1 Outcome: 82
+Series 1 Outcome: 97
+Series 1 Outcome: 112
+Series 1 Outcome: 127
+Series 1 Outcome: 142
+Series 1 Outcome: 157
+Series 1 Outcome: 172
+Series 1 Outcome: 187
+Series 1 Outcome: 202
+Series 1 Outcome: 217
+Series 1 Outcome: 232
+Series 1 Outcome: 247
+Series 1 Outcome: 6
+Series 1 Outcome: 21
+Series 1 Outcome: 36
+Series 1 Outcome: 51
+Series 1 Outcome: 66
+Series 1 Outcome: 81
+Series 1 Outcome: 96
+Series 1 Outcome: 111
+Series 1 Outcome: 126
+Series 1 Outcome: 141
+Series 1 Outcome: 156
+Series 1 Outcome: 171
+Series 1 Outcome: 186
+Series 1 Outcome: 201
+Series 1 Outcome: 216
+Series 1 Outcome: 231
+Series 1 Outcome: 246
+Series 1 Outcome: 5
+Series 1 Outcome: 20
+Series 1 Outcome: 35
+Series 1 Outcome: 50
+Series 1 Outcome: 65
+Series 1 Outcome: 80
+Series 1 Outcome: 95
+Series 1 Outcome: 110
+Series 1 Outcome: 125
+Series 1 Outcome: 140
+Series 1 Outcome: 155
+Series 1 Outcome: 170
+Series 1 Outcome: 185
+Series 1 Outcome: 200
+Series 1 Outcome: 215
+Series 1 Outcome: 230
+Series 2 Outcome: 25
+Series 2 Outcome: 40
+Series 2 Outcome: 55
+Series 2 Outcome: 70
+Series 2 Outcome: 85
+Series 2 Outcome: 100
+Series 2 Outcome: 115
+Series 2 Outcome: 130
+Series 2 Outcome: 145
+Series 2 Outcome: 160
+Series 2 Outcome: 175
+Series 2 Outcome: 190
+Series 2 Outcome: 205
+Series 2 Outcome: 220
+Series 2 Outcome: 235
+Series 2 Outcome: 250
+Series 2 Outcome: 9
+Series 2 Outcome: 24
+Series 2 Outcome: 39
+Series 2 Outcome: 54
+Series 2 Outcome: 69
+Series 2 Outcome: 84
+Series 2 Outcome: 99
+Series 2 Outcome: 114
+Series 2 Outcome: 129
+Series 2 Outcome: 144
+Series 2 Outcome: 159
+Series 2 Outcome: 174
+Series 2 Outcome: 189
+Series 2 Outcome: 204
+Series 2 Outcome: 219
+Series 2 Outcome: 234
+Series 2 Outcome: 249
+Series 2 Outcome: 8
+Series 2 Outcome: 23
+Series 2 Outcome: 38
+Series 2 Outcome: 53
+Series 2 Outcome: 68
+Series 2 Outcome: 83
+Series 2 Outcome: 98
+Series 2 Outcome: 113
+Series 2 Outcome: 128
+Series 2 Outcome: 143
+Series 2 Outcome: 158
+Series 2 Outcome: 173
+Series 2 Outcome: 188
+Series 2 Outcome: 203
+Series 2 Outcome: 218
+Series 2 Outcome: 233
+Series 2 Outcome: 248
+Series 2 Outcome: 7
+Series 2 Outcome: 22
+Series 2 Outcome: 37
+Series 2 Outcome: 52
+Series 2 Outcome: 67
+Series 2 Outcome: 82
+Series 2 Outcome: 97
+Series 2 Outcome: 112
+Series 2 Outcome: 127
+Series 2 Outcome: 142
+Series 2 Outcome: 157
+Series 2 Outcome: 172
+Series 2 Outcome: 187
+Series 2 Outcome: 202
+Series 2 Outcome: 217
+Series 2 Outcome: 232
+Series 2 Outcome: 247
+Series 2 Outcome: 6
+Series 2 Outcome: 21
+Series 2 Outcome: 36
+Series 2 Outcome: 51
+Series 2 Outcome: 66
+Series 2 Outcome: 81
+Series 2 Outcome: 96
+Series 2 Outcome: 111
+Series 2 Outcome: 126
+Series 2 Outcome: 141
+Series 2 Outcome: 156
+Series 2 Outcome: 171
+Series 2 Outcome: 186
+Series 2 Outcome: 201
+Series 2 Outcome: 216
+Series 2 Outcome: 231
+Series 2 Outcome: 246
+Series 2 Outcome: 5
+Series 2 Outcome: 20
+Series 2 Outcome: 35
+Series 2 Outcome: 50
+Series 2 Outcome: 65
+Series 2 Outcome: 80
+Series 2 Outcome: 95
+Series 2 Outcome: 110
+Series 2 Outcome: 125
+Series 2 Outcome: 140
+Series 2 Outcome: 155
+Series 2 Outcome: 170
+Series 2 Outcome: 185
+Series 2 Outcome: 200
+Series 2 Outcome: 215
+Series 2 Outcome: 230
+Test passed !
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\E\HLS\Lab\Lab_B\HLS_Lab_B\dataflow\proj\solution1\sim\verilog>set PATH= 
+
+C:\E\HLS\Lab\Lab_B\HLS_Lab_B\dataflow\proj\solution1\sim\verilog>call C:/Xilinx/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_diamond_top glbl -prj diamond.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s diamond -debug wave 
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_diamond_top glbl -prj diamond.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s diamond -debug wave 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/AESL_automem_vecIn.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_vecIn
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/AESL_automem_vecOut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_vecOut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_diamond_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_c1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_c1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_c1_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_c1_memcore_ram
+INFO: [VRFC 10-311] analyzing module diamond_c1_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_c2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_c2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_c2_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_c2_memcore_ram
+INFO: [VRFC 10-311] analyzing module diamond_c2_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_c4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_c4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_c4_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_c4_memcore_ram
+INFO: [VRFC 10-311] analyzing module diamond_c4_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_funcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_funcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_funcB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_funcB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_funcC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_funcC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond_funcD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module diamond_funcD
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.diamond_c1_memcore_ram
+Compiling module xil_defaultlib.diamond_c1_memcore
+Compiling module xil_defaultlib.diamond_c1(AddressRange=100)
+Compiling module xil_defaultlib.diamond_c2_memcore_ram
+Compiling module xil_defaultlib.diamond_c2_memcore
+Compiling module xil_defaultlib.diamond_c2(AddressRange=100)
+Compiling module xil_defaultlib.diamond_c4_memcore_ram
+Compiling module xil_defaultlib.diamond_c4_memcore
+Compiling module xil_defaultlib.diamond_c4(AddressRange=100)
+Compiling module xil_defaultlib.diamond_funcA
+Compiling module xil_defaultlib.diamond_funcB
+Compiling module xil_defaultlib.diamond_funcC
+Compiling module xil_defaultlib.diamond_funcD
+Compiling module xil_defaultlib.diamond
+Compiling module xil_defaultlib.AESL_automem_vecIn
+Compiling module xil_defaultlib.AESL_automem_vecOut
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(OUT_CH...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_I...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit_1
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_diamond_top
+Compiling module work.glbl
+Built simulation snapshot diamond
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/xsim.dir/diamond/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct 23 12:12:45 2021...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/diamond/xsim_script.tcl
+# xsim {diamond} -view {{diamond_dataflow_ana.wcfg}} -tclbatch {diamond.tcl} -protoinst {diamond.protoinst}
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file diamond.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond//AESL_inst_diamond_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcA_U0/funcA_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcB_U0/funcB_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcC_U0/funcC_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_diamond_top/AESL_inst_diamond/funcD_U0/funcD_U0_activity
+Time resolution is 1 ps
+open_wave_config diamond_dataflow_ana.wcfg
+source diamond.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set vecOut_group [add_wave_group vecOut(memory) -into $coutputgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_we1 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_q1 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_d1 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_ce1 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_address1 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_we0 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_q0 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_d0 -into $vecOut_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_ce0 -into $vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecOut_address0 -into $vecOut_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set vecIn_group [add_wave_group vecIn(memory) -into $cinputgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_we1 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_q1 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_d1 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_ce1 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_address1 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_we0 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_q0 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_d0 -into $vecIn_group -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_ce0 -into $vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/AESL_inst_diamond/vecIn_address0 -into $vecIn_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_start -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_done -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_ready -into $blocksiggroup
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_idle -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_diamond_top/AESL_inst_diamond/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_diamond_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_diamond_top/LENGTH_vecIn -into $tb_portdepth_group -radix hex
+## add_wave /apatb_diamond_top/LENGTH_vecOut -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_vecOut_group [add_wave_group vecOut(memory) -into $tbcoutputgroup]
+## add_wave /apatb_diamond_top/vecOut_we1 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_q1 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_d1 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_ce1 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_address1 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_we0 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_q0 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_d0 -into $tb_vecOut_group -radix hex
+## add_wave /apatb_diamond_top/vecOut_ce0 -into $tb_vecOut_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecOut_address0 -into $tb_vecOut_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_vecIn_group [add_wave_group vecIn(memory) -into $tbcinputgroup]
+## add_wave /apatb_diamond_top/vecIn_we1 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_q1 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_d1 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_ce1 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_address1 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_we0 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_q0 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_d0 -into $tb_vecIn_group -radix hex
+## add_wave /apatb_diamond_top/vecIn_ce0 -into $tb_vecIn_group -color #ffff00 -radix hex
+## add_wave /apatb_diamond_top/vecIn_address0 -into $tb_vecIn_group -radix hex
+## save_wave_config diamond.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "113000"
+// RTL Simulation : 1 / 3 [67.10%] @ "898000"
+// RTL Simulation : 2 / 3 [67.10%] @ "1148000"
+// RTL Simulation : 3 / 3 [100.00%] @ "1418000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1437500 ps : File "C:/E/HLS/Lab/Lab_B/HLS_Lab_B/dataflow/proj/solution1/sim/verilog/diamond.autotb.v" Line 297
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 23 12:12:53 2021...
+INFO: [COSIM 212-316] Starting C post checking ...
+Series 0 Outcome: 25
+Series 0 Outcome: 40
+Series 0 Outcome: 55
+Series 0 Outcome: 70
+Series 0 Outcome: 85
+Series 0 Outcome: 100
+Series 0 Outcome: 115
+Series 0 Outcome: 130
+Series 0 Outcome: 145
+Series 0 Outcome: 160
+Series 0 Outcome: 175
+Series 0 Outcome: 190
+Series 0 Outcome: 205
+Series 0 Outcome: 220
+Series 0 Outcome: 235
+Series 0 Outcome: 250
+Series 0 Outcome: 9
+Series 0 Outcome: 24
+Series 0 Outcome: 39
+Series 0 Outcome: 54
+Series 0 Outcome: 69
+Series 0 Outcome: 84
+Series 0 Outcome: 99
+Series 0 Outcome: 114
+Series 0 Outcome: 129
+Series 0 Outcome: 144
+Series 0 Outcome: 159
+Series 0 Outcome: 174
+Series 0 Outcome: 189
+Series 0 Outcome: 204
+Series 0 Outcome: 219
+Series 0 Outcome: 234
+Series 0 Outcome: 249
+Series 0 Outcome: 8
+Series 0 Outcome: 23
+Series 0 Outcome: 38
+Series 0 Outcome: 53
+Series 0 Outcome: 68
+Series 0 Outcome: 83
+Series 0 Outcome: 98
+Series 0 Outcome: 113
+Series 0 Outcome: 128
+Series 0 Outcome: 143
+Series 0 Outcome: 158
+Series 0 Outcome: 173
+Series 0 Outcome: 188
+Series 0 Outcome: 203
+Series 0 Outcome: 218
+Series 0 Outcome: 233
+Series 0 Outcome: 248
+Series 0 Outcome: 7
+Series 0 Outcome: 22
+Series 0 Outcome: 37
+Series 0 Outcome: 52
+Series 0 Outcome: 67
+Series 0 Outcome: 82
+Series 0 Outcome: 97
+Series 0 Outcome: 112
+Series 0 Outcome: 127
+Series 0 Outcome: 142
+Series 0 Outcome: 157
+Series 0 Outcome: 172
+Series 0 Outcome: 187
+Series 0 Outcome: 202
+Series 0 Outcome: 217
+Series 0 Outcome: 232
+Series 0 Outcome: 247
+Series 0 Outcome: 6
+Series 0 Outcome: 21
+Series 0 Outcome: 36
+Series 0 Outcome: 51
+Series 0 Outcome: 66
+Series 0 Outcome: 81
+Series 0 Outcome: 96
+Series 0 Outcome: 111
+Series 0 Outcome: 126
+Series 0 Outcome: 141
+Series 0 Outcome: 156
+Series 0 Outcome: 171
+Series 0 Outcome: 186
+Series 0 Outcome: 201
+Series 0 Outcome: 216
+Series 0 Outcome: 231
+Series 0 Outcome: 246
+Series 0 Outcome: 5
+Series 0 Outcome: 20
+Series 0 Outcome: 35
+Series 0 Outcome: 50
+Series 0 Outcome: 65
+Series 0 Outcome: 80
+Series 0 Outcome: 95
+Series 0 Outcome: 110
+Series 0 Outcome: 125
+Series 0 Outcome: 140
+Series 0 Outcome: 155
+Series 0 Outcome: 170
+Series 0 Outcome: 185
+Series 0 Outcome: 200
+Series 0 Outcome: 215
+Series 0 Outcome: 230
+Series 1 Outcome: 25
+Series 1 Outcome: 40
+Series 1 Outcome: 55
+Series 1 Outcome: 70
+Series 1 Outcome: 85
+Series 1 Outcome: 100
+Series 1 Outcome: 115
+Series 1 Outcome: 130
+Series 1 Outcome: 145
+Series 1 Outcome: 160
+Series 1 Outcome: 175
+Series 1 Outcome: 190
+Series 1 Outcome: 205
+Series 1 Outcome: 220
+Series 1 Outcome: 235
+Series 1 Outcome: 250
+Series 1 Outcome: 9
+Series 1 Outcome: 24
+Series 1 Outcome: 39
+Series 1 Outcome: 54
+Series 1 Outcome: 69
+Series 1 Outcome: 84
+Series 1 Outcome: 99
+Series 1 Outcome: 114
+Series 1 Outcome: 129
+Series 1 Outcome: 144
+Series 1 Outcome: 159
+Series 1 Outcome: 174
+Series 1 Outcome: 189
+Series 1 Outcome: 204
+Series 1 Outcome: 219
+Series 1 Outcome: 234
+Series 1 Outcome: 249
+Series 1 Outcome: 8
+Series 1 Outcome: 23
+Series 1 Outcome: 38
+Series 1 Outcome: 53
+Series 1 Outcome: 68
+Series 1 Outcome: 83
+Series 1 Outcome: 98
+Series 1 Outcome: 113
+Series 1 Outcome: 128
+Series 1 Outcome: 143
+Series 1 Outcome: 158
+Series 1 Outcome: 173
+Series 1 Outcome: 188
+Series 1 Outcome: 203
+Series 1 Outcome: 218
+Series 1 Outcome: 233
+Series 1 Outcome: 248
+Series 1 Outcome: 7
+Series 1 Outcome: 22
+Series 1 Outcome: 37
+Series 1 Outcome: 52
+Series 1 Outcome: 67
+Series 1 Outcome: 82
+Series 1 Outcome: 97
+Series 1 Outcome: 112
+Series 1 Outcome: 127
+Series 1 Outcome: 142
+Series 1 Outcome: 157
+Series 1 Outcome: 172
+Series 1 Outcome: 187
+Series 1 Outcome: 202
+Series 1 Outcome: 217
+Series 1 Outcome: 232
+Series 1 Outcome: 247
+Series 1 Outcome: 6
+Series 1 Outcome: 21
+Series 1 Outcome: 36
+Series 1 Outcome: 51
+Series 1 Outcome: 66
+Series 1 Outcome: 81
+Series 1 Outcome: 96
+Series 1 Outcome: 111
+Series 1 Outcome: 126
+Series 1 Outcome: 141
+Series 1 Outcome: 156
+Series 1 Outcome: 171
+Series 1 Outcome: 186
+Series 1 Outcome: 201
+Series 1 Outcome: 216
+Series 1 Outcome: 231
+Series 1 Outcome: 246
+Series 1 Outcome: 5
+Series 1 Outcome: 20
+Series 1 Outcome: 35
+Series 1 Outcome: 50
+Series 1 Outcome: 65
+Series 1 Outcome: 80
+Series 1 Outcome: 95
+Series 1 Outcome: 110
+Series 1 Outcome: 125
+Series 1 Outcome: 140
+Series 1 Outcome: 155
+Series 1 Outcome: 170
+Series 1 Outcome: 185
+Series 1 Outcome: 200
+Series 1 Outcome: 215
+Series 1 Outcome: 230
+Series 2 Outcome: 25
+Series 2 Outcome: 40
+Series 2 Outcome: 55
+Series 2 Outcome: 70
+Series 2 Outcome: 85
+Series 2 Outcome: 100
+Series 2 Outcome: 115
+Series 2 Outcome: 130
+Series 2 Outcome: 145
+Series 2 Outcome: 160
+Series 2 Outcome: 175
+Series 2 Outcome: 190
+Series 2 Outcome: 205
+Series 2 Outcome: 220
+Series 2 Outcome: 235
+Series 2 Outcome: 250
+Series 2 Outcome: 9
+Series 2 Outcome: 24
+Series 2 Outcome: 39
+Series 2 Outcome: 54
+Series 2 Outcome: 69
+Series 2 Outcome: 84
+Series 2 Outcome: 99
+Series 2 Outcome: 114
+Series 2 Outcome: 129
+Series 2 Outcome: 144
+Series 2 Outcome: 159
+Series 2 Outcome: 174
+Series 2 Outcome: 189
+Series 2 Outcome: 204
+Series 2 Outcome: 219
+Series 2 Outcome: 234
+Series 2 Outcome: 249
+Series 2 Outcome: 8
+Series 2 Outcome: 23
+Series 2 Outcome: 38
+Series 2 Outcome: 53
+Series 2 Outcome: 68
+Series 2 Outcome: 83
+Series 2 Outcome: 98
+Series 2 Outcome: 113
+Series 2 Outcome: 128
+Series 2 Outcome: 143
+Series 2 Outcome: 158
+Series 2 Outcome: 173
+Series 2 Outcome: 188
+Series 2 Outcome: 203
+Series 2 Outcome: 218
+Series 2 Outcome: 233
+Series 2 Outcome: 248
+Series 2 Outcome: 7
+Series 2 Outcome: 22
+Series 2 Outcome: 37
+Series 2 Outcome: 52
+Series 2 Outcome: 67
+Series 2 Outcome: 82
+Series 2 Outcome: 97
+Series 2 Outcome: 112
+Series 2 Outcome: 127
+Series 2 Outcome: 142
+Series 2 Outcome: 157
+Series 2 Outcome: 172
+Series 2 Outcome: 187
+Series 2 Outcome: 202
+Series 2 Outcome: 217
+Series 2 Outcome: 232
+Series 2 Outcome: 247
+Series 2 Outcome: 6
+Series 2 Outcome: 21
+Series 2 Outcome: 36
+Series 2 Outcome: 51
+Series 2 Outcome: 66
+Series 2 Outcome: 81
+Series 2 Outcome: 96
+Series 2 Outcome: 111
+Series 2 Outcome: 126
+Series 2 Outcome: 141
+Series 2 Outcome: 156
+Series 2 Outcome: 171
+Series 2 Outcome: 186
+Series 2 Outcome: 201
+Series 2 Outcome: 216
+Series 2 Outcome: 231
+Series 2 Outcome: 246
+Series 2 Outcome: 5
+Series 2 Outcome: 20
+Series 2 Outcome: 35
+Series 2 Outcome: 50
+Series 2 Outcome: 65
+Series 2 Outcome: 80
+Series 2 Outcome: 95
+Series 2 Outcome: 110
+Series 2 Outcome: 125
+Series 2 Outcome: 140
+Series 2 Outcome: 155
+Series 2 Outcome: 170
+Series 2 Outcome: 185
+Series 2 Outcome: 200
+Series 2 Outcome: 215
+Series 2 Outcome: 230
+Test passed !
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 27.428 seconds; current allocated memory: 225.607 MB.

@@ -1,0 +1,57 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/reports/tsp
+	Log files: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/logs/tsp
+INFO: [v++ 60-1548] Creating build summary session with primary output /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp.xo.compile_summary, at Sun Oct 31 19:38:11 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Oct 31 19:38:12 2021
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/xilinx_u50_gen3x16_xdma_201920_3.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_201920_3/hw/hw.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-585] Compiling for software emulation target
+INFO: [v++ 60-423]   Target device: xilinx_u50_gen3x16_xdma_201920_3
+INFO: [v++ 60-242] Creating kernel: 'tsp'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: tsp Log file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log :
+ERROR: [v++ 207-3796] unknown type name 'uint16_t': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:42:49
+ERROR: [v++ 207-3587] templates must have C++ linkage: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:41:1
+ERROR: [v++ 207-3796] unknown type name 'uint16_t': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:52:48
+ERROR: [v++ 207-3771] use of undeclared identifier 'std': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:82:3
+ERROR: [v++ 207-3771] use of undeclared identifier 'std': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:82:65
+ERROR: [v++ 207-3771] use of undeclared identifier 'hls': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:10
+ERROR: [v++ 207-3696] variable has incomplete type 'void': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:6
+ERROR: [v++ 207-3771] use of undeclared identifier 'uint16_t': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:22
+ERROR: [v++ 207-3771] use of undeclared identifier 'streamDistances': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:33
+ERROR: [v++ 207-1198] expected '(' for function-style cast or type construction: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:59
+ERROR: [v++ 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:89:1
+ERROR: [v++ 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:91:9
+ERROR: [v++ 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:94:9
+ERROR: [v++ 207-3771] use of undeclared identifier 'std': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:106:30
+ERROR: [v++ 207-1198] expected '(' for function-style cast or type construction: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:106:59
+ERROR: [v++ 207-3796] unknown type name 'loop_compute': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:107:5
+ERROR: [v++ 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:107:17
+ERROR: [v++ 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:109:9
+ERROR: [v++ 207-2911] C++ requires a type specifier for all declarations: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:114:5
+ERROR: [v++ 207-59] too many errors emitted, stopping now
+ERROR: [v++ 60-300] Failed to build kernel(ip) tsp, see log for details: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3796] unknown type name 'uint16_t': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:42:49
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3587] templates must have C++ linkage: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:41:1
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3796] unknown type name 'uint16_t': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:52:48
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'std': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:82:3
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'std': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:82:65
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'hls': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:10
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3696] variable has incomplete type 'void': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:6
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'uint16_t': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:22
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'streamDistances': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:33
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1198] expected '(' for function-style cast or type construction: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:88:59
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:89:1
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:91:9
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:94:9
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'std': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:106:30
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1198] expected '(' for function-style cast or type construction: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:106:59
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3796] unknown type name 'loop_compute': /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:107:5
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:107:17
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-1228] expected unqualified-id: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:109:9
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-2911] C++ requires a type specifier for all declarations: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/src/tsp.cpp:114:5
+ERROR: [v++ 60-773] In '/mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp/tsp/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-59] too many errors emitted, stopping now
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.

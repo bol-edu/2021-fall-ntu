@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vitis Analyzer v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# 
+# Start of session at: Sun Oct 31 20:29:19 2021
+# Process ID: 4129300
+# Current directory: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build
+# Command line: vitis_analyzer /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/tsp.xo.compile_summary -listener
+# Log file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/vitis_analyzer.log
+# Journal file: /mnt/HLSNAS/r10943005/traveling-salesperson/proj_kernels/Emulation-SW/build/vitis_analyzer.jou
+#-----------------------------------------------------------
+start_gui
+create_project dummy
+close_project
+create_project dummy
+close_project
+create_project dummy

@@ -1,0 +1,39 @@
+===============================================================================
+Version:    v++ v2020.2 (64-bit)
+Build:      SW Build (by xbuild) on 2020-11-18-05:13:29
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Wed Nov  3 21:36:44 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             tsp
+Target Device:           xilinx:u50:gen3x16_xdma:201920.3
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+tsp          c     fpga0:OCL_REGION_0  tsp             1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     tsp
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name  Target Frequency  Estimated Frequency
+------------  -----------  -----------  ----------------  -------------------
+tsp_1         tsp          tsp          300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -----------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+tsp_1         tsp          tsp          907598          907597         907597        907597          3.025 ms         3.025 ms        3.025 ms
+
+Area Information
+Compute Unit  Kernel Name  Module Name  FF     LUT    DSP  BRAM  URAM
+------------  -----------  -----------  -----  -----  ---  ----  ----
+tsp_1         tsp          tsp          31895  29560  0    2     0
+-------------------------------------------------------------------------------
